@@ -15,8 +15,8 @@
 - Working with Resource Assignments
 - Working with Currencies
 - Miscellaneous
-- </Description>
-      <FolderName>ProgrammersGuide</FolderName>
+- Using Aspose.Tasks for .NET in other programming languages</Description>
+      <FolderName>programmersguide</FolderName>
       <Order>1</Order>
       <Folders>
         <Folder>
@@ -53,20 +53,20 @@
 - Replacing a Calendar
 - Extended Attributes
 - Calculate Critical Path
-- Recalculating Project Data
+- Recaclulating Project Data
 - Printing the TaskWritingException
 - Microsoft Project 2010 MPP File Update
 - Writing Updated Extended Attribute Definitions and Values to MPP
 - Saving a Project as PDF
 - Get Number of Pages in Project
 - Retrieving Outline Codes</Description>
-          <FolderName>WorkingWithProjects</FolderName>
+          <FolderName>workingwithprojects</FolderName>
           <Order>1</Order>
           <Examples>
             <Example>
               <Title>Creating an Empty Project File</Title>
               <Description>Aspose.Tasks can open existing files, but it can also create new files. This example explains how to create a new and empty project file from stream or using the ProjectWriter class.</Description>
-              <FolderName>CreatingEmptyProjectFile</FolderName>
+              <FolderName>creatingemptyprojectfile</FolderName>
               <Order>1</Order>
               <DocLink>
                 <DisplayName>Creating an Empty Project File</DisplayName>
@@ -74,10 +74,10 @@
               </DocLink>
               <OutputFiles>
                 <DataFile>
-                  <Path>..\Data\Project2.xml</Path>
+                  <Path>..\data\Project2.xml</Path>
                 </DataFile>
                 <DataFile>
-                  <Path>..\Data\Project1.xml</Path>
+                  <Path>..\data\Project1.xml</Path>
                 </DataFile>
               </OutputFiles>
               <Type>Console</Type>
@@ -85,7 +85,7 @@
             <Example>
               <Title>Setting Attributes for New Tasks</Title>
               <Description>With ASpose.Tasks, it is easy to add tasks to projects. This example explains how to add task and set the default start date for new tasks.</Description>
-              <FolderName>SettingAttributesForNewTasks</FolderName>
+              <FolderName>settingattributesfornewtasks</FolderName>
               <Order>2</Order>
               <DocLink>
                 <DisplayName>Setting Attributes for New Tasks</DisplayName>
@@ -93,7 +93,7 @@
               </DocLink>
               <OutputFiles>
                 <DataFile>
-                  <Path>..\Data\project1.xml</Path>
+                  <Path>..\data\project1.xml</Path>
                 </DataFile>
               </OutputFiles>
               <Type>Console</Type>
@@ -101,18 +101,23 @@
             <Example>
               <Title>Adding and Removing Tasks</Title>
               <Description>Projects are made up by a series of tasks with resources (staff or equipment) assigned to them. Aspose.Tasks lets you work with tasks in many different ways. A lot of the time, when you're creating a project, you'll want to add tasks. This example explains how to add and remove tasks from a project.</Description>
-              <FolderName>AddRemoveTasks</FolderName>
+              <FolderName>addremovetasks</FolderName>
               <Order>3</Order>
               <DocLink>
                 <DisplayName>Adding and Removing Tasks</DisplayName>
                 <Url>Adding+and+Removing+Tasks</Url>
               </DocLink>
+              <InputFiles>
+                <DataFile>
+                  <Path>..\data\project.mpp</Path>
+                </DataFile>
+              </InputFiles>
               <Type>Console</Type>
             </Example>
             <Example>
               <Title>Determining Project Version</Title>
               <Description>Aspose.Tasks lets you retrieve project file information such as the version of Microsoft Project that the file was created with. This example shows how.</Description>
-              <FolderName>DeterminingProjectVersion</FolderName>
+              <FolderName>determiningprojectversion</FolderName>
               <Order>4</Order>
               <DocLink>
                 <DisplayName>Determining Project Version</DisplayName>
@@ -120,7 +125,7 @@
               </DocLink>
               <InputFiles>
                 <DataFile>
-                  <Path>..\Data\input.xml</Path>
+                  <Path>..\data\input.xml</Path>
                 </DataFile>
               </InputFiles>
               <Type>Console</Type>
@@ -128,7 +133,7 @@
             <Example>
               <Title>General Project Properties</Title>
               <Description>Microsoft Project saves project properties, metadata, for every project. The properties include the project's start and end dates, the current date and the status date, the type of calendar used and when a project is scheduled from. Aspose.Tasks lets you read and set project properties. This example shows how.</Description>
-              <FolderName>GeneralProjectProperties</FolderName>
+              <FolderName>generalprojectproperties</FolderName>
               <Order>5</Order>
               <DocLink>
                 <DisplayName>General Project Properties</DisplayName>
@@ -136,12 +141,12 @@
               </DocLink>
               <InputFiles>
                 <DataFile>
-                  <Path>..\Data\project.mpp</Path>
+                  <Path>..\data\project.mpp</Path>
                 </DataFile>
               </InputFiles>
               <OutputFiles>
                 <DataFile>
-                  <Path>..\Data\project.xml</Path>
+                  <Path>..\data\project.xml</Path>
                 </DataFile>
               </OutputFiles>
               <Type>Console</Type>
@@ -149,7 +154,7 @@
             <Example>
               <Title>Default Project Properties</Title>
               <Description>Microsoft Project lets users set default project properties that speed up the process of setting up a project. The default properties define when a new task starts and finishes, sets the default overtime and standard pay rates and more. Aspose.Tasks supports these features. This example explains both how to read default properties and how to write default properties to a project file.</Description>
-              <FolderName>DefaultProjectProperties</FolderName>
+              <FolderName>defaultprojectproperties</FolderName>
               <Order>6</Order>
               <DocLink>
                 <DisplayName>Default Project Properties</DisplayName>
@@ -157,12 +162,12 @@
               </DocLink>
               <InputFiles>
                 <DataFile>
-                  <Path>..\Data\project.mpp</Path>
+                  <Path>..\data\project.mpp</Path>
                 </DataFile>
               </InputFiles>
               <OutputFiles>
                 <DataFile>
-                  <Path>..\Data\project.xml</Path>
+                  <Path>..\data\project.xml</Path>
                 </DataFile>
               </OutputFiles>
               <Type>Console</Type>
@@ -170,7 +175,7 @@
             <Example>
               <Title>Writing MPP Project Summary Information</Title>
               <Description>Most programs save summary information with the files they save. Microsoft Project is no different. As well as the name of the author, the date the project was created and the last time it was edited and saved, it saves keywords, subject, comments and more. Aspose.Tasks lets you both read and write this type of information. This example explains how to open a project file, set the summary information and save it again.</Description>
-              <FolderName>WriteMPPProjectSummary</FolderName>
+              <FolderName>writemppprojectsummary</FolderName>
               <Order>7</Order>
               <DocLink>
                 <DisplayName>Writing MPP Project Summary Information</DisplayName>
@@ -178,12 +183,12 @@
               </DocLink>
               <InputFiles>
                 <DataFile>
-                  <Path>..\Data\project.mpp</Path>
+                  <Path>..\data\project.mpp</Path>
                 </DataFile>
               </InputFiles>
               <OutputFiles>
                 <DataFile>
-                  <Path>..\Data\MPPAspose.xml</Path>
+                  <Path>..\data\MPPAspose.xml</Path>
                 </DataFile>
               </OutputFiles>
               <Type>Console</Type>
@@ -191,7 +196,7 @@
             <Example>
               <Title>Fiscal Year Properties</Title>
               <Description>The fiscal year is the same as a financial year, or budget year. It is the dates between which an country, an organization or an individual calculates budgets and taxes. Microsoft Project lets users define a fiscal year for projects. Aspose.Tasks supports this functionality with properties that allow developers to both read fiscal year properties from existing projects, and set fiscal year properties when creating or working with projects.</Description>
-              <FolderName>FiscalYearProperties</FolderName>
+              <FolderName>fiscalyearproperties</FolderName>
               <Order>8</Order>
               <DocLink>
                 <DisplayName>Fiscal Year Properties</DisplayName>
@@ -199,12 +204,12 @@
               </DocLink>
               <InputFiles>
                 <DataFile>
-                  <Path>..\Data\project.mpp</Path>
+                  <Path>..\data\project.mpp</Path>
                 </DataFile>
               </InputFiles>
               <OutputFiles>
                 <DataFile>
-                  <Path>..\Data\savedProject.xml</Path>
+                  <Path>..\data\savedProject.xml</Path>
                 </DataFile>
               </OutputFiles>
               <Type>Console</Type>
@@ -212,7 +217,7 @@
             <Example>
               <Title>Weekday Properties</Title>
               <Description>Microsoft Project lets users set a number of different weekday properties, for example what day a week starts on and how many working days are in a month. Aspose.Tasks support these features through a number of properties that can be used both to read weekday properties and to write them to a project.</Description>
-              <FolderName>WeekdayProperties</FolderName>
+              <FolderName>weekdayproperties</FolderName>
               <Order>9</Order>
               <DocLink>
                 <DisplayName>Weekday Properties</DisplayName>
@@ -220,12 +225,12 @@
               </DocLink>
               <InputFiles>
                 <DataFile>
-                  <Path>..\Data\project.mpp</Path>
+                  <Path>..\data\project.mpp</Path>
                 </DataFile>
               </InputFiles>
               <OutputFiles>
                 <DataFile>
-                  <Path>..\Data\savedProject.xml</Path>
+                  <Path>..\data\savedProject.xml</Path>
                 </DataFile>
               </OutputFiles>
               <Type>Console</Type>
@@ -233,7 +238,7 @@
             <Example>
               <Title>Reading Project Files</Title>
               <Description>The Read method exposed by the ProjectReader class is used to read project files. The Read method accepts a valid FileStream object in MPP or XML format and returns a Project object which can be used to manipulate project data.</Description>
-              <FolderName>ReadingProjectFiles</FolderName>
+              <FolderName>readingprojectfiles</FolderName>
               <Order>10</Order>
               <DocLink>
                 <DisplayName>Reading Project Files</DisplayName>
@@ -241,7 +246,7 @@
               </DocLink>
               <InputFiles>
                 <DataFile>
-                  <Path>..\Data\project.mpp</Path>
+                  <Path>..\data\project.mpp</Path>
                 </DataFile>
               </InputFiles>
               <Type>Console</Type>
@@ -249,7 +254,7 @@
             <Example>
               <Title>Retrieving Calendar Information</Title>
               <Description>Microsoft Project lets users associate a variety of different calendars with working time, tasks and resources. These features are also available in Aspose.Tasks. This example explains how to retrieve information about which calendars are used in a project. Aspose.Tasks can retrieve calendar information for all versions of Microsoft Project: 2003, 2007, 2010, and 2013.</Description>
-              <FolderName>RetrievingCalendarInformation</FolderName>
+              <FolderName>retrievingcalendarinformation</FolderName>
               <Order>12</Order>
               <DocLink>
                 <DisplayName>Retrieving Calendar Information</DisplayName>
@@ -257,7 +262,7 @@
               </DocLink>
               <InputFiles>
                 <DataFile>
-                  <Path>..\Data\project.mpp</Path>
+                  <Path>..\data\project.mpp</Path>
                 </DataFile>
               </InputFiles>
               <Type>Console</Type>
@@ -265,7 +270,7 @@
             <Example>
               <Title>Retrieving Task Information</Title>
               <Description>Projects are typically broken down into tasks, discreet units of work. Microsoft Project stored information about tasks, the task's name, when it will start and when it will finish. This example explains how to retrieve information for all the tasks in a project.</Description>
-              <FolderName>RetrievingTaskInformation</FolderName>
+              <FolderName>retrievingtaskinformation</FolderName>
               <Order>13</Order>
               <DocLink>
                 <DisplayName>Retrieving Task Information</DisplayName>
@@ -273,7 +278,7 @@
               </DocLink>
               <InputFiles>
                 <DataFile>
-                  <Path>..\Data\project.mpp</Path>
+                  <Path>..\data\project.mpp</Path>
                 </DataFile>
               </InputFiles>
               <Type>Console</Type>
@@ -281,7 +286,7 @@
             <Example>
               <Title>Writing Tasks to Project</Title>
               <Description>Projects are made up by tasks. This example explains how to write tasks to a project with Aspose.Tasks for .NET.</Description>
-              <FolderName>WritingTasksToProject</FolderName>
+              <FolderName>writingtaskstoproject</FolderName>
               <Order>14</Order>
               <DocLink>
                 <DisplayName>Writing Tasks to Project</DisplayName>
@@ -289,7 +294,7 @@
               </DocLink>
               <OutputFiles>
                 <DataFile>
-                  <Path>..\Data\project.xml</Path>
+                  <Path>..\data\project.xml</Path>
                 </DataFile>
               </OutputFiles>
               <Type>Console</Type>
@@ -297,7 +302,7 @@
             <Example>
               <Title>Retrieving Task Links</Title>
               <Description>Task links indicate that one task depends on another. In Microsoft Project Gantt charts, links are shown by lines that links two tasks together, or as a list of precedents. Aspose.Tasks support task links and you can use the API to add and remove task links. This article shows how to retrieve task links, essentially a list of predecessors and successors, and write them to a console window. Aspose.Tasks can retrieve Task Links information for all versions of Microsoft Project: 2003, 2007, 2010, and 2013.</Description>
-              <FolderName>RetrievingTaskLinks</FolderName>
+              <FolderName>retrievingtasklinks</FolderName>
               <Order>15</Order>
               <DocLink>
                 <DisplayName>Retrieving Task Links</DisplayName>
@@ -305,7 +310,7 @@
               </DocLink>
               <InputFiles>
                 <DataFile>
-                  <Path>..\Data\project.mpp</Path>
+                  <Path>..\data\project.mpp</Path>
                 </DataFile>
               </InputFiles>
               <Type>Console</Type>
@@ -313,7 +318,7 @@
             <Example>
               <Title>Adding and Removing Task Links</Title>
               <Description>Tasks are linked to show that tasks are dependent on each other. For example, task 2 cannot start until task 1 has been completed. In Microsoft Project, task links are shown as lines that connect links in a Gantt chart, or as a list of predecessors. Aspose.Tasks fully supports task links. This article explains how to add and remove task links with Aspose.Tasks.</Description>
-              <FolderName>AddingAndRemovingTaskLinks</FolderName>
+              <FolderName>addingandremovingtasklinks</FolderName>
               <Order>16</Order>
               <DocLink>
                 <DisplayName>Adding and Removing Task Links</DisplayName>
@@ -321,12 +326,12 @@
               </DocLink>
               <InputFiles>
                 <DataFile>
-                  <Path>..\Data\project.mpp</Path>
+                  <Path>..\data\project.mpp</Path>
                 </DataFile>
               </InputFiles>
               <OutputFiles>
                 <DataFile>
-                  <Path>..\Data\project.xml</Path>
+                  <Path>..\data\project.xml</Path>
                 </DataFile>
               </OutputFiles>
               <Type>Console</Type>
@@ -334,7 +339,7 @@
             <Example>
               <Title>Defining Root Task</Title>
               <Description>In Microsoft Project, the root task is the parent task of all other tasks in a project. It is central to managing tasks. Aspose.Tasks lets you define a root task in a project and work with its children.</Description>
-              <FolderName>DefiningRootTask</FolderName>
+              <FolderName>definingroottask</FolderName>
               <Order>17</Order>
               <DocLink>
                 <DisplayName>Defining Root Task</DisplayName>
@@ -342,7 +347,7 @@
               </DocLink>
               <OutputFiles>
                 <DataFile>
-                  <Path>..\Data\project.xml</Path>
+                  <Path>..\data\project.xml</Path>
                 </DataFile>
               </OutputFiles>
               <Type>Console</Type>
@@ -350,7 +355,7 @@
             <Example>
               <Title>Adding and Removing Resources</Title>
               <Description>In Microsoft Project, resources are the staff and equipment needed to complete a task. Aspose.Tasks lets you work with resources from within your own applications. This article explains how to add and remove resources from a project file.</Description>
-              <FolderName>AddingAndRemovingResources</FolderName>
+              <FolderName>addingandremovingresources</FolderName>
               <Order>18</Order>
               <DocLink>
                 <DisplayName>Adding and Removing Resources</DisplayName>
@@ -358,7 +363,7 @@
               </DocLink>
               <InputFiles>
                 <DataFile>
-                  <Path>..\Data\project.mpp</Path>
+                  <Path>..\data\project.mpp</Path>
                 </DataFile>
               </InputFiles>
               <Type>Console</Type>
@@ -366,7 +371,7 @@
             <Example>
               <Title>Writing Resources to Project</Title>
               <Description>In Microsoft Project, resources are the staff or equipment needed to complete a task. Aspose.Tasks has many features that lets you work with resources. This article focuses on how to write resources to a project.</Description>
-              <FolderName>WritingResourcesToProject</FolderName>
+              <FolderName>writingresourcestoproject</FolderName>
               <Order>19</Order>
               <DocLink>
                 <DisplayName>Writing Resources to Project</DisplayName>
@@ -374,7 +379,7 @@
               </DocLink>
               <OutputFiles>
                 <DataFile>
-                  <Path>..\Data\project.xml</Path>
+                  <Path>..\data\project.xml</Path>
                 </DataFile>
               </OutputFiles>
               <Type>Console</Type>
@@ -389,13 +394,13 @@ This section include the following examples:
 
 1: Read Currency Properties
 2: Set Currecncy Properties</Description>
-              <FolderName>CurrencyProperties</FolderName>
+              <FolderName>currencyproperties</FolderName>
               <Order>11</Order>
               <Examples>
                 <Example>
                   <Title>Reading Currency Properties</Title>
                   <Description>The example explains how to read a project's currency properties using Aspose.Tasks</Description>
-                  <FolderName>ReadingCurrencyProperties</FolderName>
+                  <FolderName>readingcurrencyproperties</FolderName>
                   <Order>1</Order>
                   <DocLink>
                     <DisplayName>Currency Properties</DisplayName>
@@ -403,7 +408,7 @@ This section include the following examples:
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\project.mpp</Path>
+                      <Path>..\data\project.mpp</Path>
                     </DataFile>
                   </InputFiles>
                   <Type>Console</Type>
@@ -411,7 +416,7 @@ This section include the following examples:
                 <Example>
                   <Title>Set Currency Properties</Title>
                   <Description>The example explains how to set currency properties using Aspose.Tasks</Description>
-                  <FolderName>SetCurrencyProperties</FolderName>
+                  <FolderName>setcurrencyproperties</FolderName>
                   <Order>2</Order>
                   <DocLink>
                     <DisplayName>Currency Properties</DisplayName>
@@ -419,7 +424,7 @@ This section include the following examples:
                   </DocLink>
                   <OutputFiles>
                     <DataFile>
-                      <Path>..\Data\project.xml</Path>
+                      <Path>..\data\project.xml</Path>
                     </DataFile>
                   </OutputFiles>
                   <Type>Console</Type>
@@ -455,13 +460,13 @@ This section include the following examples:
 21:Calculate Duration in Different Formats
 22:Read Timephased Data of a Task
 23:Change Progress of a Task</Description>
-          <FolderName>WorkingWithTasks</FolderName>
+          <FolderName>workingwithtasks</FolderName>
           <Order>2</Order>
           <Examples>
             <Example>
               <Title>Creating Tasks</Title>
               <Description>A project is, essentially, made up by a number of tasks, each of which has to be completed for the project to be completed. When working with project files, adding tasks is an important activity. Tasks are often linked to other tasks, to indicate dependency, and typically have a set duration. Aspose.Project lets developers create tasks and define, at the time of creation, their name, and children or duration.</Description>
-              <FolderName>CreatingTasks</FolderName>
+              <FolderName>creatingtasks</FolderName>
               <Order>1</Order>
               <DocLink>
                 <DisplayName>Creating Tasks</DisplayName>
@@ -469,7 +474,7 @@ This section include the following examples:
               </DocLink>
               <OutputFiles>
                 <DataFile>
-                  <Path>..\Data\Project.Xml</Path>
+                  <Path>..\data\Project.Xml</Path>
                 </DataFile>
               </OutputFiles>
               <Type>Console</Type>
@@ -477,7 +482,7 @@ This section include the following examples:
             <Example>
               <Title>Adding a New Task</Title>
               <Description>Projects are made up of tasks and resources. Once you have created a project, add tasks to it to start building up the complete project plan.</Description>
-              <FolderName>AddingNewTask</FolderName>
+              <FolderName>addingnewtask</FolderName>
               <Order>2</Order>
               <DocLink>
                 <DisplayName>Adding a New Task</DisplayName>
@@ -485,7 +490,7 @@ This section include the following examples:
               </DocLink>
               <OutputFiles>
                 <DataFile>
-                  <Path>..\Data\Project.Xml</Path>
+                  <Path>..\data\Project.Xml</Path>
                 </DataFile>
               </OutputFiles>
               <Type>Console</Type>
@@ -493,7 +498,7 @@ This section include the following examples:
             <Example>
               <Title>Managing Durations</Title>
               <Description>Tasks take time: they have a duration. Realistic task durations help give a realistic project end date. Aspose.Tasks allows developers set task durations in projects.</Description>
-              <FolderName>ManagingDurations</FolderName>
+              <FolderName>managingdurations</FolderName>
               <Order>6</Order>
               <DocLink>
                 <DisplayName>Managing Durations</DisplayName>
@@ -501,9 +506,25 @@ This section include the following examples:
               </DocLink>
               <OutputFiles>
                 <DataFile>
-                  <Path>..\Data\Project.Xml</Path>
+                  <Path>..\data\Project.Xml</Path>
                 </DataFile>
               </OutputFiles>
+              <Type>Console</Type>
+            </Example>
+            <Example>
+              <Title>Actual Properties</Title>
+              <Description>The actual properties are used to find out how much time or money has been sent on a task to date.</Description>
+              <FolderName>actualproperties</FolderName>
+              <Order>7</Order>
+              <DocLink>
+                <DisplayName>Actual Properties</DisplayName>
+                <Url>Actual+Properties</Url>
+              </DocLink>
+              <InputFiles>
+                <DataFile>
+                  <Path>..\data\project.mpp</Path>
+                </DataFile>
+              </InputFiles>
               <Type>Console</Type>
             </Example>
           </Examples>
@@ -514,13 +535,13 @@ This section include the following examples:
 
 1: Setting General Properties
 2: Getting General Properties</Description>
-              <FolderName>ReadingAndWritingGeneralProperties</FolderName>
+              <FolderName>readingandwritinggeneralproperties</FolderName>
               <Order>3</Order>
               <Examples>
                 <Example>
                   <Title>Setting General Properties</Title>
                   <Description>The Task exposes a number of general properties. This example shows how to set some of those properties using Aspose.Tasks.</Description>
-                  <FolderName>SettingGeneralProperties</FolderName>
+                  <FolderName>settinggeneralproperties</FolderName>
                   <Order>1</Order>
                   <DocLink>
                     <DisplayName>Reading and Writing General Properties</DisplayName>
@@ -528,7 +549,7 @@ This section include the following examples:
                   </DocLink>
                   <OutputFiles>
                     <DataFile>
-                      <Path>..\Data\Project.Xml</Path>
+                      <Path>..\data\Project.Xml</Path>
                     </DataFile>
                   </OutputFiles>
                   <Type>Console</Type>
@@ -536,7 +557,7 @@ This section include the following examples:
                 <Example>
                   <Title>Getting General Properties</Title>
                   <Description>In this example we will get task's properties by traversing the children of the project's RootTask property.</Description>
-                  <FolderName>GettingGeneralProperties</FolderName>
+                  <FolderName>gettinggeneralproperties</FolderName>
                   <Order>2</Order>
                   <DocLink>
                     <DisplayName>Reading and Writing General Properties</DisplayName>
@@ -544,7 +565,7 @@ This section include the following examples:
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\project.mpp</Path>
+                      <Path>..\data\project.mpp</Path>
                     </DataFile>
                   </InputFiles>
                   <Type>Console</Type>
@@ -554,13 +575,13 @@ This section include the following examples:
             <Folder>
               <Title>Tasks and Calendars</Title>
               <Description>It is possible to associate calendars with particular tasks in Microsoft Project. Aspose.Task supports this functionality as well. The Task class exposes the Calendar property, used to set or get the calendar associated with a task. This property accepts or returns an Aspose.Tasks.Calendar object.</Description>
-              <FolderName>TasksAndCalendars</FolderName>
+              <FolderName>tasksandcalendars</FolderName>
               <Order>4</Order>
               <Examples>
                 <Example>
                   <Title>Setting Task Calendar</Title>
                   <Description>Using Aspose.Tasks, create a standard calendar and create a task. Assign the Calendar to the task.</Description>
-                  <FolderName>SettingTaskCalendar</FolderName>
+                  <FolderName>settingtaskcalendar</FolderName>
                   <Order>1</Order>
                   <DocLink>
                     <DisplayName>Tasks and Calendars</DisplayName>
@@ -568,7 +589,7 @@ This section include the following examples:
                   </DocLink>
                   <OutputFiles>
                     <DataFile>
-                      <Path>..\Data\Project.Xml</Path>
+                      <Path>..\data\Project.Xml</Path>
                     </DataFile>
                   </OutputFiles>
                   <Type>Console</Type>
@@ -576,7 +597,7 @@ This section include the following examples:
                 <Example>
                   <Title>Getting Task Calendar</Title>
                   <Description>To get a task calendar, traverse the tasks in a project using Aspose.Tasks.</Description>
-                  <FolderName>GettingTaskCalendar</FolderName>
+                  <FolderName>gettingtaskcalendar</FolderName>
                   <Order>2</Order>
                   <DocLink>
                     <DisplayName>Tasks and Calendars</DisplayName>
@@ -584,7 +605,7 @@ This section include the following examples:
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\project.mpp</Path>
+                      <Path>..\data\project.mpp</Path>
                     </DataFile>
                   </InputFiles>
                   <Type>Console</Type>
@@ -594,13 +615,13 @@ This section include the following examples:
             <Folder>
               <Title>Handling Task Constraints</Title>
               <Description>Task constraints are used to define a Microsoft Project project's schedule and define when tasks should be started or finished. Constraints can be flexible - start or end as soon as possible or as late as possible - or inflexible. Inflexible constraints are tied to specific dates.</Description>
-              <FolderName>HandlingTaskConstraints</FolderName>
+              <FolderName>handlingtaskconstraints</FolderName>
               <Order>5</Order>
               <Examples>
                 <Example>
                   <Title>Setting Constraints</Title>
                   <Description>In this example, we will see how to apply different constraints on tasks using Aspose.Tasks.</Description>
-                  <FolderName>SettingConstraints</FolderName>
+                  <FolderName>settingconstraints</FolderName>
                   <Order>1</Order>
                   <DocLink>
                     <DisplayName>Handling Task Constraints</DisplayName>
@@ -608,15 +629,20 @@ This section include the following examples:
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\project.mpp</Path>
+                      <Path>..\data\project.mpp</Path>
                     </DataFile>
                   </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\output.pdf</Path>
+                    </DataFile>
+                  </OutputFiles>
                   <Type>Console</Type>
                 </Example>
                 <Example>
                   <Title>Getting Constraints</Title>
                   <Description>In this example we demonstrate how to get the constraint information of a task using Aspose.Tasks.</Description>
-                  <FolderName>GettingConstraints</FolderName>
+                  <FolderName>gettingconstraints</FolderName>
                   <Order>2</Order>
                   <DocLink>
                     <DisplayName>Handling Task Constraints</DisplayName>
@@ -624,7 +650,7 @@ This section include the following examples:
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\Data\project.mpp</Path>
+                      <Path>..\data\project.mpp</Path>
                     </DataFile>
                   </InputFiles>
                   <Type>Console</Type>
@@ -632,6 +658,168 @@ This section include the following examples:
               </Examples>
             </Folder>
           </Folders>
+        </Folder>
+        <Folder>
+          <Title>Working with Calendars</Title>
+          <Description>This section includes the following examples: 
+
+- Creating a Calendar
+- Making a Standard Calendar
+- General Calendar Properties
+- Defining Weekdays for Calendar
+- Getting Working Hours On or Between Dates
+- Writing Updated Calendar Data to MPP</Description>
+          <FolderName>workingwithcalendars</FolderName>
+          <Order>3</Order>
+          <Examples>
+            <Example>
+              <Title>Creating a Calendar</Title>
+              <Description>Calendars, and other information, is used by Microsoft Project to build project schedules. With Aspose.Tasks, adding a calendar to a project is easy. The Calendar class constructors allow you to assign an ID or a calendar name to the calendar, or use the default constructor.</Description>
+              <FolderName>creatingacalendar</FolderName>
+              <Order>1</Order>
+              <DocLink>
+                <DisplayName>Creating a Calendar</DisplayName>
+                <Url>Creating+a+Calendar</Url>
+              </DocLink>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\data\Project.Xml</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
+            <Example>
+              <Title>Making a Standard Calendar</Title>
+              <Description>A standard calendar provides the most common work days, work hours and holidays. By default, a standard calendar is added whenever a project is created using Microsoft Project. Aspose.Tasks has features for defining a standard calendar for a project.</Description>
+              <FolderName>makingastandardcalendar</FolderName>
+              <Order>2</Order>
+              <DocLink>
+                <DisplayName>Making a Standard Calendar</DisplayName>
+                <Url>Making+a+Standard+Calendar</Url>
+              </DocLink>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\data\Project.Xml</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
+            <Example>
+              <Title>Defining Weekdays for Calendar</Title>
+              <Description>Microsoft Project keeps track of which days are considered weekdays in a calendar so that it can calculate project end dates and so on. Aspose.Tasks allows developers to define weekdays for a calendar associated with a project.</Description>
+              <FolderName>definingweekdays</FolderName>
+              <Order>3</Order>
+              <DocLink>
+                <DisplayName>Defining Weekdays for Calendar</DisplayName>
+                <Url>Defining+Weekdays+for+Calendar</Url>
+              </DocLink>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\data\Project.Xml</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
+            <Example>
+              <Title>Getting Working Hours On or Between Dates</Title>
+              <Description>Working hours are typically defined as a range of hours over a day, on specific days of the week. For example, 09:00 – 17:00, Monday to Friday. With Aspose.Tasks, it is possible to calculate the number of working hours that fall on a date, or between two dates. Finding out the number of working dates between two dates help project managers figure out whether there are enough hours to get work done, or if they need to find more resources to complete a task.</Description>
+              <FolderName>gettingworkinghours</FolderName>
+              <Order>4</Order>
+              <DocLink>
+                <DisplayName>Getting Working Hours On or Between Dates</DisplayName>
+                <Url>Getting+Working+Hours+On+or+Between+Dates</Url>
+              </DocLink>
+              <InputFiles>
+                <DataFile>
+                  <Path>..\data\project.mpp</Path>
+                </DataFile>
+              </InputFiles>
+              <Type>Console</Type>
+            </Example>
+          </Examples>
+        </Folder>
+        <Folder>
+          <Title>Working with Task Links</Title>
+          <Description>This section includes the following examples:
+
+
+- Creating a task link
+- Defining link type
+- Predecessor / successor tasks
+- Cross project predecessors
+- Identify tasks through cross projects</Description>
+          <FolderName>workingwithtasklinks</FolderName>
+          <Order>4</Order>
+          <Examples>
+            <Example>
+              <Title>Creating a task link</Title>
+              <Description>A task link is created using the default constructor (TaskLink) which accepts three parameters:
+ 
+1.The first parameter defines the predecessor Task,
+2.the second parameter defines the successor Task and, finally,
+3.the third parameter defines the task link type from values specified by the TaskLinkType enumeration type.</Description>
+              <FolderName>creatingatasklink</FolderName>
+              <Order>1</Order>
+              <DocLink>
+                <DisplayName>Creating a task link</DisplayName>
+                <Url>Creating+a+Task+Link</Url>
+              </DocLink>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\data\Project.Xml</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
+            <Example>
+              <Title>Defining link type</Title>
+              <Description>The LinkType property exposed by the TaskLink class is used to retrieve or define the type of link between two tasks. It reads and writes one of the values defined by the TaskLinkType enumeration type.</Description>
+              <FolderName>defininglinktype</FolderName>
+              <Order>2</Order>
+              <DocLink>
+                <DisplayName>Defining link type</DisplayName>
+                <Url>Defining+Link+Type</Url>
+              </DocLink>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\data\Project.xml</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
+            <Example>
+              <Title>Predecessor and successor tasks</Title>
+              <Description>The PredTask and SuccTask properties exposed by the TaskLink class are used to define the predecessor and successor tasks for a TaskLink. Both of these properties read and write a Task object.</Description>
+              <FolderName>predecessorsuccessortasks</FolderName>
+              <Order>3</Order>
+              <DocLink>
+                <DisplayName>Predecessor and successor tasks</DisplayName>
+                <Url>Predecessor+and+Successor+Tasks</Url>
+              </DocLink>
+              <InputFiles>
+                <DataFile>
+                  <Path>..\data\project.mpp</Path>
+                </DataFile>
+              </InputFiles>
+              <Type>Console</Type>
+            </Example>
+            <Example>
+              <Title>Cross Project Predecessors</Title>
+              <Description>Microsoft Project lets users link tasks within the current project, or to external projects. Cross project predecessors are predecessors from another project. Aspose.Tasks support these too.</Description>
+              <FolderName>crossprojectpredecessors</FolderName>
+              <Order>4</Order>
+              <DocLink>
+                <DisplayName>Cross Project Predecessors</DisplayName>
+                <Url>Cross+Project+Predecessors</Url>
+              </DocLink>
+              <InputFiles>
+                <DataFile>
+                  <Path>..\data\project.mpp</Path>
+                </DataFile>
+              </InputFiles>
+              <Type>Console</Type>
+            </Example>
+          </Examples>
         </Folder>
       </Folders>
     </Folder>
