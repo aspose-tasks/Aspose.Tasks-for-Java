@@ -1,6 +1,16 @@
-#Aspose.Tasks for Java Examples Repository
+##Aspose.Tasks for Java Examples Repository
 
 This package contains Java Examples for [Aspose.Tasks for Java](http://www.aspose.com/categories/java-components/aspose.tasks-for-java/default.aspx).
+<br/><br/>
+<p align="center">
+  <a title="Download Examples Dashboard" href="http://www.aspose.com/community/files/72/java-components/aspose-examples-for-java/default.aspx">
+	<img src="https://raw.github.com/AsposeExamples/java-examples-dashboard/master/images/downloadDasboard-Button-Large.png" />
+  </a>
+  &nbsp;
+  <a title="Download Examples ZIP" href="https://github.com/asposetasks/Aspose_Tasks_Java/archive/master.zip">
+	<img src="https://raw.github.com/AsposeExamples/java-examples-dashboard/master/images/downloadZip-Button-Large.png" />
+  </a>
+</p>
 
 ##How to use the Examples?
 
