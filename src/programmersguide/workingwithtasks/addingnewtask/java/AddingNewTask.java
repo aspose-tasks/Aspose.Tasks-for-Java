@@ -29,18 +29,18 @@ public class AddingNewTask
 
         java.util.Calendar cal = java.util.Calendar.getInstance();
         cal.set(2013, 7, 16,8,0,0);
-        //Set project Start and Finish Date
+//Set project Start and Finish Date
         project.setStartDate(cal.getTime());
 
         System.out.println(cal.getTime());
         cal.set(2013, 07, 20);
         project.setFinishDate(cal.getTime());
 
-        //Add root task
+//Add root task
         Task root = new Task();
         project.setRootTask(root);
 
-        //Add child task
+//Add child task
         Task task = new Task("This is Task1");
         cal.set(2013, 7, 16, 8, 0, 0);
         task.setActualStart(cal.getTime());
@@ -51,15 +51,15 @@ public class AddingNewTask
         task.setDurationFormat(TimeUnitType.Day);
         root.getChildren().add(task);
 
-        //We need to recalculate the IDs only as UIDs were set correctly.
+//We need to recalculate the IDs only as UIDs were set correctly.
         project.calcTaskIds();
         project.calcTaskUids();
 
 
         project.updateReferences();
 
-        //Save the Project
-        project.save(dataDir + "project.xml", SaveFileFormat.XML);
+//Save the Project
+        project.save(dataDir+ "AddingANewTask.Xml", SaveFileFormat.XML);
 
         //Display result of conversion.
         System.out.println("Process completed Successfully");

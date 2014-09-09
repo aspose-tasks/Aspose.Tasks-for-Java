@@ -26,11 +26,16 @@ public class ReadingProjectFiles
         ProjectReader projectReader = new ProjectReader();
         Project existingProject = null;
         FileInputStream prjStream = null;
+        try
+        {
+            prjStream = new FileInputStream( dataDir+ "project.mpp");
+            existingProject = projectReader.read(prjStream);
+            prjStream.close();
+        }
+        catch(Exception ex)
+        {
 
-        prjStream = new FileInputStream(dataDir + "Project.mpp");
-        existingProject = projectReader.read(prjStream);
-        prjStream.close();
-
+        }
         System.out.println("Calendar : " + existingProject.getName());
 
         //Display result of conversion.

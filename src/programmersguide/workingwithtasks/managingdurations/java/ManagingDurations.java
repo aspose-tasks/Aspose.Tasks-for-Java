@@ -60,7 +60,7 @@ public class ManagingDurations
         project.updateReferences();
 
         //Save the Project
-        project.save(dataDir + "project.xml", SaveFileFormat.XML);
+        project.save(dataDir+ "ManagaingDurations.Xml", SaveFileFormat.XML);
 
         //Display result of conversion.
         System.out.println("Process completed Successfully");
