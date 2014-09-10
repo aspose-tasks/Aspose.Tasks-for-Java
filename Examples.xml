@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Data>
   <Folders>
     <Folder>
@@ -129,51 +129,6 @@
               </InputFiles>
               <Type>Console</Type>
             </Example>
-		 <Folders>
-            <Folder>
-              <Title>General Project Properties</Title>
-              <Description>This section includes the following topics:
-
- - Reading Project Information
- - Writing Project Information</Description>
-              <FolderName>GeneralProjectProperties</FolderName>
-              <Order>5</Order>
-              <Examples>
-                <Example>
-                  <Title>Reading Project Information</Title>
-                  <Description>In this example, we will see how we can read the project properties using Aspose.Tasks.</Description>
-                  <FolderName>readingprojectinformation</FolderName>
-                  <Order>1</Order>
-                  <DocLink>
-                    <DisplayName>General Project Properties</DisplayName>
-                    <Url>http://www.aspose.com/docs/display/tasksnet/General+Project+Properties</Url>
-                  </DocLink>
-                  <InputFiles>
-                    <DataFile>
-                      <Path>..\data\input.xml</Path>
-                    </DataFile>
-                  </InputFiles>
-                  <Type>Console</Type>
-                </Example>
-                <Example>
-                  <Title>Writing Project Information</Title>
-                  <Description>In this example, we will see how we can write the project information such as scheduling the start point, the start date, current date, status date and calendar type using Aspose.Tasks,</Description>
-                  <FolderName>writingprojectinformation</FolderName>
-                  <Order>2</Order>
-                  <DocLink>
-                    <DisplayName>General Project Properties</DisplayName>
-                    <Url>http://www.aspose.com/docs/display/tasksnet/General+Project+Properties</Url>
-                  </DocLink>
-                  <OutputFiles>
-                    <DataFile>
-                      <Path>..\data\input.xml</Path>
-                    </DataFile>
-                  </OutputFiles>
-                  <Type>Console</Type>
-                </Example>
-              </Examples>
-            </Folder>
-		 </Folders>
             <Example>
               <Title>Default Project Properties</Title>
               <Description>Microsoft Project lets users set default project properties that speed up the process of setting up a project. The default properties define when a new task starts and finishes, sets the default overtime and standard pay rates and more. Aspose.Tasks supports these features. This example explains both how to read default properties and how to write default properties to a project file.</Description>
@@ -265,7 +220,7 @@
               <Order>10</Order>
               <DocLink>
                 <DisplayName>Reading Project Files</DisplayName>
-                <Url>Reading+a+Project+File</Url>
+                <Url>http://www.aspose.com/docs/display/tasksnet/Reading+a+Project+File</Url>
               </DocLink>
               <InputFiles>
                 <DataFile>
@@ -454,6 +409,49 @@ This section include the following examples:
                 </Example>
               </Examples>
             </Folder>
+            <Folder>
+              <Title>General Project Properties</Title>
+              <Description>This section includes the following topics:
+
+ - Reading Project Information
+ - Writing Project Information</Description>
+              <FolderName>generalprojectproperties</FolderName>
+              <Order>5</Order>
+              <Examples>
+                <Example>
+                  <Title>Reading Project Information</Title>
+                  <Description>In this example, we will see how we can read the project properties using Aspose.Tasks.</Description>
+                  <FolderName>readingprojectinformation</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>General Project Properties</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/tasksnet/General+Project+Properties</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\data\project.mpp</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Writing Project Information</Title>
+                  <Description>In this example, we will see how we can write the project information such as scheduling the start point, the start date, current date, status date and calendar type using Aspose.Tasks,</Description>
+                  <FolderName>writingprojectinformation</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>General Project Properties</DisplayName>
+                    <Url>http://www.aspose.com/docs/display/tasksnet/General+Project+Properties</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\data\project3.xml</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
           </Folders>
         </Folder>
         <Folder>
@@ -509,7 +507,7 @@ This section include the following examples:
               <Order>2</Order>
               <DocLink>
                 <DisplayName>Adding a New Task</DisplayName>
-                <Url>Adding+a+New+Task</Url>
+                <Url>http://www.aspose.com/docs/display/tasksnet/Adding+a+New+Task</Url>
               </DocLink>
               <OutputFiles>
                 <DataFile>
@@ -525,7 +523,7 @@ This section include the following examples:
               <Order>6</Order>
               <DocLink>
                 <DisplayName>Managing Durations</DisplayName>
-                <Url>Managing+Durations</Url>
+                <Url>http://www.aspose.com/docs/display/tasksnet/Managing+Durations</Url>
               </DocLink>
               <OutputFiles>
                 <DataFile>
@@ -745,7 +743,7 @@ This section include the following examples:
             </Example>
             <Example>
               <Title>Getting Working Hours On or Between Dates</Title>
-              <Description>Working hours are typically defined as a range of hours over a day, on specific days of the week. For example, 09:00 � 17:00, Monday to Friday. With Aspose.Tasks, it is possible to calculate the number of working hours that fall on a date, or between two dates. Finding out the number of working dates between two dates help project managers figure out whether there are enough hours to get work done, or if they need to find more resources to complete a task.</Description>
+              <Description>Working hours are typically defined as a range of hours over a day, on specific days of the week. For example, 09:00 – 17:00, Monday to Friday. With Aspose.Tasks, it is possible to calculate the number of working hours that fall on a date, or between two dates. Finding out the number of working dates between two dates help project managers figure out whether there are enough hours to get work done, or if they need to find more resources to complete a task.</Description>
               <FolderName>gettingworkinghours</FolderName>
               <Order>4</Order>
               <DocLink>
