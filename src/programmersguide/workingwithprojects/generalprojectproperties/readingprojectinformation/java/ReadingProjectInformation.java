@@ -6,7 +6,7 @@
  * "as is", without warranty of any kind, either expressed or implied.
  */
  
-package programmersguide.workingwithprojects.generalpropjectproperties.readingprojectinformation.java;
+package programmersguide.workingwithprojects.generalprojectproperties.readingprojectinformation.java;
 
 import com.aspose.tasks.Project;
 
@@ -15,7 +15,7 @@ public class ReadingProjectInformation
     public static void main(String[] args) throws Exception
     {
         // The path to the documents directory.
-        String dataDir = "src/programmersguide/workingwithprojects/generalpropjectproperties/readingprojectinformation/data/";
+        String dataDir = "src/programmersguide/workingwithprojects/generalprojectproperties/readingprojectinformation/data/";
 
         Project prj = new Project(dataDir + "input.xml");
         if(prj.isScheduleFromStart())

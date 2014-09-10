@@ -6,7 +6,7 @@
  * "as is", without warranty of any kind, either expressed or implied.
  */
  
-package programmersguide.workingwithprojects.generalpropjectproperties.WritingProjectInformation.java;
+package programmersguide.workingwithprojects.generalprojectproperties.WritingProjectInformation.java;
 import com.aspose.tasks.*;
 import com.aspose.tasks.Project;
 import com.aspose.tasks.Calendar;
@@ -16,7 +16,7 @@ public class WritingProjectInformation
     public static void main(String[] args) throws Exception
     {
         // The path to the documents directory.
-        String dataDir = "src/programmersguide/workingwithprojects/generalpropjectproperties/writingprojectinformation/data/";
+        String dataDir = "src/programmersguide/workingwithprojects/generalprojectproperties/writingprojectinformation/data/";
 
         //Create a project instance
         Project prj = new Project();
