@@ -20,7 +20,7 @@ public class ReadingCurrencyProperties
         String dataDir = "src/programmersguide/workingwithprojects/currencyproperties/readingcurrencyproperties/data/";
 
         //Create a project reader instance
-        Project prj = new Project(dataDir + "Project.mpp");
+        Project prj = new Project(dataDir + "project.mpp");
 
         //Display currency properties
         System.out.println("Currency Code : " + prj.getCurrencyCode());

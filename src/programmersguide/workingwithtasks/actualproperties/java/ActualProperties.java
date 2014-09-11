@@ -19,7 +19,7 @@ public class ActualProperties
         // The path to the documents directory.
         String dataDir = "src/programmersguide/workingwithtasks/actualproperties/data/";
 
-        Project project = new Project(dataDir + "Project.mpp");
+        Project project = new Project(dataDir + "project.mpp");
 
         // Create a ChildTasksCollector instance
         ChildTasksCollector collector = new ChildTasksCollector();

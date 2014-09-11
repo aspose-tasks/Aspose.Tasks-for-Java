@@ -45,7 +45,6 @@ public class DefiningRootTask
         TaskUtils.apply(prj.getRootTask(), collector, 0);
 
         List<Task> allTasks = collector.getTasks();
-
         // Parse through all the collected tasks
         for(int i = 0 ; i < allTasks.size(); i++)
         {
@@ -53,7 +52,7 @@ public class DefiningRootTask
             Task tsk = allTasks.get(i);
             System.out.println("" + tsk.getName());
         }
-
+        prj.save(dataDir + "project.xml", SaveFileFormat.XML);
         //Display result of conversion.
         System.out.println("Process completed Successfully");
     }

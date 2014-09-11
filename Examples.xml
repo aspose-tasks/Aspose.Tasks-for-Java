@@ -429,7 +429,7 @@ This section include the following examples:
                   </DocLink>
                   <InputFiles>
                     <DataFile>
-                      <Path>..\data\project.mpp</Path>
+                      <Path>..\data\input.xml</Path>
                     </DataFile>
                   </InputFiles>
                   <Type>Console</Type>
@@ -511,7 +511,7 @@ This section include the following examples:
               </DocLink>
               <OutputFiles>
                 <DataFile>
-                  <Path>..\data\Project.Xml</Path>
+                  <Path>..\data\AddingANewTask.Xml</Path>
                 </DataFile>
               </OutputFiles>
               <Type>Console</Type>
@@ -527,7 +527,7 @@ This section include the following examples:
               </DocLink>
               <OutputFiles>
                 <DataFile>
-                  <Path>..\data\Project.Xml</Path>
+                  <Path>..\data\ManagaingDurations.Xml</Path>
                 </DataFile>
               </OutputFiles>
               <Type>Console</Type>
@@ -938,7 +938,7 @@ This section include the following examples:
               <Order>1</Order>
               <DocLink>
                 <DisplayName>Overtimes for a Resource</DisplayName>
-                <Url>http://support.aspose.dynabic.com/wiki/display/demos/.NET+Dashboard+Examples+-+2014.03</Url>
+                <Url>hhttp://www.aspose.com/docs/display/tasksjava/Overtimes+for+a+Resource</Url>
               </DocLink>
               <Type>Console</Type>
             </Example>
@@ -951,6 +951,11 @@ This section include the following examples:
                 <DisplayName>Resource Cost</DisplayName>
                 <Url>Resource+Cost</Url>
               </DocLink>
+              <InputFiles>
+                <DataFile>
+                  <Path>..\data\project.mpp</Path>
+                </DataFile>
+              </InputFiles>
               <Type>Console</Type>
             </Example>
             <Example>

@@ -55,7 +55,7 @@ public class CreatingTasks
         project.updateReferences();
 
         //Save the Project
-        project.save(dataDir + "project.Xml", SaveFileFormat.XML);
+        project.save(dataDir + "Project.Xml", SaveFileFormat.XML);
 
         //Display result of conversion.
         System.out.println("Process completed Successfully");

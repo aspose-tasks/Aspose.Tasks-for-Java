@@ -19,7 +19,7 @@ public class CrossProjectPredecessors
         // The path to the documents directory.
         String dataDir = "src/programmersguide/workingwithtasklinks/crossprojectpredecessors/data/";
 
-        Project prj = new Project(dataDir + "Project.mpp");
+        Project prj = new Project(dataDir + "project.mpp");
         List<TaskLink> AllLinks= prj.getTaskLinks();
         for (int i = 0 ; i < AllLinks.size(); i++)
         {

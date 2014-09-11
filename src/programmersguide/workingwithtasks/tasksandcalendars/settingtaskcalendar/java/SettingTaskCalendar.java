@@ -24,7 +24,7 @@ public class SettingTaskCalendar
         Calendar cal = new Calendar("TaskCal1");
         Calendar.makeStandardCalendar(cal);
         tsk.setCalendar(cal);
-        prj.save(dataDir + "project.xml", SaveFileFormat.XML);
+        prj.save(dataDir + "Project.Xml", SaveFileFormat.XML);
 
         //Display result of conversion.
         System.out.println("Process completed Successfully");

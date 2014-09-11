@@ -7,7 +7,7 @@
   <Company>Home</Company>
   <Author>Sergey</Author>
   <CreationDate>2000-06-08T11:06:00</CreationDate>
-  <LastSaved>2000-01-21T10:42:27</LastSaved>
+  <LastSaved>2000-09-10T23:25:25</LastSaved>
   <ScheduleFromStart>1</ScheduleFromStart>
   <StartDate>2000-06-08T08:00:00</StartDate>
   <FinishDate>2000-07-16T17:00:00</FinishDate>
@@ -1240,7 +1240,7 @@
       <IsInactive>0</IsInactive>
       <IsEnterprise>0</IsEnterprise>
       <BookingType>0</BookingType>
-      <CreationDate>2000-01-21T10:42:27</CreationDate>
+      <CreationDate>2000-09-10T23:25:25</CreationDate>
       <IsCostResource>0</IsCostResource>
       <IsBudget>0</IsBudget>
     </Resource>
@@ -1290,7 +1290,7 @@
       <IsInactive>0</IsInactive>
       <IsEnterprise>0</IsEnterprise>
       <BookingType>0</BookingType>
-      <CreationDate>2000-01-21T10:42:27</CreationDate>
+      <CreationDate>2000-09-10T23:25:25</CreationDate>
       <IsCostResource>0</IsCostResource>
       <IsBudget>0</IsBudget>
     </Resource>
@@ -1340,7 +1340,7 @@
       <IsInactive>0</IsInactive>
       <IsEnterprise>0</IsEnterprise>
       <BookingType>0</BookingType>
-      <CreationDate>2000-01-21T10:42:27</CreationDate>
+      <CreationDate>2000-09-10T23:25:25</CreationDate>
       <IsCostResource>0</IsCostResource>
       <IsBudget>0</IsBudget>
     </Resource>
@@ -1390,7 +1390,7 @@
       <IsInactive>0</IsInactive>
       <IsEnterprise>0</IsEnterprise>
       <BookingType>0</BookingType>
-      <CreationDate>2000-01-21T10:42:27</CreationDate>
+      <CreationDate>2000-09-10T23:25:25</CreationDate>
       <IsCostResource>0</IsCostResource>
       <IsBudget>0</IsBudget>
     </Resource>
@@ -1440,7 +1440,7 @@
       <IsInactive>0</IsInactive>
       <IsEnterprise>0</IsEnterprise>
       <BookingType>0</BookingType>
-      <CreationDate>2000-01-21T10:42:27</CreationDate>
+      <CreationDate>2000-09-10T23:25:25</CreationDate>
       <IsCostResource>0</IsCostResource>
       <IsBudget>0</IsBudget>
     </Resource>
@@ -1490,7 +1490,7 @@
       <IsInactive>0</IsInactive>
       <IsEnterprise>0</IsEnterprise>
       <BookingType>0</BookingType>
-      <CreationDate>2000-01-21T10:42:27</CreationDate>
+      <CreationDate>2000-09-10T23:25:25</CreationDate>
       <IsCostResource>0</IsCostResource>
       <IsBudget>0</IsBudget>
     </Resource>

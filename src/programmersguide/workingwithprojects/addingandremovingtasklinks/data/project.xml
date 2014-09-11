@@ -7,10 +7,10 @@
   <Company>Home</Company>
   <Author>Sergey</Author>
   <CreationDate>2000-06-08T11:06:00</CreationDate>
-  <LastSaved>2000-01-21T11:50:09</LastSaved>
+  <LastSaved>2000-09-10T23:30:10</LastSaved>
   <ScheduleFromStart>1</ScheduleFromStart>
   <StartDate>2000-06-08T08:00:00</StartDate>
-  <FinishDate>2000-01-23T11:50:08</FinishDate>
+  <FinishDate>2000-09-12T17:00:00</FinishDate>
   <FYStartDate>1</FYStartDate>
   <CriticalSlackLimit>0</CriticalSlackLimit>
   <CurrencyDigits>2</CurrencyDigits>
@@ -190,8 +190,8 @@
       <OutlineLevel>0</OutlineLevel>
       <Priority>500</Priority>
       <Start>2000-06-08T08:00:00</Start>
-      <Finish>2000-01-23T11:50:08</Finish>
-      <Duration>PT28443H50M8.760S</Duration>
+      <Finish>2000-09-12T17:00:00</Finish>
+      <Duration>PT29776H0M0S</Duration>
       <DurationFormat>21</DurationFormat>
       <Work>PT408H0M0S</Work>
       <Stop>2000-01-01T00:00:00</Stop>
@@ -208,11 +208,11 @@
       <IsSubprojectReadOnly>0</IsSubprojectReadOnly>
       <ExternalTask>0</ExternalTask>
       <EarlyStart>2000-06-08T08:00:00</EarlyStart>
-      <EarlyFinish>2000-01-23T11:50:08</EarlyFinish>
-      <LateStart>2000-12-25T11:50:00</LateStart>
-      <LateFinish>2000-01-23T11:50:08</LateFinish>
+      <EarlyFinish>2000-09-12T17:00:00</EarlyFinish>
+      <LateStart>2000-08-15T08:00:00</LateStart>
+      <LateFinish>2000-09-13T08:00:00</LateFinish>
       <StartVariance>542400</StartVariance>
-      <FinishVariance>17608701</FinishVariance>
+      <FinishVariance>18408000</FinishVariance>
       <WorkVariance>24480000</WorkVariance>
       <FreeSlack>0</FreeSlack>
       <TotalSlack>0</TotalSlack>
@@ -231,7 +231,7 @@
       <ActualWork>PT0H0M0S</ActualWork>
       <ActualOvertimeWork>PT0H0M0S</ActualOvertimeWork>
       <RegularWork>PT408H0M0S</RegularWork>
-      <RemainingDuration>PT28443H50M8.760S</RemainingDuration>
+      <RemainingDuration>PT29776H0M0S</RemainingDuration>
       <RemainingCost>0</RemainingCost>
       <RemainingWork>PT408H0M0S</RemainingWork>
       <RemainingOvertimeCost>0</RemainingOvertimeCost>
@@ -278,8 +278,8 @@
       <OutlineLevel>1</OutlineLevel>
       <Priority>500</Priority>
       <Start>2000-06-08T08:00:00</Start>
-      <Finish>2000-01-23T11:50:08</Finish>
-      <Duration>PT28443H50M8.760S</Duration>
+      <Finish>2000-09-12T17:00:00</Finish>
+      <Duration>PT29776H0M0S</Duration>
       <DurationFormat>21</DurationFormat>
       <Work>PT408H0M0S</Work>
       <Stop>2000-01-01T00:00:00</Stop>
@@ -296,15 +296,15 @@
       <IsSubprojectReadOnly>0</IsSubprojectReadOnly>
       <ExternalTask>0</ExternalTask>
       <EarlyStart>2000-06-08T08:00:00</EarlyStart>
-      <EarlyFinish>2000-01-23T11:50:08</EarlyFinish>
-      <LateStart>2000-12-25T11:50:00</LateStart>
-      <LateFinish>2000-01-23T11:50:08</LateFinish>
+      <EarlyFinish>2000-09-12T17:00:00</EarlyFinish>
+      <LateStart>2000-08-15T08:00:00</LateStart>
+      <LateFinish>2000-09-13T08:00:00</LateFinish>
       <StartVariance>542400</StartVariance>
-      <FinishVariance>17608701</FinishVariance>
+      <FinishVariance>18408000</FinishVariance>
       <WorkVariance>24480000</WorkVariance>
       <FreeSlack>0</FreeSlack>
       <TotalSlack>0</TotalSlack>
-      <StartSlack>16965500</StartSlack>
+      <StartSlack>17764800</StartSlack>
       <FixedCost>0</FixedCost>
       <FixedCostAccrual>3</FixedCostAccrual>
       <PercentComplete>0</PercentComplete>
@@ -320,7 +320,7 @@
       <ActualWork>PT0H0M0S</ActualWork>
       <ActualOvertimeWork>PT0H0M0S</ActualOvertimeWork>
       <RegularWork>PT408H0M0S</RegularWork>
-      <RemainingDuration>PT28443H50M8.760S</RemainingDuration>
+      <RemainingDuration>PT29776H0M0S</RemainingDuration>
       <RemainingCost>0</RemainingCost>
       <RemainingWork>PT408H0M0S</RemainingWork>
       <RemainingOvertimeCost>0</RemainingOvertimeCost>
@@ -387,15 +387,15 @@
       <ExternalTask>0</ExternalTask>
       <EarlyStart>2000-06-08T08:00:00</EarlyStart>
       <EarlyFinish>2000-06-08T17:00:00</EarlyFinish>
-      <LateStart>2000-01-22T11:50:00</LateStart>
-      <LateFinish>2000-01-23T11:50:08</LateFinish>
+      <LateStart>2000-09-12T08:00:00</LateStart>
+      <LateFinish>2000-09-12T17:00:00</LateFinish>
       <StartVariance>542400</StartVariance>
       <FinishVariance>547200</FinishVariance>
       <WorkVariance>0</WorkVariance>
-      <FreeSlack>17061500</FreeSlack>
-      <TotalSlack>17061500</TotalSlack>
-      <StartSlack>17061500</StartSlack>
-      <FinishSlack>17061500</FinishSlack>
+      <FreeSlack>17860800</FreeSlack>
+      <TotalSlack>17860800</TotalSlack>
+      <StartSlack>17860800</StartSlack>
+      <FinishSlack>17860800</FinishSlack>
       <FixedCost>0</FixedCost>
       <FixedCostAccrual>3</FixedCostAccrual>
       <PercentComplete>0</PercentComplete>
@@ -478,15 +478,15 @@
       <ExternalTask>0</ExternalTask>
       <EarlyStart>2000-06-08T08:00:00</EarlyStart>
       <EarlyFinish>2000-06-09T17:00:00</EarlyFinish>
-      <LateStart>2000-01-21T11:50:00</LateStart>
-      <LateFinish>2000-01-23T11:50:08</LateFinish>
+      <LateStart>2000-09-11T08:00:00</LateStart>
+      <LateFinish>2000-09-12T17:00:00</LateFinish>
       <StartVariance>542400</StartVariance>
       <FinishVariance>552000</FinishVariance>
       <WorkVariance>960000</WorkVariance>
-      <FreeSlack>17056700</FreeSlack>
-      <TotalSlack>17056700</TotalSlack>
-      <StartSlack>17056700</StartSlack>
-      <FinishSlack>17056700</FinishSlack>
+      <FreeSlack>17856000</FreeSlack>
+      <TotalSlack>17856000</TotalSlack>
+      <StartSlack>17856000</StartSlack>
+      <FinishSlack>17856000</FinishSlack>
       <FixedCost>0</FixedCost>
       <FixedCostAccrual>3</FixedCostAccrual>
       <PercentComplete>0</PercentComplete>
@@ -569,15 +569,15 @@
       <ExternalTask>0</ExternalTask>
       <EarlyStart>2000-06-10T08:00:00</EarlyStart>
       <EarlyFinish>2000-06-23T17:00:00</EarlyFinish>
-      <LateStart>2000-12-25T11:50:00</LateStart>
-      <LateFinish>2000-01-08T11:50:00</LateFinish>
+      <LateStart>2000-08-15T08:00:00</LateStart>
+      <LateFinish>2000-08-28T17:00:00</LateFinish>
       <StartVariance>552000</StartVariance>
       <FinishVariance>600000</FinishVariance>
       <WorkVariance>9600000</WorkVariance>
       <FreeSlack>0</FreeSlack>
-      <TotalSlack>16955900</TotalSlack>
-      <StartSlack>16955900</StartSlack>
-      <FinishSlack>16955900</FinishSlack>
+      <TotalSlack>17755200</TotalSlack>
+      <StartSlack>17755200</StartSlack>
+      <FinishSlack>17755200</FinishSlack>
       <FixedCost>0</FixedCost>
       <FixedCostAccrual>3</FixedCostAccrual>
       <PercentComplete>0</PercentComplete>
@@ -660,15 +660,15 @@
       <ExternalTask>0</ExternalTask>
       <EarlyStart>2000-06-24T08:00:00</EarlyStart>
       <EarlyFinish>2000-07-08T17:00:00</EarlyFinish>
-      <LateStart>2000-01-08T11:50:00</LateStart>
-      <LateFinish>2000-01-23T11:50:08</LateFinish>
+      <LateStart>2000-08-29T08:00:00</LateStart>
+      <LateFinish>2000-09-12T17:00:00</LateFinish>
       <StartVariance>600000</StartVariance>
       <FinishVariance>648000</FinishVariance>
       <WorkVariance>10560000</WorkVariance>
-      <FreeSlack>16955900</FreeSlack>
-      <TotalSlack>16955900</TotalSlack>
-      <StartSlack>16955900</StartSlack>
-      <FinishSlack>16960700</FinishSlack>
+      <FreeSlack>17755200</FreeSlack>
+      <TotalSlack>17755200</TotalSlack>
+      <StartSlack>17755200</StartSlack>
+      <FinishSlack>17760000</FinishSlack>
       <FixedCost>0</FixedCost>
       <FixedCostAccrual>3</FixedCostAccrual>
       <PercentComplete>0</PercentComplete>
@@ -758,15 +758,15 @@
       <ExternalTask>0</ExternalTask>
       <EarlyStart>2000-06-24T08:00:00</EarlyStart>
       <EarlyFinish>2000-07-07T17:00:00</EarlyFinish>
-      <LateStart>2000-01-09T11:50:00</LateStart>
-      <LateFinish>2000-01-23T11:50:08</LateFinish>
+      <LateStart>2000-09-01T08:00:00</LateStart>
+      <LateFinish>2000-09-12T17:00:00</LateFinish>
       <StartVariance>600000</StartVariance>
       <FinishVariance>648000</FinishVariance>
       <WorkVariance>0</WorkVariance>
-      <FreeSlack>16960700</FreeSlack>
-      <TotalSlack>16960700</TotalSlack>
-      <StartSlack>16960700</StartSlack>
-      <FinishSlack>16960700</FinishSlack>
+      <FreeSlack>17760000</FreeSlack>
+      <TotalSlack>17760000</TotalSlack>
+      <StartSlack>17760000</StartSlack>
+      <FinishSlack>17760000</FinishSlack>
       <FixedCost>0</FixedCost>
       <FixedCostAccrual>3</FixedCostAccrual>
       <PercentComplete>0</PercentComplete>
@@ -849,15 +849,15 @@
       <ExternalTask>0</ExternalTask>
       <EarlyStart>2000-06-24T08:00:00</EarlyStart>
       <EarlyFinish>2000-07-08T17:00:00</EarlyFinish>
-      <LateStart>2000-01-08T11:50:00</LateStart>
-      <LateFinish>2000-01-23T11:50:08</LateFinish>
+      <LateStart>2000-08-29T08:00:00</LateStart>
+      <LateFinish>2000-09-12T17:00:00</LateFinish>
       <StartVariance>600000</StartVariance>
       <FinishVariance>648000</FinishVariance>
       <WorkVariance>5280000</WorkVariance>
-      <FreeSlack>16955900</FreeSlack>
-      <TotalSlack>16955900</TotalSlack>
-      <StartSlack>16955900</StartSlack>
-      <FinishSlack>16960700</FinishSlack>
+      <FreeSlack>17755200</FreeSlack>
+      <TotalSlack>17755200</TotalSlack>
+      <StartSlack>17755200</StartSlack>
+      <FinishSlack>17760000</FinishSlack>
       <FixedCost>0</FixedCost>
       <FixedCostAccrual>3</FixedCostAccrual>
       <PercentComplete>0</PercentComplete>
@@ -939,15 +939,15 @@
       <ExternalTask>0</ExternalTask>
       <EarlyStart>2000-07-09T08:00:00</EarlyStart>
       <EarlyFinish>2000-07-12T17:00:00</EarlyFinish>
-      <LateStart>2000-01-20T11:50:00</LateStart>
-      <LateFinish>2000-01-22T11:50:00</LateFinish>
+      <LateStart>2000-09-10T08:00:00</LateStart>
+      <LateFinish>2000-09-11T17:00:00</LateFinish>
       <StartVariance>648000</StartVariance>
       <FinishVariance>662400</FinishVariance>
       <WorkVariance>1920000</WorkVariance>
       <FreeSlack>0</FreeSlack>
-      <TotalSlack>16941500</TotalSlack>
-      <StartSlack>16946300</StartSlack>
-      <FinishSlack>16941500</FinishSlack>
+      <TotalSlack>17740800</TotalSlack>
+      <StartSlack>17745600</StartSlack>
+      <FinishSlack>17740800</FinishSlack>
       <FixedCost>0</FixedCost>
       <FixedCostAccrual>3</FixedCostAccrual>
       <PercentComplete>0</PercentComplete>
@@ -1030,15 +1030,15 @@
       <ExternalTask>0</ExternalTask>
       <EarlyStart>2000-07-13T08:00:00</EarlyStart>
       <EarlyFinish>2000-07-13T17:00:00</EarlyFinish>
-      <LateStart>2000-01-22T11:50:00</LateStart>
-      <LateFinish>2000-01-23T11:50:08</LateFinish>
+      <LateStart>2000-09-12T08:00:00</LateStart>
+      <LateFinish>2000-09-12T17:00:00</LateFinish>
       <StartVariance>662400</StartVariance>
       <FinishVariance>667200</FinishVariance>
       <WorkVariance>0</WorkVariance>
-      <FreeSlack>16941500</FreeSlack>
-      <TotalSlack>16941500</TotalSlack>
-      <StartSlack>16941500</StartSlack>
-      <FinishSlack>16941500</FinishSlack>
+      <FreeSlack>17740800</FreeSlack>
+      <TotalSlack>17740800</TotalSlack>
+      <StartSlack>17740800</StartSlack>
+      <FinishSlack>17740800</FinishSlack>
       <FixedCost>0</FixedCost>
       <FixedCostAccrual>3</FixedCostAccrual>
       <PercentComplete>0</PercentComplete>
@@ -1128,15 +1128,15 @@
       <ExternalTask>0</ExternalTask>
       <EarlyStart>2000-07-14T08:00:00</EarlyStart>
       <EarlyFinish>2000-07-16T17:00:00</EarlyFinish>
-      <LateStart>2000-01-20T11:50:00</LateStart>
-      <LateFinish>2000-01-23T11:50:08</LateFinish>
+      <LateStart>2000-09-10T08:00:00</LateStart>
+      <LateFinish>2000-09-12T17:00:00</LateFinish>
       <StartVariance>667200</StartVariance>
       <FinishVariance>672000</FinishVariance>
       <WorkVariance>1440000</WorkVariance>
-      <FreeSlack>16927100</FreeSlack>
-      <TotalSlack>16927100</TotalSlack>
-      <StartSlack>16927100</StartSlack>
-      <FinishSlack>16936700</FinishSlack>
+      <FreeSlack>17726400</FreeSlack>
+      <TotalSlack>17726400</TotalSlack>
+      <StartSlack>17726400</StartSlack>
+      <FinishSlack>17736000</FinishSlack>
       <FixedCost>0</FixedCost>
       <FixedCostAccrual>3</FixedCostAccrual>
       <PercentComplete>0</PercentComplete>
@@ -1195,13 +1195,13 @@
       <Manual>0</Manual>
       <Type>0</Type>
       <IsNull>0</IsNull>
-      <CreateDate>2000-01-21T11:50:08</CreateDate>
+      <CreateDate>2000-09-10T23:30:09</CreateDate>
       <WBS>1.8</WBS>
       <OutlineNumber>1.8</OutlineNumber>
       <OutlineLevel>2</OutlineLevel>
       <Priority>500</Priority>
-      <Start>2000-01-21T11:50:08</Start>
-      <Finish>2000-01-22T11:50:08</Finish>
+      <Start>2000-09-11T08:00:00</Start>
+      <Finish>2000-09-11T23:30:09</Finish>
       <Duration>PT8H0M0S</Duration>
       <DurationFormat>7</DurationFormat>
       <Work>PT0H0M0S</Work>
@@ -1216,10 +1216,10 @@
       <IsSubproject>0</IsSubproject>
       <IsSubprojectReadOnly>0</IsSubprojectReadOnly>
       <ExternalTask>0</ExternalTask>
-      <EarlyStart>2000-01-21T11:50:08</EarlyStart>
-      <EarlyFinish>2000-01-22T11:50:08</EarlyFinish>
-      <LateStart>2000-01-21T11:50:00</LateStart>
-      <LateFinish>2000-01-22T11:50:08</LateFinish>
+      <EarlyStart>2000-09-11T08:00:00</EarlyStart>
+      <EarlyFinish>2000-09-11T23:30:09</EarlyFinish>
+      <LateStart>2000-09-11T08:00:00</LateStart>
+      <LateFinish>2000-09-11T17:00:00</LateFinish>
       <StartVariance>0</StartVariance>
       <FinishVariance>0</FinishVariance>
       <WorkVariance>0</WorkVariance>
@@ -1245,9 +1245,9 @@
       <RemainingOvertimeWork>PT0H0M0S</RemainingOvertimeWork>
       <ACWP>0</ACWP>
       <CV>0</CV>
-      <ConstraintType>4</ConstraintType>
+      <ConstraintType>6</ConstraintType>
       <CalendarUID>-1</CalendarUID>
-      <ConstraintDate>2000-01-21T11:50:08</ConstraintDate>
+      <ConstraintDate>2000-09-11T23:30:09</ConstraintDate>
       <LevelAssignments>1</LevelAssignments>
       <LevelingCanSplit>1</LevelingCanSplit>
       <LevelingDelay>0</LevelingDelay>
@@ -1269,13 +1269,13 @@
       <Manual>0</Manual>
       <Type>0</Type>
       <IsNull>0</IsNull>
-      <CreateDate>2000-01-21T11:50:08</CreateDate>
+      <CreateDate>2000-09-10T23:30:09</CreateDate>
       <WBS>1.9</WBS>
       <OutlineNumber>1.9</OutlineNumber>
       <OutlineLevel>2</OutlineLevel>
       <Priority>500</Priority>
-      <Start>2000-01-22T11:50:08</Start>
-      <Finish>2000-01-23T11:50:08</Finish>
+      <Start>2000-09-12T08:00:00</Start>
+      <Finish>2000-09-12T17:00:00</Finish>
       <Duration>PT8H0M0S</Duration>
       <DurationFormat>7</DurationFormat>
       <Work>PT0H0M0S</Work>
@@ -1290,10 +1290,10 @@
       <IsSubproject>0</IsSubproject>
       <IsSubprojectReadOnly>0</IsSubprojectReadOnly>
       <ExternalTask>0</ExternalTask>
-      <EarlyStart>2000-01-22T11:50:08</EarlyStart>
-      <EarlyFinish>2000-01-23T11:50:08</EarlyFinish>
-      <LateStart>2000-01-22T11:50:00</LateStart>
-      <LateFinish>2000-01-23T11:50:08</LateFinish>
+      <EarlyStart>2000-09-12T08:00:00</EarlyStart>
+      <EarlyFinish>2000-09-12T17:00:00</EarlyFinish>
+      <LateStart>2000-09-12T08:00:00</LateStart>
+      <LateFinish>2000-09-13T08:00:00</LateFinish>
       <StartVariance>0</StartVariance>
       <FinishVariance>0</FinishVariance>
       <WorkVariance>0</WorkVariance>
@@ -1319,9 +1319,9 @@
       <RemainingOvertimeWork>PT0H0M0S</RemainingOvertimeWork>
       <ACWP>0</ACWP>
       <CV>0</CV>
-      <ConstraintType>4</ConstraintType>
+      <ConstraintType>6</ConstraintType>
       <CalendarUID>-1</CalendarUID>
-      <ConstraintDate>2000-01-21T11:50:09</ConstraintDate>
+      <ConstraintDate>2000-09-13T08:00:00</ConstraintDate>
       <LevelAssignments>1</LevelAssignments>
       <LevelingCanSplit>1</LevelingCanSplit>
       <LevelingDelay>0</LevelingDelay>
@@ -1389,7 +1389,7 @@
       <IsInactive>0</IsInactive>
       <IsEnterprise>0</IsEnterprise>
       <BookingType>0</BookingType>
-      <CreationDate>2000-01-21T11:50:08</CreationDate>
+      <CreationDate>2000-09-10T23:30:09</CreationDate>
       <IsCostResource>0</IsCostResource>
       <IsBudget>0</IsBudget>
     </Resource>
@@ -1439,7 +1439,7 @@
       <IsInactive>0</IsInactive>
       <IsEnterprise>0</IsEnterprise>
       <BookingType>0</BookingType>
-      <CreationDate>2000-01-21T11:50:08</CreationDate>
+      <CreationDate>2000-09-10T23:30:09</CreationDate>
       <IsCostResource>0</IsCostResource>
       <IsBudget>0</IsBudget>
     </Resource>
@@ -1489,7 +1489,7 @@
       <IsInactive>0</IsInactive>
       <IsEnterprise>0</IsEnterprise>
       <BookingType>0</BookingType>
-      <CreationDate>2000-01-21T11:50:08</CreationDate>
+      <CreationDate>2000-09-10T23:30:09</CreationDate>
       <IsCostResource>0</IsCostResource>
       <IsBudget>0</IsBudget>
     </Resource>
@@ -1539,7 +1539,7 @@
       <IsInactive>0</IsInactive>
       <IsEnterprise>0</IsEnterprise>
       <BookingType>0</BookingType>
-      <CreationDate>2000-01-21T11:50:08</CreationDate>
+      <CreationDate>2000-09-10T23:30:09</CreationDate>
       <IsCostResource>0</IsCostResource>
       <IsBudget>0</IsBudget>
     </Resource>
@@ -1589,7 +1589,7 @@
       <IsInactive>0</IsInactive>
       <IsEnterprise>0</IsEnterprise>
       <BookingType>0</BookingType>
-      <CreationDate>2000-01-21T11:50:08</CreationDate>
+      <CreationDate>2000-09-10T23:30:09</CreationDate>
       <IsCostResource>0</IsCostResource>
       <IsBudget>0</IsBudget>
     </Resource>
@@ -1639,7 +1639,7 @@
       <IsInactive>0</IsInactive>
       <IsEnterprise>0</IsEnterprise>
       <BookingType>0</BookingType>
-      <CreationDate>2000-01-21T11:50:08</CreationDate>
+      <CreationDate>2000-09-10T23:30:09</CreationDate>
       <IsCostResource>0</IsCostResource>
       <IsBudget>0</IsBudget>
     </Resource>

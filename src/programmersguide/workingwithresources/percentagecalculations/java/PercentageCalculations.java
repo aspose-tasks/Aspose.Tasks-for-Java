@@ -6,7 +6,7 @@
  * "as is", without warranty of any kind, either expressed or implied.
  */
  
-package programmersguide.workingwithresources.resourceandcalendars.percentagecalculations.java;
+package programmersguide.workingwithresources.percentagecalculations.java;
 
 import com.aspose.tasks.*;
 
@@ -15,9 +15,15 @@ public class PercentageCalculations
     public static void main(String[] args) throws Exception
     {
         // The path to the documents directory.
-        String dataDir = "src/programmersguide/workingwithresources/resourceandcalendars/percentagecalculations/data/";
-        
-        
+        String dataDir = "src/programmersguide/workingwithresources/percentagecalculations/data/";
+
+        Project project = new Project(dataDir+ "project.mpp");
+
+        for (int i=0;i<project.getResources().size();i++)
+        {
+            Resource res = project.getResources().get(i);
+            System.out.println("%age Work Complete: " + res.getPercentWorkComplete());
+        }
     }
 }
 

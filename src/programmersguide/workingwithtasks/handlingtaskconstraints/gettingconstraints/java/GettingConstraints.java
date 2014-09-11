@@ -24,7 +24,7 @@ public class GettingConstraints
         FileInputStream prjStream = null;
         try
         {
-            prjStream = new FileInputStream(dataDir + "Project.mpp");
+            prjStream = new FileInputStream(dataDir + "project.mpp");
             prj = projectReader.read(prjStream);
             prjStream.close();
         }

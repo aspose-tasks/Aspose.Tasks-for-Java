@@ -21,7 +21,7 @@ public class GettingWorkingHours
         long OneMin = 60 * OneSec;
         long OneHour = 60 * OneMin;
 
-        Project project = new Project(dataDir + "Project.mpp");
+        Project project = new Project(dataDir + "project.mpp");
         Task task = project.getTaskById(1);
 
         Calendar taskCalendar = task.getCalendar();
