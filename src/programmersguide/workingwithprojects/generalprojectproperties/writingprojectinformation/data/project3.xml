@@ -1,13 +1,11 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Project xmlns="http://schemas.microsoft.com/project">
-  <!--Published by Aspose.Tasks 2009 for .NET 6.7.0.0-->
+  <!--Published by Aspose.Tasks 2009 for .NET 6.2.0.0-->
   <SaveVersion>14</SaveVersion>
-  <UID>1</UID>
-  <Name>Project</Name>
   <CreationDate>2000-09-11T08:00:00</CreationDate>
-  <LastSaved>2000-09-11T12:43:15</LastSaved>
+  <LastSaved>2000-09-11T23:20:57</LastSaved>
   <ScheduleFromStart>1</ScheduleFromStart>
-  <StartDate>2000-08-10T08:00:00</StartDate>
+  <StartDate>2000-08-10T23:20:57</StartDate>
   <FinishDate>2000-09-11T08:00:00</FinishDate>
   <FYStartDate>1</FYStartDate>
   <CriticalSlackLimit>0</CriticalSlackLimit>
@@ -33,7 +31,7 @@
   <MultipleCriticalPaths>0</MultipleCriticalPaths>
   <NewTasksEffortDriven>0</NewTasksEffortDriven>
   <NewTasksEstimated>0</NewTasksEstimated>
-  <SplitsInProgressTasks>1</SplitsInProgressTasks>
+  <SplitsInProgressTasks>0</SplitsInProgressTasks>
   <SpreadActualCost>0</SpreadActualCost>
   <SpreadPercentComplete>0</SpreadPercentComplete>
   <TaskUpdatesResource>0</TaskUpdatesResource>
@@ -45,8 +43,8 @@
   <MoveCompletedEndsForward>0</MoveCompletedEndsForward>
   <BaselineForEarnedValue>0</BaselineForEarnedValue>
   <AutoAddNewResourcesAndTasks>0</AutoAddNewResourcesAndTasks>
-  <StatusDate>2000-08-10T00:00:00</StatusDate>
-  <CurrentDate>2000-08-10T00:00:00</CurrentDate>
+  <StatusDate>2000-08-10T23:20:57</StatusDate>
+  <CurrentDate>2000-08-10T23:20:57</CurrentDate>
   <MicrosoftProjectServerURL>0</MicrosoftProjectServerURL>
   <Autolink>0</Autolink>
   <NewTaskStartDate>0</NewTaskStartDate>
@@ -56,7 +54,6 @@
   <ActualsInSync>0</ActualsInSync>
   <RemoveFileProperties>0</RemoveFileProperties>
   <AdminProject>0</AdminProject>
-  <UpdateManuallyScheduledTasksWhenEditingLinks>1</UpdateManuallyScheduledTasksWhenEditingLinks>
   <OutlineCodes />
   <ExtendedAttributes />
   <Calendars>
@@ -240,18 +237,16 @@
       <Manual>0</Manual>
       <Type>0</Type>
       <IsNull>0</IsNull>
-      <CreateDate>2000-09-11T12:43:15</CreateDate>
-      <WBS>0</WBS>
-      <OutlineNumber>0</OutlineNumber>
+      <CreateDate>2000-09-11T23:20:57</CreateDate>
       <OutlineLevel>0</OutlineLevel>
       <Priority>500</Priority>
-      <Start>2000-08-10T08:00:00</Start>
-      <Finish>2000-08-10T17:00:00</Finish>
-      <Duration>PT8H0M0S</Duration>
-      <ManualStart>2000-08-10T08:00:00</ManualStart>
-      <ManualFinish>2000-08-10T17:00:00</ManualFinish>
-      <ManualDuration>PT8H0M0S</ManualDuration>
-      <DurationFormat>37</DurationFormat>
+      <Start>2000-08-10T23:20:57</Start>
+      <Finish>2000-08-10T23:20:57</Finish>
+      <Duration>PT0H0M0S</Duration>
+      <ManualStart>2000-08-10T23:20:57</ManualStart>
+      <ManualFinish>2000-08-10T23:20:57</ManualFinish>
+      <ManualDuration>PT0H0M0S</ManualDuration>
+      <DurationFormat>21</DurationFormat>
       <Work>PT0H0M0S</Work>
       <ResumeValid>0</ResumeValid>
       <EffortDriven>0</EffortDriven>

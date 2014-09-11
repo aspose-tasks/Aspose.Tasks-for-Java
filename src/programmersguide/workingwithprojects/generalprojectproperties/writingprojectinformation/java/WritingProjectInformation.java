@@ -17,7 +17,22 @@ public class WritingProjectInformation
         // The path to the documents directory.
         String dataDir = "src/programmersguide/workingwithprojects/generalprojectproperties/writingprojectinformation/data/";
 
+        //Create a project instance
+        Project prj = new Project();
 
+        //Set project information properties
+        prj.isScheduleFromStart(true);
+        java.util.Calendar cal = java.util.Calendar.getInstance();
+        cal.set(2014, 7, 10);
+        prj.setStartDate(cal.getTime());
+        prj.setCurrentDate(cal.getTime());
+        prj.setStatusDate(cal.getTime());
+        Calendar TaskCal =  Calendar.makeStandardCalendar();
+        TaskCal.setName("Standard");
+        prj.getCalendars().add(TaskCal);
+
+        //Save the Project as XML
+        prj.save(dataDir+ "project3.xml", SaveFileFormat.XML);
     }
 }
 
