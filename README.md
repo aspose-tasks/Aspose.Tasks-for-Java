@@ -31,7 +31,7 @@ Also download the [latest version](http://www.aspose.com/community/files/72/java
 
 ###Code
 
-Each example is runnable Java class with its own main method. You can run each example separately and see its output. Please change the path variables to correct folders on your hard drive before running the examples.
+Each example is runnable Java class with its own main method.You can run each example separately and see its output. Please change the path variables to correct folders on your hard drive before running the examples.
 
 
 <table>
