@@ -18,21 +18,17 @@ public class WritingProjectInformation
         String dataDir = "src/programmersguide/workingwithprojects/generalprojectproperties/writingprojectinformation/data/";
 
         //Create a project instance
-        Project prj = new Project();
-
+        Project project = new Project();
         //Set project information properties
-        prj.isScheduleFromStart(true);
+        project.set(Prj.SCHEDULE_FROM_START, new NullableBool(true));
         java.util.Calendar cal = java.util.Calendar.getInstance();
         cal.set(2014, 7, 10);
-        prj.setStartDate(cal.getTime());
-        prj.setCurrentDate(cal.getTime());
-        prj.setStatusDate(cal.getTime());
-        Calendar TaskCal =  Calendar.makeStandardCalendar();
-        TaskCal.setName("Standard");
-        prj.getCalendars().add(TaskCal);
+        project.set(Prj.START_DATE,cal.getTime());
+        project.set(Prj.CURRENT_DATE, cal.getTime());
+        project.set(Prj.STATUS_DATE, cal.getTime());
 
         //Save the Project as XML
-        prj.save(dataDir+ "project3.xml", SaveFileFormat.XML);
+        project.save(dataDir + "project3.xml", SaveFileFormat.XML);
     }
 }
 

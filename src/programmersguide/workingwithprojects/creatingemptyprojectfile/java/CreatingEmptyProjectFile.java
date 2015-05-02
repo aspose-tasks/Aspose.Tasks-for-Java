@@ -1,11 +1,11 @@
-/* 
+/*
  * Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
  *
  * This file is part of Aspose.Slides. The source code in this file
  * is only intended as a supplement to the documentation, and is provided
  * "as is", without warranty of any kind, either expressed or implied.
  */
- 
+
 package programmersguide.workingwithprojects.creatingemptyprojectfile.java;
 
 import com.aspose.tasks.*;
@@ -20,24 +20,24 @@ public class CreatingEmptyProjectFile
         String dataDir = "src/programmersguide/workingwithprojects/creatingemptyprojectfile/data/";
 
 
-        // 1. Create the project using file stream
         //Create a project instance
         Project newProject = new Project();
 
         //Create a file stream
         FileOutputStream projectStream = null;
-        projectStream = new FileOutputStream(dataDir + "Project1.xml");
-        newProject.save(projectStream, SaveFileFormat.XML);
-        projectStream.close();
-
-        // 1. Create the project using Project Writer
-        Project prj = new Project();
-        ProjectWriter prjWriter = new ProjectWriter();
-        prjWriter.write(prj, dataDir + "Project2.xml", TasksDataFormat.XML);
-
+        try
+        {
+            projectStream = new FileOutputStream("Project1.xml");
+            newProject.save(projectStream, SaveFileFormat.XML);
+            projectStream.close();
+        }
+        catch (IOException e)
+        {
+            e.printStackTrace();
+        }
 
         //Display result of conversion.
-        System.out.println("Project files generated Successfully");
+        System.out.println("Project file generated Successfully");
     }
 }
 
