@@ -1,5 +1,5 @@
 /* 
- * Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
+ * Copyright 2001-2015 Aspose Pty Ltd. All Rights Reserved.
  *
  * This file is part of Aspose.Tasks. The source code in this file
  * is only intended as a supplement to the documentation, and is provided
@@ -17,16 +17,17 @@ public class OvertimesResource
     {
         // The path to the documents directory.
         String dataDir = "src/programmersguide/workingwithresources/overtimesresource/data/";
-        Project project = new Project(dataDir+ "project.mpp");
-
-        for (int i=0;i<project.getResources().size();i++)
-        {
-            Resource res = project.getResources().get(i);
-            System.out.println("OverTime Cost: " + res.getOvertimeCost());
-            System.out.println("OverTime Work : " + res.getOvertimeWork());
-            System.out.println("OverTime Format: "  + res.getOvertimeRateFormat());
-            System.out.println("OverTime: "  + res.getOvertime());
-        }
+        
+	Project prj = new Project(dataDir + "project5.mpp");
+	for (Resource res:prj.getResources())
+	{
+	  if(res.get(Rsc.NAME) != null)
+  	  {
+    		System.out.println(res.get(Rsc.OVERTIME_COST));
+    		System.out.println(res.get(Rsc.OVERTIME_WORK).toString());
+    		System.out.println(res.get(Rsc.OVERTIME_RATE_FORMAT).toString());
+  	  }
+	}
         
     }
 }

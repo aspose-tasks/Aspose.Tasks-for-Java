@@ -1,5 +1,5 @@
 /* 
- * Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
+ * Copyright 2001-2015 Aspose Pty Ltd. All Rights Reserved.
  *
  * This file is part of Aspose.Tasks. The source code in this file
  * is only intended as a supplement to the documentation, and is provided
@@ -18,18 +18,14 @@ public class MakingAStandardCalendar
         String dataDir = "src/programmersguide/workingwithcalendars/makingastandardcalendar/data/";
 
         //Create a project instance
-        Project prj = new Project();
+	Project project = new Project();
 
-        //Define Calendar and make it standard
-        Calendar cal1 = new Calendar("My Cal");
-        Calendar.makeStandardCalendar(cal1);
+	//Define Calendar and make it standard
+	Calendar cal1 = project.getCalendars().add("My Cal");
+	Calendar.makeStandardCalendar(cal1);
 
-        prj.getCalendars().add(cal1);
-        prj.calcCalendarUids();
-
-        //Save the Project
-        prj.save(dataDir + "Project.Xml", SaveFileFormat.XML);
-
+	//Save the Project
+	project.save("Project.Xml", SaveFileFormat.XML);
         //Display result of conversion.
         System.out.println("Process completed Successfully");
 

@@ -19,51 +19,26 @@ public class ManagingDurations
     {
         // The path to the documents directory.
         String dataDir = "src/programmersguide/workingwithtasks/managingdurations/data/";
+	
+	// Create a new project
+	Project project = new Project();
+	Task task = project.getRootTask().getChildren().add("Task");
 
-        long OneSec = 10000000;//microsecond * 10
-        long OneMin = 60 * OneSec;
-        long OneHour = 60 * OneMin;
+	// task duration in days (default time unit)
+	Duration duration = task.get(Tsk.DURATION);
+	System.out.println("Duration in Days" + duration.toString());
 
-        Project project = new Project();
-        project.setMinutesPerDay(60 * 8);
+	// convert to hours time unit
+	duration = duration.convert(TimeUnitType.Hour);
+	System.out.println("Duration in Hours"+ duration.toString());
 
-        java.util.Calendar cal = java.util.Calendar.getInstance();
-        cal.set(2013, 11, 12, 8, 0 , 0);
-        System.out.println(cal.getTime());
-        //Set project Start and Finish Date
-        project.setStartDate(cal.getTime());
+	// get Duration instance
+	task.set(Tsk.DURATION, project.getDuration(1, TimeUnitType.Week));
+	System.out.println("1 wk" +  task.get(Tsk.DURATION).toString());
 
-        System.out.println(cal.getTime());
-        cal.set(2013, 11, 20);
-        project.setFinishDate(cal.getTime());
-
-        //Add root task
-        Task root = new Task();
-        project.setRootTask(root);
-
-        //Add child task
-        Task task = new Task("This is Task1");
-        cal.set(2013, 11, 12, 17, 0, 0);
-        task.setActualStart(cal.getTime());
-
-        double val = OneHour * 24.0;
-        task.setDuration((long)val);
-
-        task.setDurationFormat(TimeUnitType.Day);
-        root.getChildren().add(task);
-
-        //We need to recalculate the IDs only as UIDs were set correctly.
-        project.calcTaskIds();
-        project.calcTaskUids();
-
-
-        project.updateReferences();
-
-        //Save the Project
-        project.save(dataDir+ "ManagaingDurations.Xml", SaveFileFormat.XML);
-
-        //Display result of conversion.
-        System.out.println("Process completed Successfully");
+	// Decrease task duration
+	task.set(Tsk.DURATION, task.get(Tsk.DURATION).subtract(0.5));
+	System.out.println("0.5 wks" + task.get(Tsk.DURATION).toString());
     }
 }
 

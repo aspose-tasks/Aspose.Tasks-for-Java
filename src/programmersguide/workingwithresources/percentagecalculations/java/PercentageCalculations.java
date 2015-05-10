@@ -1,5 +1,5 @@
 /* 
- * Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
+ * Copyright 2001-2015 Aspose Pty Ltd. All Rights Reserved.
  *
  * This file is part of Aspose.Tasks. The source code in this file
  * is only intended as a supplement to the documentation, and is provided
@@ -17,13 +17,14 @@ public class PercentageCalculations
         // The path to the documents directory.
         String dataDir = "src/programmersguide/workingwithresources/percentagecalculations/data/";
 
-        Project project = new Project(dataDir+ "project.mpp");
-
-        for (int i=0;i<project.getResources().size();i++)
-        {
-            Resource res = project.getResources().get(i);
-            System.out.println("%age Work Complete: " + res.getPercentWorkComplete());
-        }
+	Project prj = new Project(dataDir + "project5.mpp");
+	for (Resource res:prj.getResources())
+	{
+  	    if(res.get(Rsc.NAME) != null)
+  	    {
+    		System.out.println(res.get(Rsc.PERCENT_WORK_COMPLETE));
+  	    }
+	}
     }
 }
 

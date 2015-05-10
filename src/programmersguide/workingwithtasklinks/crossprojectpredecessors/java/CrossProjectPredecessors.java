@@ -1,5 +1,5 @@
 /* 
- * Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
+ * Copyright 2001-2015 Aspose Pty Ltd. All Rights Reserved.
  *
  * This file is part of Aspose.Tasks. The source code in this file
  * is only intended as a supplement to the documentation, and is provided
@@ -19,15 +19,13 @@ public class CrossProjectPredecessors
         // The path to the documents directory.
         String dataDir = "src/programmersguide/workingwithtasklinks/crossprojectpredecessors/data/";
 
-        Project prj = new Project(dataDir + "project.mpp");
-        List<TaskLink> AllLinks= prj.getTaskLinks();
-        for (int i = 0 ; i < AllLinks.size(); i++)
-        {
-            TaskLink tsklnk = (TaskLink) AllLinks.get(i);
-            if(tsklnk.isCrossProject())
-                System.out.println(tsklnk.getCrossProjectName());
-        }
+        Project prj = new Project(dataDir + "project5.mpp");
 
+	for (TaskLink tsklnk:prj.getTaskLinks())
+	{
+  		if(tsklnk.isCrossProject())
+    		System.out.println(tsklnk.getCrossProjectName());
+	}
     }
 }
 

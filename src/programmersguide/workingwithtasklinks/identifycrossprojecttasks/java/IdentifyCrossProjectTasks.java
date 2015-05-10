@@ -17,17 +17,13 @@ public class IdentifyCrossProjectTasks
         // The path to the documents directory.
         String dataDir = "src/programmersguide/workingwithtasklinks/identifycrossprojecttasks/data/";
 
-        Project externalProject = new Project(dataDir+ "project.mpp");
+        Project externalProject = new Project(dataDir + "External.mpp");
 
-        Task externalTask = externalProject.getTaskByUid(5);
-        if(externalTask != null)
-        {
-            //ID of the task in the external project
-            System.out.println(externalTask.getId());
-            //ID of the task in the original project
-            System.out.println(externalTask.getExternalId());
-        }
-        
+	Task externalTask = externalProject.getRootTask().getChildren().getByUid(4);
+	//ID of the task in the external project
+	System.out.println(externalTask.get(Tsk.ID).toString());
+	//ID of the task in the original project
+	System.out.println(externalTask.get(Tsk.EXTERNAL_ID).toString());        
     }
 }
 

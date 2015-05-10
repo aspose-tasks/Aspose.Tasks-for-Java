@@ -19,28 +19,24 @@ public class ActualProperties
         // The path to the documents directory.
         String dataDir = "src/programmersguide/workingwithtasks/actualproperties/data/";
 
-        Project project = new Project(dataDir + "project.mpp");
+        Project project = new Project(dataDir + "E - 1 Task.mpp");
 
-        // Create a ChildTasksCollector instance
-        ChildTasksCollector collector = new ChildTasksCollector();
+	// Create a ChildTasksCollector instance
+	ChildTasksCollector collector = new ChildTasksCollector();
 
-        //Use TaskUtils to get all children tasks in RootTask
-        TaskUtils.apply(project.getRootTask(), collector, 0);
+	// Collect all the tasks from RootTask using TaskUtils
+	TaskUtils.apply(project.getRootTask(), collector, 0);
 
-        List<Task> tasks = collector.getTasks();
-        int iSize = tasks.size();
-
-        // Parse through all the collected tasks
-        for(int i = 0 ; i < iSize; i++)
-        {
-            Task task = (Task) tasks.get(i);
-            System.out.println("Task Name : " + task.getName());
-            System.out.println("Actual Start: " + task.getActualStart());
-            System.out.println("Actual Finish: " + task.getActualFinish());
-            System.out.println("Actual Duration: " + task.getActualDuration());
-            System.out.println("Actual Cost: " + task.getActualCost());
-            System.out.println("---------------------------------------------");
-        }
+	// Parse through all the collected tasks
+	for(Task task:collector.getTasks())
+	{
+		System.out.println("Task Name : " + task.get(Tsk.NAME));
+		System.out.println("Actual Start: " + task.get(Tsk.ACTUAL_START).toString());
+		System.out.println("Actual Finish: " + task.get(Tsk.ACTUAL_FINISH).toString());
+		System.out.println("Actual Duration: " + task.get(Tsk.ACTUAL_DURATION).toString());
+		System.out.println("Actual Cost: " + task.get(Tsk.ACTUAL_COST).toString());
+		System.out.println("---------------------------------------------");
+	}
 
     }
 }

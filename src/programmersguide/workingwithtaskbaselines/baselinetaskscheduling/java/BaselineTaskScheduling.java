@@ -1,5 +1,5 @@
 /* 
- * Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
+ * Copyright 2001-2015 Aspose Pty Ltd. All Rights Reserved.
  *
  * This file is part of Aspose.Tasks. The source code in this file
  * is only intended as a supplement to the documentation, and is provided
@@ -19,14 +19,19 @@ public class BaselineTaskScheduling
         // The path to the documents directory.
         String dataDir = "src/programmersguide/workingwithtaskbaselines/baselinetaskscheduling/data/";
 
-        Project prj = new Project(dataDir+ "project.mpp");
-        List<TaskBaseline> alB = (List<TaskBaseline>) prj.getRootTask().getChildren().get(0).getBaseline();
-        for (int i = 0 ; i < alB.size(); i++)
-        {
-            TaskBaseline  tskBln = (TaskBaseline) alB.get(i);
-            System.out.println("Start = " + tskBln.getStart());
-            System.out.println("Finish = " + tskBln.getFinish());
-        }
+        long OneSec = 10000000;//microsecond * 10
+	long OneMin = 60 * OneSec;
+	long OneHour = 60 * OneMin;
+
+	Project project = new Project();
+	// Creating TaskBaseline:
+	Task task = project.getRootTask().getChildren().add("Task");
+	project.setBaseline(BaselineType.Baseline);
+
+	TaskBaseline baseline = task.getBaselines().toList().get(0);
+	System.out.println(baseline.getDuration().toDouble()/OneHour + " Hours");
+	System.out.println("Baseline Start: "  + baseline.getStart());
+	System.out.println("Baseline Finish: " + baseline.getFinish());
     }
 }
 
