@@ -14,12 +14,6 @@ This package contains Java Examples for [Aspose.Tasks for Java](http://www.aspos
 
 ##How to use the Examples?
 
-###With the Examples Dashboard
-
-Download the [Aspose Examples Dashboard for Java](http://www.aspose.com/community/files/72/java-components/aspose-examples-for-java/default.aspx) to view and run all these examples on your PC. It updates itself with the latest dependency libraries and examples.
-
-![Aspose Examples Dashboard](http://www.aspose.com/blogs/wp-content/uploads/2013/03/Java-Dashboard1.png "Aspose Examples Dashboard")
-
 ###With IDE
 
 Clone or Download the ZIP and extract the contents to your local hard drive. If you have IntelliJ IDEA, then open the project directly 
