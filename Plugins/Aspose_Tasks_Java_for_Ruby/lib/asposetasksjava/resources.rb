@@ -1,0 +1,5 @@
+require_relative 'Resources/resourcecost'
+require_relative 'Resources/setresourceproperties'
+require_relative 'Resources/extendedresourceattributes'
+require_relative 'Resources/readtimephasedresourcedata'
+require_relative 'Resources/renderresourceusageandsheetview'

@@ -1,0 +1,5 @@
+jar_dir: ../asposetasksjava/jars
+license_path: ../asposetasksjava/license/path
+jvm_args: -Xms512m -Xmx1G
+
+
