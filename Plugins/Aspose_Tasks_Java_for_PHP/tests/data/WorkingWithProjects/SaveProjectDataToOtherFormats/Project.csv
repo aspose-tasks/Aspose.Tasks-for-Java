@@ -1,0 +1,172 @@
+ID;Task_Name;Outline_Level;Duration;Start_Date;Finish_Date;Percent_Comp;Cost;Work
+1;Five to Eight Weeks Before Moving;1;16 days;Sat 01.01.00 08:00;Sat 22.01.00 17:00;0%;$0;0 hrs
+2;Planning the Move;2;3 days;Sat 01.01.00 08:00;Wed 05.01.00 17:00;0%;$0;0 hrs
+3;Calculate moving expenses;3;1 day;Sat 01.01.00 08:00;Sat 01.01.00 17:00;0%;$0;0 hrs
+4;Determine the best method of moving;3;2 days;Sun 02.01.00 08:00;Wed 05.01.00 17:00;0%;$0;0 hrs
+5;Create a moving-expense receipt file;3;1 day;Sun 02.01.00 08:00;Sun 02.01.00 17:00;0%;$0;0 hrs
+6;Create a moving binder;3;1 day;Sun 02.01.00 08:00;Sun 02.01.00 17:00;0%;$0;0 hrs
+7;Household Administration;2;6 days;Wed 05.01.00 08:00;Wed 12.01.00 17:00;0%;$0;0 hrs
+8;Finances and Insurance;3;2 days;Wed 05.01.00 08:00;Thu 06.01.00 17:00;0%;$0;0 hrs
+9;Review household finances;4;1 day;Thu 06.01.00 08:00;Thu 06.01.00 17:00;0%;$0;0 hrs
+10;Verify that your belongings are insured for the move;4;1 day;Wed 05.01.00 08:00;Wed 05.01.00 17:00;0%;$0;0 hrs
+11;Appraise valuables specifically insured for the move;4;2 days;Wed 05.01.00 08:00;Thu 06.01.00 17:00;0%;$0;0 hrs
+12;Transfer insurance policies to your new address;4;1 day;Wed 05.01.00 08:00;Wed 05.01.00 17:00;0%;$0;0 hrs
+13;Transfer medical insurance to your new location;4;1 day;Wed 05.01.00 08:00;Wed 05.01.00 17:00;0%;$0;0 hrs
+14;Notifications;3;2 days;Thu 06.01.00 08:00;Fri 07.01.00 17:00;0%;$0;0 hrs
+15;Notify your employer of your moving dates and new address;4;1 day;Thu 06.01.00 08:00;Thu 06.01.00 17:00;0%;$0;0 hrs
+16;Transfer, sell, or discontinue any memberships;4;2 days;Thu 06.01.00 08:00;Fri 07.01.00 17:00;0%;$0;0 hrs
+17;Vital Services and Records;3;2 days;Sat 08.01.00 08:00;Sun 09.01.00 17:00;0%;$0;0 hrs
+18;Organize important records;4;2 days;Sat 08.01.00 08:00;Sun 09.01.00 17:00;0%;$0;0 hrs
+19;Contact your doctor, dentist, and vet for referrals;4;1 day;Sat 08.01.00 08:00;Sat 08.01.00 17:00;0%;$0;0 hrs
+20;Request additional refills of vital medications;4;1 day;Sat 08.01.00 08:00;Sat 08.01.00 17:00;0%;$0;0 hrs
+21;Your New Residence;3;2 days;Sun 09.01.00 08:00;Wed 12.01.00 17:00;0%;$0;0 hrs
+22;Collect shopping and dining guides from your new community;4;2 days;Sun 09.01.00 08:00;Wed 12.01.00 17:00;0%;$0;0 hrs
+23;Determine the location of the police, fire department and hospitals;4;1 day;Sun 09.01.00 08:00;Sun 09.01.00 17:00;0%;$0;0 hrs
+24;Change drivers/vehicle license address if required;4;1 day;Sun 09.01.00 08:00;Sun 09.01.00 17:00;0%;$0;0 hrs
+25;Place orders for new furniture;4;2 days;Sun 09.01.00 08:00;Wed 12.01.00 17:00;0%;$0;0 hrs
+26;Moving;2;8 days;Thu 13.01.00 08:00;Sat 22.01.00 17:00;0%;$0;0 hrs
+27;Movers;3;4 days;Thu 13.01.00 08:00;Sun 16.01.00 17:00;0%;$0;0 hrs
+28;Obtain estimates from several moving services;4;4 days;Thu 13.01.00 08:00;Sun 16.01.00 17:00;0%;$0;0 hrs
+29;Request references from each moving service;4;1 day;Thu 13.01.00 08:00;Thu 13.01.00 17:00;0%;$0;0 hrs
+30;Select moving service;4;1 day;Thu 13.01.00 08:00;Thu 13.01.00 17:00;0%;$0;0 hrs
+31;Discuss rough details with movers;4;1 day;Thu 13.01.00 08:00;Thu 13.01.00 17:00;0%;$0;0 hrs
+32;Packing;3;7 days;Fri 14.01.00 08:00;Sat 22.01.00 17:00;0%;$0;0 hrs
+33;Inventory and organize all possessions;4;7 days;Fri 14.01.00 08:00;Sat 22.01.00 17:00;0%;$0;0 hrs
+34;Begin using food and cleaning supplies currently on hand;4;1 day;Fri 14.01.00 08:00;Fri 14.01.00 17:00;0%;$0;0 hrs
+35;Start cleaning closets, bookcases, and other storage areas;4;5 days;Fri 14.01.00 08:00;Thu 20.01.00 17:00;0%;$0;0 hrs
+36;Conduct a sale or donate to charity;4;3 days;Fri 14.01.00 08:00;Sun 16.01.00 17:00;0%;$0;0 hrs
+37;Decide what furniture items you want to keep;4;4 days;Fri 14.01.00 08:00;Wed 19.01.00 17:00;0%;$0;0 hrs
+38;Reserve storage if necessary;4;1 day;Fri 14.01.00 08:00;Fri 14.01.00 17:00;0%;$0;0 hrs
+39;Preparing for Moving Day;3;3 days;Sat 15.01.00 08:00;Wed 19.01.00 17:00;0%;$0;0 hrs
+40;Make any long distance travel arrangements;4;3 days;Sat 15.01.00 08:00;Wed 19.01.00 17:00;0%;$0;0 hrs
+41;Three to Five Weeks Before Moving;1;14 days;Thu 20.01.00 08:00;Sun 06.02.00 17:00;0%;$0;0 hrs
+42;Household Administration;2;5 days;Thu 20.01.00 08:00;Wed 26.01.00 17:00;0%;$0;0 hrs
+43;Finances and Insurance;3;4 days;Thu 20.01.00 08:00;Sun 23.01.00 17:00;0%;$0;0 hrs
+44;Research and choose bank at the new location;4;4 days;Thu 20.01.00 08:00;Sun 23.01.00 17:00;0%;$0;0 hrs
+45;Open new bank account;4;1 day;Thu 20.01.00 08:00;Thu 20.01.00 17:00;0%;$0;0 hrs
+46;Order bank checks with your new address;4;1 day;Thu 20.01.00 08:00;Thu 20.01.00 17:00;0%;$0;0 hrs
+47;Close any local charge accounts;4;1 day;Thu 20.01.00 08:00;Thu 20.01.00 17:00;0%;$0;0 hrs
+48;Notifications;3;3 days;Fri 21.01.00 08:00;Sun 23.01.00 17:00;0%;$0;0 hrs
+49;Schedule disconnection of utilities;4;3 days;Fri 21.01.00 08:00;Sun 23.01.00 17:00;0%;$0;0 hrs
+50;Change your address with government agencies if required;4;1 day;Fri 21.01.00 08:00;Fri 21.01.00 17:00;0%;$0;0 hrs
+51;Clear up any unpaid taxes or parking tickets;4;3 days;Fri 21.01.00 08:00;Sun 23.01.00 17:00;0%;$0;0 hrs
+52;Transfer car registration to your new location;4;1 day;Fri 21.01.00 08:00;Fri 21.01.00 17:00;0%;$0;0 hrs
+53;Vital Services and Records;3;3 days;Sat 22.01.00 08:00;Wed 26.01.00 17:00;0%;$0;0 hrs
+54;Register your children in their new schools;4;3 days;Sat 22.01.00 08:00;Wed 26.01.00 17:00;0%;$0;0 hrs
+55;Forward children's school records to the new school district;4;1 day;Sat 22.01.00 08:00;Sat 22.01.00 17:00;0%;$0;0 hrs
+56;Your New Residence;3;1 day;Sun 23.01.00 08:00;Sun 23.01.00 17:00;0%;$0;0 hrs
+57;Order mailing labels with your new address;4;1 day;Sun 23.01.00 08:00;Sun 23.01.00 17:00;0%;$0;0 hrs
+58;Determine if there are pet requirements at the new location;4;1 day;Sun 23.01.00 08:00;Sun 23.01.00 17:00;0%;$0;0 hrs
+59;Schedule move with the building management at the new location;4;1 day;Sun 23.01.00 08:00;Sun 23.01.00 17:00;0%;$0;0 hrs
+60;Schedule cable television installation if required;4;1 day;Sun 23.01.00 08:00;Sun 23.01.00 17:00;0%;$0;0 hrs
+61;Schedule internet installation if required;4;1 day;Sun 23.01.00 08:00;Sun 23.01.00 17:00;0%;$0;0 hrs
+62;Contact utility companies and sign up for new service;4;1 day;Sun 23.01.00 08:00;Sun 23.01.00 17:00;0%;$0;0 hrs
+63;Moving;2;10 days;Wed 26.01.00 08:00;Sun 06.02.00 17:00;0%;$0;0 hrs
+64;Movers;3;1 day;Wed 26.01.00 08:00;Wed 26.01.00 17:00;0%;$0;0 hrs
+65;Confirm your move date with your moving service;4;1 day;Wed 26.01.00 08:00;Wed 26.01.00 17:00;0%;$0;0 hrs
+66;Do-It-Yourself;3;3 days;Thu 27.01.00 08:00;Sat 29.01.00 17:00;0%;$0;0 hrs
+67;Reserve a truck or trailer;4;1 day;Thu 27.01.00 08:00;Thu 27.01.00 17:00;0%;$0;0 hrs
+68;Begin enlisting assistance for moving day;4;3 days;Thu 27.01.00 08:00;Sat 29.01.00 17:00;0%;$0;0 hrs
+69;Packing;3;8 days;Thu 27.01.00 08:00;Sat 05.02.00 17:00;0%;$0;0 hrs
+70;Start collecting boxes, tape, and padding;4;8 days;Thu 27.01.00 08:00;Sat 05.02.00 17:00;0%;$0;0 hrs
+71;Arrange for disposal of items not sold or donated;4;2 days;Sun 30.01.00 08:00;Wed 02.02.00 17:00;0%;$0;0 hrs
+72;Begin letting children do some of their own packing and labeling;4;4 days;Sun 30.01.00 08:00;Fri 04.02.00 17:00;0%;$0;0 hrs
+73;Begin packing books, seasonal clothing, or sporting equipment;4;5 days;Sun 30.01.00 08:00;Sat 05.02.00 17:00;0%;$0;0 hrs
+74;Send furniture, drapes, and carpets for repair or cleaning;4;1 day;Sun 30.01.00 08:00;Sun 30.01.00 17:00;0%;$0;0 hrs
+75;Have appliances serviced for moving, if applicable;4;2 days;Sun 30.01.00 08:00;Wed 02.02.00 17:00;0%;$0;0 hrs
+76;Preparing for Moving Day;3;1 day;Sun 06.02.00 08:00;Sun 06.02.00 17:00;0%;$0;0 hrs
+77;Arrange for child care the day of the move;4;1 day;Sun 06.02.00 08:00;Sun 06.02.00 17:00;0%;$0;0 hrs
+78;One to Two Weeks Before Moving;1;10 days;Wed 09.02.00 08:00;Sun 20.02.00 17:00;0%;$0;0 hrs
+79;Household Administration;2;5 days;Wed 09.02.00 08:00;Sun 13.02.00 17:00;0%;$0;0 hrs
+80;Finances and Insurance;3;2 days;Wed 09.02.00 08:00;Thu 10.02.00 17:00;0%;$0;0 hrs
+81;Transfer your bank accounts to new bank or new location;4;1 day;Wed 09.02.00 08:00;Wed 09.02.00 17:00;0%;$0;0 hrs
+82;Close existing bank accounts at old location;4;1 day;Wed 09.02.00 08:00;Wed 09.02.00 17:00;0%;$0;0 hrs
+83;Empty safe-deposit box;4;1 day;Wed 09.02.00 08:00;Wed 09.02.00 17:00;0%;$0;0 hrs
+84;Organize appliance documents;4;1 day;Thu 10.02.00 08:00;Thu 10.02.00 17:00;0%;$0;0 hrs
+85;Make arrangements to pay for your move;4;1 day;Thu 10.02.00 08:00;Thu 10.02.00 17:00;0%;$0;0 hrs
+86;Buy traveler's checks;4;1 day;Thu 10.02.00 08:00;Thu 10.02.00 17:00;0%;$0;0 hrs
+87;Notifications;3;3 days;Fri 11.02.00 08:00;Sun 13.02.00 17:00;0%;$0;0 hrs
+88;Fill out mail change of address cards;4;3 days;Fri 11.02.00 08:00;Sun 13.02.00 17:00;0%;$0;0 hrs
+89;Distribute new address;4;1 day;Fri 11.02.00 08:00;Fri 11.02.00 17:00;0%;$0;0 hrs
+90;If no longer required, cancel local deliveries;4;1 day;Fri 11.02.00 08:00;Fri 11.02.00 17:00;0%;$0;0 hrs
+91;Cancel newspaper delivery;4;1 day;Fri 11.02.00 08:00;Fri 11.02.00 17:00;0%;$0;0 hrs
+92;Take trash to dump or recycling center;4;1 day;Fri 11.02.00 08:00;Fri 11.02.00 17:00;0%;$0;0 hrs
+93;Coordinate with friend to act as your message center;4;2 days;Fri 11.02.00 08:00;Sat 12.02.00 17:00;0%;$0;0 hrs
+94;Vital Services and Records;3;1 day;Sun 13.02.00 08:00;Sun 13.02.00 17:00;0%;$0;0 hrs
+95;Have medical and dental records forwarded;4;1 day;Sun 13.02.00 08:00;Sun 13.02.00 17:00;0%;$0;0 hrs
+96;Contact your pharmacist for referral;4;1 day;Sun 13.02.00 08:00;Sun 13.02.00 17:00;0%;$0;0 hrs
+97;Transfer your prescriptions to this new pharmacy;4;1 day;Sun 13.02.00 08:00;Sun 13.02.00 17:00;0%;$0;0 hrs
+98;Your New Residence;3;1 day;Sun 13.02.00 08:00;Sun 13.02.00 17:00;0%;$0;0 hrs
+99;Contact previous residents for appliance documentation;4;1 day;Sun 13.02.00 08:00;Sun 13.02.00 17:00;0%;$0;0 hrs
+100;Subscribe to the local newspapers and community newsletters;4;1 day;Sun 13.02.00 08:00;Sun 13.02.00 17:00;0%;$0;0 hrs
+101;Moving;2;5 days;Wed 16.02.00 08:00;Sun 20.02.00 17:00;0%;$0;0 hrs
+102;Movers;3;1 day;Wed 16.02.00 08:00;Wed 16.02.00 17:00;0%;$0;0 hrs
+103;Check with mover about moving house plants;4;1 day;Wed 16.02.00 08:00;Wed 16.02.00 17:00;0%;$0;0 hrs
+104;Obtain moving service contact numbers;4;1 day;Wed 16.02.00 08:00;Wed 16.02.00 17:00;0%;$0;0 hrs
+105;Acquire labels for boxes (for example, Fragile, Load First, Load Last);4;1 day;Wed 16.02.00 08:00;Wed 16.02.00 17:00;0%;$0;0 hrs
+106;Verify that the moving service has your contact numbers;4;1 day;Wed 16.02.00 08:00;Wed 16.02.00 17:00;0%;$0;0 hrs
+107;Give moving service written directions to the new location;4;1 day;Wed 16.02.00 08:00;Wed 16.02.00 17:00;0%;$0;0 hrs
+108;Do-It-Yourself;3;1 day;Thu 17.02.00 08:00;Thu 17.02.00 17:00;0%;$0;0 hrs
+109;Move possessions to storage facility if necessary;4;1 day;Thu 17.02.00 08:00;Thu 17.02.00 17:00;0%;$0;0 hrs
+110;Confirm assistance for moving day;4;1 day;Thu 17.02.00 08:00;Thu 17.02.00 17:00;0%;$0;0 hrs
+111;Verify dolly available with truck rental;4;1 day;Thu 17.02.00 08:00;Thu 17.02.00 17:00;0%;$0;0 hrs
+112;Packing;3;3 days;Fri 18.02.00 08:00;Sun 20.02.00 17:00;0%;$0;0 hrs
+113;Clean appliances;4;1 day;Fri 18.02.00 08:00;Fri 18.02.00 17:00;0%;$0;0 hrs
+114;Pick up all dry cleaning;4;1 day;Fri 18.02.00 08:00;Fri 18.02.00 17:00;0%;$0;0 hrs
+115;Pack items that you do not use regularly;4;3 days;Fri 18.02.00 08:00;Sun 20.02.00 17:00;0%;$0;0 hrs
+116;Pack all valuables to move personally;4;2 days;Fri 18.02.00 08:00;Sat 19.02.00 17:00;0%;$0;0 hrs
+117;Locate hazardous waste disposal sites;4;1 day;Fri 18.02.00 08:00;Fri 18.02.00 17:00;0%;$0;0 hrs
+118;Drain all fluids from your lawn mower and power tools;4;2 days;Fri 18.02.00 08:00;Sat 19.02.00 17:00;0%;$0;0 hrs
+119;Dispose of all hazardous household materials;4;2 days;Fri 18.02.00 08:00;Sat 19.02.00 17:00;0%;$0;0 hrs
+120;Have mover pack your goods (unless doing it yourself);4;1 day;Fri 18.02.00 08:00;Fri 18.02.00 17:00;0%;$0;0 hrs
+121;Pack travel bags and confirm travel arrangements;4;1 day;Fri 18.02.00 08:00;Fri 18.02.00 17:00;0%;$0;0 hrs
+122;Preparing for Move Day;3;2 days;Sat 19.02.00 08:00;Sun 20.02.00 17:00;0%;$0;0 hrs
+123;Have your automobile serviced if you're traveling by car;4;1 day;Sat 19.02.00 08:00;Sat 19.02.00 17:00;0%;$0;0 hrs
+124;Plan auto route;4;1 day;Sat 19.02.00 08:00;Sat 19.02.00 17:00;0%;$0;0 hrs
+125;Plan meals that will use up the food in your freezer;4;1 day;Sat 19.02.00 08:00;Sat 19.02.00 17:00;0%;$0;0 hrs
+126;Empty, defrost, and clean refrigerator and freezer;4;2 days;Sat 19.02.00 08:00;Sun 20.02.00 17:00;0%;$0;0 hrs
+127;Prepare a survival kit for move day;4;1 day;Sat 19.02.00 08:00;Sat 19.02.00 17:00;0%;$0;0 hrs
+128;Prepare your pet's survival kit;4;1 day;Sat 19.02.00 08:00;Sat 19.02.00 17:00;0%;$0;0 hrs
+129;Prepare an immediate-need kit for move day;4;2 days;Sat 19.02.00 08:00;Sun 20.02.00 17:00;0%;$0;0 hrs
+130;Day of the Move;1;1 day;Wed 23.02.00 08:00;Wed 23.02.00 17:00;0%;$0;0 hrs
+131;Old Residence;2;1 day;Wed 23.02.00 08:00;Wed 23.02.00 17:00;0%;$0;0 hrs
+132;Moving;3;1 day;Wed 23.02.00 08:00;Wed 23.02.00 17:00;0%;$0;0 hrs
+133;Have tools, tape, twine, and spare boxes on hand;4;1 day;Wed 23.02.00 08:00;Wed 23.02.00 17:00;0%;$0;0 hrs
+134;Be present throughout the entire move;4;1 day;Wed 23.02.00 08:00;Wed 23.02.00 17:00;0%;$0;0 hrs
+135;Verify all possessions have been packed and loaded;4;1 day;Wed 23.02.00 08:00;Wed 23.02.00 17:00;0%;$0;0 hrs
+136;Make sure fragile items are handled carefully;4;1 day;Wed 23.02.00 08:00;Wed 23.02.00 17:00;0%;$0;0 hrs
+137;Pack cleaning supplies including a vacuum cleaner in a box labeled Last Load;4;1 day;Wed 23.02.00 08:00;Wed 23.02.00 17:00;0%;$0;0 hrs
+138;Verify that bedding gets packed last;4;1 day;Wed 23.02.00 08:00;Wed 23.02.00 17:00;0%;$0;0 hrs
+139;New Residence;2;1 day;Wed 23.02.00 08:00;Wed 23.02.00 17:00;0%;$0;0 hrs
+140;Household Administration;3;1 day;Wed 23.02.00 08:00;Wed 23.02.00 17:00;0%;$0;0 hrs
+141;Empty, defrost, and clean the new refrigerator;4;1 day;Wed 23.02.00 08:00;Wed 23.02.00 17:00;0%;$0;0 hrs
+142;Designate a room for your pet;4;1 day;Wed 23.02.00 08:00;Wed 23.02.00 17:00;0%;$0;0 hrs
+143;Have snacks and beverages on hand throughout the day;4;1 day;Wed 23.02.00 08:00;Wed 23.02.00 17:00;0%;$0;0 hrs
+144;Moving;3;1 day;Wed 23.02.00 08:00;Wed 23.02.00 17:00;0%;$0;0 hrs
+145;Be present throughout the entire move;4;1 day;Wed 23.02.00 08:00;Wed 23.02.00 17:00;0%;$0;0 hrs
+146;Make sure fragile items are handled carefully;4;1 day;Wed 23.02.00 08:00;Wed 23.02.00 17:00;0%;$0;0 hrs
+147;Review all paperwork when the moving service arrives;4;1 day;Wed 23.02.00 08:00;Wed 23.02.00 17:00;0%;$0;0 hrs
+148;Pay moving service before unpacking;4;1 day;Wed 23.02.00 08:00;Wed 23.02.00 17:00;0%;$0;0 hrs
+149;Check carefully for any damaged or missing items;4;1 day;Wed 23.02.00 08:00;Wed 23.02.00 17:00;0%;$0;0 hrs
+150;Read and sign bill of lading;4;1 day;Wed 23.02.00 08:00;Wed 23.02.00 17:00;0%;$0;0 hrs
+151;Retain copies of the bill of lading and inventory;4;1 day;Wed 23.02.00 08:00;Wed 23.02.00 17:00;0%;$0;0 hrs
+152;Move completed;4;0 days;Wed 23.02.00 17:00;Wed 23.02.00 17:00;0%;$0;0 hrs
+153;One to Two Weeks After the Move;1;5 days;Thu 24.02.00 08:00;Wed 01.03.00 17:00;0%;$0;0 hrs
+154;Household Administration;2;5 days;Thu 24.02.00 08:00;Wed 01.03.00 17:00;0%;$0;0 hrs
+155;Finances and Insurance;3;1 day;Thu 24.02.00 08:00;Thu 24.02.00 17:00;0%;$0;0 hrs
+156;Put valuables into a safety deposit box in the new bank;4;1 day;Thu 24.02.00 08:00;Thu 24.02.00 17:00;0%;$0;0 hrs
+157;Notifications;3;2 days;Fri 25.02.00 08:00;Sat 26.02.00 17:00;0%;$0;0 hrs
+158;Arrange for new registration of cars (bicycles also, if required);4;1 day;Fri 25.02.00 08:00;Fri 25.02.00 17:00;0%;$0;0 hrs
+159;Have pets licensed;4;1 day;Sat 26.02.00 08:00;Sat 26.02.00 17:00;0%;$0;0 hrs
+160;Change your voter registration, if required;4;1 day;Sat 26.02.00 08:00;Sat 26.02.00 17:00;0%;$0;0 hrs
+161;Vital Services and Records;3;1 day;Sun 27.02.00 08:00;Sun 27.02.00 17:00;0%;$0;0 hrs
+162;Contact new dentists and doctors to verify record delivery;4;1 day;Sun 27.02.00 08:00;Sun 27.02.00 17:00;0%;$0;0 hrs
+163;Get recommendations for babysitters, nanny agencies, and other services;4;1 day;Sun 27.02.00 08:00;Sun 27.02.00 17:00;0%;$0;0 hrs
+164;Verify that new schools have received records;4;1 day;Sun 27.02.00 08:00;Sun 27.02.00 17:00;0%;$0;0 hrs
+165;Update driver's license and car license plates;4;1 day;Sun 27.02.00 08:00;Sun 27.02.00 17:00;0%;$0;0 hrs
+166;Your New Residence;3;1 day;Wed 01.03.00 08:00;Wed 01.03.00 17:00;0%;$0;0 hrs
+167;Make additional sets of keys and change locks if necessary;4;1 day;Wed 01.03.00 08:00;Wed 01.03.00 17:00;0%;$0;0 hrs
+168;Ask for repair service recommendations;4;1 day;Wed 01.03.00 08:00;Wed 01.03.00 17:00;0%;$0;0 hrs
+169;Meet your neighbors (write down their names);4;1 day;Wed 01.03.00 08:00;Wed 01.03.00 17:00;0%;$0;0 hrs
+170;Find out about recycling at the new location;4;1 day;Wed 01.03.00 08:00;Wed 01.03.00 17:00;0%;$0;0 hrs
+171;Enjoy your new home;1;0 days;Wed 01.03.00 17:00;Wed 01.03.00 17:00;0%;$0;0 hrs
