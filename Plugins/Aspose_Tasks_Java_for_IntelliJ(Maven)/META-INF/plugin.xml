@@ -1,0 +1,29 @@
+<!--
+  ~ @author Adeel Ilyas <adeel.ilyas@aspose.com>
+  -->
+<idea-plugin version="2">
+    <id>com.aspose.tasks.java.intellij.maven</id>
+    <name>Aspose.Tasks Java for IntelliJ IDEA Maven</name>
+    <version>1.0.0.0</version>
+
+    <vendor email="tasks@aspose.com" url="http://www.aspose.com">Aspose Pty Ltd.</vendor>
+
+
+    <description><![CDATA[<br/><b>Aspose.Tasks for Java</b> is a project management API that adds Microsoft Project ® documents manipulation capability in java applications – all without using Microsoft Project ®. <br/><br/><b>Aspose.Tasks for Java</b> API exposes the complete project document structure to read and write Microsoft Project documents in both MPP and XML formats. With this powerful API, developers can control various stages of project management, such as project planning, definition and tracking.<br/><br/>The plugin's <b>Aspose.Tasks Maven Project</b> wizard lets you create a Aspose.Tasks Java API maven project by fetching & referencing the latest API mvn artifact from the Aspose Cloud Maven Repository.<br/><br/>Plugin provided wizards also gives you option to download & import the example source codes for using Aspose.Tasks for Java API.<br/><br/>After the completion of wizard, project will be created and API examples are downloaded. All references and required resources will also be automatically added to the project.<br/><br/>You can then import / use codes (using option <b>File-> New-> Aspose.Tasks Example</b>) from downloaded examples for your project needs and enhance them as necessary.<br/>
+    ]]></description>
+
+
+    <!-- please see http://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
+    <idea-version since-build="139"/>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <moduleBuilder builderClass="com.aspose.wizards.maven.AsposeMavenModuleBuilder"/>
+    </extensions>
+
+    <actions>
+        <action id="aspose.tasks.example" class="com.aspose.examples.AsposeExampleAction" text="Aspose.Tasks Example" icon="/resources/asposeSmall.png"
+                description="Aspose.Tasks Examples allow you to add Aspose sourcecode examples to demonstrate Aspose.Tasks Java API usage. Available samples are displayed in tree format from where you can select one. Selected category examples will be added to current project including source files and required data files.">
+            <add-to-group group-id="NewGroup" anchor="first"/>
+        </action>
+    </actions>
+</idea-plugin>
