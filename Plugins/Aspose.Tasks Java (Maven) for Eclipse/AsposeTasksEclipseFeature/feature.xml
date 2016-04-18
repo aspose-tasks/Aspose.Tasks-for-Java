@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.aspose.tasks.java.maven"
+      label="Aspose.Tasks Java (Maven) for Eclipse"
+      version="1.0"
+      provider-name="http://www.aspose.com">
+
+   <description>
+Aspose.Tasks Maven Project wizard creates Maven Project for using Aspose.Tasks for Java API within Eclipse IDE.
+Aspose.Tasks for Java is a project management component that enables Java application developers to provide Microsoft Project ® documents manipulation capability in their applications – all without using Microsoft Project ®.
+Aspose.Tasks for Java supports rendering tasks, resources and resource assignment data to various output formats such as JPG, PNG, PDF, XML, XAML, HTML, BMP, XPS, TIFF and SVG. In addition, it is possible to export project data to CSV, TXT, XLS, XLSX and MPT formats as well.
+Aspose.Tasks Maven Project wizard fetch and configures the latest Maven dependency reference of Aspose.Tasks for Java from the Aspose Cloud Maven Repository.
+The wizard also gives you option to download the Code Examples to use Aspose.Tasks for Java API. Once you are finished with this wizard - created Maven project and downloaded Code Examples,
+next you can insert those Code Examples to use Aspose.Tasks for Java API in your Project from File -&gt; New -&gt; Other -&gt; Aspose.Tasks Code Example
+The newly created project and the Code Examples you added is now ready to be enhanced, all required resources and references are also automatically added.
+   </description>
+
+   <license url="">
+      The MIT License (MIT)
+Copyright (c) 2001-2016 Aspose Pty Ltd
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+   </license>
+
+   <plugin
+         id="com.aspose.tasks.java.maven.plugin"
+         download-size="0"
+         install-size="0"
+         version="1.0.0"
+         unpack="false"/>
+
+</feature>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <description name="Aspose.Tasks Java (Maven) for Eclipse - Eclipse Update Site" url="http://cdn.aspose.com/marketplace/eclipse/java/maven/asposetasks/">
+      Aspose.Tasks Maven Project wizard creates Maven Project for using Aspose.Tasks for Java API within Eclipse IDE.
+Aspose.Tasks for Java is a project management component that enables Java application developers to provide Microsoft Project ® documents manipulation capability in their applications – all without using Microsoft Project ®.
+Aspose.Tasks for Java supports rendering tasks, resources and resource assignment data to various output formats such as JPG, PNG, PDF, XML, XAML, HTML, BMP, XPS, TIFF and SVG. In addition, it is possible to export project data to CSV, TXT, XLS, XLSX and MPT formats as well.
+Aspose.Tasks Maven Project wizard fetch and configures the latest Maven dependency reference of Aspose.Tasks for Java from the Aspose Cloud Maven Repository.
+The wizard also gives you option to download the Code Examples to use Aspose.Tasks for Java API.
+   </description>
+   <feature url="features/com.aspose.tasks.java.maven_1.0.0.jar" id="com.aspose.tasks.java.maven" version="1.0">
+      <category name="com.aspose.tasks.java.maven.category"/>
+   </feature>
+   <category-def name="com.aspose.tasks.java.maven.category" label="Aspose.Tasks Java (Maven) for Eclipse"/>
+</site>
