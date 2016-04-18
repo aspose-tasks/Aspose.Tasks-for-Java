@@ -6,7 +6,7 @@ This project is **Eclipse IDE plugin** which lets developers use [Aspose.Tasks f
 
 This Plugin is intended for developers using Maven platform for Java developments and want to use [Aspose.Tasks for Java](http://www.aspose.com/java/project-management-component.aspx) in their projects.
 
-**NOTE:** [Aspose.Tasks for Java](http://www.aspose.com/java/project-management-component.aspx) is Java API developed by [Aspose](http://aspose.com) is a project management component that enables Java application developers to provide Microsoft Project ® documents manipulation capability in their applications – all without using Microsoft Project ®. For the API detailed features list check the [link](http://www.aspose.com/java/project-management-component.aspx.
+**NOTE:** [Aspose.Tasks for Java](http://www.aspose.com/java/project-management-component.aspx) is Java API developed by [Aspose](http://aspose.com) is a project management component that enables Java application developers to provide Microsoft Project ® documents manipulation capability in their applications – all without using Microsoft Project ®. For the API detailed features list check the [link](http://www.aspose.com/java/project-management-component.aspx).
 
 ## **Features**
 
@@ -39,7 +39,7 @@ The plugin provides following features to work with [Aspose.Tasks for Java](http
 **Aspose.Tasks for Java** supports rendering tasks, resources and resource assignment data to various output formats such as JPG, PNG, PDF, XML, XAML, HTML, BMP, XPS, TIFF and SVG. In addition, it is possible to export project data to CSV, TXT, XLS, XLSX and MPT formats as well.
 
 
-For more info about the **Aspose.Tasks for Java API**, [please check the api documentation - click here](http://www.aspose.com/java/project-management-component.aspx
+For more info about the **Aspose.Tasks for Java API**, [please check the api documentation - click here](http://www.aspose.com/java/project-management-component.aspx)
 
 ## Plugin Documentation
 
