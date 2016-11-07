@@ -5,30 +5,23 @@
  * is only intended as a supplement to the documentation, and is provided
  * "as is", without warranty of any kind, either expressed or implied.
  */
- 
+
 package com.aspose.tasks.examples.ResourceAssignments;
 
 import com.aspose.tasks.*;
 import com.aspose.tasks.examples.Utils;
 
-public class CreateResourceAssignments
-{
-    public static void main(String[] args) throws Exception
-    {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(CreateResourceAssignments.class);
+public class CreateResourceAssignments {
+	public static void main(String[] args) throws Exception {
+		// ExStart: create-resource-assignments
+		// The path to the documents directory.
+		String dataDir = Utils.getDataDir(CreateResourceAssignments.class);
+		Project project = new Project();
+		Task task = project.getRootTask().getChildren().add("Task");
 
-        Project project = new Project();
+		Resource rsc = project.getResources().add("Rsc");
 
-        Task task = project.getRootTask().getChildren().add("Task");
-
-        Resource rsc = project.getResources().add("Rsc");
-
-        ResourceAssignment assn = project.getResourceAssignments().add(task, rsc);
-        
-    }
+		ResourceAssignment assn = project.getResourceAssignments().add(task, rsc);
+		// ExEnd: create-resource-assignments
+	}
 }
-
-
-
-

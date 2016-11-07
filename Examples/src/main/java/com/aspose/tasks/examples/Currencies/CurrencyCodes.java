@@ -12,41 +12,39 @@ import com.aspose.tasks.Prj;
 import com.aspose.tasks.Project;
 import com.aspose.tasks.examples.Utils;
 
-public class CurrencyCodes
-{
-    public static void main(String[] args) throws Exception
-    {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(CurrencyCodes.class);
+public class CurrencyCodes {
+	public static void main(String[] args) throws Exception {
+		// The path to the documents directory.
+		String dataDir = Utils.getDataDir(CurrencyCodes.class);
 
-        settingcurrency();
+		settingCurrency();
 
-	    gettingcurrencycode();
+		gettingCurrencycode();
 
-        //Display result of conversion.
-        System.out.println("Process completed Successfully");
-    }
+		// Display result of conversion.
+		System.out.println("Process completed Successfully");
+	}
 
-    public static void settingcurrency()
-    {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(CurrencyCodes.class);
+	public static void settingCurrency() {
+		// ExStart: setting-currency-codes
+		// The path to the documents directory.
+		String dataDir = Utils.getDataDir(CurrencyCodes.class);
 
-        Project prj = new Project();
-        prj.set(Prj.CURRENCY_CODE, "USD");
-        
-    }
+		Project prj = new Project();
+		prj.set(Prj.CURRENCY_CODE, "USD");
+		// ExEnd: setting-currency-codes
 
-    public static void gettingcurrencycode()
-    {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(CurrencyCodes.class);
+	}
 
-        Project prj = new Project(dataDir + "project5.mpp");
-        System.out.println(prj.get(Prj.CURRENCY_CODE));
-    }    
+	public static void gettingCurrencycode() {
+		// ExStart: getting-currency-codes
+		// The path to the documents directory.
+		String dataDir = Utils.getDataDir(CurrencyCodes.class);
+
+		Project prj = new Project(dataDir + "project5.mpp");
+		System.out.println(prj.get(Prj.CURRENCY_CODE));
+
+		// ExEnd: getting-currency-codes
+
+	}
 }
-
-
-
-

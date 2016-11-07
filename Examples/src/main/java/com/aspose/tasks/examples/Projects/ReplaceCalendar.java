@@ -11,36 +11,27 @@ package com.aspose.tasks.examples.Projects;
 import com.aspose.tasks.*;
 import com.aspose.tasks.examples.Utils;
 
-public class ReplaceCalendar
-{
-    public static void main(String[] args) throws Exception
-    {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(ReplaceCalendar.class);
+public class ReplaceCalendar {
+	public static void main(String[] args) throws Exception {
+		// ExStart: replace-calendar-new-calendar
+		// The path to the documents directory.
+		String dataDir = Utils.getDataDir(ReplaceCalendar.class);
 
-        Project project = new Project();
-
-		//Add a calendar to the project
-		Calendar cal =  project.getCalendars().add("Cal 1");
+		Project project = new Project();
+		// Add a calendar to the project
+		Calendar cal = project.getCalendars().add("Cal 1");
 
 		Calendar newCal = new Calendar("New Cal");
-
 		CalendarCollection calColl = project.getCalendars();
-		for (Calendar c:calColl)
-		{
-		    if (c.getName()== "Cal 1")
-		    {
-		        calColl.remove(c);
-		        calColl.add("Standard", newCal);
-		        break;
-		    }
+		for (Calendar c : calColl) {
+			if (c.getName() == "Cal 1") {
+				calColl.remove(c);
+				calColl.add("Standard", newCal);
+				break;
+			}
 		}
-
-        //Display result of conversion.
-        System.out.println("Process completed Successfully");
-    }
+		// Display result of conversion.
+		System.out.println("Process completed Successfully");
+		// ExEnd: replace-calendar-new-calendar
+	}
 }
-
-
-
-

@@ -5,28 +5,24 @@
  * is only intended as a supplement to the documentation, and is provided
  * "as is", without warranty of any kind, either expressed or implied.
  */
- 
+
 package com.aspose.tasks.examples.Tasks;
 
 import com.aspose.tasks.*;
 import com.aspose.tasks.examples.Utils;
 
-public class RenderTaskSheet
-{
-    public static void main(String[] args) throws Exception
-    {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(RenderTaskSheet.class);
+public class RenderTaskSheet {
+	public static void main(String[] args) throws Exception {
 
-        Project project = new Project(dataDir + "NewProductDev.mpp");
-        SaveOptions options = new PdfSaveOptions();
-        options.setPresentationFormat(PresentationFormat.TaskSheet);
-        // See the result attached
-        project.save(dataDir + "taskSheet.pdf", options);
-  
-    }
+		// ExStart: render-task-sheet-view
+		// The path to the documents directory.
+		String dataDir = Utils.getDataDir(RenderTaskSheet.class);
+
+		Project project = new Project(dataDir + "NewProductDev.mpp");
+		SaveOptions options = new PdfSaveOptions();
+		options.setPresentationFormat(PresentationFormat.TaskSheet);
+		// See the result attached
+		project.save(dataDir + "taskSheet.pdf", options);
+		// ExEnd: render-task-sheet-view
+	}
 }
-
-
-
-

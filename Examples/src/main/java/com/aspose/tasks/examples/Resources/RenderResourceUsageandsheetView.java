@@ -5,74 +5,71 @@
  * is only intended as a supplement to the documentation, and is provided
  * "as is", without warranty of any kind, either expressed or implied.
  */
- 
+
 package com.aspose.tasks.examples.Resources;
 
 import com.aspose.tasks.*;
 import com.aspose.tasks.examples.Utils;
 
-public class RenderResourceUsageandsheetView
-{
-    public static void main(String[] args) throws Exception
-    {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(RenderResourceUsageandsheetView.class);
-        
-	    resourceusage();
+public class RenderResourceUsageandsheetView {
+	public static void main(String[] args) throws Exception {
+		// The path to the documents directory.
+		String dataDir = Utils.getDataDir(RenderResourceUsageandsheetView.class);
 
-	    resourcesheetview();
+		resourceusage();
 
-        //Display result of conversion.
-        System.out.println("Process completed Successfully");
-    }
+		resourcesheetview();
 
-    public static void resourceusage()
-    {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(RenderResourceUsageandsheetView.class);
+		// Display result of conversion.
+		System.out.println("Process completed Successfully");
+	}
 
-        //Read the source Project
-        Project project = new Project(dataDir + "RenderMe.mpp");
-        //Define the SaveOptions with required TimeScale settings as Days
-        SaveOptions options = new PdfSaveOptions();
-        options.setTimescale(Timescale.Days);
-        //Set the Presentation format to ResourceUsage
-        options.setPresentationFormat(PresentationFormat.ResourceUsage);
-        String days = "result_days.pdf";
-        //Save the Project
-        project.save(days, options);
+	public static void resourceusage() {
+		// ExStart: render-task-usage-view
+		// The path to the documents directory.
+		String dataDir = Utils.getDataDir(RenderResourceUsageandsheetView.class);
 
-        //Set the Tiemscale settings to ThirdsOfMonths
-        options.setTimescale(Timescale.ThirdsOfMonths);
-        String thirds = "result_thirdsOfMonths.pdf";
-        //Save the Project
-        project.save(thirds, options);
+		// Read the source Project
+		Project project = new Project(dataDir + "RenderMe.mpp");
+		// Define the SaveOptions with required TimeScale settings as Days
+		SaveOptions options = new PdfSaveOptions();
+		options.setTimescale(Timescale.Days);
+		// Set the Presentation format to ResourceUsage
+		options.setPresentationFormat(PresentationFormat.ResourceUsage);
+		String days = "result_days.pdf";
+		// Save the Project
+		project.save(days, options);
 
-        //Set the Timescale settings to Months
-        options.setTimescale(Timescale.Months);
-        String months = "result_months.pdf";
-        //Save the project
-        project.save(months, options);
-    }
+		// Set the Tiemscale settings to ThirdsOfMonths
+		options.setTimescale(Timescale.ThirdsOfMonths);
+		String thirds = "result_thirdsOfMonths.pdf";
+		// Save the Project
+		project.save(thirds, options);
 
-    public static void resourcesheetview()
-    {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(RenderResourceUsageandsheetView.class);
+		// Set the Timescale settings to Months
+		options.setTimescale(Timescale.Months);
+		String months = "result_months.pdf";
+		// Save the project
+		project.save(months, options);
 
-        //Read the source Project
-        Project project = new Project(dataDir + "TASKSNET_33285.mpp");
-        //Define the SaveOptions
-        SaveOptions options = new PdfSaveOptions();
+		// ExEnd: render-task-usage-view
+	}
 
-        //Set the Presentation format to ResourceSheet
-        options.setPresentationFormat(PresentationFormat.ResourceSheet);
-            project.save("result.pdf", options);
+	public static void resourcesheetview() {
 
-        
-    }
+		// ExStart: render-resource-sheet-view
+		// The path to the documents directory.
+		String dataDir = Utils.getDataDir(RenderResourceUsageandsheetView.class);
+
+		// Read the source Project
+		Project project = new Project(dataDir + "TASKSNET_33285.mpp");
+		// Define the SaveOptions
+		SaveOptions options = new PdfSaveOptions();
+
+		// Set the Presentation format to ResourceSheet
+		options.setPresentationFormat(PresentationFormat.ResourceSheet);
+		project.save("result.pdf", options);
+
+		// ExEnd: render-resource-sheet-view
+	}
 }
-
-
-
-

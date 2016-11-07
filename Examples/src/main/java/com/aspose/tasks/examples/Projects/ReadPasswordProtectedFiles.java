@@ -11,20 +11,16 @@ package com.aspose.tasks.examples.Projects;
 import com.aspose.tasks.Project;
 import com.aspose.tasks.examples.Utils;
 
-public class ReadPasswordProtectedFiles
-{
-    public static void main(String[] args) throws Exception
-    {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(ReadPasswordProtectedFiles.class);
+public class ReadPasswordProtectedFiles {
+	public static void main(String[] args) throws Exception {
+		// ExStart: reading-password-protected-files
+		// The path to the documents directory.
+		String dataDir = Utils.getDataDir(ReadPasswordProtectedFiles.class);
 
-        Project prj = new Project(dataDir + "PassProtected2003.mpp", "pass");
+		Project prj = new Project(dataDir + "PassProtected2003.mpp", "pass");
 
-        //Display result of conversion.
-        System.out.println("Process completed Successfully");
-    }
+		// Display result of conversion.
+		System.out.println("Process completed Successfully");
+		// ExEnd: reading-password-protected-files
+	}
 }
-
-
-
-

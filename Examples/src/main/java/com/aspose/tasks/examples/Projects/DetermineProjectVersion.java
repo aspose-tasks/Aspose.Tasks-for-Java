@@ -12,24 +12,18 @@ import com.aspose.tasks.Prj;
 import com.aspose.tasks.Project;
 import com.aspose.tasks.examples.Utils;
 
-public class DetermineProjectVersion
-{
-    public static void main(String[] args) throws Exception
-    {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(DetermineProjectVersion.class);
+public class DetermineProjectVersion {
+	public static void main(String[] args) throws Exception {
+		// ExStart: determining-project-version
+		// The path to the documents directory.
+		String dataDir = Utils.getDataDir(DetermineProjectVersion.class);
+		Project project = new Project(dataDir + "input.xml");
+		// Display project version property
+		System.out.println("Project Version : " + project.get(Prj.SAVE_VERSION));
+		System.out.println("Last Saved : " + project.get(Prj.LAST_SAVED));
 
-        Project project = new Project(dataDir + "input.xml");
-
-        //Display project version property
-        System.out.println("Project Version : " + project.get(Prj.SAVE_VERSION));
-        System.out.println("Last Saved : " + project.get(Prj.LAST_SAVED));
-
-        //Display result of conversion.
-        System.out.println("Process completed Successfully");
-    }
+		// Display result of conversion.
+		System.out.println("Process completed Successfully");
+		// ExEnd: determining-project-version
+	}
 }
-
-
-
-

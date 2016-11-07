@@ -11,71 +11,64 @@ package com.aspose.tasks.examples.Projects;
 import com.aspose.tasks.*;
 import com.aspose.tasks.examples.Utils;
 
-public class SaveAsCsvTextAndTemplate
-{
-    public static void main(String[] args) throws Exception
-    {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(SaveAsCsvTextAndTemplate.class);
-        savingprojectascsv();
+public class SaveAsCsvTextAndTemplate {
+	public static void main(String[] args) throws Exception {
+		// The path to the documents directory.
+		String dataDir = Utils.getDataDir(SaveAsCsvTextAndTemplate.class);
+		savingprojectascsv();
+		savingprojectastext();
+		savingprojectastemplate();
 
-        savingprojectastext();
+		// Display result of conversion.
+		System.out.println("Process completed Successfully");
+	}
 
-        savingprojectastemplate();
+	public static void savingprojectascsv() {
+		// ExStart: saving-project-csv
+		// The path to the documents directory.
+		String dataDir = Utils.getDataDir(SaveAsCsvTextAndTemplate.class);
+		Project project = new Project(dataDir + "Project5.mpp");
+		project.save(dataDir + "Project5.csv", SaveFileFormat.CSV);
+		// ExEnd: saving-project-csv
 
-        //Display result of conversion.
-        System.out.println("Process completed Successfully");
-    }
+	}
 
-    public static void savingprojectascsv()
-    {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(SaveAsCsvTextAndTemplate.class);
+	public static void savingprojectastext() {
+		// ExStart: saving-project-text
+		// The path to the documents directory.
+		String dataDir = Utils.getDataDir(SaveAsCsvTextAndTemplate.class);
 
-        Project project = new Project(dataDir + "Project5.mpp");
-        project.save(dataDir + "Project5.csv", SaveFileFormat.CSV);
-        
-    }
+		Project project = new Project(dataDir + "Project5.mpp");
+		project.save(dataDir + "Project5.txt", SaveFileFormat.TXT);
+		// ExEnd: saving-project-text
 
-    public static void savingprojectastext()
-    {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(SaveAsCsvTextAndTemplate.class);
-		
-        Project project = new Project(dataDir + "Project5.mpp");
-        project.save(dataDir + "Project5.txt", SaveFileFormat.TXT);
-           
-    }    
+	}
 
-    public static void savingprojectastemplate()
-    {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(SaveAsCsvTextAndTemplate.class);
+	public static void savingprojectastemplate() {
+		// ExStart: saving-project-data-template
+		// The path to the documents directory.
+		String dataDir = Utils.getDataDir(SaveAsCsvTextAndTemplate.class);
 
-        String projectName = "Blank2010.mpp"; // any mpp file (here 2010 format used)
-        Project project = new Project(projectName);
-        ProjectFileInfo projectFileInfo = Project.getProjectFileInfo(dataDir + "Blank2010.mpp");
+		String projectName = "Blank2010.mpp"; // any mpp file (here 2010 format
+												// used)
+		Project project = new Project(projectName);
+		ProjectFileInfo projectFileInfo = Project.getProjectFileInfo(dataDir + "Blank2010.mpp");
 
-        if (FileFormat.MPP14 == projectFileInfo.getProjectFileFormat())
-        {
-            System.out.println("Project file format is ok");
-        }
-        SaveTemplateOptions options = new SaveTemplateOptions();
-        options.setRemoveActualValues(true);
-        options.setRemoveBaselineValues(true);
+		if (FileFormat.MPP14 == projectFileInfo.getProjectFileFormat()) {
+			System.out.println("Project file format is ok");
+		}
+		SaveTemplateOptions options = new SaveTemplateOptions();
+		options.setRemoveActualValues(true);
+		options.setRemoveBaselineValues(true);
 
-        String templateName = "result.mpt";
-        project.saveAsTemplate(templateName);
+		String templateName = "result.mpt";
+		project.saveAsTemplate(templateName);
 
-        ProjectFileInfo templateFileInfo = Project.getProjectFileInfo(templateName);
-        if (FileFormat.MPT14 == templateFileInfo.getProjectFileFormat())
-        {
-            System.out.println("Template FileFormat is ok");
-        }
+		ProjectFileInfo templateFileInfo = Project.getProjectFileInfo(templateName);
+		if (FileFormat.MPT14 == templateFileInfo.getProjectFileFormat()) {
+			System.out.println("Template FileFormat is ok");
+		}
+		// ExEnd: saving-project-data-template
 
-    }
+	}
 }
-
-
-
-

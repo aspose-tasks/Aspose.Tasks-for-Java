@@ -12,46 +12,43 @@ import com.aspose.tasks.Project;
 import com.aspose.tasks.SaveFileFormat;
 import com.aspose.tasks.examples.Utils;
 
-public class SaveDataToExcel
-{
-    public static void main(String[] args) throws Exception
-    {
-        // The path to the documents directory.
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(SaveDataToExcel.class);
+public class SaveDataToExcel {
+	public static void main(String[] args) throws Exception {
+		// The path to the documents directory.
+		// The path to the documents directory.
+		String dataDir = Utils.getDataDir(SaveDataToExcel.class);
 
-        savingprojectasxlsx();
+		savingprojectasxlsx();
 
-	savingprojectasxml();
+		savingprojectasxml();
 
-        //Display result of conversion.
-        System.out.println("Process completed Successfully");
-    }
+		// Display result of conversion.
+		System.out.println("Process completed Successfully");
+	}
 
-    public static void savingprojectasxlsx()
-    {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(SaveDataToExcel.class);
+	public static void savingprojectasxlsx() {
+		// ExStart: saving-project-to-xlsx
+		// The path to the documents directory.
+		String dataDir = Utils.getDataDir(SaveDataToExcel.class);
 
-        //Read the input Project file
-        Project project = new Project(dataDir + "Project5.mpp");
+		// Read the input Project file
+		Project project = new Project(dataDir + "Project5.mpp");
 
-        //Save the Project as XLSX
-        project.save(dataDir + "Project1.XLSX", SaveFileFormat.XLSX);
-        
-    }
+		// Save the Project as XLSX
+		project.save(dataDir + "Project1.XLSX", SaveFileFormat.XLSX);
 
-    public static void savingprojectasxml()
-    {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(SaveDataToExcel.class);
+		// ExEnd: saving-project-to-xlsx
 
-        Project project = new Project(dataDir + "Project5.mpp");
-        project.save(dataDir + "Project5.xml", SaveFileFormat.Spreadsheet2003);
-        
-    }     
+	}
+
+	public static void savingprojectasxml() {
+		// ExStart: saving-project-to-spreadsheet2003
+		// The path to the documents directory.
+		String dataDir = Utils.getDataDir(SaveDataToExcel.class);
+		Project project = new Project(dataDir + "Project5.mpp");
+		project.save(dataDir + "Project5.xml", SaveFileFormat.Spreadsheet2003);
+
+		// ExEnd: saving-project-to-spreadsheet2003
+
+	}
 }
-
-
-
-

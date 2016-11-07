@@ -14,30 +14,23 @@ import com.aspose.tasks.Project;
 import com.aspose.tasks.SaveFileFormat;
 import com.aspose.tasks.examples.Utils;
 
-public class SetCurrencyProperties
-{
-    public static void main(String[] args) throws Exception
-    {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(SetCurrencyProperties.class);
+public class SetCurrencyProperties {
+	public static void main(String[] args) throws Exception {
+		// ExStart: write-currency-properties
+		// The path to the documents directory.
+		String dataDir = Utils.getDataDir(SetCurrencyProperties.class);
+		// Create a project instance
+		Project project = new Project();
 
-        //Create a project instance
-        Project project = new Project();
-
-        //Set currency properties
-        project.set(Prj.CURRENCY_CODE, "AUD");
-        project.set(Prj.CURRENCY_DIGITS, 2);
-        project.set(Prj.CURRENCY_SYMBOL, "$");
-        project.set(Prj.CURRENCY_SYMBOL_POSITION, CurrencySymbolPositionType.After);
-
-        //Save the project as XML project file
-        project.save(dataDir + "project.xml", SaveFileFormat.XML);
-
-        //Display result of conversion.
-        System.out.println("Process completed Successfully");
-    }
+		// Set currency properties
+		project.set(Prj.CURRENCY_CODE, "AUD");
+		project.set(Prj.CURRENCY_DIGITS, 2);
+		project.set(Prj.CURRENCY_SYMBOL, "$");
+		project.set(Prj.CURRENCY_SYMBOL_POSITION, CurrencySymbolPositionType.After);
+		// Save the project as XML project file
+		project.save(dataDir + "project.xml", SaveFileFormat.XML);
+		// Display result of conversion.
+		System.out.println("Process completed Successfully");
+		// ExEnd: write-currency-properties
+	}
 }
-
-
-
-

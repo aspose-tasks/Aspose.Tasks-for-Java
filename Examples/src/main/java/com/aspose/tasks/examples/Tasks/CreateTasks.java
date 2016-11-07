@@ -5,26 +5,21 @@
  * is only intended as a supplement to the documentation, and is provided
  * "as is", without warranty of any kind, either expressed or implied.
  */
- 
+
 package com.aspose.tasks.examples.Tasks;
 
 import com.aspose.tasks.*;
 import com.aspose.tasks.examples.Utils;
 
-public class CreateTasks
-{
-    public static void main(String[] args) throws Exception
-    {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(CreateTasks.class);
+public class CreateTasks {
+	public static void main(String[] args) throws Exception {
+		// ExStart: creating-tasks
+		// The path to the documents directory.
+		String dataDir = Utils.getDataDir(CreateTasks.class);
 
-        Project project = new Project();
-        Task task = project.getRootTask().getChildren().add("Summary1");
-        Task subtask = task.getChildren().add("Subtask1");
-        
-    }
+		Project project = new Project();
+		Task task = project.getRootTask().getChildren().add("Summary1");
+		Task subtask = task.getChildren().add("Subtask1");
+		// ExEnd: creating-tasks
+	}
 }
-
-
-
-

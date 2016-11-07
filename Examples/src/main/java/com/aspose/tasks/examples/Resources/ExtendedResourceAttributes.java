@@ -5,37 +5,27 @@
  * is only intended as a supplement to the documentation, and is provided
  * "as is", without warranty of any kind, either expressed or implied.
  */
- 
+
 package com.aspose.tasks.examples.Resources;
 
 import com.aspose.tasks.*;
 import com.aspose.tasks.examples.Utils;
 
+public class ExtendedResourceAttributes {
 
-public class ExtendedResourceAttributes
-{
+	public static void main(String[] args) throws Exception {
+		// ExStart: extending-resource-attributes
+		// The path to the documents directory.
+		String dataDir = Utils.getDataDir(ExtendedResourceAttributes.class);
+		Project prj = new Project(dataDir + "project5.mpp");
+		Resource res = prj.getResources().toList().get(0);
+		ExtendedAttribute ea = new ExtendedAttribute();
+		ea.setFieldId("11");
+		ea.setValue("MyValueEA");
+		ea.setValueGuid("MyValueGuidEA");
+		res.getExtendedAttributes().add(ea);
+		// ExEnd: extending-resource-attributes
 
-    public static void main(String[] args) throws Exception
-    {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(ExtendedResourceAttributes.class);
-
-
-        Project prj = new Project(dataDir + "project5.mpp");
-
-        Resource res = prj.getResources().toList().get(0);
-
-        ExtendedAttribute ea = new ExtendedAttribute();
-        ea.setFieldId("11");
-        ea.setValue("MyValueEA");
-        ea.setValueGuid("MyValueGuidEA");
-        res.getExtendedAttributes().add(ea);
-        
-    }
+	}
 
 }
-
-
-
-
-

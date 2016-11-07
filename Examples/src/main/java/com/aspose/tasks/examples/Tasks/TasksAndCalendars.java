@@ -5,62 +5,56 @@
  * is only intended as a supplement to the documentation, and is provided
  * "as is", without warranty of any kind, either expressed or implied.
  */
- 
+
 package com.aspose.tasks.examples.Tasks;
 
 import com.aspose.tasks.*;
 import com.aspose.tasks.examples.Utils;
 
-public class TasksAndCalendars
-{
-    public static void main(String[] args) throws Exception
-    {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(TasksAndCalendars.class);
+public class TasksAndCalendars {
+	public static void main(String[] args) throws Exception {
+		// The path to the documents directory.
+		String dataDir = Utils.getDataDir(TasksAndCalendars.class);
 
-	    settingtaskcalendar();
+		settingTaskCalendar();
 
-        //Display result of conversion.
-        System.out.println("Process completed Successfully");
-    }
+		// Display result of conversion.
+		System.out.println("Process completed Successfully");
+	}
 
-    public static void settingtaskcalendar()
-    {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(TasksAndCalendars.class);
+	public static void settingTaskCalendar() {
+		// ExStart: setting-task-calendar
+		// The path to the documents directory.
+		String dataDir = Utils.getDataDir(TasksAndCalendars.class);
 
-        Project project = new Project();
-        Task tsk = project.getRootTask().getChildren().add("Task1");
-        // add a standard calendar
-        Calendar cal = project.getCalendars().add("TaskCal1");
+		Project project = new Project();
+		Task tsk = project.getRootTask().getChildren().add("Task1");
+		// add a standard calendar
+		Calendar cal = project.getCalendars().add("TaskCal1");
 
-        tsk.set(Tsk.CALENDAR, cal);
+		tsk.set(Tsk.CALENDAR, cal);
+		// ExEnd: setting-task-calendar
+	}
 
-    }
+	public static void gettingTaskCalendar() {
+		// ExStart: getting-task-calendar
+		// The path to the documents directory.
+		String dataDir = Utils.getDataDir(TasksAndCalendars.class);
 
-    public static void gettingtaskcalendar()
-    {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(TasksAndCalendars.class);
+		// create a project instance
+		Project prj = new Project(dataDir + "project5.mpp");
 
-        //create a project instance
-        Project prj = new Project(dataDir + "project5.mpp");
+		// Declare ChildTasksCollector class object
+		ChildTasksCollector collector = new ChildTasksCollector();
 
-        //Declare ChildTasksCollector class object
-        ChildTasksCollector collector = new ChildTasksCollector();
+		// Use TaskUtils to get all children tasks in RootTask
+		TaskUtils.apply(prj.getRootTask(), collector, 0);
 
-        //Use TaskUtils to get all children tasks in RootTask
-        TaskUtils.apply(prj.getRootTask(), collector, 0);
-
-        //Parse all the recursive children
-        for(Task tsk:collector.getTasks())
-        {
-            Calendar tskCal = tsk.get(Tsk.CALENDAR);
-            System.out.println("Task calendar name:"+ tskCal.getName());
-        }
-     }
+		// Parse all the recursive children
+		for (Task tsk : collector.getTasks()) {
+			Calendar tskCal = tsk.get(Tsk.CALENDAR);
+			System.out.println("Task calendar name:" + tskCal.getName());
+		}
+		// ExEnd: getting-task-calendar
+	}
 }
-
-
-
-

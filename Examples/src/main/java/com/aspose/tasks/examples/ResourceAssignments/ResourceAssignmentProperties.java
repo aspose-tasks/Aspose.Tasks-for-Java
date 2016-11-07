@@ -13,51 +13,46 @@ import com.aspose.tasks.examples.Utils;
 
 import java.math.BigDecimal;
 
-public class ResourceAssignmentProperties
-{
-    public static void main(String[] args) throws Exception
-    {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(ResourceAssignmentProperties.class);
+public class ResourceAssignmentProperties {
+	public static void main(String[] args) throws Exception {
+		// The path to the documents directory.
+		String dataDir = Utils.getDataDir(ResourceAssignmentProperties.class);
 
-        settingresourceassignmentproperties();
+		settingResourceAssignmentProperties();
 
-	    gettingresourceassignmentproperties();
+		gettingResourceaAsignmentProperties();
 
-        //Display result of conversion.
-        System.out.println("Process completed Successfully");
-    }
+		// Display result of conversion.
+		System.out.println("Process completed Successfully");
+	}
 
-    public static void settingresourceassignmentproperties()
-    {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(ResourceAssignmentProperties.class);
+	public static void settingResourceAssignmentProperties() {
+		// ExStart: setting-resource-assignment-properties
+		// The path to the documents directory.
+		String dataDir = Utils.getDataDir(ResourceAssignmentProperties.class);
 
-        Project project = new Project();
+		Project project = new Project();
 
-        Task task = project.getRootTask().getChildren().add("Task");
-        Resource rsc = project.getResources().add("Rsc");
-        rsc.set(Rsc.STANDARD_RATE, BigDecimal.valueOf(10));
-        rsc.set(Rsc.OVERTIME_RATE, BigDecimal.valueOf(15));
+		Task task = project.getRootTask().getChildren().add("Task");
+		Resource rsc = project.getResources().add("Rsc");
+		rsc.set(Rsc.STANDARD_RATE, BigDecimal.valueOf(10));
+		rsc.set(Rsc.OVERTIME_RATE, BigDecimal.valueOf(15));
 
-        ResourceAssignment assn = project.getResourceAssignments().add(task, rsc);
-    }
+		ResourceAssignment assn = project.getResourceAssignments().add(task, rsc);
+		// ExEnd: setting-resource-assignment-properties
+	}
 
-    public static void gettingresourceassignmentproperties()
-    {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(ResourceAssignmentProperties.class);
+	public static void gettingResourceaAsignmentProperties() {
+		// ExStart: getting-resource-assignment-properties
+		// The path to the documents directory.
+		String dataDir = Utils.getDataDir(ResourceAssignmentProperties.class);
 
-        Project prj = new Project(dataDir + "input.mpp");
-        for (ResourceAssignment ra:prj.getResourceAssignments())
-        {
-                System.out.println(ra.get(Asn.UID));
-                System.out.println(ra.get(Asn.START).toString());
-                System.out.println(ra.get(Asn.FINISH).toString());
-        }
-    }    
+		Project prj = new Project(dataDir + "input.mpp");
+		for (ResourceAssignment ra : prj.getResourceAssignments()) {
+			System.out.println(ra.get(Asn.UID));
+			System.out.println(ra.get(Asn.START).toString());
+			System.out.println(ra.get(Asn.FINISH).toString());
+		}
+		// ExEnd: getting-resource-assignment-properties
+	}
 }
-
-
-
-

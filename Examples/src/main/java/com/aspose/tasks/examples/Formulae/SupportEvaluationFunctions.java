@@ -10,58 +10,44 @@ package com.aspose.tasks.examples.Formulae;
 
 import com.aspose.tasks.examples.Utils;
 
-public class SupportEvaluationFunctions
-{
-    public static void main(String[] args) throws Exception
-    {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(SupportEvaluationFunctions.class);
+public class SupportEvaluationFunctions {
+	public static void main(String[] args) throws Exception {
+		// The path to the documents directory.
+		String dataDir = Utils.getDataDir(SupportEvaluationFunctions.class);
 
-        calculationofmathexpressions();
+		calculationofmathexpressions();
 
-        calculationofgeneralfunctions();
+		calculationofgeneralfunctions();
 
-        calculationoftextfunctions();
+		calculationoftextfunctions();
 
-        calculationofdatetimefunctions();
+		calculationofdatetimefunctions();
 
-        //Display result of conversion.
-        System.out.println("Process completed Successfully");
-    }
+		// Display result of conversion.
+		System.out.println("Process completed Successfully");
+	}
 
-    public static void calculationofmathexpressions()
-    {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(SupportEvaluationFunctions.class);
+	public static void calculationofmathexpressions() {
+		// The path to the documents directory.
+		String dataDir = Utils.getDataDir(SupportEvaluationFunctions.class);
 
+	}
 
-	        
-    }
+	public static void calculationofgeneralfunctions() {
+		// The path to the documents directory.
+		String dataDir = Utils.getDataDir(SupportEvaluationFunctions.class);
 
-    public static void calculationofgeneralfunctions()
-    {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(SupportEvaluationFunctions.class);
+	}
 
-        
-    }    
+	public static void calculationoftextfunctions() {
+		// The path to the documents directory.
+		String dataDir = Utils.getDataDir(SupportEvaluationFunctions.class);
 
-    public static void calculationoftextfunctions()
-    {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(SupportEvaluationFunctions.class);
+	}
 
-	
-    }  
+	public static void calculationofdatetimefunctions() {
+		// The path to the documents directory.
+		String dataDir = Utils.getDataDir(SupportEvaluationFunctions.class);
 
-    public static void calculationofdatetimefunctions()
-    {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(SupportEvaluationFunctions.class);
-
-    }
+	}
 }
-
-
-
-

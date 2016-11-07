@@ -13,41 +13,37 @@ import com.aspose.tasks.Project;
 import com.aspose.tasks.SaveFileFormat;
 import com.aspose.tasks.examples.Utils;
 
-public class CurrencyDigits
-{
-    public static void main(String[] args) throws Exception
-    {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(CurrencyDigits.class);
+public class CurrencyDigits {
+	public static void main(String[] args) throws Exception {
+		// The path to the documents directory.
+		String dataDir = Utils.getDataDir(CurrencyDigits.class);
+		settingCurrencyDigits();
+		gettingCurrencyDigits();
 
-        settingcurrencydigits();
+		// Display result of conversion.
+		System.out.println("Process completed Successfully");
+	}
 
-	    gettingcurrencydigits();
+	public static void settingCurrencyDigits() {
+		// ExStart: setting-currency-digits
+		// The path to the documents directory.
+		String dataDir = Utils.getDataDir(CurrencyDigits.class);
 
-        //Display result of conversion.
-        System.out.println("Process completed Successfully");
-    }
+		Project project = new Project();
+		project.set(Prj.CURRENCY_DIGITS, 2);
+		project.save(dataDir + "ProjectCurrDigits.mpp", SaveFileFormat.MPP);
+		// ExEnd: setting-currency-digits
 
-    public static void settingcurrencydigits()
-    {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(CurrencyDigits.class);
+	}
 
-        Project project = new Project();
-        project.set(Prj.CURRENCY_DIGITS, 2);
-        project.save(dataDir + "ProjectCurrDigits.mpp", SaveFileFormat.MPP);
-    }
+	public static void gettingCurrencyDigits() {
+		// ExStart: getting-currency-digits
+		// The path to the documents directory.
+		String dataDir = Utils.getDataDir(CurrencyDigits.class);
 
-    public static void gettingcurrencydigits()
-    {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(CurrencyDigits.class);
+		Project project = new Project(dataDir + "project5.mpp");
+		System.out.println(project.get(Prj.CURRENCY_DIGITS));
+		// ExEnd: getting-currency-digits
 
-        Project project = new Project(dataDir + "project5.mpp");
-        System.out.println(project.get(Prj.CURRENCY_DIGITS));
-    }    
+	}
 }
-
-
-
-

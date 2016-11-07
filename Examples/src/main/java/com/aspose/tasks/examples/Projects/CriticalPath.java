@@ -11,12 +11,11 @@ package com.aspose.tasks.examples.Projects;
 import com.aspose.tasks.*;
 import com.aspose.tasks.examples.Utils;
 
-public class CriticalPath
-{
-    public static void main(String[] args) throws Exception
-    {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(CriticalPath.class);
+public class CriticalPath {
+	public static void main(String[] args) throws Exception {
+		// ExStart: critical-path
+		// The path to the documents directory.
+		String dataDir = Utils.getDataDir(CriticalPath.class);
 
 		Project project = new Project(dataDir + "New project 2010.mpp");
 		project.setCalculationMode(CalculationMode.Automatic);
@@ -27,17 +26,12 @@ public class CriticalPath
 
 		project.getTaskLinks().add(subtask1, subtask2, TaskLinkType.FinishToStart);
 
-		//Display the critical path now
-		for(Task task:project.getCriticalPath())
-		{
-		    System.out.println(task.get(Tsk.NAME));
+		// Display the critical path now
+		for (Task task : project.getCriticalPath()) {
+			System.out.println(task.get(Tsk.NAME));
 		}
-
-        //Display result of conversion.
-        System.out.println("Process completed Successfully");
-    }
+		// ExEnd: critical-path
+		// Display result of conversion.
+		System.out.println("Process completed Successfully");
+	}
 }
-
-
-
-

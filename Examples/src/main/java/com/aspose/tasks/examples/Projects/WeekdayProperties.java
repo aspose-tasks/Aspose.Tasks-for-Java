@@ -11,39 +11,37 @@ package com.aspose.tasks.examples.Projects;
 import com.aspose.tasks.*;
 import com.aspose.tasks.examples.Utils;
 
-public class WeekdayProperties
-{
-    public static void main(String[] args) throws Exception
-    {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(WeekdayProperties.class);
+public class WeekdayProperties {
+	public static void main(String[] args) throws Exception {
+		// ExStart: reading-weekday-properties
+		// The path to the documents directory.
+		String dataDir = Utils.getDataDir(WeekdayProperties.class);
 
-        Project project = new Project(dataDir + "project.mpp");
+		Project project = new Project(dataDir + "project.mpp");
 
-        //Display week days properties
-        System.out.println("Week Start Date : " + project.get(Prj.WEEK_START_DAY).toString());
-        System.out.println("Days Per Month : " + project.get(Prj.DAYS_PER_MONTH).toString());
-        System.out.println("Minutes Per Day : " + project.get(Prj.MINUTES_PER_DAY).toString());
-        System.out.println("Minutes Per Week : " + project.get(Prj.MINUTES_PER_WEEK).toString());
+		// Display week days properties
+		System.out.println("Week Start Date : " + project.get(Prj.WEEK_START_DAY).toString());
+		System.out.println("Days Per Month : " + project.get(Prj.DAYS_PER_MONTH).toString());
+		System.out.println("Minutes Per Day : " + project.get(Prj.MINUTES_PER_DAY).toString());
+		System.out.println("Minutes Per Week : " + project.get(Prj.MINUTES_PER_WEEK).toString());
+		// ExEnd: reading-weekday-properties
+		// ---------- Setting Week Day Properties
+		// ExStart: writing-weekday-properties
+		// Create a project instance
+		Project prj = new Project();
 
-        //---------- Setting Week Day Properties
-        //Create a project instance
-        Project prj = new Project();
+		// Set week days properties
+		project.set(Prj.WEEK_START_DAY, DayType.Monday);
+		project.set(Prj.DAYS_PER_MONTH, 24);
+		project.set(Prj.MINUTES_PER_DAY, 540);
+		project.set(Prj.MINUTES_PER_WEEK, 3240);
 
-        //Set week days properties
-        project.set(Prj.WEEK_START_DAY, DayType.Monday);
-        project.set(Prj.DAYS_PER_MONTH, 24);
-        project.set(Prj.MINUTES_PER_DAY, 540);
-        project.set(Prj.MINUTES_PER_WEEK, 3240);
+		// Save the project as XML project file
+		prj.save(dataDir + "savedProject.xml", SaveFileFormat.XML);
 
-        //Save the project as XML project file
-        prj.save(dataDir + "savedProject.xml", SaveFileFormat.XML);
+		// Display result of conversion.
+		System.out.println("Process completed Successfully");
+		// ExEnd: writing-weekday-properties
 
-        //Display result of conversion.
-        System.out.println("Process completed Successfully");
-    }
+	}
 }
-
-
-
-

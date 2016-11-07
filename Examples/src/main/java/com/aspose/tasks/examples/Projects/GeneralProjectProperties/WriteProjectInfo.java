@@ -11,28 +11,24 @@ package com.aspose.tasks.examples.Projects.GeneralProjectProperties;
 import com.aspose.tasks.*;
 import com.aspose.tasks.examples.Utils;
 
-public class WriteProjectInfo
-{
-    public static void main(String[] args) throws Exception
-    {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(WriteProjectInfo.class);
+public class WriteProjectInfo {
+	public static void main(String[] args) throws Exception {
+		// ExStart: writing-project-properties
+		// The path to the documents directory.
+		String dataDir = Utils.getDataDir(WriteProjectInfo.class);
 
-        //Create a project instance
-        Project project = new Project();
-        //Set project information properties
-        project.set(Prj.SCHEDULE_FROM_START, new NullableBool(true));
-        java.util.Calendar cal = java.util.Calendar.getInstance();
-        cal.set(2014, 7, 10);
-        project.set(Prj.START_DATE,cal.getTime());
-        project.set(Prj.CURRENT_DATE, cal.getTime());
-        project.set(Prj.STATUS_DATE, cal.getTime());
+		// Create a project instance
+		Project project = new Project();
+		// Set project information properties
+		project.set(Prj.SCHEDULE_FROM_START, new NullableBool(true));
+		java.util.Calendar cal = java.util.Calendar.getInstance();
+		cal.set(2014, 7, 10);
+		project.set(Prj.START_DATE, cal.getTime());
+		project.set(Prj.CURRENT_DATE, cal.getTime());
+		project.set(Prj.STATUS_DATE, cal.getTime());
 
-        //Save the Project as XML
-        project.save(dataDir + "project3.xml", SaveFileFormat.XML);
-    }
+		// Save the Project as XML
+		project.save(dataDir + "project3.xml", SaveFileFormat.XML);
+		// ExEnd: writing-project-properties
+	}
 }
-
-
-
-

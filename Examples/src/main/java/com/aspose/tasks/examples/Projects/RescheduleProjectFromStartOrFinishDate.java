@@ -11,56 +11,61 @@ package com.aspose.tasks.examples.Projects;
 import com.aspose.tasks.*;
 import com.aspose.tasks.examples.Utils;
 
-public class RescheduleProjectFromStartOrFinishDate
-{
-    public static void main(String[] args) throws Exception
-    {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(RescheduleProjectFromStartOrFinishDate.class);
+public class RescheduleProjectFromStartOrFinishDate {
+	public static void main(String[] args) throws Exception {
+		// The path to the documents directory.
+		String dataDir = Utils.getDataDir(RescheduleProjectFromStartOrFinishDate.class);
+		scheduleFromStart();
+		scheduleFromFinish();
 
-        schedulefromstart();
+		// Display result of conversion.
+		System.out.println("Process completed Successfully");
+	}
 
-	    schedulefromfinish();
+	public static void scheduleFromStart() {
+		// ExStart: schedule-from-start
+		// The path to the documents directory.
+		String dataDir = Utils.getDataDir(RescheduleProjectFromStartOrFinishDate.class);
 
-        //Display result of conversion.
-        System.out.println("Process completed Successfully");
-    }
+		Project project = new Project(dataDir + "Project.mpp");
+		project.set(Prj.SCHEDULE_FROM_START, new NullableBool(true));
+		java.util.Calendar cal = java.util.Calendar.getInstance();
+		cal.set(2020, 1, 1, 0, 0, 0);
+		project.set(Prj.START_DATE, cal.getTime());
 
-    public static void schedulefromstart()
-    {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(RescheduleProjectFromStartOrFinishDate.class);
+		// Now all tasks dates (Start, Finish, EarlyStart, EarlyFinish,
+		// LateStart,
+		// LateFinish) are calculated.
+		// To get the critical path we need to calculate slacks (can be invoked
+		// in
+		// separate thread, but only after calculation of all early/late dates)
+		project.recalculate();
+		TaskCollection criticalPath = project.getCriticalPath();
 
-        Project project = new Project(dataDir + "Project.mpp");
-        project.set(Prj.SCHEDULE_FROM_START, new NullableBool(true));
-        java.util.Calendar cal = java.util.Calendar.getInstance();
-        cal.set(2020, 1, 1, 0, 0, 0);
-        project.set(Prj.FINISH_DATE, cal.getTime());
+		// ExEnd: schedule-from-start
 
-        // Now all tasks dates (Start, Finish, EarlyStart, EarlyFinish, LateStart, LateFinish) are calculated.
-        // To get the critical path we need to calculate slacks (can be invoked in separate thread, but only after calculation of all early/late dates)
-        project.recalculate();
-        TaskCollection criticalPath = project.getCriticalPath();
-    }
+	}
 
-    public static void schedulefromfinish()
-    {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(RescheduleProjectFromStartOrFinishDate.class);
+	public static void scheduleFromFinish() {
+		// ExStart: schedule-from-finish
+		// The path to the documents directory.
+		String dataDir = Utils.getDataDir(RescheduleProjectFromStartOrFinishDate.class);
 
-        Project project = new Project(dataDir + "Project.mpp");
-        project.set(Prj.SCHEDULE_FROM_START, new NullableBool(false));
-        java.util.Calendar cal = java.util.Calendar.getInstance();
-        cal.set(2020, 1, 1, 0, 0, 0);
-        project.set(Prj.FINISH_DATE, cal.getTime());
+		Project project = new Project(dataDir + "Project.mpp");
+		project.set(Prj.SCHEDULE_FROM_START, new NullableBool(false));
+		java.util.Calendar cal = java.util.Calendar.getInstance();
+		cal.set(2020, 1, 1, 0, 0, 0);
+		project.set(Prj.FINISH_DATE, cal.getTime());
 
-        // Now all tasks dates (Start, Finish, EarlyStart, EarlyFinish, LateStart, LateFinish) are calculated.
-        // To get the critical path we need to calculate slacks (can be invoked in separate thread, but only after calculation of all early/late dates)
-        project.recalculate();
-        TaskCollection criticalPath = project.getCriticalPath();
-    }     
+		// Now all tasks dates (Start, Finish, EarlyStart, EarlyFinish,
+		// LateStart,
+		// LateFinish) are calculated.
+		// To get the critical path we need to calculate slacks (can be invoked
+		// in
+		// separate thread, but only after calculation of all early/late dates)
+		project.recalculate();
+		TaskCollection criticalPath = project.getCriticalPath();
+
+		// ExEnd: schedule-from-finish
+	}
 }
-
-
-
-

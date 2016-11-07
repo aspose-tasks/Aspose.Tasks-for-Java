@@ -5,28 +5,25 @@
  * is only intended as a supplement to the documentation, and is provided
  * "as is", without warranty of any kind, either expressed or implied.
  */
- 
+
 package com.aspose.tasks.examples.Tasks;
 
 import com.aspose.tasks.*;
 import com.aspose.tasks.examples.Utils;
 
-public class ChangeProgressOfTask
-{
-    public static void main(String[] args) throws Exception
-    {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(ChangeProgressOfTask.class);
+public class ChangeProgressOfTask {
+	public static void main(String[] args) throws Exception {
+		// ExStart: change-progress-of-task
+		// The path to the documents directory.
+		String dataDir = Utils.getDataDir(ChangeProgressOfTask.class);
 
-        Project project = new Project();
-        System.out.println(project.getCalculationMode());
-    
-        Task task = project.getRootTask().getChildren().add("Task");
-        task.set(Tsk.DURATION, project.getDuration(2));
-        task.set(Tsk.PERCENT_COMPLETE, 50);
-    }
+		Project project = new Project();
+		System.out.println(project.getCalculationMode());
+
+		Task task = project.getRootTask().getChildren().add("Task");
+		task.set(Tsk.DURATION, project.getDuration(2));
+		task.set(Tsk.PERCENT_COMPLETE, 50);
+
+		// ExEnd: change-progress-of-task
+	}
 }
-
-
-
-

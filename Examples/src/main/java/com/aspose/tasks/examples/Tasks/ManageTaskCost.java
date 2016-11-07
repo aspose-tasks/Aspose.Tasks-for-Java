@@ -5,7 +5,7 @@
  * is only intended as a supplement to the documentation, and is provided
  * "as is", without warranty of any kind, either expressed or implied.
  */
- 
+
 package com.aspose.tasks.examples.Tasks;
 
 import com.aspose.tasks.*;
@@ -13,28 +13,26 @@ import com.aspose.tasks.examples.Utils;
 
 import java.math.BigDecimal;
 
-public class ManageTaskCost
-{
-    public static void main(String[] args) throws Exception
-    {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(ManageTaskCost.class);
+public class ManageTaskCost {
+	public static void main(String[] args) throws Exception {
 
-        Project project = new Project();
-        Task task = project.getRootTask().getChildren().add("Task");
+		// ExStart: manage-task-cost
+		// The path to the documents directory.
+		String dataDir = Utils.getDataDir(ManageTaskCost.class);
 
-        task.set(Tsk.COST, BigDecimal.valueOf(800));
+		Project project = new Project();
+		Task task = project.getRootTask().getChildren().add("Task");
 
-        System.out.println(task.get(Tsk.REMAINING_COST));
-        System.out.println(task.get(Tsk.FIXED_COST));
-        System.out.println(task.get(Tsk.COST_VARIANCE));
-        System.out.println(project.getRootTask().get(Tsk.COST));
-        System.out.println(project.getRootTask().get(Tsk.FIXED_COST));
-        System.out.println(project.getRootTask().get(Tsk.REMAINING_COST));
-        System.out.println(project.getRootTask().get(Tsk.COST_VARIANCE));
-    }
+		task.set(Tsk.COST, BigDecimal.valueOf(800));
+
+		System.out.println(task.get(Tsk.REMAINING_COST));
+		System.out.println(task.get(Tsk.FIXED_COST));
+		System.out.println(task.get(Tsk.COST_VARIANCE));
+		System.out.println(project.getRootTask().get(Tsk.COST));
+		System.out.println(project.getRootTask().get(Tsk.FIXED_COST));
+		System.out.println(project.getRootTask().get(Tsk.REMAINING_COST));
+		System.out.println(project.getRootTask().get(Tsk.COST_VARIANCE));
+
+		// ExEnd: manage-task-cost
+	}
 }
-
-
-
-

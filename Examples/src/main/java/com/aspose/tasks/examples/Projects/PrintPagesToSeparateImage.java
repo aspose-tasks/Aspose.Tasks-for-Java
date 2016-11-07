@@ -14,43 +14,40 @@ import com.aspose.tasks.examples.Utils;
 import java.awt.*;
 import java.util.ArrayList;
 
-public class PrintPagesToSeparateImage
-{
-    public static void main(String[] args) throws Exception
-    {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(PrintPagesToSeparateImage.class);
-	
-        Project project = new Project(dataDir + "CustomerFeedback.mpp");
-        ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFileFormat.PNG);
+public class PrintPagesToSeparateImage {
+	public static void main(String[] args) throws Exception {
+		// ExStart: saving-project-pages-to-seperate-images
+		// The path to the documents directory.
+		String dataDir = Utils.getDataDir(PrintPagesToSeparateImage.class);
 
-        java.util.Calendar cal = java.util.Calendar.getInstance();
-        cal.setTime(project.get(Prj.START_DATE));
-        cal.add(java.util.Calendar.DATE, -3);
+		Project project = new Project(dataDir + "CustomerFeedback.mpp");
+		ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFileFormat.PNG);
 
-        saveOptions.setStartDate(cal.getTime());
-        saveOptions.setEndDate(project.get(Prj.FINISH_DATE));
+		java.util.Calendar cal = java.util.Calendar.getInstance();
+		cal.setTime(project.get(Prj.START_DATE));
+		cal.add(java.util.Calendar.DATE, -3);
 
-        saveOptions.setMarkCriticalTasks(true);
-        saveOptions.setLegendOnEachPage(false);
+		saveOptions.setStartDate(cal.getTime());
+		saveOptions.setEndDate(project.get(Prj.FINISH_DATE));
 
-        saveOptions.setGridlines(new ArrayList<Gridline>());
+		saveOptions.setMarkCriticalTasks(true);
+		saveOptions.setLegendOnEachPage(false);
 
-        Gridline gridline = new Gridline();
-        gridline.setGridlineType(GridlineType.GanttRow);
-        gridline.setColor(Color.BLUE);
-        gridline.setPattern(LinePattern.Dashed);
-        saveOptions.getGridlines().add(gridline);
+		saveOptions.setGridlines(new ArrayList<Gridline>());
 
-        // Save the whole project layout to one file
-        project.save(dataDir + "CustomerFeedback.png", saveOptions);
+		Gridline gridline = new Gridline();
+		gridline.setGridlineType(GridlineType.GanttRow);
+		gridline.setColor(Color.BLUE);
+		gridline.setPattern(LinePattern.Dashed);
+		saveOptions.getGridlines().add(gridline);
 
-        // Save project layout to separate files
-        saveOptions.setSaveToSeparateFiles(true);
-        project.save(dataDir + "CustomerFeedback_.png", saveOptions);
-    }
+		// Save the whole project layout to one file
+		project.save(dataDir + "CustomerFeedback.png", saveOptions);
+
+		// Save project layout to separate files
+		saveOptions.setSaveToSeparateFiles(true);
+		project.save(dataDir + "CustomerFeedback_.png", saveOptions);
+
+		// ExEnd: saving-project-pages-to-seperate-images
+	}
 }
-
-
-
-

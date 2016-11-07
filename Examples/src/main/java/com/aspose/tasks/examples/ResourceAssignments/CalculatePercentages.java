@@ -5,29 +5,24 @@
  * is only intended as a supplement to the documentation, and is provided
  * "as is", without warranty of any kind, either expressed or implied.
  */
- 
+
 package com.aspose.tasks.examples.ResourceAssignments;
 
 import com.aspose.tasks.*;
 import com.aspose.tasks.examples.Utils;
 
-public class CalculatePercentages
-{
-    public static void main(String[] args) throws Exception
-    {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(CalculatePercentages.class);
+public class CalculatePercentages {
+	public static void main(String[] args) throws Exception {
+		// ExStart: calculating-percentages
+		// The path to the documents directory.
+		String dataDir = Utils.getDataDir(CalculatePercentages.class);
 
-        Project project = new Project(dataDir + "project5.mpp");
+		Project project = new Project(dataDir + "project5.mpp");
 
-        for (ResourceAssignment ra:project.getResourceAssignments())
-        {
-                System.out.println(ra.get(Asn.PERCENT_WORK_COMPLETE).toString());
-        }
-        
-    }
+		for (ResourceAssignment ra : project.getResourceAssignments()) {
+			System.out.println(ra.get(Asn.PERCENT_WORK_COMPLETE).toString());
+		}
+		// ExEnd: calculating-percentages
+
+	}
 }
-
-
-
-

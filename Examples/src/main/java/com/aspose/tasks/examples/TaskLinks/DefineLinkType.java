@@ -5,56 +5,50 @@
  * is only intended as a supplement to the documentation, and is provided
  * "as is", without warranty of any kind, either expressed or implied.
  */
- 
+
 package com.aspose.tasks.examples.TaskLinks;
 
 import com.aspose.tasks.*;
 import com.aspose.tasks.examples.Utils;
 
-public class DefineLinkType
-{
-    public static void main(String[] args) throws Exception
-    {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(DefineLinkType.class);
+public class DefineLinkType {
+	public static void main(String[] args) throws Exception {
+		// The path to the documents directory.
+		String dataDir = Utils.getDataDir(DefineLinkType.class);
 
-        settinglinktype();
-	    gettinglinktype();
-	
-	//Display result of conversion.
-        System.out.println("Process completed Successfully");
-    }
+		settingLinkType();
+		gettingLinkType();
 
-    public static void settinglinktype()
-    { 
+		// Display result of conversion.
+		System.out.println("Process completed Successfully");
+	}
 
-	// The path to the documents directory.
-        String dataDir = "src/programmersguide/workingwithtasklinks/defininglinktype/data/";
+	public static void settingLinkType() {
 
-        Project project = new Project();
-        Task pred = project.getRootTask().getChildren().add("Task 1");
-        Task succ = project.getRootTask().getChildren().add("Task 2");
-        TaskLink link = project.getTaskLinks().add(pred, succ);
-        link.setLinkType(TaskLinkType.StartToStart);
-        }
+		// ExStart: setting-link-types
+		// The path to the documents directory.
+		String dataDir = Utils.getDataDir(DefineLinkType.class);
 
-        public static void gettinglinktype()
-        {
+		Project project = new Project();
+		Task pred = project.getRootTask().getChildren().add("Task 1");
+		Task succ = project.getRootTask().getChildren().add("Task 2");
+		TaskLink link = project.getTaskLinks().add(pred, succ);
+		link.setLinkType(TaskLinkType.StartToStart);
 
-        // The path to the documents directory.
-            String dataDir = "src/programmersguide/workingwithtasklinks/defininglinktype/data/";
+		// ExEnd: setting-link-types
+	}
 
-        Project project = new Project("Input.mpp");
-        TaskLinkCollection allinks= project.getTaskLinks();
-        for (TaskLink tsklnk:allinks)
-        {
-        System.out.println(tsklnk.getLinkType());
-        }
+	public static void gettingLinkType() {
+		// ExStart: getting-link-types
+		// The path to the documents directory.
+		String dataDir = Utils.getDataDir(DefineLinkType.class);
 
-           
-    }
+		Project project = new Project("Input.mpp");
+		TaskLinkCollection allinks = project.getTaskLinks();
+		for (TaskLink tsklnk : allinks) {
+			System.out.println(tsklnk.getLinkType());
+		}
+		// ExEnd: getting-link-types
+
+	}
 }
-
-
-
-

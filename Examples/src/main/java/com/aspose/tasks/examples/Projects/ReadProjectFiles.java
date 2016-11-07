@@ -7,39 +7,24 @@
  */
 package com.aspose.tasks.examples.Projects;
 
-
-import com.aspose.tasks.*;
+import com.aspose.tasks.Prj;
 import com.aspose.tasks.Project;
 import com.aspose.tasks.examples.Utils;
 
-import java.io.FileInputStream;
-
-public class ReadProjectFiles
-{
-    public static void main(String[] args) throws Exception
-    {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(ReadProjectFiles.class);
-
-       		Project existingProject = null;
-            FileInputStream prjStream = null;
-            try
-            {
-                prjStream = new FileInputStream(dataDir + "Project1.mpp");
-                existingProject = new Project(prjStream);
-                prjStream.close();
-            }
-            catch(Exception ex)
-            {
-
-            }
-            System.out.println("Calendar : " + existingProject.get(Prj.NAME));
-
-            //Display result of conversion.
-            System.out.println("Process completed Successfully");
-    }
+public class ReadProjectFiles {
+	public static void main(String[] args) throws Exception {
+		// ExStart: reading-a-project-file
+		// The path to the documents directory.
+		String dataDir = Utils.getDataDir(ReadProjectFiles.class);
+		Project existingProject = null;
+		try {
+			existingProject = new Project(dataDir + "Project1.xml");
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		System.out.println("Calendar : " + existingProject.get(Prj.NAME));
+		// Display result of conversion.
+		System.out.println("Process completed Successfully");
+		// ExEnd: reading-a-project-file
+	}
 }
-
-
-
-
