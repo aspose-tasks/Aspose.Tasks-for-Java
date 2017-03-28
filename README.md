@@ -1,6 +1,6 @@
-##Aspose.Tasks for Java
+## Aspose.Tasks for Java
 
-This package contains [Examples](https://github.com/asposetasks/Aspose_Tasks_Java/tree/master/Examples) and Showcase projects for [Aspose.Tasks for Java](http://www.aspose.com/categories/java-components/aspose.tasks-for-java/default.aspx) and will help you write your own applications.
+This package contains [Examples](https://github.com/asposetasks/Aspose_Tasks_Java/tree/master/Examples) and Showcase projects for [Aspose.Tasks for Java](https://www.aspose.com/products/tasks/java) and will help you write your own applications.
 
 <p align="center">
 
@@ -16,8 +16,8 @@ Directory | Description
 ## Resources
 
 + **Website:** [www.aspose.com](http://www.aspose.com)
-+ **Product Home:** [Aspose.Tasks for Java](http://www.aspose.com/java/project-management-component.aspx)
-+ **Download:** [Download Aspose.Tasks for Java](http://www.aspose.com/community/files/72/java-components/aspose.tasks-for-java/default.aspx)
-+ **Documentation:** [Aspose.Tasks for Java Documentation](http://www.aspose.com/docs/display/tasksjava/Home)
-+ **Forum:** [Aspose.Tasks for Java Forum](http://www.aspose.com/community/forums/aspose.tasks-product-family/75/showforum.aspx)
++ **Product Home:** [Aspose.Tasks for Java](https://www.aspose.com/products/tasks/java)
++ **Download:** [Download Aspose.Tasks for Java](https://downloads.aspose.com/tasks/java)
++ **Documentation:** [Aspose.Tasks for Java Documentation](https://docs.aspose.com/display/tasksjava/Home)
++ **Forum:** [Aspose.Tasks for Java Forum](https://www.aspose.com/community/forums/aspose.tasks-product-family/96/showforum.aspx)
 + **Blog:** [Aspose.Tasks for Java Blog](http://www.aspose.com/blogs/aspose-products/aspose-tasks-product-family.html)
