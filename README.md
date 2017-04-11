@@ -16,9 +16,9 @@ Directory | Description
 
 ## Resources
 
-+ **Website:** [www.aspose.com](http://www.aspose.com)
++ **Website:** [www.aspose.com](https://www.aspose.com)
 + **Product Home:** [Aspose.Tasks for Java](https://www.aspose.com/products/tasks/java)
 + **Download:** [Download Aspose.Tasks for Java](https://downloads.aspose.com/tasks/java)
 + **Documentation:** [Aspose.Tasks for Java Documentation](https://docs.aspose.com/display/tasksjava/Home)
 + **Forum:** [Aspose.Tasks for Java Forum](https://www.aspose.com/community/forums/aspose.tasks-product-family/96/showforum.aspx)
-+ **Blog:** [Aspose.Tasks for Java Blog](http://www.aspose.com/blogs/aspose-products/aspose-tasks-product-family.html)
++ **Blog:** [Aspose.Tasks for Java Blog](https://blog.aspose.com/category/aspose-products/aspose-tasks-product-family/)
