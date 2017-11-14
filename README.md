@@ -1,4 +1,4 @@
-## Aspose.Tasks for Java
+## Aspose.Tasks for Java 
 
 This package contains [Examples](Examples), [Plugins](Plugins) and Showcase projects for [Aspose.Tasks for Java](https://www.aspose.com/products/tasks/java) and will help you write your own applications.
 
