@@ -1,6 +1,6 @@
 ## Aspose.Tasks for Java 
 
-This package contains [Examples](Examples), [Plugins](Plugins) and Showcase projects for [Aspose.Tasks for Java](https://www.aspose.com/products/tasks/java) and will help you write your own applications.
+This package contains [Examples](Examples), [Plugins](Plugins) and Showcase projects for [Aspose.Tasks for Java](https://products.aspose.com/tasks/java) and will help you write your own applications.
 
 <p align="center">
 
@@ -17,7 +17,7 @@ Directory | Description
 ## Resources
 
 + **Website:** [www.aspose.com](https://www.aspose.com)
-+ **Product Home:** [Aspose.Tasks for Java](https://www.aspose.com/products/tasks/java)
++ **Product Home:** [Aspose.Tasks for Java](https://products.aspose.com/tasks/java)
 + **Download:** [Download Aspose.Tasks for Java](https://downloads.aspose.com/tasks/java)
 + **Documentation:** [Aspose.Tasks for Java Documentation](https://docs.aspose.com/display/tasksjava/Home)
 + **Forum:** [Aspose.Tasks for Java Forum](https://forum.aspose.com/c/tasks)
