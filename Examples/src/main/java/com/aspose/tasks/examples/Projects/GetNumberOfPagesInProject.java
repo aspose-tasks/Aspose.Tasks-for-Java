@@ -8,6 +8,8 @@
 
 package com.aspose.tasks.examples.Projects;
 
+import java.util.Date;
+
 import com.aspose.tasks.*;
 import com.aspose.tasks.examples.Utils;
 
@@ -22,6 +24,8 @@ public class GetNumberOfPagesInProject
         GetNumberOfPagesInProject(dataDir + "Homemoveplan.mpp");
 
         GetNumberOfPagesInDifferentViews(dataDir + "Homemoveplan.mpp");
+        
+        GetPageCountBetweenStartAndEndDates(dataDir + "Homemoveplan.mpp");
         //Display result of conversion.
         System.out.println("Process completed Successfully");
     }
@@ -61,6 +65,41 @@ public class GetNumberOfPagesInProject
 
         //Get number of pages (ThirdsOfMonths)
         System.out.println("Number of Pages = " + project.getPageCount(PresentationFormat.ResourceUsage, Timescale.ThirdsOfMonths));
+    }
+    
+    public static void GetPageCountBetweenStartAndEndDates(String projectName)
+    {
+    	//ExStart: GetPageCountBetweenStartAndEndDates
+    	Project project = new Project(projectName);
+
+    	Date dtStartDate, dtEndDate;
+    	java.util.Calendar cal = java.util.Calendar.getInstance();
+	    cal.setTime(project.get(Prj.START_DATE));
+	    cal.add(java.util.Calendar.DAY_OF_MONTH, 7);	//add 7 days from start of project
+	    dtStartDate = cal.getTime();
+	    
+	    //Get Finish date with 30 days offset
+	    cal.setTime(project.get(Prj.FINISH_DATE));
+	    cal.add(java.util.Calendar.DAY_OF_MONTH, -30);
+	    dtEndDate = cal.getTime();
+	    
+    	ImageSaveOptions options = new ImageSaveOptions(SaveFileFormat.PNG);
+    	{
+    	    options.setSaveToSeparateFiles(true);
+    	    options.setPageSize(PageSize.A3);
+    	    options.setTimescale(Timescale.Months);
+    	    options.setStartDate (dtStartDate);
+    	    options.setEndDate(dtEndDate);
+    	};
+    	
+    	int pageCount = project.getPageCount_PageSize(
+    	    PageSize.A3,
+    	    Timescale.Months,
+    	    dtStartDate,
+    	    dtEndDate);
+
+    	System.out.println("Number of Pages = " + pageCount);
+    	//ExEnd: GetPageCountBetweenStartAndEndDates
     }
 
 }
