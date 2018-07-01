@@ -69,7 +69,7 @@ public class AddExtendedAttributesToResourceAssignments {
 	public static void AddLookUpExtendedAttributeToResourceAssignment()
 	{
 		String dataDir = Utils.getDataDir(AddExtendedAttributesToResourceAssignments.class);
-		//ExStart: AddPlainExtendedAttributeToResourceAssignment
+		//ExStart: AddLookUpExtendedAttributeToResourceAssignment
 		 Project project = new Project(dataDir + "Blank2010.mpp");
 
 		 ResourceAssignment assignment = project.getResourceAssignments().get(0);
@@ -99,6 +99,6 @@ public class AddExtendedAttributesToResourceAssignments {
 		 ExtendedAttribute value = resCostAttr.createExtendedAttribute(value1);
 		 value.setValue("1500");
 		 project.save(dataDir + "AddExtendedAttributesToRAWithLookUp_out.mpp", SaveFileFormat.MPP);
-		//ExEnd: AddPlainExtendedAttributeToResourceAssignment
+		//ExEnd: AddLookUpExtendedAttributeToResourceAssignment
 	}
 }
