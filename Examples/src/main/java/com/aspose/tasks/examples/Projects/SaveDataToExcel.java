@@ -8,6 +8,8 @@
 
 package com.aspose.tasks.examples.Projects;
 
+import java.io.IOException;
+
 import com.aspose.tasks.Project;
 import com.aspose.tasks.SaveFileFormat;
 import com.aspose.tasks.examples.Utils;
@@ -28,7 +30,7 @@ public class SaveDataToExcel
         System.out.println("Process completed Successfully");
     }
 
-    public static void savingprojectasxlsx()
+    public static void savingprojectasxlsx() throws IOException
     {
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(SaveDataToExcel.class);
@@ -41,7 +43,7 @@ public class SaveDataToExcel
         
     }
 
-    public static void savingprojectasxml()
+    public static void savingprojectasxml() throws IOException
     {
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(SaveDataToExcel.class);

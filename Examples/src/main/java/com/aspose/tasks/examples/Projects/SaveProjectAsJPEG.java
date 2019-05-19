@@ -1,5 +1,7 @@
 package com.aspose.tasks.examples.Projects;
 
+import java.io.IOException;
+
 import com.aspose.tasks.ImageSaveOptions;
 import com.aspose.tasks.Project;
 import com.aspose.tasks.SaveFileFormat;
@@ -7,7 +9,7 @@ import com.aspose.tasks.examples.Utils;
 
 public class SaveProjectAsJPEG {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 
 		 // The path to the documents directory.

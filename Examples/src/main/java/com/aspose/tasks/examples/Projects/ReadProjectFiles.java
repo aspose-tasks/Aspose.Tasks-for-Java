@@ -18,25 +18,26 @@ public class ReadProjectFiles
 {
     public static void main(String[] args) throws Exception
     {
+    	// ExStart: ReadProjectFiles
+    	// For complete examples and data files, please go to https://github.com/aspose-tasks/Aspose.Tasks-for-Java
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(ReadProjectFiles.class);
-
-       		Project existingProject = null;
-            FileInputStream prjStream = null;
-            try
-            {
-                prjStream = new FileInputStream(dataDir + "Project1.mpp");
-                existingProject = new Project(prjStream);
-                prjStream.close();
-            }
-            catch(Exception ex)
-            {
-
-            }
-            System.out.println("Calendar : " + existingProject.get(Prj.NAME));
-
-            //Display result of conversion.
-            System.out.println("Process completed Successfully");
+        Project existingProject = null;
+        FileInputStream prjStream = null;
+        try
+        {
+        	prjStream = new FileInputStream(dataDir + "Project1.mpp");
+        	existingProject = new Project(prjStream);
+        	prjStream.close();
+        }
+        catch(Exception ex)
+        {
+        	System.out.println(ex.getMessage());
+        }
+        System.out.println("Calendar : " + existingProject.get(Prj.NAME));
+        // Display result of conversion.
+        System.out.println("Process completed Successfully");
+        // ExEnd: ReadProjectFiles
     }
 }
 
