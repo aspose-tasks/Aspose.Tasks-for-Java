@@ -15,6 +15,7 @@ public class RetrieveCalendarExceptions
 {
     public static void main(String[] args) throws Exception
     {
+    	// ExStart: RetrieveCalendarExceptions
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(RetrieveCalendarExceptions.class);
 
@@ -28,6 +29,7 @@ public class RetrieveCalendarExceptions
                     System.out.println("To: " + calExc.getToDate().toString()) ;
               }
         }
+        // ExEnd: RetrieveCalendarExceptions
      }
 
 }

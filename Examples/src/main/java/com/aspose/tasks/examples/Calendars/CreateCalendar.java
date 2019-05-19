@@ -15,6 +15,7 @@ public class CreateCalendar
 {
     public static void main(String[] args) throws Exception
     {
+    	// ExStart: CreateCalendar
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(CreateCalendar.class);
 
@@ -26,12 +27,16 @@ public class CreateCalendar
         Calendar cal2 = prj.getCalendars().add("no name");
         Calendar cal3 = prj.getCalendars().add("cal3");
 
+        prj.getCalendars().add(cal1);
+        prj.getCalendars().add(cal2);
+        prj.getCalendars().add(cal3);
+        
         //Save the Project
         prj.save(dataDir + "Project.Xml",SaveFileFormat.XML);
 
         //Display result of conversion.
         System.out.println("Process completed Successfully");
-
+        // ExEnd: CreateCalendar
    }
 }
 

@@ -15,6 +15,7 @@ public class AddRemoveCalendarExceptions
 {
     public static void main(String[] args) throws Exception
     {
+    	// ExStart: AddRemoveCalendarExceptions
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(AddRemoveCalendarExceptions.class);
 
@@ -22,7 +23,7 @@ public class AddRemoveCalendarExceptions
 
         //Remove an exception
         Calendar cal = project.getCalendars().toList().get(0);
-        if (cal.getExceptions().getCount() > 1)
+        if (cal.getExceptions().size() > 1)
         {
                 CalendarException exc = cal.getExceptions().toList().get(0);
                 cal.getExceptions().remove(exc);
@@ -46,6 +47,7 @@ public class AddRemoveCalendarExceptions
             System.out.println("From" + calExc1.getFromDate().toString());
             System.out.println("To" + calExc1.getToDate().toString());
         }
+        // ExEnd: AddRemoveCalendarExceptions
      }
 
 }

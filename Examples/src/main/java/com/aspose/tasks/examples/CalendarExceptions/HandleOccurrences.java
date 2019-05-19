@@ -15,13 +15,12 @@ public class HandleOccurrences
 {
     public static void main(String[] args) throws Exception
     {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(HandleOccurrences.class);
-
+    	// ExStart: HandleOccurrences
         CalendarException except = new CalendarException();
         except.setEnteredByOccurrences(true);
         except.setOccurrences(5);
         except.setType(CalendarExceptionType.YearlyByDay);
+        // ExEnd: HandleOccurrences
     }
 
 }

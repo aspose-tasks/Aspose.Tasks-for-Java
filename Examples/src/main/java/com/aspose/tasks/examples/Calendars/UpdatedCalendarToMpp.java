@@ -17,6 +17,7 @@ public class UpdatedCalendarToMpp
 {
     public static void main(String[] args) throws Exception
     {
+    	// ExStart: UpdatedCalendarToMpp
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(UpdatedCalendarToMpp.class);
 
@@ -34,10 +35,11 @@ public class UpdatedCalendarToMpp
 
         //Display result of conversion.
         System.out.println("Process completed Successfully");
+        // ExEnd: UpdatedCalendarToMpp
     }
 	
 
-
+    // ExStart: GetTestCalendar
     private static void GetTestCalendar(Calendar  cal)
 
     {
@@ -83,7 +85,7 @@ public class UpdatedCalendarToMpp
     	exc2.setDayWorking(false);
     	cal.getExceptions().add(exc2);
      }
-
+    // ExEnd: GetTestCalendar
 }
 
 

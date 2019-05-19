@@ -15,6 +15,7 @@ public class MakeStandardCalendar
 {
     public static void main(String[] args) throws Exception
     {
+    	// ExStart: MakeStandardCalendar
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(MakeStandardCalendar.class);
 
@@ -30,7 +31,7 @@ public class MakeStandardCalendar
 
         //Display result of conversion.
         System.out.println("Process completed Successfully");
-
+        // ExEnd: MakeStandardCalendar
     }
 }
 

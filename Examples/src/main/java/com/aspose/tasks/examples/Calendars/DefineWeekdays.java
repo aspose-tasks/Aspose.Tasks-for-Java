@@ -17,6 +17,7 @@ public class DefineWeekdays
 {
     public static void main(String[] args) throws Exception
     {
+    	// ExStart: DefineWeekdays
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(DefineWeekdays.class);
 
@@ -26,7 +27,7 @@ public class DefineWeekdays
         //Define Calendar
         Calendar cal = prj.getCalendars().add("Calendar1");
 
-        //Add working days monday through thursday with default timings
+        //Add working days Monday through Thursday with default timings
         cal.getWeekDays().add(WeekDay.createDefaultWorkingDay(DayType.Monday));
         cal.getWeekDays().add(WeekDay.createDefaultWorkingDay(DayType.Tuesday));
         cal.getWeekDays().add(WeekDay.createDefaultWorkingDay(DayType.Wednesday));
@@ -34,7 +35,7 @@ public class DefineWeekdays
         cal.getWeekDays().add(new WeekDay(DayType.Saturday));
         cal.getWeekDays().add(new WeekDay(DayType.Sunday));
 
-        //Set friday as short working day
+        //Set Friday as short working day
         WeekDay myWeekDay = new WeekDay(DayType.Friday);
 
         //Sets working time. Only time part of DateTime is important
@@ -70,7 +71,7 @@ public class DefineWeekdays
 
         //Display result of conversion.
         System.out.println("Process completed Successfully");
-
+        // ExEnd: DefineWeekdays
     }
 }
 

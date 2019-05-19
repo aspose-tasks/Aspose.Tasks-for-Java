@@ -15,6 +15,7 @@ public class GetWorkingHours
 {
     public static void main(String[] args) throws Exception
     {
+    	// ExStart: GetWorkingHours
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(GetWorkingHours.class);
 
@@ -89,6 +90,7 @@ public class GetWorkingHours
         System.out.println("Duration in Hours = " + durationInHours);
         System.out.println("Duration in Days = " + durationInDays);
         System.out.println();
+        // ExEnd: GetWorkingHours
     }
 }
 

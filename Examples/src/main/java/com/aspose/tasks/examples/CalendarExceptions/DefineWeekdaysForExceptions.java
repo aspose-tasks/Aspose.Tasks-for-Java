@@ -15,6 +15,7 @@ public class DefineWeekdaysForExceptions
 {
     public static void main(String[] args) throws Exception
     {
+    	// ExStart: DefineWeekDaysForExceptions
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(DefineWeekdaysForExceptions.class);
 
@@ -24,7 +25,7 @@ public class DefineWeekdaysForExceptions
         //Define Calendar
         Calendar cal = project.getCalendars().add("Calendar1");
 
-        //Define week days exception for christmis
+        //Define week days exception for Christmas
         CalendarException except = new CalendarException();
         except.setEnteredByOccurrences(false);
 
@@ -39,6 +40,7 @@ public class DefineWeekdaysForExceptions
 
         //Save the Project
         project.save(dataDir + "Project.Xml", SaveFileFormat.XML);
+        // ExEnd: DefineWeekDaysForExceptions
     }
 
 }

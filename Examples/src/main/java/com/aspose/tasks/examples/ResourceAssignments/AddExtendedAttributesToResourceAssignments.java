@@ -34,7 +34,7 @@ public class AddExtendedAttributesToResourceAssignments {
 		// Assign the resource desired task
 		ResourceAssignment assn = project.getResourceAssignments().add(task1, rsc1);
 
-		ResourceAssignment assignment = project.getResourceAssignments().get(0);
+		ResourceAssignment assignment = project.getResourceAssignments().toList().get(0);
 
 		// Custom attributes which is visible in "Resource Usage" view can be created with ExtendedAttributeDefinition.CreateResourceDefinition method.
 		ExtendedAttributeDefinition resCostAttr = ExtendedAttributeDefinition.createResourceDefinition(
@@ -72,7 +72,7 @@ public class AddExtendedAttributesToResourceAssignments {
 		//ExStart: AddLookUpExtendedAttributeToResourceAssignment
 		 Project project = new Project(dataDir + "Blank2010.mpp");
 
-		 ResourceAssignment assignment = project.getResourceAssignments().get(0);
+		 
 
 		 ExtendedAttributeDefinition resCostAttr = ExtendedAttributeDefinition.createLookupResourceDefinition(
 		         																CustomFieldType.Cost,
