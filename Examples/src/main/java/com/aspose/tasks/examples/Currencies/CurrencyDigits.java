@@ -8,6 +8,8 @@
 
 package com.aspose.tasks.examples.Currencies;
 
+import java.io.IOException;
+
 import com.aspose.tasks.Prj;
 import com.aspose.tasks.Project;
 import com.aspose.tasks.SaveFileFormat;
@@ -28,7 +30,7 @@ public class CurrencyDigits
         System.out.println("Process completed Successfully");
     }
 
-    public static void settingcurrencydigits()
+    public static void settingcurrencydigits() throws IOException
     {
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(CurrencyDigits.class);

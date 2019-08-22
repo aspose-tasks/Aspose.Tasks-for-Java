@@ -68,12 +68,12 @@ public class IgnoringInvalidCharactersDuringLoadingProject {
 	 
 	private static Object customDurationHandler(Object sender, ParseErrorArgs args)
 	{
-	        System.err.print(String.format("Object field : %s; Invalid value : %s; ", args.getFieldName(), args.getInvalidValue()));
-	        String duration = args.getInvalidValue().replaceAll("[*]{2}(\\d+)Hrs(\\d+)Mins(\\d+)Secs[*]{2}", "PT$1H$2M$3S");
-	        double newValue = Duration.parseTimeSpan(duration)*0.001/60/60;
-	        System.err.println(String.format("New value : %s", duration));
-	        Project project = new Project();
-			return project.getDuration(newValue, TimeUnitType.Hour);
+	    System.err.print(String.format("Object field : %s; Invalid value : %s; ", args.getFieldName(), args.getInvalidValue()));
+	    String duration = args.getInvalidValue().replaceAll("[*]{2}(\\d+)Hrs(\\d+)Mins(\\d+)Secs[*]{2}", "PT$1H$2M$3S");
+	    double newValue = Duration.parseTimeSpan(duration)*0.001/60/60;
+	    System.err.println(String.format("New value : %s", duration));
+	    Project project = new Project();
+		return project.getDuration(newValue, TimeUnitType.Hour);
 	}
 	// ExEnd: IgnoringInvalidCharactersDuringLoadingProject
 }

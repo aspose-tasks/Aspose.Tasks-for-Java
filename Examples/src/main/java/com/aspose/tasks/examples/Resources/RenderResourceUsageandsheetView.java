@@ -8,6 +8,8 @@
  
 package com.aspose.tasks.examples.Resources;
 
+import java.io.IOException;
+
 import com.aspose.tasks.*;
 import com.aspose.tasks.examples.Utils;
 
@@ -26,7 +28,7 @@ public class RenderResourceUsageandsheetView
         System.out.println("Process completed Successfully");
     }
 
-    public static void resourceusage()
+    public static void resourceusage() throws IOException
     {
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(RenderResourceUsageandsheetView.class);
@@ -55,7 +57,7 @@ public class RenderResourceUsageandsheetView
         project.save(months, options);
     }
 
-    public static void resourcesheetview()
+    public static void resourcesheetview() throws IOException
     {
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(RenderResourceUsageandsheetView.class);
@@ -67,7 +69,7 @@ public class RenderResourceUsageandsheetView
 
         //Set the Presentation format to ResourceSheet
         options.setPresentationFormat(PresentationFormat.ResourceSheet);
-            project.save("result.pdf", options);
+        project.save("result.pdf", options);
 
         
     }

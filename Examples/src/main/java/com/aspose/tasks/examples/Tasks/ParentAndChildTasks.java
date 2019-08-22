@@ -11,6 +11,7 @@ package com.aspose.tasks.examples.Tasks;
 import com.aspose.tasks.*;
 import com.aspose.tasks.examples.Utils;
 
+import java.io.IOException;
 import java.util.Date;
 import java.util.List;
 
@@ -52,7 +53,7 @@ public class ParentAndChildTasks
         
     }
 
-    public static void settingchildtasks()
+    public static void settingchildtasks() throws IOException
     
     {
         // The path to the documents directory.
@@ -93,8 +94,6 @@ public class ParentAndChildTasks
         task4.set(Tsk.PERCENT_COMPLETE,70);
 
         proj.save(dataDir + "ProjectJava.mpp", SaveFileFormat.MPP);
-
-
     }
 }
 

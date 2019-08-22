@@ -20,7 +20,7 @@ public class AssignmentCost
 
         Project project = new Project(dataDir + "EarnedValues2010.mpp");
 
-        for (int i=0;i<project.getResourceAssignments().getCount(); i++)
+        for (int i=0;i<project.getResourceAssignments().size(); i++)
         {
             ResourceAssignment ra = project.getResourceAssignments().getByUid(0);
             System.out.println(ra.get(Asn.COST));

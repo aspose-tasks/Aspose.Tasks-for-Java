@@ -1,15 +1,17 @@
 package com.aspose.tasks.examples.Tasks;
 
+import java.io.IOException;
+
 import com.aspose.tasks.*;
 import com.aspose.tasks.examples.Utils;
 
 public class AddTaskExtendedAttributes {
-    public static void main(String[] args)
+    public static void main(String[] args) throws IOException
     {
         TaskExtendedAttributes();
     }
 
-    static void TaskExtendedAttributes()
+    static void TaskExtendedAttributes() throws IOException
     {
         // ExStart:AddTaskExtendedAttributes
         // The path to the documents directory.

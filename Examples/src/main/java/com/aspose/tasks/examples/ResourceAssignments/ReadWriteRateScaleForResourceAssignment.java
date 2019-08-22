@@ -1,5 +1,7 @@
 package com.aspose.tasks.examples.ResourceAssignments;
 
+import java.io.IOException;
+
 import com.aspose.tasks.Asn;
 import com.aspose.tasks.Project;
 import com.aspose.tasks.RateScaleType;
@@ -13,7 +15,7 @@ import com.aspose.tasks.examples.Utils;
 
 public class ReadWriteRateScaleForResourceAssignment {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 
 		//ExStart: ReadWriteRateScaleForResourceAssignment

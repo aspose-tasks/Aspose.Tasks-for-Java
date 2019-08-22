@@ -1,7 +1,7 @@
 /*
  * Copyright 2001-2015 Aspose Pty Ltd. All Rights Reserved.
  *
- * This file is part of Aspose.Slides. The source code in this file
+ * This file is part of Aspose.Tasks. The source code in this file
  * is only intended as a supplement to the documentation, and is provided
  * "as is", without warranty of any kind, either expressed or implied.
  */
@@ -11,91 +11,88 @@ package com.aspose.tasks.examples.Formulae;
 import com.aspose.tasks.*;
 import com.aspose.tasks.examples.Utils;
 
+import java.io.IOException;
 import java.math.BigDecimal;
 
-public class WriteReadFormula
-{
-    public static void main(String[] args) throws Exception
-    {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(WriteReadFormula.class);
+public class WriteReadFormula {
+	public static void main(String[] args) throws Exception {
+		// The path to the documents directory.
+		String dataDir = Utils.getDataDir(WriteReadFormula.class);
 
-        writingformulasinextendedattributes();
+		writingFormulasInExtendedAttributes();
 
-        readingformulasinlocalandenterpriseextendedattributes();
-    
-        readonlyaccesstocustomfieldvalues();
+		readingFormulasInLocalAndEnterpriseExtendedAttributes();
 
-        //Display result of conversion.
-        System.out.println("Process completed Successfully");
-    }
+		readOnlyAccessToCustomFieldValues();
 
-    public static void writingformulasinextendedattributes()
-    {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(WriteReadFormula.class);
+		// Display result of conversion.
+		System.out.println("Process completed Successfully");
+	}
 
+	public static void writingFormulasInExtendedAttributes() throws IOException {
+		// ExStart: writingFormulasInExtendedAttributes
+		// The path to the documents directory.
+		String dataDir = Utils.getDataDir(WriteReadFormula.class);
 
-        Project project = new Project(dataDir + "New project 2010.mpp");
-        project.set(Prj.NEW_TASKS_ARE_MANUAL, new NullableBool(false));
+		Project project = new Project(dataDir + "New project 2010.mpp");
+		project.set(Prj.NEW_TASKS_ARE_MANUAL, new NullableBool(false));
 
-        // create new custom field (Task Text1) with formula which will double task cost
-        ExtendedAttributeDefinition attr = new ExtendedAttributeDefinition();
-        project.getExtendedAttributes().add(attr);
+		// create new custom field (Task Text1) with formula which will double task cost
+		ExtendedAttributeDefinition attr = ExtendedAttributeDefinition.createTaskDefinition(CustomFieldType.Text,
+				ExtendedAttributeTask.Text1, "Custom");
+		attr.setAlias("Double Costs");
+		attr.setFormula("[Cost]*2");
 
-        attr.setFieldId(Integer.toString(ExtendedAttributeTask.Text1));
-        attr.setAlias("Double Costs");
-        //
-        attr.setFormula("[Cost]*2");
+		project.getExtendedAttributes().add(attr);
 
-        // add a task to see the result in MSP
-        Task task = project.getRootTask().getChildren().add("Task");
-        // set task cost
-        task.set(Tsk.COST, BigDecimal.valueOf(100));
-        // see the result in the attached screenshot (result.jpg)
-        project.save(dataDir + "saved.mpp", SaveFileFormat.MPP);
-        
-    }
+		// add a task to see the result in MSP
+		Task task = project.getRootTask().getChildren().add("Task");
+		// set task cost
+		task.set(Tsk.COST, BigDecimal.valueOf(100));
+		// see the result in the attached screenshot (result.jpg)
+		project.save(dataDir + "saved.mpp", SaveFileFormat.MPP);
+		// ExEnd: writingFormulasInExtendedAttributes
+	}
 
-    public static void readingformulasinlocalandenterpriseextendedattributes()
-    {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(WriteReadFormula.class);
+	public static void readingFormulasInLocalAndEnterpriseExtendedAttributes() {
+		// ExStart: readingFormulasInLocalAndEnterpriseExtendedAttributes
+		// The path to the documents directory.
+		String dataDir = Utils.getDataDir(WriteReadFormula.class);
 
-        Project proj = new Project(dataDir + "FormulaField.mpp"); // attached test mpp
-        ExtendedAttributeDefinition attr = proj.getExtendedAttributes().get(0);
+		Project proj = new Project(dataDir + "FormulaField.mpp"); // attached test mpp
+		ExtendedAttributeDefinition attr = proj.getExtendedAttributes().get(0);
 
-        System.out.println("Attribute Formula: " + attr.getFormula());
-    }    
+		System.out.println("Attribute Formula: " + attr.getFormula());
+		// ExEnd: readingFormulasInLocalAndEnterpriseExtendedAttributes
+	}
 
-    public static void readonlyaccesstocustomfieldvalues()
-    {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(WriteReadFormula.class);
+	public static void readOnlyAccessToCustomFieldValues() {
+		// ExStart: readOnlyAccessToCustomFieldValues
+		// The path to the documents directory.
+		String dataDir = Utils.getDataDir(WriteReadFormula.class);
 
-        Project project = new Project();
+		Project project = new Project();
 
-        ExtendedAttributeDefinition attr = new ExtendedAttributeDefinition();
-        attr.setFieldId(Integer.toString(ExtendedAttributeTask.Text1));
-        attr.setFormula("[Cost]-[Actual Cost]");
-        project.getExtendedAttributes().add(attr);
+		ExtendedAttributeDefinition attribute = ExtendedAttributeDefinition.createTaskDefinition(CustomFieldType.Cost,
+				ExtendedAttributeTask.Cost1, "");
+		attribute.setFormula("[Cost]-[Actual Cost]");
 
-        Task task = project.getRootTask().getChildren().add("Task");
+		project.getExtendedAttributes().add(attribute);
 
-        ExtendedAttribute a = attr.createExtendedAttribute();
-        task.getExtendedAttributes().add(a);
+		// Add task
+		Task task = project.getRootTask().getChildren().add("Task");
 
-        System.out.println(a.getValueReadOnly() == true ? "Value is Read only" : "Value is not read only");
+		// Create extended attribute
+		ExtendedAttribute extendedAttribute = attribute.createExtendedAttribute();
+		task.getExtendedAttributes().add(extendedAttribute);
 
-        //This should not work
-        a.setValue("Invalid");
+		// Display if extended attributes are read only or not
+		System.out.println(
+				extendedAttribute.getValueReadOnly() == true ? "Value is Read only" : "Value is not read only");
+		extendedAttribute.setTextValue("-36755");
+		System.out.println(
+				extendedAttribute.getTextValue() == " " ? "Formula values are read-only" : "Values are not read-only");
+		// ExEnd: readOnlyAccessToCustomFieldValues
+	}
 
-        System.out.println(a.getValue() == "" ? "Formula values are read-only" : "Values are not read-only");
-
-    }  
- 
 }
-
-
-
-
