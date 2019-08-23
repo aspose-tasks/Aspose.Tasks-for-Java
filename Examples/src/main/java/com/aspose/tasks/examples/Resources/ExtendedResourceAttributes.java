@@ -16,14 +16,15 @@ import com.aspose.tasks.examples.Utils;
 public class ExtendedResourceAttributes {
 
 	public static void main(String[] args) throws Exception {
-		// ExEnd: ExtendedResourceAttributes
+		// ExStart: ExtendedResourceAttributes
 		// The path to the documents directory.
 		String dataDir = Utils.getDataDir(ExtendedResourceAttributes.class);
 
 		Project prj = new Project(dataDir + "project5.mpp");
 
 		// Define extended attribute
-		ExtendedAttributeDefinition myNumber1 = prj.getExtendedAttributes().getById((int) ExtendedAttributeTask.Number1);
+		ExtendedAttributeDefinition myNumber1 = prj.getExtendedAttributes()
+				.getById((int) ExtendedAttributeTask.Number1);
 		if (myNumber1 == null) {
 			myNumber1 = ExtendedAttributeDefinition.createResourceDefinition(ExtendedAttributeResource.Number1, "Age");
 			prj.getExtendedAttributes().add(myNumber1);

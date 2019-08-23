@@ -24,118 +24,106 @@ import com.aspose.tasks.examples.Utils;
 public class ResourcePrefixForNestedResources implements IFontSavingCallback, ICssSavingCallback, IImageSavingCallback {
 
 	public static String dataDir = Utils.getDataDir(ResourcePrefixForNestedResources.class);
-	
-	public static void main(String[] args) throws IOException {
-        FileInputStream fs = new FileInputStream(dataDir + "Project1.mpp");
-        Project project = new Project(fs);
-        HtmlSaveOptions options = GetSaveOptions(1);
-        FileOutputStream stream = new FileOutputStream(dataDir + "document.html");
-        project.save(stream, options);
-    }
 
-    public void cssSaving(CssSavingArgs args)
-    {
-        FileOutputStream stream;
+	public static void main(String[] args) throws IOException {
+		FileInputStream fs = new FileInputStream(dataDir + "Project1.mpp");
+		Project project = new Project(fs);
+		HtmlSaveOptions options = GetSaveOptions(1);
+		FileOutputStream stream = new FileOutputStream(dataDir + "document.html");
+		project.save(stream, options);
+	}
+
+	public void cssSaving(CssSavingArgs args) {
+		FileOutputStream stream;
 		try {
 			stream = new FileOutputStream(dataDir + "css/" + args.getFileName());
 			args.setStream(stream);
-	        args.setKeepStreamOpen(false);
-	        args.setUri(dataDir + "css/" + args.getFileName());
+			args.setKeepStreamOpen(false);
+			args.setUri(dataDir + "css/" + args.getFileName());
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
-    }
+	}
 
-    public void fontSaving(FontSavingArgs args)
-    {
-        FileOutputStream stream;
+	public void fontSaving(FontSavingArgs args) {
+		FileOutputStream stream;
 		try {
 			stream = new FileOutputStream(dataDir + "fonts/" + args.getFileName());
 			args.setStream(stream);
-	        args.setKeepStreamOpen(false);
-	        args.setUri(dataDir + "fonts/" + args.getFileName());
+			args.setKeepStreamOpen(false);
+			args.setUri(dataDir + "fonts/" + args.getFileName());
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
-    }
+	}
 
-    public void imageSaving(ImageSavingArgs args)
-    {
-        if (args.getFileName().endsWith("png"))
-        {
-            FileOutputStream stream1;
+	public void imageSaving(ImageSavingArgs args) {
+		if (args.getFileName().endsWith("png")) {
+			FileOutputStream stream1;
 			try {
 				stream1 = new FileOutputStream(dataDir + "resources/nestedResources/" + args.getFileName());
 				args.setStream(stream1);
-	            args.setKeepStreamOpen(false);
-	            args.setUri(dataDir + "resources/" + args.getFileName());
-	            args.setNestedUri(dataDir + "nestedResources/" + args.getFileName());
+				args.setKeepStreamOpen(false);
+				args.setUri(dataDir + "resources/" + args.getFileName());
+				args.setNestedUri(dataDir + "nestedResources/" + args.getFileName());
 			} catch (FileNotFoundException e) {
 				e.printStackTrace();
 			}
-        }
-        else
-        {
-            FileOutputStream stream2;
+		} else {
+			FileOutputStream stream2;
 			try {
 				stream2 = new FileOutputStream(dataDir + "resources/" + args.getFileName());
 				args.setStream(stream2);
-	            args.setKeepStreamOpen(false);
-	            args.setUri(dataDir + "resources/" + args.getFileName());
+				args.setKeepStreamOpen(false);
+				args.setUri(dataDir + "resources/" + args.getFileName());
 			} catch (FileNotFoundException e) {
 				e.printStackTrace();
 			}
-        }
-    }
+		}
+	}
 
-    private static HtmlSaveOptions GetSaveOptions(int pageNumber)
-    {
-        HtmlSaveOptions saveOptions = new HtmlSaveOptions();
-        saveOptions.setIncludeProjectNameInPageHeader(false);
-        saveOptions.setIncludeProjectNameInTitle(false);
-        saveOptions.setPageSize(PageSize.A3);
-        saveOptions.setTimescale(Timescale.ThirdsOfMonths);
-        saveOptions.setReduceFooterGap(true);
-        saveOptions.setFontFaceTypes(FontFaceType.Ttf);
-        saveOptions.setExportCss(ResourceExportType.AsFile);
-        saveOptions.setExportFonts(ResourceExportType.AsFile);
-        saveOptions.setExportImages(ResourceExportType.AsFile);
-        
+	private static HtmlSaveOptions GetSaveOptions(int pageNumber) {
+		HtmlSaveOptions saveOptions = new HtmlSaveOptions();
+		saveOptions.setIncludeProjectNameInPageHeader(false);
+		saveOptions.setIncludeProjectNameInTitle(false);
+		saveOptions.setPageSize(PageSize.A3);
+		saveOptions.setTimescale(Timescale.ThirdsOfMonths);
+		saveOptions.setReduceFooterGap(true);
+		saveOptions.setFontFaceTypes(FontFaceType.Ttf);
+		saveOptions.setExportCss(ResourceExportType.AsFile);
+		saveOptions.setExportFonts(ResourceExportType.AsFile);
+		saveOptions.setExportImages(ResourceExportType.AsFile);
 
-        ResourcePrefixForNestedResources program = new ResourcePrefixForNestedResources();
-        saveOptions.setFontSavingCallback(program);
-        saveOptions.setCssSavingCallback(program);
-        saveOptions.setImageSavingCallback(program);
+		ResourcePrefixForNestedResources program = new ResourcePrefixForNestedResources();
+		saveOptions.setFontSavingCallback(program);
+		saveOptions.setCssSavingCallback(program);
+		saveOptions.setImageSavingCallback(program);
 
-        saveOptions.getPages().clear();
-        saveOptions.getPages().add(pageNumber);
+		saveOptions.getPages().clear();
+		saveOptions.getPages().add(pageNumber);
 
-        File dirFonts = new File(dataDir + "fonts");
-        if (!dirFonts.exists())
-        {
-        	dirFonts.mkdir();
-        }
+		File dirFonts = new File(dataDir + "fonts");
+		if (!dirFonts.exists()) {
+			dirFonts.mkdir();
+		}
 
-        File dirResources = new File(dataDir + "resources");
-        if (!dirResources.exists())
-        {
-        	dirResources.mkdir();
-        }
-        
-        File dirNResources = new File(dataDir + "nestedResources");
-        if (!dirNResources.exists())
-        {
-        	dirNResources.mkdir();
-        }
-        
-        File dirCSS = new File(dataDir + "css");
-        if (!dirCSS.exists())
-        {
-        	dirCSS.mkdir();
-        }
-        
-        return saveOptions;
-    }
+		File dirResources = new File(dataDir + "resources");
+		if (!dirResources.exists()) {
+			dirResources.mkdir();
+		}
+
+		File dirNResources = new File(dataDir + "nestedResources");
+		if (!dirNResources.exists()) {
+			dirNResources.mkdir();
+		}
+
+		File dirCSS = new File(dataDir + "css");
+		if (!dirCSS.exists()) {
+			dirCSS.mkdir();
+		}
+
+		return saveOptions;
+	}
 
 }
 //ExEnd: ResourcePrefixForNestedResources
