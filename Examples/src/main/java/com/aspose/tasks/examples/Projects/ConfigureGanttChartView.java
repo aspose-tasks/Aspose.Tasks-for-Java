@@ -15,6 +15,7 @@ public class ConfigureGanttChartView
 {
     public static void main(String[] args) throws Exception
     {
+    	// ExStart:ConfigureGantChart
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(ConfigureGanttChartView.class);
 
@@ -23,12 +24,11 @@ public class ConfigureGanttChartView
         // Create a new project task
         Task task = project.getRootTask().getChildren().add("New Activity");
 
+        // Define new custom attribute
+        ExtendedAttributeDefinition text1Definition = ExtendedAttributeDefinition.createTaskDefinition(ExtendedAttributeTask.Text1, null);
+        project.getExtendedAttributes().add(text1Definition);
         // Add custom text attribute to created task.
-        ExtendedAttribute attr = new ExtendedAttribute();
-        attr.setFieldId(String.valueOf((int) ExtendedAttributeTask.Text1));
-        attr.setValue("Activity attribute");
-
-        task.getExtendedAttributes().add(attr);
+        task.getExtendedAttributes().add(text1Definition.createExtendedAttribute("Activity attribute"));
 
         // Customize table by adding text attribute field
         TableField attrField = new TableField();
@@ -43,7 +43,7 @@ public class ConfigureGanttChartView
 
         // The result of opening of saved project in MSP2010 is in attached screenshot
         project.save("saved.mpp", SaveFileFormat.MPP);
-	
+        // ExEnd:ConfigureGantChart
     }
 }
 

@@ -35,7 +35,7 @@ public class AddTaskExtendedAttributes {
         ExtendedAttribute taskExtendedAttributeText1 = taskExtendedAttributeText1Definition.createExtendedAttribute();
 
         //Assign a value to the generated Extended Attribute
-        taskExtendedAttributeText1.setValue("London");
+        taskExtendedAttributeText1.setTextValue("London");
 
         //Add the Extended Attribute to task
         task.getExtendedAttributes().add(taskExtendedAttributeText1);
@@ -85,26 +85,26 @@ public class AddTaskExtendedAttributes {
         //Add lookup values for extended attribute definition
         val = new Value();
         val.setId(2);
-        val.setDurationValue(4*60);
+        val.setDuration(project2.getDuration(4, TimeUnitType.Hour));
         val.setDescription("4 hours");
         taskExtendedAttributeDuration2Definition.addLookupValue(val);
 
 
         val = new Value();
         val.setId(3);
-        val.setDurationValue(8*60);
+        val.setDuration(project2.getDuration(8, TimeUnitType.Day));
         val.setDescription("1 day");
         taskExtendedAttributeDuration2Definition.addLookupValue(val);
 
         val = new Value();
         val.setId(4);
-        val.setDurationValue(1*60);
+        val.setDuration(project2.getDuration(1, TimeUnitType.Hour));
         val.setDescription("1 hour");
         taskExtendedAttributeDuration2Definition.addLookupValue(val);
 
         val = new Value();
         val.setId(7);
-        val.setDurationValue(10*8*60);
+        val.setDuration(project2.getDuration(10, TimeUnitType.Day));
         val.setDescription("10 days");
         taskExtendedAttributeDuration2Definition.addLookupValue(val);
 

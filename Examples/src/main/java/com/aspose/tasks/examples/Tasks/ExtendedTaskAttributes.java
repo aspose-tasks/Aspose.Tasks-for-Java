@@ -15,6 +15,7 @@ public class ExtendedTaskAttributes
 {
     public static void main(String[] args) throws Exception
     {
+    	// ExStart:ReadTaskExtendedAttributes
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(ExtendedTaskAttributes.class);
 
@@ -25,11 +26,36 @@ public class ExtendedTaskAttributes
                 for (ExtendedAttribute ea:tsk.getExtendedAttributes())
                 {
                        System.out.println(ea.getFieldId());
-                       System.out.println(ea.getValue());
                        System.out.println(ea.getValueGuid());
+                       
+                       switch (ea.getAttributeDefinition().getCfType())
+                       {
+                           case CustomFieldType.Date:
+                           case CustomFieldType.Start:
+                           case CustomFieldType.Finish:
+                        	   System.out.println(ea.getDateValue());
+                               break;
+
+                           case CustomFieldType.Text:
+                        	   System.out.println(ea.getTextValue());
+                               break;
+
+                           case CustomFieldType.Duration:
+                        	   System.out.println(ea.getDurationValue().toString());
+                               break;
+
+                           case CustomFieldType.Cost:
+                           case CustomFieldType.Number:
+                        	   System.out.println(ea.getNumericValue());
+                               break;
+
+                           case CustomFieldType.Flag:
+                        	   System.out.println(ea.getFlagValue());
+                               break;
+                       }
                 }
         }
- 
+        // ExEnd:ReadTaskExtendedAttributes
     }
 }
 
