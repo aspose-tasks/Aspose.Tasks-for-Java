@@ -65,7 +65,7 @@ public class ResourcePrefixForNestedResources implements IFontSavingCallback, IC
 				args.setStream(stream1);
 				args.setKeepStreamOpen(false);
 				args.setUri(dataDir + "resources/" + args.getFileName());
-				args.setNestedUri(dataDir + "nestedResources/" + args.getFileName());
+				//args.setNestedUri(dataDir + "nestedResources/" + args.getFileName());
 			} catch (FileNotFoundException e) {
 				e.printStackTrace();
 			}
