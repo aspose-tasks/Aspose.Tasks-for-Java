@@ -6,7 +6,7 @@
  * "as is", without warranty of any kind, either expressed or implied.
  */
 
-package com.aspose.tasks.examples.Projects.GeneralProjectProperties;
+package com.aspose.tasks.examples.ProjectProperties;
 
 import com.aspose.tasks.*;
 import com.aspose.tasks.examples.Utils;
@@ -17,7 +17,7 @@ public class ReadProjectInfo
     {
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(ReadProjectInfo.class);
-        
+        //ExStart:ReadProjectInfo
         Project project = new Project(dataDir+ "input.xml");
 		if(project.get(Prj.SCHEDULE_FROM_START).getValue())
 			System.out.println("Project Start Date : " + project.get(Prj.START_DATE));
@@ -29,12 +29,6 @@ public class ReadProjectInfo
 		System.out.println("Current Date : " + project.get(Prj.CURRENT_DATE));
 		System.out.println("Status Date : " + project.get(Prj.STATUS_DATE));
 		System.out.println("Calendar : " + project.get(Prj.CALENDAR).getName());
-
-
-
+		//ExEnd:ReadProjectInfo
     }
 }
-
-
-
-

@@ -6,7 +6,7 @@
  * "as is", without warranty of any kind, either expressed or implied.
  */
 
-package com.aspose.tasks.examples.Projects.GeneralProjectProperties;
+package com.aspose.tasks.examples.ProjectProperties;
 
 import com.aspose.tasks.*;
 import com.aspose.tasks.examples.Utils;
@@ -17,7 +17,7 @@ public class WriteProjectInfo
     {
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(WriteProjectInfo.class);
-
+        //ExStart:WriteProjectInfo
         //Create a project instance
         Project project = new Project();
         //Set project information properties
@@ -30,6 +30,7 @@ public class WriteProjectInfo
 
         //Save the Project as XML
         project.save(dataDir + "project3.xml", SaveFileFormat.XML);
+        //ExEnd:WriteProjectInfo
     }
 }
 
