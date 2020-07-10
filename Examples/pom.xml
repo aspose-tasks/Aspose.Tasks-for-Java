@@ -13,7 +13,7 @@
         <dependency>
             <groupId>com.aspose</groupId>
             <artifactId>aspose-tasks</artifactId>
-            <version>20.6</version>
+            <version>20.7</version>
             <classifier>jdk18</classifier>
         </dependency>
         <dependency>
