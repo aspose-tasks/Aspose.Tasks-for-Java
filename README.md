@@ -26,13 +26,13 @@ Directory | Description
 </li>
 	<li>The resources folder in the Examples/src folder contains input files used in the examples. It is mandatory that you download this folder along with the examples project.</li>
 </ul>
-<p>Please find more details on how to run the examples <a title="How to Run the Examples" href="https://docs.aspose.com/display/tasksjava/How+to+Run+the+Examples">here</a>.</p>
+Please find more details on how to run the examples, [here](https://docs.aspose.com/tasks/java/how-to-run-the-examples/).
 
 ## Resources
 
 + **Website:** [www.aspose.com](https://www.aspose.com)
 + **Product Home:** [Aspose.Tasks for Java](https://products.aspose.com/tasks/java)
 + **Download:** [Download Aspose.Tasks for Java](https://downloads.aspose.com/tasks/java)
-+ **Documentation:** [Aspose.Tasks for Java Documentation](https://docs.aspose.com/display/tasksjava/Home)
++ **Documentation:** [Aspose.Tasks for Java Documentation](https://docs.aspose.com/tasks/java/)
 + **Forum:** [Aspose.Tasks for Java Forum](https://forum.aspose.com/c/tasks)
 + **Blog:** [Aspose.Tasks for Java Blog](https://blog.aspose.com/category/aspose-products/aspose-tasks-product-family/)
