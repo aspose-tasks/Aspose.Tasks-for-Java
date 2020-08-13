@@ -26,7 +26,10 @@ Directory | Description
 </li>
 	<li>The resources folder in the Examples/src folder contains input files used in the examples. It is mandatory that you download this folder along with the examples project.</li>
 </ul>
-Please find more details on how to run the examples, [here](https://docs.aspose.com/tasks/java/how-to-run-the-examples/).
+
+<p>
+Please find more details on how to run the examples, <a href="https://docs.aspose.com/tasks/java/how-to-run-the-examples/">here</a>.
+</p>
 
 ## Resources
 
