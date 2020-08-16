@@ -1,6 +1,6 @@
-## Aspose.Tasks for Java 
+# Microsoft Project File Manipulation API
 
-This package contains [Examples](Examples), [Plugins](Plugins) and Showcase projects for [Aspose.Tasks for Java](https://products.aspose.com/tasks/java) and will help you write your own applications.
+[Aspose.Tasks](https://products.aspose.com/tasks/java) a Java Project Management API to manipulate Microsoft Project files. Developers can define a project’s main and default properties as well as calendar information. API also provides the ability to specify weekdays and calendar exceptions while making it easy to add & recalculate tasks, resources and other data without user intervention.
 
 <p align="center">
 
@@ -11,31 +11,66 @@ This package contains [Examples](Examples), [Plugins](Plugins) and Showcase proj
 
 Directory | Description
 --------- | -----------
-[Examples](Examples)  | A collection of Java examples that help you learn how to product features
-[Plugins](Plugins)  | Plugins that will demonstrate one or more features of Aspose.Tasks for Java
+[Examples](Examples)  | A collection of Java examples that help you learn how to product features.
+[Plugins](Plugins)  | Plugins that will demonstrate more features of Aspose.Tasks for Java.
 
-## How to Run Examples
-<ul>
-	<li>You can either clone the repository using your favourite GitHub client or download the ZIP file from <a title="Download complete Aspose.Tasks for Java source code" href="https://github.com/asposetasks/Aspose_Tasks_Java/archive/master.zip">here</a>.</li>
-	<li>Extract the contents of the ZIP file to any folder on your computer. All the examples are located in the Examples folder.</li>
-	<li>You can run/execute these examples with any IDE of your choice.</li>
-	<li>Open the project in your selected IDE.
-</li>
-	<li>Open the example file that you want to run.</li>
-	<li>Run the file in your IDE (method may vary depending on the IDE you use).
-</li>
-	<li>The resources folder in the Examples/src folder contains input files used in the examples. It is mandatory that you download this folder along with the examples project.</li>
-</ul>
+## Microsoft Project File Processing
 
-<p>
-Please find more details on how to run the examples, <a href="https://docs.aspose.com/tasks/java/how-to-run-the-examples/">here</a>.
-</p>
+- Read, change and write Microsoft Project® documents.
+- Read MPP and XML project formats. 
+- Create, update and write projects in an XML project format. 
+- Read MPP project files, update summary information and write in original MPP format.
+- Read MPP project files and convert them to XML format.
+- Change main project settings like schedule type, start and finish dates.
+- Change default project settings like default standard rate, default overtime rate, default task type, default fixed cost accrual, etc.
+- Manage extended attributes.
+- Define weekdays for the project as well as for calendars and calendar exceptions.
+- Read and write calendars for tasks and resources.
+- Manage task baseline scheduling & duration.
+- Handle constraints on tasks.
+- Create and manage links between tasks.
+- Read, change and create tasks, milestone, estimated critical or effort driven tasks.
+- Manage resources costs and variances.
+- Access assignment costs and budget.
+- Resource prefix implementation for nested resources
 
-## Resources
+## Read & Write Project Formats
 
-+ **Website:** [www.aspose.com](https://www.aspose.com)
-+ **Product Home:** [Aspose.Tasks for Java](https://products.aspose.com/tasks/java)
-+ **Download:** [Download Aspose.Tasks for Java](https://downloads.aspose.com/tasks/java)
-+ **Documentation:** [Aspose.Tasks for Java Documentation](https://docs.aspose.com/tasks/java/)
-+ **Forum:** [Aspose.Tasks for Java Forum](https://forum.aspose.com/c/tasks)
-+ **Blog:** [Aspose.Tasks for Java Blog](https://blog.aspose.com/category/aspose-products/aspose-tasks-product-family/)
+MPP, XML, MPT, MPX
+
+## Save Project Files As
+
+XLSX, HTML, TXT, PDF, XER, PrimaveraP6XML\
+TIF, SVG, PNG, JPEG
+
+
+## Supported Environments
+
+- **Microsoft Windows:** Windows Desktop & Server (x86, x64)
+- **macOS:** Mac OS X
+- **Linux:** Ubuntu, OpenSUSE, CentOS, and others
+- **Java Versions:** `J2SE 7.0 (1.7)` or above
+
+## Get Started with Aspose.Tasks for Java
+
+Aspose hosts all Java APIs at the [Aspose Repository](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-tasks). You can easily use Aspose.Tasks for Java API directly in your Maven projects with simple configurations. For the detailed instructions please visit [Installing Aspose.Tasks for Java from Maven Repository](https://docs.aspose.com/tasks/java/installation/) documentation page.
+
+## Read Project Data from Microsoft Project Database
+
+```java
+String url = "jdbc:sqlserver://";
+String serverName = "192.168.56.2\\MSSQLSERVER";
+String portNumber = "1433";
+String databaseName = "ProjectServer_Published";
+String userName = "sa";
+String password = "***";
+MspDbSettings settings = new MspDbSettings(url+serverName+":"+portNumber+";databaseName="+databaseName+
+         ";user=" + userName + ";password=" + password, UUID.fromString("E6426C44-D6CB-4B9C-AF16-48910ACE0F54"));
+ 
+addJDBCDriver(new File("sqljdbc4.jar"));
+ 
+Project project = new Project(settings);
+project.save(dir + "output.xml", SaveFileFormat.XML);
+```
+
+[Home](https://www.aspose.com/) | [Product Page](https://products.aspose.com/tasks/java) | [Docs](https://docs.aspose.com/tasks/java/) | [Demos](https://products.aspose.app/tasks/family) | [API Reference](https://apireference.aspose.com/java/tasks) | [Examples](https://github.com/aspose-tasks/Aspose.Tasks-for-Java) | [Blog](https://blog.aspose.com/category/tasks/) | [Free Support](https://forum.aspose.com/c/tasks) | [Temporary License](https://purchase.aspose.com/temporary-license)
