@@ -75,7 +75,7 @@ public class AddExtendedAttributesToResourceAssignments {
 				CustomFieldType.Cost, ExtendedAttributeResource.Cost5, "My lookup cost");
 
 		Value value1 = new Value();
-		value1.setNumberValue(1500);
+		value1.setNumericValue(BigDecimal.valueOf(1500));
 		value1.setDescription("Val 1");
 		value1.setId(1);
 		value1.setVal("1500");
@@ -83,7 +83,7 @@ public class AddExtendedAttributesToResourceAssignments {
 		resCostAttr.addLookupValue(value1);
 
 		Value value2 = new Value();
-		value1.setNumberValue(2500);
+		value1.setNumericValue(BigDecimal.valueOf(2500));
 		value1.setDescription("Val 2");
 		value1.setId(2);
 

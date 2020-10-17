@@ -2,7 +2,6 @@ package com.aspose.tasks.examples.Projects;
 
 import com.aspose.tasks.Project;
 import com.aspose.tasks.ProjectInfo;
-import com.aspose.tasks.ProjectOnlineReader;
 import com.aspose.tasks.ProjectServerCredentials;
 import com.aspose.tasks.ProjectServerManager;
 
@@ -36,7 +35,7 @@ public class WorkWithProjectServer {
         String password = "MyPassword";
 
         ProjectServerCredentials credentials = new ProjectServerCredentials(sharepointDomainAddress, userName, password);
-        ProjectOnlineReader reader = new ProjectOnlineReader(credentials);
+        ProjectServerManager reader = new ProjectServerManager(credentials);
 
         for (ProjectInfo p : (Iterable<ProjectInfo>)reader.getProjectList())
         {
