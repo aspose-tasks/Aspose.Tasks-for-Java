@@ -21,10 +21,18 @@ public class ReadProjectFiles
     	// The path to the documents directory.
         String dataDir = Utils.getDataDir(ReadProjectFiles.class);
         
+        CheckIfProjectIsPasswordProtected(dataDir);
         ReadProjectAsTemplate(dataDir);
         ReadProjectFileFromStream(dataDir);
     }
     
+    public static void CheckIfProjectIsPasswordProtected(String dataDir)
+    {
+    	//ExStart: CheckIfProjectIsPasswordProtected
+    	ProjectFileInfo info = Project.getProjectFileInfo(dataDir + "project.mpp");
+    	System.out.println("Is file password protected?:" + info.isPasswordProtected());
+    	//ExEnd: CheckIfProjectIsPasswordProtected
+    }
     public static void ReadProjectAsTemplate(String dataDir)
     {
     	// ExStart: ReadProjectAsTemplate
