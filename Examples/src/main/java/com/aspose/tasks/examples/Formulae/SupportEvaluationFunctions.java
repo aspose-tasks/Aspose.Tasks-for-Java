@@ -8,6 +8,7 @@
 
 package com.aspose.tasks.examples.Formulae;
 
+import com.aspose.tasks.*;
 import com.aspose.tasks.examples.Utils;
 
 public class SupportEvaluationFunctions
@@ -17,48 +18,184 @@ public class SupportEvaluationFunctions
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(SupportEvaluationFunctions.class);
 
-        calculationofmathexpressions();
+        CalculationOfMathExpressions();
 
-        calculationofgeneralfunctions();
+        EvaluateChoose();
+        EvaluateIsNumeric();
+        EvaluateSwitch();
 
-        calculationoftextfunctions();
-
-        calculationofdatetimefunctions();
+        CalculationOfTextFunctions();
+        CalculationOfDateTimeFunctions();
 
         //Display result of conversion.
         System.out.println("Process completed Successfully");
     }
 
-    public static void calculationofmathexpressions()
+    private static Project CreateTestProjectWithCustomField()
     {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(SupportEvaluationFunctions.class);
+        Project project = new Project();
+        ExtendedAttributeDefinition attr = ExtendedAttributeDefinition.createTaskDefinition(CustomFieldType.Number, ExtendedAttributeTask.Number1, "Sine");         
+        project.getExtendedAttributes().add(attr);
 
+        Task task = project.getRootTask().getChildren().add("Task");
 
-	        
+        ExtendedAttribute a = attr.createExtendedAttribute();
+        task.getExtendedAttributes().add(a);
+        return project;
+    }
+    
+    public static void CalculationOfMathExpressions()
+    {
+    	//ExStart: CalculationOfMathExpressions
+        Project project = CreateTestProjectWithCustomField();
+        
+        // Set formula Sin(pi/2)
+        project.getExtendedAttributes().get(0).setFormula("Sin(3.1415926/2)");
+
+        // Print Calculated value
+        Task task = project.getRootTask().getChildren().getById(1);
+        System.out.println("Sin(pi/2): {0}" + task.getExtendedAttributes().get(0).getNumericValue());
+        //ExEnd: CalculationOfMathExpressions
     }
 
-    public static void calculationofgeneralfunctions()
-    {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(SupportEvaluationFunctions.class);
-
+    //ExStart: CalculationOfGeneralFunctions
+    public static void EvaluateChoose()
+    {    
+        Project project = CreateTestProjectWithCustomField();
         
-    }    
+        // Set Formula
+        project.getExtendedAttributes().get(0).setFormula("Choose(3, \"This is a\", \"right\", \"choice\")");
+        
+        // Print extended attribute value
+        Task task = project.getRootTask().getChildren().getById(1);
+        System.out.println(task.getExtendedAttributes().get(0).getTextValue());
+    }
 
-    public static void calculationoftextfunctions()
+    public static void EvaluateIsNumeric()
     {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(SupportEvaluationFunctions.class);
+        String[] numericFormulas = { "IsNumeric('AAA')", "IsNUmeric(1)", "IsNumeric(1<0)", "IsNumeric(\"1.1\")", "IsNumeric(Choose((2 + Sgn(2^-3)), 123, \"one two three\"))" };
+        
+        Project project = CreateTestProjectWithCustomField();
+        
+        for (String numericFormula : numericFormulas)    
+        {
+            // Set Formula
+            project.getExtendedAttributes().get(0).setFormula(numericFormula);
 
-	
-    }  
+            // Print extended attribute value
+            Task task = project.getRootTask().getChildren().getById(1);
+            System.out.println(task.getExtendedAttributes().get(0).getTextValue());
+        }           
+    }
 
-    public static void calculationofdatetimefunctions()
+    public static void EvaluateSwitch()
+    {    
+        Project project = CreateTestProjectWithCustomField();
+
+        // Set Formula
+        project.getExtendedAttributes().get(0).setFormula("Switch( 0 < 1, \"0 is lesser than 1\", 0 > 1, \"0 is greater than 1\")");
+
+        // Print extended attribute value
+        Task task = project.getRootTask().getChildren().getById(1);
+        System.out.println(task.getExtendedAttributes().get(0).getTextValue());
+    }	
+    //ExEnd: CalculationOfGeneralFunctions
+        
+    public static void CalculationOfTextFunctions()
     {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(SupportEvaluationFunctions.class);
+    	//ExStart: CalculationOfTextFunctions
+        Project project = CreateTestProjectWithCustomField();
+        Task task = project.getRootTask().getChildren().getById(1);
 
+        // EvaluateStrConv
+        // Set formulas and print extended attribute value
+        project.getExtendedAttributes().get(0).setFormula("StrConv(\"sTring and sTRINg\",3)");
+        System.out.println(task.getExtendedAttributes().get(0).getTextValue());
+        
+        project.getExtendedAttributes().get(0).setFormula("StrConv(\"sTring and sTRINg\",1)");
+        System.out.println(task.getExtendedAttributes().get(0).getTextValue());
+        
+        project.getExtendedAttributes().get(0).setFormula("StrConv(\"sTring and sTRINg\",2)");
+        System.out.println(task.getExtendedAttributes().get(0).getTextValue());
+           
+        // EvaluateStringFunction
+        // Set formulas and print extended attribute value
+        project.getExtendedAttributes().get(0).setFormula("String(5, 40)");
+        System.out.println(task.getExtendedAttributes().get(0).getTextValue());
+        
+        project.getExtendedAttributes().get(0).setFormula("String(5, \"A\")");
+        System.out.println(task.getExtendedAttributes().get(0).getTextValue());
+        
+        project.getExtendedAttributes().get(0).setFormula("String(-5, \"A\")");
+        // #Error
+        System.out.println(task.getExtendedAttributes().get(0).getTextValue());
+        //ExEnd: CalculationOfTextFunctions
+    }
+
+    public static void CalculationOfDateTimeFunctions() {
+    	//ExStart: CalculationOfDateTimeFunctions
+    	Project project = CreateTestProjectWithCustomField();
+    	Task task = project.getRootTask().getChildren().getById(1);
+
+    	ExtendedAttributeDefinition numberDefinition = ExtendedAttributeDefinition.createTaskDefinition(ExtendedAttributeTask.Number1, null);
+    	project.getExtendedAttributes().add(numberDefinition);
+
+    	ExtendedAttribute numberAttribute = numberDefinition.createExtendedAttribute();
+    	task.getExtendedAttributes().add(numberAttribute);
+
+    	// Set ProjDateDiff formula and print extended attribute value
+    	numberDefinition.setFormula("ProjDateDiff(\"03/23/2015\",\"03/18/2015\")");
+    	System.out.println(task.getExtendedAttributes().get(0).getNumericValue());
+    	
+    	numberDefinition.setFormula("ProjDateDiff(\"03/23/2015\",\"03/25/2015\")");
+    	System.out.println(task.getExtendedAttributes().get(0).getNumericValue());
+
+    	ExtendedAttributeDefinition dateDefinition = ExtendedAttributeDefinition.createTaskDefinition(ExtendedAttributeTask.Date1, null);
+    	project.getExtendedAttributes().add(dateDefinition);
+    	ExtendedAttribute dateAttribute = dateDefinition.createExtendedAttribute();
+    	task.getExtendedAttributes().add(dateAttribute);
+
+    	ExtendedAttributeDefinition durationDefinition = ExtendedAttributeDefinition.createTaskDefinition(ExtendedAttributeTask.Duration4, "Custom duration field");
+    	project.getExtendedAttributes().add(durationDefinition);
+    	ExtendedAttribute durationAttribute = durationDefinition.createExtendedAttribute();
+    	task.getExtendedAttributes().add(durationAttribute);
+
+    	ExtendedAttributeDefinition textDefinition = ExtendedAttributeDefinition.createTaskDefinition(ExtendedAttributeTask.Text5, "Custom text field");
+    	project.getExtendedAttributes().add(textDefinition);
+    	ExtendedAttribute textAttribute = textDefinition.createExtendedAttribute();
+    	task.getExtendedAttributes().add(textAttribute);
+
+    	// Set ProjDateSub formula and print extended attribute value
+    	dateDefinition.setFormula("ProjDateSub(\"3/19/2015\", \"1d\")");
+    	System.out.println(dateAttribute.getDateValue());
+
+    	// We can set ProjDurConv formula to duration-valued attribute as well as to text-valued attribute.
+
+    	// Set ProjDurConv formula to duration-valued extended attribute and print its value.
+    	durationDefinition.setFormula("ProjDurConv([Duration], pjHours)");
+    	System.out.println(durationAttribute.getDurationValue());
+
+    	// Set ProjDurConv formula to text-valued extended attribute and print its value.
+    	textDefinition.setFormula("ProjDurConv([Duration], pjHours)");
+    	System.out.println(task.getExtendedAttributes().get(0).getTextValue());
+
+    	textDefinition.setFormula("ProjDurConv([Duration], pjWeeks)");
+    	System.out.println(task.getExtendedAttributes().get(0).getTextValue());
+
+    	// Set Second formula and print entended attribute value
+    	numberDefinition.setFormula("Second(\"4/21/2015 2:53:41 AM\")");
+    	System.out.println(task.getExtendedAttributes().get(0).getNumericValue());
+
+    	// Set Weekday formula and print entended attribute value
+    	numberDefinition.setFormula("Weekday(\"24/3/2015\", 1)");
+    	System.out.println(task.getExtendedAttributes().get(0).getNumericValue());
+    	
+    	numberDefinition.setFormula("Weekday(\"24/3/2015\", 2)");
+    	System.out.println(task.getExtendedAttributes().get(0).getNumericValue());
+    	
+    	numberDefinition.setFormula("Weekday(\"24/3/2015\", 3)");
+    	System.out.println(task.getExtendedAttributes().get(0).getNumericValue());
+    	//ExEnd: CalculationOfDateTimeFunctions
     }
 }
 
