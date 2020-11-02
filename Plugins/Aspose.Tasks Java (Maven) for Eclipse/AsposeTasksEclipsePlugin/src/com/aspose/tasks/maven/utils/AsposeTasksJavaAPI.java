@@ -24,8 +24,8 @@ package com.aspose.tasks.maven.utils;
 public class AsposeTasksJavaAPI extends AsposeJavaAPI {
 
     private final String _name = AsposeConstants.API_NAME;
-    private final String _mavenRepositoryURL = "http://maven.aspose.com/repository/ext-release-local/com/aspose/aspose-tasks/";
-    private final String _remoteExamplesRepository = "https://github.com/asposetasks/Aspose_Tasks_Java";
+    private final String _mavenRepositoryURL = "https://repository.aspose.com/repo/com/aspose/aspose-tasks/";
+    private final String _remoteExamplesRepository = "https://github.com/aspose-tasks/Aspose.Tasks-for-Java";
 
     /**
      * @return the _name
