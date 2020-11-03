@@ -15,28 +15,27 @@ public class ManageDurations
 {
     public static void main(String[] args) throws Exception
     {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(ManageDurations.class);
-	
-        // Create a new project
+    	//ExStart: ManageDurations
+        // Create a new project and add a new task
         Project project = new Project();
         Task task = project.getRootTask().getChildren().add("Task");
 
-        // task duration in days (default time unit)
+        // Task duration in days (default time unit)
         Duration duration = task.get(Tsk.DURATION);
-        System.out.println("Duration in Days" + duration.toString());
+        System.out.println("Duration equals 1 day:" + duration.toString().equals("1 day"));
 
-        // convert to hours time unit
+        // Convert to hours time unit
         duration = duration.convert(TimeUnitType.Hour);
-        System.out.println("Duration in Hours"+ duration.toString());
+        System.out.println("Duration equals 8 hrs: "+ duration.toString().equals("8 hrs"));
 
-        // get Duration instance
+        // Increase task duration to 1 week and display if duration is updated successfully
         task.set(Tsk.DURATION, project.getDuration(1, TimeUnitType.Week));
-        System.out.println("1 wk" +  task.get(Tsk.DURATION).toString());
+        System.out.println("Duration equals 1 wk: " + task.get(Tsk.DURATION).toString().equals("1 wk"));
 
-        // Decrease task duration
+        // Decrease task duration and display if duration is updated successfully
         task.set(Tsk.DURATION, task.get(Tsk.DURATION).subtract(0.5));
-        System.out.println("0.5 wks" + task.get(Tsk.DURATION).toString());
+        System.out.println("Duration equals 0.5 wks: " + task.get(Tsk.DURATION).toString().equals("0.5 wks"));
+        //ExEnd: ManageDurations
     }
 }
 
