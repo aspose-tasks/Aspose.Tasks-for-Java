@@ -1,3 +1,5 @@
+![GitHub all releases](https://img.shields.io/github/downloads/aspose-tasks/Aspose.tasks-for-Java/total) ![GitHub](https://img.shields.io/github/license/aspose-tasks/Aspose.tasks-for-java)
+
 # Microsoft Project File Manipulation API
 
 [Aspose.Tasks](https://products.aspose.com/tasks/java) a Java Project Management API to manipulate Microsoft Project files. Developers can define a project’s main and default properties as well as calendar information. API also provides the ability to specify weekdays and calendar exceptions while making it easy to add & recalculate tasks, resources and other data without user intervention.
