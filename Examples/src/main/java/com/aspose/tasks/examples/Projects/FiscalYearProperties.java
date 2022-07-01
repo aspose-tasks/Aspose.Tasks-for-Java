@@ -1,7 +1,7 @@
 /*
- * Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
+ * Copyright 2001-2022 Aspose Pty Ltd. All Rights Reserved.
  *
- * This file is part of Aspose.Slides. The source code in this file
+ * This file is part of Aspose.Tasks. The source code in this file
  * is only intended as a supplement to the documentation, and is provided
  * "as is", without warranty of any kind, either expressed or implied.
  */
@@ -9,13 +9,12 @@
 package com.aspose.tasks.examples.Projects;
 
 import com.aspose.tasks.*;
+import com.aspose.tasks.examples.Utils;
 
-public class FiscalYearProperties
-{
-    public static void main(String[] args) throws Exception
-    {
+public class FiscalYearProperties {
+    public static void main(String[] args) throws Exception {
         // The path to the documents directory.
-        String dataDir = "src/programmersguide/workingwithprojects/fiscalyearproperties/data/";
+        String dataDir = Utils.getDataDir(FiscalYearProperties.class);
 
         Project project = new Project(dataDir + "project.mpp");
 
@@ -29,11 +28,11 @@ public class FiscalYearProperties
         Project prj = new Project();
 
         //Set fiscal year properties
-        prj.set(Prj.FY_START_DATE,Month.July);
+        prj.set(Prj.FY_START_DATE, Month.July);
         prj.set(Prj.FISCAL_YEAR_START, new NullableBool(true));
 
         //Save the project as XML project file
-        prj.save(dataDir + "savedProject.xml", SaveFileFormat.XML);
+        prj.save(dataDir + "savedproject.xml", SaveFileFormat.Xml);
 
         //Display result of conversion.
         System.out.println("Process completed Successfully");

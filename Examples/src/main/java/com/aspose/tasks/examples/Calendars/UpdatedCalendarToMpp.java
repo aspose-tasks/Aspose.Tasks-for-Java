@@ -1,5 +1,5 @@
-/* 
- * Copyright 2001-2015 Aspose Pty Ltd. All Rights Reserved.
+/*
+ * Copyright 2001-2022 Aspose Pty Ltd. All Rights Reserved.
  *
  * This file is part of Aspose.Tasks. The source code in this file
  * is only intended as a supplement to the documentation, and is provided
@@ -12,11 +12,11 @@ import com.aspose.tasks.*;
 import com.aspose.tasks.examples.Utils;
 
 import java.util.Date;
+import java.util.GregorianCalendar;
 
 public class UpdatedCalendarToMpp
 {
-    public static void main(String[] args) throws Exception
-    {
+    public static void main(String[] args) throws Exception {
     	// ExStart: UpdatedCalendarToMpp
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(UpdatedCalendarToMpp.class);
@@ -31,7 +31,7 @@ public class UpdatedCalendarToMpp
         project.set(Prj.CALENDAR, cal1);
 
         //Save the Project
-        project.save(dataDir + resultFile, SaveFileFormat.MPP);
+        project.save(dataDir + resultFile, SaveFileFormat.Mpp);
 
         //Display result of conversion.
         System.out.println("Process completed Successfully");
@@ -40,9 +40,7 @@ public class UpdatedCalendarToMpp
 	
 
     // ExStart: GetTestCalendar
-    private static void GetTestCalendar(Calendar  cal)
-
-    {
+    private static void GetTestCalendar(Calendar  cal) {
     	Calendar.makeStandardCalendar(cal);
     	cal.setName("Test calendar");
     	CalendarException exc = new CalendarException();
@@ -54,23 +52,20 @@ public class UpdatedCalendarToMpp
     	exc.setToDate(calObject.getTime());
     	exc.setDayWorking(true);
 
-    	WorkingTime wt1 = new WorkingTime();
-    	calObject.set(1,1,1, 9,0,0);
-    	wt1.setFromTime(calObject.getTime());
-    	calObject.set(1,1,1, 13,0,0);
-    	wt1.setToTime(calObject.getTime());
+		WorkingTime wt1 = new WorkingTime(
+				new GregorianCalendar(1, java.util.Calendar.JANUARY, 1, 9, 0, 0).getTime(),
+				new GregorianCalendar(1, java.util.Calendar.JANUARY, 1, 13, 0, 0).getTime()
+		);
 
-    	WorkingTime wt2 = new WorkingTime();
-    	calObject.set(1, 1, 1, 14, 0, 0);
-    	wt2.setFromTime(calObject.getTime());
-    	calObject.set(1, 1, 1, 19, 0, 0);
-    	wt2.setToTime(calObject.getTime());
+		WorkingTime wt2 = new WorkingTime(
+				new GregorianCalendar(1, java.util.Calendar.JANUARY, 1, 14, 0, 0).getTime(),
+				new GregorianCalendar(1, java.util.Calendar.JANUARY, 1, 19, 0, 0).getTime()
+		);
 
-    	WorkingTime wt3 = new WorkingTime();
-    	calObject.set(10, 1, 1, 20, 0, 0);
-    	wt3.setFromTime(calObject.getTime());
-    	calObject.set(10, 1, 1, 21, 0, 0);
-    	wt3.setToTime(calObject.getTime());
+		WorkingTime wt3 = new WorkingTime(
+				new GregorianCalendar(10, java.util.Calendar.JANUARY, 1, 20, 0, 0).getTime(),
+				new GregorianCalendar(10, java.util.Calendar.JANUARY, 1, 21, 0, 0).getTime()
+		);
 
     	exc.getWorkingTimes().add(wt1);
     	exc.getWorkingTimes().add(wt2);

@@ -1,5 +1,5 @@
-/* 
- * Copyright 2001-2015 Aspose Pty Ltd. All Rights Reserved.
+/*
+ * Copyright 2001-2022 Aspose Pty Ltd. All Rights Reserved.
  *
  * This file is part of Aspose.Tasks. The source code in this file
  * is only intended as a supplement to the documentation, and is provided
@@ -25,12 +25,8 @@ public class CreateCalendar {
 		Calendar cal2 = prj.getCalendars().add("no name");
 		Calendar cal3 = prj.getCalendars().add("cal3");
 
-		prj.getCalendars().add(cal1);
-		prj.getCalendars().add(cal2);
-		prj.getCalendars().add(cal3);
-
 		// Save the Project
-		prj.save(dataDir + "Project.Xml", SaveFileFormat.XML);
+		prj.save(dataDir + "project.xml", SaveFileFormat.Xml);
 
 		// Display result of conversion.
 		System.out.println("Process completed Successfully");

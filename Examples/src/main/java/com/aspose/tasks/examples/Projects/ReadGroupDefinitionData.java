@@ -1,7 +1,7 @@
 /*
- * Copyright 2001-2015 Aspose Pty Ltd. All Rights Reserved.
+ * Copyright 2001-2022 Aspose Pty Ltd. All Rights Reserved.
  *
- * This file is part of Aspose.Slides. The source code in this file
+ * This file is part of Aspose.Tasks. The source code in this file
  * is only intended as a supplement to the documentation, and is provided
  * "as is", without warranty of any kind, either expressed or implied.
  */
@@ -39,7 +39,7 @@ public class ReadGroupDefinitionData
         System.out.println("Parent Group is equval to task Group.");
 	
 	System.out.println("\n*********** Retreivnig Criterion's Font Information ***********");
-	System.out.println("Font Name: " + criterion.getFont().getName());
+	System.out.println("Font Family Name: " + criterion.getFont().getFontFamily());
 	System.out.println("Font Size: " + criterion.getFont().getSize());
 	System.out.println("Font Style: " + criterion.getFont().getStyle());
 	System.out.println("Ascending/Dscending: " + criterion.getAscending());

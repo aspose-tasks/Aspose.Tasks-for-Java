@@ -1,26 +1,27 @@
-/* 
- * Copyright 2001-2015 Aspose Pty Ltd. All Rights Reserved.
+/*
+ * Copyright 2001-2022 Aspose Pty Ltd. All Rights Reserved.
  *
  * This file is part of Aspose.Tasks. The source code in this file
  * is only intended as a supplement to the documentation, and is provided
  * "as is", without warranty of any kind, either expressed or implied.
  */
- 
+
 package com.aspose.tasks.examples.Resources;
 
-import com.aspose.tasks.*;
+import com.aspose.tasks.Project;
+import com.aspose.tasks.Resource;
+import com.aspose.tasks.Rsc;
+import com.aspose.tasks.SaveFileFormat;
 import com.aspose.tasks.examples.Utils;
 
 import java.math.BigDecimal;
 
-public class WriteUpdatedResourceData
-{
-    public static void main(String[] args) throws Exception
-    {
+public class WriteUpdatedResourceData {
+    public static void main(String[] args) throws Exception {
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(WriteUpdatedResourceData.class);
-        
-        String file = dataDir + "SampleNewMPP.mpp"; // Test file with one rsc to update
+
+        String file = dataDir + "ResourceWithExtAttribs.xml"; // Test file with one rsc to update
         // File to write test project
         String resultFile = dataDir + "OutputMPP.mpp";
 
@@ -31,8 +32,7 @@ public class WriteUpdatedResourceData
         rsc.set(Rsc.GROUP, "Workgroup1");
 
         //Save the Project
-        project.save(resultFile, SaveFileFormat.MPP);
-        
+        project.save(resultFile, SaveFileFormat.Mpp);
     }
 }
 

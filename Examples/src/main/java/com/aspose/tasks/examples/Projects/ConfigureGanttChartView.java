@@ -1,7 +1,7 @@
 /*
- * Copyright 2001-2015 Aspose Pty Ltd. All Rights Reserved.
+ * Copyright 2001-2022 Aspose Pty Ltd. All Rights Reserved.
  *
- * This file is part of Aspose.Slides. The source code in this file
+ * This file is part of Aspose.Tasks. The source code in this file
  * is only intended as a supplement to the documentation, and is provided
  * "as is", without warranty of any kind, either expressed or implied.
  */
@@ -11,15 +11,13 @@ package com.aspose.tasks.examples.Projects;
 import com.aspose.tasks.*;
 import com.aspose.tasks.examples.Utils;
 
-public class ConfigureGanttChartView
-{
-    public static void main(String[] args) throws Exception
-    {
-    	// ExStart:ConfigureGantChart
+public class ConfigureGanttChartView {
+    public static void main(String[] args) throws Exception {
+        // ExStart:ConfigureGantChart
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(ConfigureGanttChartView.class);
 
-        Project project = new Project(dataDir + "New project 2010.mpp");
+        Project project = new Project(dataDir + "project.mpp");
 
         // Create a new project task
         Task task = project.getRootTask().getChildren().add("New Activity");
@@ -42,7 +40,7 @@ public class ConfigureGanttChartView
         table.getTableFields().add(3, attrField);
 
         // The result of opening of saved project in MSP2010 is in attached screenshot
-        project.save("saved.mpp", SaveFileFormat.MPP);
+        project.save("saved.mpp", SaveFileFormat.Mpp);
         // ExEnd:ConfigureGantChart
     }
 }

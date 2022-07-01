@@ -1,28 +1,32 @@
 /*
- * Copyright 2001-2015 Aspose Pty Ltd. All Rights Reserved.
+ * Copyright 2001-2022 Aspose Pty Ltd. All Rights Reserved.
  *
- * This file is part of Aspose.Slides. The source code in this file
+ * This file is part of Aspose.Tasks. The source code in this file
  * is only intended as a supplement to the documentation, and is provided
  * "as is", without warranty of any kind, either expressed or implied.
  */
 
 package com.aspose.tasks.examples.Projects;
 
-import com.aspose.tasks.*;
+import com.aspose.tasks.Gridline;
+import com.aspose.tasks.GridlineType;
+import com.aspose.tasks.ImageSaveOptions;
+import com.aspose.tasks.LinePattern;
+import com.aspose.tasks.Prj;
+import com.aspose.tasks.Project;
+import com.aspose.tasks.SaveFileFormat;
 import com.aspose.tasks.examples.Utils;
 
 import java.awt.*;
 import java.util.ArrayList;
 
-public class PrintPagesToSeparateImage
-{
-    public static void main(String[] args) throws Exception
-    {
+public class PrintPagesToSeparateImage {
+    public static void main(String[] args) throws Exception {
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(PrintPagesToSeparateImage.class);
-	
+
         Project project = new Project(dataDir + "CustomerFeedback.mpp");
-        ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFileFormat.PNG);
+        ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFileFormat.Png);
 
         java.util.Calendar cal = java.util.Calendar.getInstance();
         cal.setTime(project.get(Prj.START_DATE));
@@ -46,7 +50,7 @@ public class PrintPagesToSeparateImage
         project.save(dataDir + "CustomerFeedback.png", saveOptions);
 
         // Save project layout to separate files
-        saveOptions.setSaveToSeparateFiles(true);
+        saveOptions.setRenderToSinglePage(false);
         project.save(dataDir + "CustomerFeedback_.png", saveOptions);
     }
 }

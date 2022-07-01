@@ -1,4 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+  ~ Copyright 2001-2022 Aspose Pty Ltd. All Rights Reserved.
+  ~
+  ~ This file is part of Aspose.Tasks. The source code in this file
+  ~ is only intended as a supplement to the documentation, and is provided
+  ~ "as is", without warranty of any kind, either expressed or implied.
+  -->
+
 <Project xmlns="http://schemas.microsoft.com/project">
   <!--Published by Aspose.Tasks 2009 for .NET 6.2.0.0-->
   <SaveVersion>14</SaveVersion>

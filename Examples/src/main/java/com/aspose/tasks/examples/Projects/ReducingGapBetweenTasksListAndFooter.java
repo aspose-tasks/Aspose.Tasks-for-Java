@@ -1,6 +1,12 @@
-package com.aspose.tasks.examples.Projects;
+/*
+ * Copyright 2001-2022 Aspose Pty Ltd. All Rights Reserved.
+ *
+ * This file is part of Aspose.Tasks. The source code in this file
+ * is only intended as a supplement to the documentation, and is provided
+ * "as is", without warranty of any kind, either expressed or implied.
+ */
 
-import java.io.IOException;
+package com.aspose.tasks.examples.Projects;
 
 import com.aspose.tasks.HtmlSaveOptions;
 import com.aspose.tasks.ImageSaveOptions;
@@ -12,40 +18,38 @@ import com.aspose.tasks.SaveOptions;
 import com.aspose.tasks.Timescale;
 import com.aspose.tasks.examples.Utils;
 
+import java.io.IOException;
+
 public class ReducingGapBetweenTasksListAndFooter {
+    public static void main(String[] args) throws IOException {
+        //ExStart: ReducingGapBetweenTasksListAndFooter
+        String dataDir = Utils.getDataDir(SaveAsPdf.class);
 
-	public static void main(String[] args) throws IOException {
-		// TODO Auto-generated method stub
+        //Read the MPP file.
+        Project project = new Project(dataDir + "Homemoveplan.mpp");
 
-		//ExStart: ReducingGapBetweenTasksListAndFooter
-		String dataDir = Utils.getDataDir(SaveAsPdf.class);
+        //Use ReduceFooterGap property to reduce the gap between list of tasks and Footer
+        ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFileFormat.Png);
+        imageSaveOptions.setReduceFooterGap(true);
+        imageSaveOptions.setRenderToSinglePage(false);
+        imageSaveOptions.setPageSize(PageSize.A0);
+        imageSaveOptions.setTimescale(Timescale.Days);
+        project.save(dataDir + "ReducingGapBetweenTasksListAndFooter_out.png", (SaveOptions) imageSaveOptions);
 
-		//Read the MPP file.
-		Project project = new Project(dataDir + "Homemoveplan.mpp");
+        PdfSaveOptions pdfSaveOptions = new PdfSaveOptions();
+        pdfSaveOptions.setReduceFooterGap(true);
+        pdfSaveOptions.setSaveToSeparateFiles(true);
+        pdfSaveOptions.setPageSize(PageSize.A0);
+        pdfSaveOptions.setTimescale(Timescale.Days);
+        project.save(dataDir + "ReducingGapBetweenTasksListAndFooter_out.pdf", (SaveOptions) pdfSaveOptions);
 
-		//Use ReduceFooterGap property to reduce the gap between list of tasks and Footer
-		ImageSaveOptions imageSaveOptions =  new ImageSaveOptions(SaveFileFormat.PNG);
-		imageSaveOptions.setReduceFooterGap(true);
-		imageSaveOptions.setSaveToSeparateFiles(true);
-		imageSaveOptions.setPageSize(PageSize.A0);
-		imageSaveOptions.setTimescale(Timescale.Days);
-		project.save(dataDir + "ReducingGapBetweenTasksListAndFooter_out.png", (SaveOptions)imageSaveOptions);
-
-		PdfSaveOptions pdfSaveOptions = new PdfSaveOptions();
-		pdfSaveOptions.setReduceFooterGap(true);
-		pdfSaveOptions.setSaveToSeparateFiles(true);
-		pdfSaveOptions.setPageSize(PageSize.A0);
-		pdfSaveOptions.setTimescale(Timescale.Days);
-		project.save(dataDir + "ReducingGapBetweenTasksListAndFooter_out.pdf", (SaveOptions)pdfSaveOptions);
-
-		HtmlSaveOptions htmlSaveOptions = new HtmlSaveOptions();
-		htmlSaveOptions.setReduceFooterGap(true); // set to true
-		htmlSaveOptions.setIncludeProjectNameInPageHeader(false);
-		htmlSaveOptions.setIncludeProjectNameInTitle(false);
-		htmlSaveOptions.setPageSize(PageSize.A0);
-		htmlSaveOptions.setTimescale(Timescale.Days);
-		project.save(dataDir + "ReducingGapBetweenTasksListAndFooter_out.html", htmlSaveOptions);
-		//ExEnd: ReducingGapBetweenTasksListAndFooter
-	}
-
+        HtmlSaveOptions htmlSaveOptions = new HtmlSaveOptions();
+        htmlSaveOptions.setReduceFooterGap(true); // set to true
+        htmlSaveOptions.setIncludeProjectNameInPageHeader(false);
+        htmlSaveOptions.setIncludeProjectNameInTitle(false);
+        htmlSaveOptions.setPageSize(PageSize.A0);
+        htmlSaveOptions.setTimescale(Timescale.Days);
+        project.save(dataDir + "ReducingGapBetweenTasksListAndFooter_out.html", htmlSaveOptions);
+        //ExEnd: ReducingGapBetweenTasksListAndFooter
+    }
 }

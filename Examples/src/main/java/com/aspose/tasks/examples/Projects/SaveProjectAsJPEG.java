@@ -1,30 +1,34 @@
-package com.aspose.tasks.examples.Projects;
+/*
+ * Copyright 2001-2022 Aspose Pty Ltd. All Rights Reserved.
+ *
+ * This file is part of Aspose.Tasks. The source code in this file
+ * is only intended as a supplement to the documentation, and is provided
+ * "as is", without warranty of any kind, either expressed or implied.
+ */
 
-import java.io.IOException;
+package com.aspose.tasks.examples.Projects;
 
 import com.aspose.tasks.ImageSaveOptions;
 import com.aspose.tasks.Project;
 import com.aspose.tasks.SaveFileFormat;
 import com.aspose.tasks.examples.Utils;
 
+import java.io.IOException;
+
 public class SaveProjectAsJPEG {
-
-	public static void main(String[] args) throws IOException {
-		// TODO Auto-generated method stub
-
-		 // The path to the documents directory.
+    public static void main(String[] args) throws IOException {
+        // The path to the documents directory.
         String dataDir = Utils.getDataDir(SaveAsPdf.class);
-        
+
         //ExStart: SaveProjectAsJPEG
-		Project project = new Project(dataDir + "Homemoveplan.mpp");
+        Project project = new Project(dataDir + "Homemoveplan.mpp");
 
-		// in order to manipulate JPEG quality one can use ImageSaveOptions.JpegQuality property.
-		// The allowed value range is 0..100.
-		ImageSaveOptions options = new ImageSaveOptions(SaveFileFormat.JPEG);
-		options.setJpegQuality(50);
+        // in order to manipulate JPEG quality one can use ImageSaveOptions.JpegQuality property.
+        // The allowed value range is 0..100.
+        ImageSaveOptions options = new ImageSaveOptions(SaveFileFormat.Jpeg);
+        options.setJpegQuality(50);
 
-		project.save(dataDir + "image_out.jpeg", options);
-		//ExEnd: SaveProjectAsJPEG
-	}
-
+        project.save(dataDir + "image_out.jpeg", options);
+        //ExEnd: SaveProjectAsJPEG
+    }
 }

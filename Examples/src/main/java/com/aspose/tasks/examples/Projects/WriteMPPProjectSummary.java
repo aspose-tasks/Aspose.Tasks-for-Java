@@ -1,20 +1,22 @@
 /*
- * Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
+ * Copyright 2001-2022 Aspose Pty Ltd. All Rights Reserved.
  *
- * This file is part of Aspose.Slides. The source code in this file
+ * This file is part of Aspose.Tasks. The source code in this file
  * is only intended as a supplement to the documentation, and is provided
  * "as is", without warranty of any kind, either expressed or implied.
  */
 
 package com.aspose.tasks.examples.Projects;
 
-import com.aspose.tasks.*;
+import com.aspose.tasks.Prj;
+import com.aspose.tasks.Project;
+import com.aspose.tasks.SaveFileFormat;
 import com.aspose.tasks.examples.Utils;
 
-public class WriteMPPProjectSummary
-{
-    public static void main(String[] args) throws Exception
-    {
+import java.util.Calendar;
+
+public class WriteMPPProjectSummary {
+    public static void main(String[] args) throws Exception {
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(WriteMPPProjectSummary.class);
 
@@ -28,18 +30,17 @@ public class WriteMPPProjectSummary
         project.set(Prj.COMMENTS, "Comments");
 
         java.util.Calendar cal = java.util.Calendar.getInstance();
-        cal.set(2014,2,15,0,0,0);
+        cal.set(2014, Calendar.FEBRUARY, 15, 0, 0, 0);
         project.set(Prj.CREATION_DATE, cal.getTime());
         project.set(Prj.KEYWORDS, "MPP Aspose");
-        cal.set(2014, 3, 16,0,0,0);
+        cal.set(2014, Calendar.MARCH, 16, 0, 0, 0);
         project.set(Prj.LAST_PRINTED, cal.getTime());
 
         //Save the Project back in MPP format
-        project.save(dataDir + "MPPAspose.xml", SaveFileFormat.XML);
+        project.save(dataDir + "MPPAspose.xml", SaveFileFormat.Xml);
 
         //Display result of conversion.
         System.out.println("Process completed Successfully");
-
 
         //Reading Project Summary Information
         project = new Project(dataDir + "MPPAspose.xml");

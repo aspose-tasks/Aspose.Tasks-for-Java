@@ -1,27 +1,24 @@
-/* 
- * Copyright 2001-2015 Aspose Pty Ltd. All Rights Reserved.
+/*
+ * Copyright 2001-2022 Aspose Pty Ltd. All Rights Reserved.
  *
- * This file is part of Aspose.Slides. The source code in this file
+ * This file is part of Aspose.Tasks. The source code in this file
  * is only intended as a supplement to the documentation, and is provided
  * "as is", without warranty of any kind, either expressed or implied.
  */
- 
+
 package com.aspose.tasks.examples.Tasks;
 
 import com.aspose.tasks.examples.Utils;
 
-
 import com.aspose.tasks.*;
 
-public class SplitTaskFinishDate
-{
-    public static void main(String[] args) throws Exception
-    {
+public class SplitTaskFinishDate {
+    public static void main(String[] args) throws Exception {
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(SplitTaskFinishDate.class);
 
         //Read project
-        String projectName = dataDir + "SplitTaskProject.mpp";
+        String projectName = dataDir + "SplitTask.mpp";
         Project project = new Project(projectName);
 
         //Find a split task
@@ -42,7 +39,6 @@ public class SplitTaskFinishDate
         System.out.println("Start Date: " + splitTask.get(Tsk.START) + "\n+ Duration 80 hours\nFinish Date: " + calendar.getTaskFinishDateFromDuration(splitTask, 80d));
         System.out.println("Start Date: " + splitTask.get(Tsk.START) + "\n+ Duration 120 hours\nFinish Date: " + calendar.getTaskFinishDateFromDuration(splitTask, 120d));
         System.out.println("Start Date: " + splitTask.get(Tsk.START) + "\n+ Duration 150 hours\nFinish Date: " + calendar.getTaskFinishDateFromDuration(splitTask, 150d));
-
     }
 }
 

@@ -1,37 +1,28 @@
-/* 
- * Copyright 2001-2015 Aspose Pty Ltd. All Rights Reserved.
+/*
+ * Copyright 2001-2022 Aspose Pty Ltd. All Rights Reserved.
  *
  * This file is part of Aspose.Tasks. The source code in this file
  * is only intended as a supplement to the documentation, and is provided
  * "as is", without warranty of any kind, either expressed or implied.
  */
- 
+
 package com.aspose.tasks.examples.Miscellaneous;
 
 import com.aspose.tasks.*;
 import com.aspose.tasks.examples.Utils;
 
-import java.util.ArrayList;
-
-public class WriteUpdatedOutlineCode
-{
-    public static void main(String[] args) throws Exception
-    {
+public class WriteUpdatedOutlineCode {
+    public static void main(String[] args) throws Exception {
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(WriteUpdatedOutlineCode.class);
-	
 
         String newFile = "New Project 2013.mpp";
 
-        String resultFile = "OutputMPP.mpp";
-
         Project project = new Project(dataDir + newFile);
-        ArrayList projectOutlCodes = new ArrayList();
-
 
         OutlineCodeDefinition code1 = new OutlineCodeDefinition();
         code1.setAlias("New task outline code1");
-        code1.setFieldId(String.valueOf((int) ExtendedAttributeTask.OutlineCode1));
+        code1.setFieldId(String.valueOf(ExtendedAttributeTask.OutlineCode1));
         code1.setFieldName("Outline Code1");
 
         OutlineMask mask = new OutlineMask();
@@ -53,7 +44,7 @@ public class WriteUpdatedOutlineCode
 
         OutlineCodeDefinition code2 = new OutlineCodeDefinition();
         code2.setAlias("New rsc outline code2");
-        code2.setFieldId(String.valueOf((int)ExtendedAttributeResource.OutlineCode2));
+        code2.setFieldId(String.valueOf(ExtendedAttributeResource.OutlineCode2));
         code2.setFieldName("Outline Code2");
 
         OutlineMask mask2 = new OutlineMask();
@@ -70,9 +61,7 @@ public class WriteUpdatedOutlineCode
         value2.setType(OutlineValueType.Number);
 
         //Save the Project
-        project.save(dataDir + "Project.Mpp", SaveFileFormat.MPP);
-  
-        
+        project.save(dataDir + "Project.Mpp", SaveFileFormat.Mpp);
     }
 }
 

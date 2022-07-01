@@ -1,5 +1,5 @@
 /*
- * Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
+ * Copyright 2001-2022 Aspose Pty Ltd. All Rights Reserved.
  *
  * This file is part of Aspose.Tasks. The source code in this file
  * is only intended as a supplement to the documentation, and is provided
@@ -8,44 +8,38 @@
 
 package com.aspose.tasks.examples.Projects;
 
-import java.io.IOException;
-
-import com.aspose.tasks.*;
+import com.aspose.tasks.Project;
+import com.aspose.tasks.SaveFileFormat;
+import com.aspose.tasks.SaveOptions;
+import com.aspose.tasks.SvgOptions;
+import com.aspose.tasks.Timescale;
 import com.aspose.tasks.examples.Utils;
 
-public class SaveAsSVG
-{
-    public static void main(String[] args) throws Exception
-    {
+import java.io.IOException;
+
+public class SaveAsSVG {
+    public static void main(String[] args) throws Exception {
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(SaveAsSVG.class);
 
-        SavingProjectDataAsSVG(dataDir + "Homemoveplan.mpp");
+        SavingProjectDataAsSVG(dataDir);
 
-        UsingSvgOptions(dataDir + "Homemoveplan.mpp");
+        UsingSvgOptions(dataDir);
 
         //Display result of conversion.
         System.out.println("Process completed Successfully");
     }
 
-    public static void SavingProjectDataAsSVG(String projectName) throws IOException
-    {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(SaveAsSVG.class);
-
-       //Read the input Project file
-        Project project = new Project(projectName);
-        //Save the Project as SVG
-        project.save(dataDir + "Project5.SVG", SaveFileFormat.SVG);
+    public static void SavingProjectDataAsSVG(String dataDir) throws IOException {
+        // Read the input Project file
+        Project project = new Project(dataDir + "Homemoveplan.mpp");
+        // Save the Project as SVG
+        project.save(dataDir + "Project5.svg", SaveFileFormat.Svg);
     }
 
-    public static void UsingSvgOptions(String projectName) throws IOException
-    {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(SaveAsSVG.class);
-
-        //Read the input Project file
-        Project project = new Project(projectName);
+    public static void UsingSvgOptions(String dataDir) throws IOException {
+        // Read the input Project file
+        Project project = new Project(dataDir + "Homemoveplan.mpp");
 
         SaveOptions opt = new SvgOptions();
         opt.setFitContent(true);

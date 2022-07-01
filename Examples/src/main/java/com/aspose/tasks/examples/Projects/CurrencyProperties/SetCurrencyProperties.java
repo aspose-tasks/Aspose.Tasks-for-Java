@@ -1,7 +1,7 @@
 /*
- * Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
+ * Copyright 2001-2022 Aspose Pty Ltd. All Rights Reserved.
  *
- * This file is part of Aspose.Slides. The source code in this file
+ * This file is part of Aspose.Tasks. The source code in this file
  * is only intended as a supplement to the documentation, and is provided
  * "as is", without warranty of any kind, either expressed or implied.
  */
@@ -14,10 +14,8 @@ import com.aspose.tasks.Project;
 import com.aspose.tasks.SaveFileFormat;
 import com.aspose.tasks.examples.Utils;
 
-public class SetCurrencyProperties
-{
-    public static void main(String[] args) throws Exception
-    {
+public class SetCurrencyProperties {
+    public static void main(String[] args) throws Exception {
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(SetCurrencyProperties.class);
 
@@ -31,7 +29,7 @@ public class SetCurrencyProperties
         project.set(Prj.CURRENCY_SYMBOL_POSITION, CurrencySymbolPositionType.After);
 
         //Save the project as XML project file
-        project.save(dataDir + "project.xml", SaveFileFormat.XML);
+        project.save(dataDir + "project.xml", SaveFileFormat.Xml);
 
         //Display result of conversion.
         System.out.println("Process completed Successfully");

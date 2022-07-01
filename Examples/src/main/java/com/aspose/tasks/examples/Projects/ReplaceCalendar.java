@@ -1,5 +1,5 @@
 /*
- * Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
+ * Copyright 2001-2022 Aspose Pty Ltd. All Rights Reserved.
  *
  * This file is part of Aspose.Tasks. The source code in this file
  * is only intended as a supplement to the documentation, and is provided
@@ -8,33 +8,27 @@
 
 package com.aspose.tasks.examples.Projects;
 
-import com.aspose.tasks.*;
-import com.aspose.tasks.examples.Utils;
+import com.aspose.tasks.Calendar;
+import com.aspose.tasks.CalendarCollection;
+import com.aspose.tasks.Project;
 
-public class ReplaceCalendar
-{
-    public static void main(String[] args) throws Exception
-    {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(ReplaceCalendar.class);
-
+public class ReplaceCalendar {
+    public static void main(String[] args) throws Exception {
         Project project = new Project();
 
-		//Add a calendar to the project
-		Calendar cal =  project.getCalendars().add("Cal 1");
+        // Add a calendar to the project
+        project.getCalendars().add("Cal 1");
+        Calendar newCal = project.getCalendars().add("New Cal");
 
-		Calendar newCal = new Calendar("New Cal");
-
-		CalendarCollection calColl = project.getCalendars();
-		for (Calendar c:calColl)
-		{
-		    if (c.getName()== "Cal 1")
-		    {
-		        calColl.remove(c);
-		        calColl.add("Standard", newCal);
-		        break;
-		    }
-		}
+        CalendarCollection calColl = project.getCalendars();
+        for (int i = calColl.size() - 1; i >= 0; i--) {
+            Calendar c = calColl.get(i);
+            if (c.getName().equals("Cal 1")) {
+                calColl.remove(i);
+                calColl.add("Standard", newCal);
+                break;
+            }
+        }
 
         //Display result of conversion.
         System.out.println("Process completed Successfully");

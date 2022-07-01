@@ -1,14 +1,15 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Project xmlns="http://schemas.microsoft.com/project">
-  <!--Published by Aspose.Tasks 2009 for .NET 6.2.0.0-->
+  <!--Published by Aspose.Tasks for Java 22.6-->
   <SaveVersion>12</SaveVersion>
+  <UID>1</UID>
   <Name>TestViews</Name>
+  <GUID>71449C27-EC1C-4D2A-95F4-1D8ACECE60E6</GUID>
   <Title>TestViews</Title>
-  <Subject>Aspose Subject</Subject>
   <Company>Home</Company>
-  <Author>Muhammad Sabir</Author>
+  <Author>Author</Author>
   <CreationDate>2000-03-15T00:00:00</CreationDate>
-  <LastSaved>2000-09-10T23:25:56</LastSaved>
+  <LastSaved>2022-07-01T23:20:55</LastSaved>
   <ScheduleFromStart>1</ScheduleFromStart>
   <StartDate>2000-06-08T08:00:00</StartDate>
   <FinishDate>2000-07-16T17:00:00</FinishDate>
@@ -48,22 +49,24 @@
   <MoveCompletedEndsForward>0</MoveCompletedEndsForward>
   <BaselineForEarnedValue>0</BaselineForEarnedValue>
   <AutoAddNewResourcesAndTasks>1</AutoAddNewResourcesAndTasks>
-  <StatusDate>2000-01-01T00:00:00</StatusDate>
-  <CurrentDate>2000-12-26T08:00:00</CurrentDate>
+  <CurrentDate>2011-12-26T08:00:00</CurrentDate>
   <MicrosoftProjectServerURL>0</MicrosoftProjectServerURL>
   <Autolink>1</Autolink>
   <NewTaskStartDate>0</NewTaskStartDate>
   <DefaultTaskEVMethod>0</DefaultTaskEVMethod>
   <ProjectExternallyEdited>0</ProjectExternallyEdited>
-  <ExtendedCreationDate>2000-01-01T00:00:00</ExtendedCreationDate>
+  <ExtendedCreationDate>1984-01-01T00:00:00</ExtendedCreationDate>
   <ActualsInSync>0</ActualsInSync>
   <RemoveFileProperties>0</RemoveFileProperties>
   <AdminProject>0</AdminProject>
+  <UpdateManuallyScheduledTasksWhenEditingLinks>1</UpdateManuallyScheduledTasksWhenEditingLinks>
   <OutlineCodes />
+  <WBSMasks />
   <ExtendedAttributes />
   <Calendars>
     <Calendar>
       <UID>1</UID>
+      <GUID>5D9713D5-4EBA-4402-B342-4CDA34BC591C</GUID>
       <Name>Standard</Name>
       <IsBaseCalendar>1</IsBaseCalendar>
       <BaseCalendarUID>-1</BaseCalendarUID>
@@ -150,30 +153,35 @@
     </Calendar>
     <Calendar>
       <UID>3</UID>
+      <GUID>D8D47FB7-849C-4B04-B51E-BE1597F9121A</GUID>
       <Name>Resource1</Name>
       <IsBaseCalendar>0</IsBaseCalendar>
       <BaseCalendarUID>1</BaseCalendarUID>
     </Calendar>
     <Calendar>
       <UID>4</UID>
+      <GUID>BBDDF954-8D14-4EAB-B4F3-09A1CB4A89F4</GUID>
       <Name>Resource2</Name>
       <IsBaseCalendar>0</IsBaseCalendar>
       <BaseCalendarUID>1</BaseCalendarUID>
     </Calendar>
     <Calendar>
       <UID>5</UID>
+      <GUID>1EF48AF2-2D7A-4587-A9D1-4AED1AADD692</GUID>
       <Name>Resource3</Name>
       <IsBaseCalendar>0</IsBaseCalendar>
       <BaseCalendarUID>1</BaseCalendarUID>
     </Calendar>
     <Calendar>
       <UID>6</UID>
+      <GUID>5EE4398D-956C-4196-94EB-301458DA80E6</GUID>
       <Name>Resource4</Name>
       <IsBaseCalendar>0</IsBaseCalendar>
       <BaseCalendarUID>1</BaseCalendarUID>
     </Calendar>
     <Calendar>
       <UID>7</UID>
+      <GUID>5033AA45-FD8A-49B9-A7E1-99D0D5D9861F</GUID>
       <Name>Resource5</Name>
       <IsBaseCalendar>0</IsBaseCalendar>
       <BaseCalendarUID>1</BaseCalendarUID>
@@ -182,7 +190,9 @@
   <Tasks>
     <Task>
       <UID>0</UID>
+      <GUID>9FDEB3C4-56E7-4552-B94B-B12304652595</GUID>
       <ID>0</ID>
+      <Name>TestViews</Name>
       <Type>1</Type>
       <IsNull>0</IsNull>
       <CreateDate>2000-06-08T16:06:00</CreateDate>
@@ -195,8 +205,6 @@
       <Duration>PT232H0M0S</Duration>
       <DurationFormat>21</DurationFormat>
       <Work>PT408H0M0S</Work>
-      <Stop>2000-01-01T00:00:00</Stop>
-      <Resume>2000-01-01T00:00:00</Resume>
       <ResumeValid>0</ResumeValid>
       <EffortDriven>0</EffortDriven>
       <Recurring>0</Recurring>
@@ -204,6 +212,7 @@
       <Estimated>0</Estimated>
       <Milestone>0</Milestone>
       <Summary>1</Summary>
+      <DisplayAsSummary>0</DisplayAsSummary>
       <Critical>1</Critical>
       <IsSubproject>0</IsSubproject>
       <IsSubprojectReadOnly>0</IsSubprojectReadOnly>
@@ -212,9 +221,9 @@
       <EarlyFinish>2000-07-16T17:00:00</EarlyFinish>
       <LateStart>2000-06-08T08:00:00</LateStart>
       <LateFinish>2000-07-16T17:00:00</LateFinish>
-      <StartVariance>542400</StartVariance>
-      <FinishVariance>672000</FinishVariance>
-      <WorkVariance>24480000</WorkVariance>
+      <StartVariance>0</StartVariance>
+      <FinishVariance>0</FinishVariance>
+      <WorkVariance>24480000.00</WorkVariance>
       <FreeSlack>0</FreeSlack>
       <TotalSlack>0</TotalSlack>
       <FixedCost>0</FixedCost>
@@ -224,8 +233,6 @@
       <Cost>0</Cost>
       <OvertimeCost>0</OvertimeCost>
       <OvertimeWork>PT0H0M0S</OvertimeWork>
-      <ActualStart>2000-01-01T00:00:00</ActualStart>
-      <ActualFinish>2000-01-01T00:00:00</ActualFinish>
       <ActualDuration>PT0H0M0S</ActualDuration>
       <ActualCost>0</ActualCost>
       <ActualOvertimeCost>0</ActualOvertimeCost>
@@ -237,38 +244,27 @@
       <RemainingWork>PT408H0M0S</RemainingWork>
       <RemainingOvertimeCost>0</RemainingOvertimeCost>
       <RemainingOvertimeWork>PT0H0M0S</RemainingOvertimeWork>
-      <ACWP>0</ACWP>
-      <CV>0</CV>
+      <ACWP>0.00</ACWP>
+      <CV>0.00</CV>
       <ConstraintType>0</ConstraintType>
       <CalendarUID>-1</CalendarUID>
-      <ConstraintDate>2000-01-01T00:00:00</ConstraintDate>
-      <Deadline>2000-01-01T00:00:00</Deadline>
       <LevelAssignments>1</LevelAssignments>
       <LevelingCanSplit>1</LevelingCanSplit>
       <LevelingDelay>0</LevelingDelay>
       <LevelingDelayFormat>8</LevelingDelayFormat>
-      <PreLeveledStart>2000-01-01T00:00:00</PreLeveledStart>
-      <PreLeveledFinish>2000-01-01T00:00:00</PreLeveledFinish>
       <IgnoreResourceCalendar>0</IgnoreResourceCalendar>
       <HideBar>0</HideBar>
       <Rollup>0</Rollup>
-      <BCWS>0</BCWS>
-      <BCWP>0</BCWP>
+      <BCWS>0.00</BCWS>
+      <BCWP>0.00</BCWP>
       <PhysicalPercentComplete>0</PhysicalPercentComplete>
       <EarnedValueMethod>0</EarnedValueMethod>
       <IsPublished>1</IsPublished>
       <CommitmentType>0</CommitmentType>
-      <Baseline>
-        <Number>0</Number>
-        <Work>PT0H0M0S</Work>
-        <Start>2000-01-01T00:00:00</Start>
-        <Finish>2000-01-01T00:00:00</Finish>
-        <Duration>PT0H0M0S</Duration>
-        <DurationFormat>21</DurationFormat>
-      </Baseline>
     </Task>
     <Task>
       <UID>1</UID>
+      <GUID>198F383B-BE02-4C28-807E-4FFA6D2BE4E5</GUID>
       <ID>1</ID>
       <Name>Task1</Name>
       <Type>1</Type>
@@ -283,8 +279,6 @@
       <Duration>PT232H0M0S</Duration>
       <DurationFormat>21</DurationFormat>
       <Work>PT408H0M0S</Work>
-      <Stop>2000-01-01T00:00:00</Stop>
-      <Resume>2000-01-01T00:00:00</Resume>
       <ResumeValid>0</ResumeValid>
       <EffortDriven>0</EffortDriven>
       <Recurring>0</Recurring>
@@ -292,6 +286,7 @@
       <Estimated>0</Estimated>
       <Milestone>0</Milestone>
       <Summary>1</Summary>
+      <DisplayAsSummary>0</DisplayAsSummary>
       <Critical>1</Critical>
       <IsSubproject>0</IsSubproject>
       <IsSubprojectReadOnly>0</IsSubprojectReadOnly>
@@ -300,9 +295,9 @@
       <EarlyFinish>2000-07-16T17:00:00</EarlyFinish>
       <LateStart>2000-06-08T08:00:00</LateStart>
       <LateFinish>2000-07-16T17:00:00</LateFinish>
-      <StartVariance>542400</StartVariance>
-      <FinishVariance>672000</FinishVariance>
-      <WorkVariance>24480000</WorkVariance>
+      <StartVariance>0</StartVariance>
+      <FinishVariance>0</FinishVariance>
+      <WorkVariance>24480000.00</WorkVariance>
       <FreeSlack>0</FreeSlack>
       <TotalSlack>0</TotalSlack>
       <FixedCost>0</FixedCost>
@@ -312,8 +307,6 @@
       <Cost>0</Cost>
       <OvertimeCost>0</OvertimeCost>
       <OvertimeWork>PT0H0M0S</OvertimeWork>
-      <ActualStart>2000-01-01T00:00:00</ActualStart>
-      <ActualFinish>2000-01-01T00:00:00</ActualFinish>
       <ActualDuration>PT0H0M0S</ActualDuration>
       <ActualCost>0</ActualCost>
       <ActualOvertimeCost>0</ActualOvertimeCost>
@@ -325,39 +318,28 @@
       <RemainingWork>PT408H0M0S</RemainingWork>
       <RemainingOvertimeCost>0</RemainingOvertimeCost>
       <RemainingOvertimeWork>PT0H0M0S</RemainingOvertimeWork>
-      <ACWP>0</ACWP>
-      <CV>0</CV>
+      <ACWP>0.00</ACWP>
+      <CV>0.00</CV>
       <ConstraintType>0</ConstraintType>
       <CalendarUID>-1</CalendarUID>
-      <ConstraintDate>2000-01-01T00:00:00</ConstraintDate>
-      <Deadline>2000-01-01T00:00:00</Deadline>
       <LevelAssignments>1</LevelAssignments>
       <LevelingCanSplit>1</LevelingCanSplit>
       <LevelingDelay>0</LevelingDelay>
       <LevelingDelayFormat>8</LevelingDelayFormat>
-      <PreLeveledStart>2000-01-01T00:00:00</PreLeveledStart>
-      <PreLeveledFinish>2000-01-01T00:00:00</PreLeveledFinish>
       <IgnoreResourceCalendar>0</IgnoreResourceCalendar>
       <Notes>Task1 notes.</Notes>
       <HideBar>0</HideBar>
       <Rollup>1</Rollup>
-      <BCWS>0</BCWS>
-      <BCWP>0</BCWP>
+      <BCWS>0.00</BCWS>
+      <BCWP>0.00</BCWP>
       <PhysicalPercentComplete>0</PhysicalPercentComplete>
       <EarnedValueMethod>0</EarnedValueMethod>
       <IsPublished>1</IsPublished>
       <CommitmentType>0</CommitmentType>
-      <Baseline>
-        <Number>0</Number>
-        <Work>PT0H0M0S</Work>
-        <Start>2000-01-01T00:00:00</Start>
-        <Finish>2000-01-01T00:00:00</Finish>
-        <Duration>PT0H0M0S</Duration>
-        <DurationFormat>39</DurationFormat>
-      </Baseline>
     </Task>
     <Task>
       <UID>2</UID>
+      <GUID>2B047876-ECD0-4F2B-8229-FD02AB90E060</GUID>
       <ID>2</ID>
       <Name>Task2</Name>
       <Type>0</Type>
@@ -372,8 +354,6 @@
       <Duration>PT8H0M0S</Duration>
       <DurationFormat>7</DurationFormat>
       <Work>PT0H0M0S</Work>
-      <Stop>2000-01-01T00:00:00</Stop>
-      <Resume>2000-01-01T00:00:00</Resume>
       <ResumeValid>0</ResumeValid>
       <EffortDriven>1</EffortDriven>
       <Recurring>0</Recurring>
@@ -381,6 +361,7 @@
       <Estimated>0</Estimated>
       <Milestone>0</Milestone>
       <Summary>0</Summary>
+      <DisplayAsSummary>0</DisplayAsSummary>
       <Critical>0</Critical>
       <IsSubproject>0</IsSubproject>
       <IsSubprojectReadOnly>0</IsSubprojectReadOnly>
@@ -389,9 +370,9 @@
       <EarlyFinish>2000-06-08T17:00:00</EarlyFinish>
       <LateStart>2000-07-16T08:00:00</LateStart>
       <LateFinish>2000-07-16T17:00:00</LateFinish>
-      <StartVariance>542400</StartVariance>
-      <FinishVariance>547200</FinishVariance>
-      <WorkVariance>0</WorkVariance>
+      <StartVariance>0</StartVariance>
+      <FinishVariance>0</FinishVariance>
+      <WorkVariance>0.00</WorkVariance>
       <FreeSlack>134400</FreeSlack>
       <TotalSlack>134400</TotalSlack>
       <StartSlack>134400</StartSlack>
@@ -403,8 +384,6 @@
       <Cost>0</Cost>
       <OvertimeCost>0</OvertimeCost>
       <OvertimeWork>PT0H0M0S</OvertimeWork>
-      <ActualStart>2000-01-01T00:00:00</ActualStart>
-      <ActualFinish>2000-01-01T00:00:00</ActualFinish>
       <ActualDuration>PT0H0M0S</ActualDuration>
       <ActualCost>0</ActualCost>
       <ActualOvertimeCost>0</ActualOvertimeCost>
@@ -416,39 +395,28 @@
       <RemainingWork>PT0H0M0S</RemainingWork>
       <RemainingOvertimeCost>0</RemainingOvertimeCost>
       <RemainingOvertimeWork>PT0H0M0S</RemainingOvertimeWork>
-      <ACWP>0</ACWP>
-      <CV>0</CV>
+      <ACWP>0.00</ACWP>
+      <CV>0.00</CV>
       <ConstraintType>0</ConstraintType>
       <CalendarUID>-1</CalendarUID>
-      <ConstraintDate>2000-01-01T00:00:00</ConstraintDate>
-      <Deadline>2000-01-01T00:00:00</Deadline>
       <LevelAssignments>1</LevelAssignments>
       <LevelingCanSplit>1</LevelingCanSplit>
       <LevelingDelay>0</LevelingDelay>
       <LevelingDelayFormat>8</LevelingDelayFormat>
-      <PreLeveledStart>2000-01-01T00:00:00</PreLeveledStart>
-      <PreLeveledFinish>2000-01-01T00:00:00</PreLeveledFinish>
       <IgnoreResourceCalendar>0</IgnoreResourceCalendar>
       <Notes>Task2 notes.</Notes>
       <HideBar>0</HideBar>
       <Rollup>0</Rollup>
-      <BCWS>0</BCWS>
-      <BCWP>0</BCWP>
+      <BCWS>0.00</BCWS>
+      <BCWP>0.00</BCWP>
       <PhysicalPercentComplete>0</PhysicalPercentComplete>
       <EarnedValueMethod>0</EarnedValueMethod>
       <IsPublished>1</IsPublished>
       <CommitmentType>0</CommitmentType>
-      <Baseline>
-        <Number>0</Number>
-        <Work>PT0H0M0S</Work>
-        <Start>2000-01-01T00:00:00</Start>
-        <Finish>2000-01-01T00:00:00</Finish>
-        <Duration>PT0H0M0S</Duration>
-        <DurationFormat>39</DurationFormat>
-      </Baseline>
     </Task>
     <Task>
       <UID>3</UID>
+      <GUID>BF56B96E-5157-4EA8-AF05-7D20CF6D4E36</GUID>
       <ID>3</ID>
       <Name>Task3</Name>
       <Type>0</Type>
@@ -463,8 +431,6 @@
       <Duration>PT16H0M0S</Duration>
       <DurationFormat>7</DurationFormat>
       <Work>PT16H0M0S</Work>
-      <Stop>2000-01-01T00:00:00</Stop>
-      <Resume>2000-01-01T00:00:00</Resume>
       <ResumeValid>0</ResumeValid>
       <EffortDriven>1</EffortDriven>
       <Recurring>0</Recurring>
@@ -472,6 +438,7 @@
       <Estimated>0</Estimated>
       <Milestone>0</Milestone>
       <Summary>0</Summary>
+      <DisplayAsSummary>0</DisplayAsSummary>
       <Critical>1</Critical>
       <IsSubproject>0</IsSubproject>
       <IsSubprojectReadOnly>0</IsSubprojectReadOnly>
@@ -480,9 +447,9 @@
       <EarlyFinish>2000-06-09T17:00:00</EarlyFinish>
       <LateStart>2000-06-08T08:00:00</LateStart>
       <LateFinish>2000-06-09T17:00:00</LateFinish>
-      <StartVariance>542400</StartVariance>
-      <FinishVariance>552000</FinishVariance>
-      <WorkVariance>960000</WorkVariance>
+      <StartVariance>0</StartVariance>
+      <FinishVariance>0</FinishVariance>
+      <WorkVariance>960000.00</WorkVariance>
       <FreeSlack>0</FreeSlack>
       <TotalSlack>0</TotalSlack>
       <FixedCost>0</FixedCost>
@@ -492,8 +459,6 @@
       <Cost>0</Cost>
       <OvertimeCost>0</OvertimeCost>
       <OvertimeWork>PT0H0M0S</OvertimeWork>
-      <ActualStart>2000-01-01T00:00:00</ActualStart>
-      <ActualFinish>2000-01-01T00:00:00</ActualFinish>
       <ActualDuration>PT0H0M0S</ActualDuration>
       <ActualCost>0</ActualCost>
       <ActualOvertimeCost>0</ActualOvertimeCost>
@@ -505,39 +470,28 @@
       <RemainingWork>PT16H0M0S</RemainingWork>
       <RemainingOvertimeCost>0</RemainingOvertimeCost>
       <RemainingOvertimeWork>PT0H0M0S</RemainingOvertimeWork>
-      <ACWP>0</ACWP>
-      <CV>0</CV>
+      <ACWP>0.00</ACWP>
+      <CV>0.00</CV>
       <ConstraintType>0</ConstraintType>
       <CalendarUID>-1</CalendarUID>
-      <ConstraintDate>2000-01-01T00:00:00</ConstraintDate>
-      <Deadline>2000-01-01T00:00:00</Deadline>
       <LevelAssignments>1</LevelAssignments>
       <LevelingCanSplit>1</LevelingCanSplit>
       <LevelingDelay>0</LevelingDelay>
       <LevelingDelayFormat>8</LevelingDelayFormat>
-      <PreLeveledStart>2000-01-01T00:00:00</PreLeveledStart>
-      <PreLeveledFinish>2000-01-01T00:00:00</PreLeveledFinish>
       <IgnoreResourceCalendar>0</IgnoreResourceCalendar>
       <Notes>Task3 notes.</Notes>
       <HideBar>0</HideBar>
       <Rollup>0</Rollup>
-      <BCWS>0</BCWS>
-      <BCWP>0</BCWP>
+      <BCWS>0.00</BCWS>
+      <BCWP>0.00</BCWP>
       <PhysicalPercentComplete>0</PhysicalPercentComplete>
       <EarnedValueMethod>0</EarnedValueMethod>
       <IsPublished>1</IsPublished>
       <CommitmentType>0</CommitmentType>
-      <Baseline>
-        <Number>0</Number>
-        <Work>PT0H0M0S</Work>
-        <Start>2000-01-01T00:00:00</Start>
-        <Finish>2000-01-01T00:00:00</Finish>
-        <Duration>PT0H0M0S</Duration>
-        <DurationFormat>39</DurationFormat>
-      </Baseline>
     </Task>
     <Task>
       <UID>4</UID>
+      <GUID>661B78EA-80BA-41B3-A0A7-9545B7979ADD</GUID>
       <ID>4</ID>
       <Name>Task4</Name>
       <Type>0</Type>
@@ -552,8 +506,6 @@
       <Duration>PT80H0M0S</Duration>
       <DurationFormat>7</DurationFormat>
       <Work>PT160H0M0S</Work>
-      <Stop>2000-01-01T00:00:00</Stop>
-      <Resume>2000-01-01T00:00:00</Resume>
       <ResumeValid>0</ResumeValid>
       <EffortDriven>1</EffortDriven>
       <Recurring>0</Recurring>
@@ -561,6 +513,7 @@
       <Estimated>0</Estimated>
       <Milestone>0</Milestone>
       <Summary>0</Summary>
+      <DisplayAsSummary>0</DisplayAsSummary>
       <Critical>1</Critical>
       <IsSubproject>0</IsSubproject>
       <IsSubprojectReadOnly>0</IsSubprojectReadOnly>
@@ -569,9 +522,9 @@
       <EarlyFinish>2000-06-23T17:00:00</EarlyFinish>
       <LateStart>2000-06-10T08:00:00</LateStart>
       <LateFinish>2000-06-23T17:00:00</LateFinish>
-      <StartVariance>552000</StartVariance>
-      <FinishVariance>600000</FinishVariance>
-      <WorkVariance>9600000</WorkVariance>
+      <StartVariance>0</StartVariance>
+      <FinishVariance>0</FinishVariance>
+      <WorkVariance>9600000.00</WorkVariance>
       <FreeSlack>0</FreeSlack>
       <TotalSlack>0</TotalSlack>
       <FixedCost>0</FixedCost>
@@ -581,8 +534,6 @@
       <Cost>0</Cost>
       <OvertimeCost>0</OvertimeCost>
       <OvertimeWork>PT0H0M0S</OvertimeWork>
-      <ActualStart>2000-01-01T00:00:00</ActualStart>
-      <ActualFinish>2000-01-01T00:00:00</ActualFinish>
       <ActualDuration>PT0H0M0S</ActualDuration>
       <ActualCost>0</ActualCost>
       <ActualOvertimeCost>0</ActualOvertimeCost>
@@ -594,36 +545,24 @@
       <RemainingWork>PT160H0M0S</RemainingWork>
       <RemainingOvertimeCost>0</RemainingOvertimeCost>
       <RemainingOvertimeWork>PT0H0M0S</RemainingOvertimeWork>
-      <ACWP>0</ACWP>
-      <CV>0</CV>
+      <ACWP>0.00</ACWP>
+      <CV>0.00</CV>
       <ConstraintType>0</ConstraintType>
       <CalendarUID>-1</CalendarUID>
-      <ConstraintDate>2000-01-01T00:00:00</ConstraintDate>
-      <Deadline>2000-01-01T00:00:00</Deadline>
       <LevelAssignments>1</LevelAssignments>
       <LevelingCanSplit>1</LevelingCanSplit>
       <LevelingDelay>0</LevelingDelay>
       <LevelingDelayFormat>8</LevelingDelayFormat>
-      <PreLeveledStart>2000-01-01T00:00:00</PreLeveledStart>
-      <PreLeveledFinish>2000-01-01T00:00:00</PreLeveledFinish>
       <IgnoreResourceCalendar>0</IgnoreResourceCalendar>
       <Notes>Task4 notes.</Notes>
       <HideBar>0</HideBar>
       <Rollup>0</Rollup>
-      <BCWS>0</BCWS>
-      <BCWP>0</BCWP>
+      <BCWS>0.00</BCWS>
+      <BCWP>0.00</BCWP>
       <PhysicalPercentComplete>0</PhysicalPercentComplete>
       <EarnedValueMethod>0</EarnedValueMethod>
       <IsPublished>1</IsPublished>
       <CommitmentType>0</CommitmentType>
-      <Baseline>
-        <Number>0</Number>
-        <Work>PT0H0M0S</Work>
-        <Start>2000-01-01T00:00:00</Start>
-        <Finish>2000-01-01T00:00:00</Finish>
-        <Duration>PT0H0M0S</Duration>
-        <DurationFormat>39</DurationFormat>
-      </Baseline>
       <PredecessorLink>
         <PredecessorUID>3</PredecessorUID>
         <Type>1</Type>
@@ -634,6 +573,7 @@
     </Task>
     <Task>
       <UID>5</UID>
+      <GUID>E27400AE-3B93-40EC-B4CD-202934B20E55</GUID>
       <ID>5</ID>
       <Name>Task5</Name>
       <Type>1</Type>
@@ -648,8 +588,6 @@
       <Duration>PT88H0M0S</Duration>
       <DurationFormat>21</DurationFormat>
       <Work>PT176H0M0S</Work>
-      <Stop>2000-01-01T00:00:00</Stop>
-      <Resume>2000-01-01T00:00:00</Resume>
       <ResumeValid>0</ResumeValid>
       <EffortDriven>0</EffortDriven>
       <Recurring>0</Recurring>
@@ -657,6 +595,7 @@
       <Estimated>0</Estimated>
       <Milestone>0</Milestone>
       <Summary>1</Summary>
+      <DisplayAsSummary>0</DisplayAsSummary>
       <Critical>1</Critical>
       <IsSubproject>0</IsSubproject>
       <IsSubprojectReadOnly>0</IsSubprojectReadOnly>
@@ -665,9 +604,9 @@
       <EarlyFinish>2000-07-08T17:00:00</EarlyFinish>
       <LateStart>2000-06-24T08:00:00</LateStart>
       <LateFinish>2000-07-08T17:00:00</LateFinish>
-      <StartVariance>600000</StartVariance>
-      <FinishVariance>648000</FinishVariance>
-      <WorkVariance>10560000</WorkVariance>
+      <StartVariance>0</StartVariance>
+      <FinishVariance>0</FinishVariance>
+      <WorkVariance>10560000.00</WorkVariance>
       <FreeSlack>0</FreeSlack>
       <TotalSlack>0</TotalSlack>
       <FixedCost>0</FixedCost>
@@ -677,8 +616,6 @@
       <Cost>0</Cost>
       <OvertimeCost>0</OvertimeCost>
       <OvertimeWork>PT0H0M0S</OvertimeWork>
-      <ActualStart>2000-01-01T00:00:00</ActualStart>
-      <ActualFinish>2000-01-01T00:00:00</ActualFinish>
       <ActualDuration>PT0H0M0S</ActualDuration>
       <ActualCost>0</ActualCost>
       <ActualOvertimeCost>0</ActualOvertimeCost>
@@ -690,36 +627,24 @@
       <RemainingWork>PT176H0M0S</RemainingWork>
       <RemainingOvertimeCost>0</RemainingOvertimeCost>
       <RemainingOvertimeWork>PT0H0M0S</RemainingOvertimeWork>
-      <ACWP>0</ACWP>
-      <CV>0</CV>
+      <ACWP>0.00</ACWP>
+      <CV>0.00</CV>
       <ConstraintType>0</ConstraintType>
       <CalendarUID>-1</CalendarUID>
-      <ConstraintDate>2000-01-01T00:00:00</ConstraintDate>
-      <Deadline>2000-01-01T00:00:00</Deadline>
       <LevelAssignments>1</LevelAssignments>
       <LevelingCanSplit>1</LevelingCanSplit>
       <LevelingDelay>0</LevelingDelay>
       <LevelingDelayFormat>8</LevelingDelayFormat>
-      <PreLeveledStart>2000-01-01T00:00:00</PreLeveledStart>
-      <PreLeveledFinish>2000-01-01T00:00:00</PreLeveledFinish>
       <IgnoreResourceCalendar>0</IgnoreResourceCalendar>
       <Notes>Task5 notes.</Notes>
       <HideBar>0</HideBar>
       <Rollup>1</Rollup>
-      <BCWS>0</BCWS>
-      <BCWP>0</BCWP>
+      <BCWS>0.00</BCWS>
+      <BCWP>0.00</BCWP>
       <PhysicalPercentComplete>0</PhysicalPercentComplete>
       <EarnedValueMethod>0</EarnedValueMethod>
       <IsPublished>1</IsPublished>
       <CommitmentType>0</CommitmentType>
-      <Baseline>
-        <Number>0</Number>
-        <Work>PT0H0M0S</Work>
-        <Start>2000-01-01T00:00:00</Start>
-        <Finish>2000-01-01T00:00:00</Finish>
-        <Duration>PT0H0M0S</Duration>
-        <DurationFormat>39</DurationFormat>
-      </Baseline>
       <PredecessorLink>
         <PredecessorUID>4</PredecessorUID>
         <Type>1</Type>
@@ -730,6 +655,7 @@
     </Task>
     <Task>
       <UID>6</UID>
+      <GUID>D118AD03-B9B9-476D-97C8-5F6CD9D7821E</GUID>
       <ID>6</ID>
       <Name>Task6</Name>
       <Type>0</Type>
@@ -744,8 +670,6 @@
       <Duration>PT80H0M0S</Duration>
       <DurationFormat>7</DurationFormat>
       <Work>PT0H0M0S</Work>
-      <Stop>2000-01-01T00:00:00</Stop>
-      <Resume>2000-01-01T00:00:00</Resume>
       <ResumeValid>0</ResumeValid>
       <EffortDriven>1</EffortDriven>
       <Recurring>0</Recurring>
@@ -753,6 +677,7 @@
       <Estimated>0</Estimated>
       <Milestone>0</Milestone>
       <Summary>0</Summary>
+      <DisplayAsSummary>0</DisplayAsSummary>
       <Critical>0</Critical>
       <IsSubproject>0</IsSubproject>
       <IsSubprojectReadOnly>0</IsSubprojectReadOnly>
@@ -761,9 +686,9 @@
       <EarlyFinish>2000-07-07T17:00:00</EarlyFinish>
       <LateStart>2000-06-25T08:00:00</LateStart>
       <LateFinish>2000-07-08T17:00:00</LateFinish>
-      <StartVariance>600000</StartVariance>
-      <FinishVariance>648000</FinishVariance>
-      <WorkVariance>0</WorkVariance>
+      <StartVariance>0</StartVariance>
+      <FinishVariance>0</FinishVariance>
+      <WorkVariance>0.00</WorkVariance>
       <FreeSlack>4800</FreeSlack>
       <TotalSlack>4800</TotalSlack>
       <StartSlack>4800</StartSlack>
@@ -775,8 +700,6 @@
       <Cost>0</Cost>
       <OvertimeCost>0</OvertimeCost>
       <OvertimeWork>PT0H0M0S</OvertimeWork>
-      <ActualStart>2000-01-01T00:00:00</ActualStart>
-      <ActualFinish>2000-01-01T00:00:00</ActualFinish>
       <ActualDuration>PT0H0M0S</ActualDuration>
       <ActualCost>0</ActualCost>
       <ActualOvertimeCost>0</ActualOvertimeCost>
@@ -788,39 +711,28 @@
       <RemainingWork>PT0H0M0S</RemainingWork>
       <RemainingOvertimeCost>0</RemainingOvertimeCost>
       <RemainingOvertimeWork>PT0H0M0S</RemainingOvertimeWork>
-      <ACWP>0</ACWP>
-      <CV>0</CV>
+      <ACWP>0.00</ACWP>
+      <CV>0.00</CV>
       <ConstraintType>0</ConstraintType>
       <CalendarUID>-1</CalendarUID>
-      <ConstraintDate>2000-01-01T00:00:00</ConstraintDate>
-      <Deadline>2000-01-01T00:00:00</Deadline>
       <LevelAssignments>1</LevelAssignments>
       <LevelingCanSplit>1</LevelingCanSplit>
       <LevelingDelay>0</LevelingDelay>
       <LevelingDelayFormat>8</LevelingDelayFormat>
-      <PreLeveledStart>2000-01-01T00:00:00</PreLeveledStart>
-      <PreLeveledFinish>2000-01-01T00:00:00</PreLeveledFinish>
       <IgnoreResourceCalendar>0</IgnoreResourceCalendar>
       <Notes>Task6 notes.</Notes>
       <HideBar>0</HideBar>
       <Rollup>0</Rollup>
-      <BCWS>0</BCWS>
-      <BCWP>0</BCWP>
+      <BCWS>0.00</BCWS>
+      <BCWP>0.00</BCWP>
       <PhysicalPercentComplete>0</PhysicalPercentComplete>
       <EarnedValueMethod>0</EarnedValueMethod>
       <IsPublished>1</IsPublished>
       <CommitmentType>0</CommitmentType>
-      <Baseline>
-        <Number>0</Number>
-        <Work>PT0H0M0S</Work>
-        <Start>2000-01-01T00:00:00</Start>
-        <Finish>2000-01-01T00:00:00</Finish>
-        <Duration>PT0H0M0S</Duration>
-        <DurationFormat>39</DurationFormat>
-      </Baseline>
     </Task>
     <Task>
       <UID>7</UID>
+      <GUID>1B35DB1E-8F3D-4EDA-92C2-69FB72B62618</GUID>
       <ID>7</ID>
       <Name>Task7</Name>
       <Type>0</Type>
@@ -835,8 +747,6 @@
       <Duration>PT88H0M0S</Duration>
       <DurationFormat>7</DurationFormat>
       <Work>PT88H0M0S</Work>
-      <Stop>2000-01-01T00:00:00</Stop>
-      <Resume>2000-01-01T00:00:00</Resume>
       <ResumeValid>0</ResumeValid>
       <EffortDriven>1</EffortDriven>
       <Recurring>0</Recurring>
@@ -844,6 +754,7 @@
       <Estimated>0</Estimated>
       <Milestone>0</Milestone>
       <Summary>0</Summary>
+      <DisplayAsSummary>0</DisplayAsSummary>
       <Critical>1</Critical>
       <IsSubproject>0</IsSubproject>
       <IsSubprojectReadOnly>0</IsSubprojectReadOnly>
@@ -852,9 +763,9 @@
       <EarlyFinish>2000-07-08T17:00:00</EarlyFinish>
       <LateStart>2000-06-24T08:00:00</LateStart>
       <LateFinish>2000-07-08T17:00:00</LateFinish>
-      <StartVariance>600000</StartVariance>
-      <FinishVariance>648000</FinishVariance>
-      <WorkVariance>5280000</WorkVariance>
+      <StartVariance>0</StartVariance>
+      <FinishVariance>0</FinishVariance>
+      <WorkVariance>5280000.00</WorkVariance>
       <FreeSlack>0</FreeSlack>
       <TotalSlack>0</TotalSlack>
       <FixedCost>0</FixedCost>
@@ -864,8 +775,6 @@
       <Cost>0</Cost>
       <OvertimeCost>0</OvertimeCost>
       <OvertimeWork>PT0H0M0S</OvertimeWork>
-      <ActualStart>2000-01-01T00:00:00</ActualStart>
-      <ActualFinish>2000-01-01T00:00:00</ActualFinish>
       <ActualDuration>PT0H0M0S</ActualDuration>
       <ActualCost>0</ActualCost>
       <ActualOvertimeCost>0</ActualOvertimeCost>
@@ -877,38 +786,27 @@
       <RemainingWork>PT88H0M0S</RemainingWork>
       <RemainingOvertimeCost>0</RemainingOvertimeCost>
       <RemainingOvertimeWork>PT0H0M0S</RemainingOvertimeWork>
-      <ACWP>0</ACWP>
-      <CV>0</CV>
+      <ACWP>0.00</ACWP>
+      <CV>0.00</CV>
       <ConstraintType>0</ConstraintType>
       <CalendarUID>-1</CalendarUID>
-      <ConstraintDate>2000-01-01T00:00:00</ConstraintDate>
-      <Deadline>2000-01-01T00:00:00</Deadline>
       <LevelAssignments>1</LevelAssignments>
       <LevelingCanSplit>1</LevelingCanSplit>
       <LevelingDelay>0</LevelingDelay>
       <LevelingDelayFormat>8</LevelingDelayFormat>
-      <PreLeveledStart>2000-01-01T00:00:00</PreLeveledStart>
-      <PreLeveledFinish>2000-01-01T00:00:00</PreLeveledFinish>
       <IgnoreResourceCalendar>0</IgnoreResourceCalendar>
       <HideBar>0</HideBar>
       <Rollup>0</Rollup>
-      <BCWS>0</BCWS>
-      <BCWP>0</BCWP>
+      <BCWS>0.00</BCWS>
+      <BCWP>0.00</BCWP>
       <PhysicalPercentComplete>0</PhysicalPercentComplete>
       <EarnedValueMethod>0</EarnedValueMethod>
       <IsPublished>1</IsPublished>
       <CommitmentType>0</CommitmentType>
-      <Baseline>
-        <Number>0</Number>
-        <Work>PT0H0M0S</Work>
-        <Start>2000-01-01T00:00:00</Start>
-        <Finish>2000-01-01T00:00:00</Finish>
-        <Duration>PT0H0M0S</Duration>
-        <DurationFormat>39</DurationFormat>
-      </Baseline>
     </Task>
     <Task>
       <UID>8</UID>
+      <GUID>E09C80FD-A36A-459D-B2E5-06AC2C5DB59E</GUID>
       <ID>8</ID>
       <Name>Task8</Name>
       <Type>0</Type>
@@ -923,8 +821,6 @@
       <Duration>PT16H0M0S</Duration>
       <DurationFormat>7</DurationFormat>
       <Work>PT32H0M0S</Work>
-      <Stop>2000-01-01T00:00:00</Stop>
-      <Resume>2000-01-01T00:00:00</Resume>
       <ResumeValid>0</ResumeValid>
       <EffortDriven>1</EffortDriven>
       <Recurring>0</Recurring>
@@ -932,6 +828,7 @@
       <Estimated>0</Estimated>
       <Milestone>0</Milestone>
       <Summary>0</Summary>
+      <DisplayAsSummary>0</DisplayAsSummary>
       <Critical>1</Critical>
       <IsSubproject>0</IsSubproject>
       <IsSubprojectReadOnly>0</IsSubprojectReadOnly>
@@ -940,9 +837,9 @@
       <EarlyFinish>2000-07-12T17:00:00</EarlyFinish>
       <LateStart>2000-07-09T08:00:00</LateStart>
       <LateFinish>2000-07-12T17:00:00</LateFinish>
-      <StartVariance>648000</StartVariance>
-      <FinishVariance>662400</FinishVariance>
-      <WorkVariance>1920000</WorkVariance>
+      <StartVariance>0</StartVariance>
+      <FinishVariance>0</FinishVariance>
+      <WorkVariance>1920000.00</WorkVariance>
       <FreeSlack>0</FreeSlack>
       <TotalSlack>0</TotalSlack>
       <FixedCost>0</FixedCost>
@@ -952,8 +849,6 @@
       <Cost>0</Cost>
       <OvertimeCost>0</OvertimeCost>
       <OvertimeWork>PT0H0M0S</OvertimeWork>
-      <ActualStart>2000-01-01T00:00:00</ActualStart>
-      <ActualFinish>2000-01-01T00:00:00</ActualFinish>
       <ActualDuration>PT0H0M0S</ActualDuration>
       <ActualCost>0</ActualCost>
       <ActualOvertimeCost>0</ActualOvertimeCost>
@@ -965,36 +860,24 @@
       <RemainingWork>PT32H0M0S</RemainingWork>
       <RemainingOvertimeCost>0</RemainingOvertimeCost>
       <RemainingOvertimeWork>PT0H0M0S</RemainingOvertimeWork>
-      <ACWP>0</ACWP>
-      <CV>0</CV>
+      <ACWP>0.00</ACWP>
+      <CV>0.00</CV>
       <ConstraintType>0</ConstraintType>
       <CalendarUID>-1</CalendarUID>
-      <ConstraintDate>2000-01-01T00:00:00</ConstraintDate>
-      <Deadline>2000-01-01T00:00:00</Deadline>
       <LevelAssignments>1</LevelAssignments>
       <LevelingCanSplit>1</LevelingCanSplit>
       <LevelingDelay>0</LevelingDelay>
       <LevelingDelayFormat>8</LevelingDelayFormat>
-      <PreLeveledStart>2000-01-01T00:00:00</PreLeveledStart>
-      <PreLeveledFinish>2000-01-01T00:00:00</PreLeveledFinish>
       <IgnoreResourceCalendar>0</IgnoreResourceCalendar>
       <Notes>Task8 notes.</Notes>
       <HideBar>0</HideBar>
       <Rollup>0</Rollup>
-      <BCWS>0</BCWS>
-      <BCWP>0</BCWP>
+      <BCWS>0.00</BCWS>
+      <BCWP>0.00</BCWP>
       <PhysicalPercentComplete>0</PhysicalPercentComplete>
       <EarnedValueMethod>0</EarnedValueMethod>
       <IsPublished>1</IsPublished>
       <CommitmentType>0</CommitmentType>
-      <Baseline>
-        <Number>0</Number>
-        <Work>PT0H0M0S</Work>
-        <Start>2000-01-01T00:00:00</Start>
-        <Finish>2000-01-01T00:00:00</Finish>
-        <Duration>PT0H0M0S</Duration>
-        <DurationFormat>39</DurationFormat>
-      </Baseline>
       <PredecessorLink>
         <PredecessorUID>5</PredecessorUID>
         <Type>1</Type>
@@ -1005,6 +888,7 @@
     </Task>
     <Task>
       <UID>9</UID>
+      <GUID>CA274C7B-EA63-4CAA-9043-EB49F8693475</GUID>
       <ID>9</ID>
       <Name>Task9</Name>
       <Type>0</Type>
@@ -1019,8 +903,6 @@
       <Duration>PT8H0M0S</Duration>
       <DurationFormat>7</DurationFormat>
       <Work>PT0H0M0S</Work>
-      <Stop>2000-01-01T00:00:00</Stop>
-      <Resume>2000-01-01T00:00:00</Resume>
       <ResumeValid>0</ResumeValid>
       <EffortDriven>1</EffortDriven>
       <Recurring>0</Recurring>
@@ -1028,6 +910,7 @@
       <Estimated>0</Estimated>
       <Milestone>0</Milestone>
       <Summary>0</Summary>
+      <DisplayAsSummary>0</DisplayAsSummary>
       <Critical>1</Critical>
       <IsSubproject>0</IsSubproject>
       <IsSubprojectReadOnly>0</IsSubprojectReadOnly>
@@ -1036,9 +919,9 @@
       <EarlyFinish>2000-07-13T17:00:00</EarlyFinish>
       <LateStart>2000-07-13T08:00:00</LateStart>
       <LateFinish>2000-07-13T17:00:00</LateFinish>
-      <StartVariance>662400</StartVariance>
-      <FinishVariance>667200</FinishVariance>
-      <WorkVariance>0</WorkVariance>
+      <StartVariance>0</StartVariance>
+      <FinishVariance>0</FinishVariance>
+      <WorkVariance>0.00</WorkVariance>
       <FreeSlack>0</FreeSlack>
       <TotalSlack>0</TotalSlack>
       <FixedCost>0</FixedCost>
@@ -1048,8 +931,6 @@
       <Cost>0</Cost>
       <OvertimeCost>0</OvertimeCost>
       <OvertimeWork>PT0H0M0S</OvertimeWork>
-      <ActualStart>2000-01-01T00:00:00</ActualStart>
-      <ActualFinish>2000-01-01T00:00:00</ActualFinish>
       <ActualDuration>PT0H0M0S</ActualDuration>
       <ActualCost>0</ActualCost>
       <ActualOvertimeCost>0</ActualOvertimeCost>
@@ -1061,36 +942,24 @@
       <RemainingWork>PT0H0M0S</RemainingWork>
       <RemainingOvertimeCost>0</RemainingOvertimeCost>
       <RemainingOvertimeWork>PT0H0M0S</RemainingOvertimeWork>
-      <ACWP>0</ACWP>
-      <CV>0</CV>
+      <ACWP>0.00</ACWP>
+      <CV>0.00</CV>
       <ConstraintType>0</ConstraintType>
       <CalendarUID>-1</CalendarUID>
-      <ConstraintDate>2000-01-01T00:00:00</ConstraintDate>
-      <Deadline>2000-01-01T00:00:00</Deadline>
       <LevelAssignments>1</LevelAssignments>
       <LevelingCanSplit>1</LevelingCanSplit>
       <LevelingDelay>0</LevelingDelay>
       <LevelingDelayFormat>8</LevelingDelayFormat>
-      <PreLeveledStart>2000-01-01T00:00:00</PreLeveledStart>
-      <PreLeveledFinish>2000-01-01T00:00:00</PreLeveledFinish>
       <IgnoreResourceCalendar>0</IgnoreResourceCalendar>
       <Notes>Task9 notes.</Notes>
       <HideBar>0</HideBar>
       <Rollup>0</Rollup>
-      <BCWS>0</BCWS>
-      <BCWP>0</BCWP>
+      <BCWS>0.00</BCWS>
+      <BCWP>0.00</BCWP>
       <PhysicalPercentComplete>0</PhysicalPercentComplete>
       <EarnedValueMethod>0</EarnedValueMethod>
       <IsPublished>1</IsPublished>
       <CommitmentType>0</CommitmentType>
-      <Baseline>
-        <Number>0</Number>
-        <Work>PT0H0M0S</Work>
-        <Start>2000-01-01T00:00:00</Start>
-        <Finish>2000-01-01T00:00:00</Finish>
-        <Duration>PT0H0M0S</Duration>
-        <DurationFormat>39</DurationFormat>
-      </Baseline>
       <PredecessorLink>
         <PredecessorUID>8</PredecessorUID>
         <Type>1</Type>
@@ -1101,6 +970,7 @@
     </Task>
     <Task>
       <UID>10</UID>
+      <GUID>A407F22A-DF16-4E53-BB78-B728CFB4D4DF</GUID>
       <ID>10</ID>
       <Name>Task10</Name>
       <Type>0</Type>
@@ -1115,8 +985,6 @@
       <Duration>PT24H0M0S</Duration>
       <DurationFormat>7</DurationFormat>
       <Work>PT24H0M0S</Work>
-      <Stop>2000-01-01T00:00:00</Stop>
-      <Resume>2000-01-01T00:00:00</Resume>
       <ResumeValid>0</ResumeValid>
       <EffortDriven>1</EffortDriven>
       <Recurring>0</Recurring>
@@ -1124,6 +992,7 @@
       <Estimated>0</Estimated>
       <Milestone>0</Milestone>
       <Summary>0</Summary>
+      <DisplayAsSummary>0</DisplayAsSummary>
       <Critical>1</Critical>
       <IsSubproject>0</IsSubproject>
       <IsSubprojectReadOnly>0</IsSubprojectReadOnly>
@@ -1132,9 +1001,9 @@
       <EarlyFinish>2000-07-16T17:00:00</EarlyFinish>
       <LateStart>2000-07-14T08:00:00</LateStart>
       <LateFinish>2000-07-16T17:00:00</LateFinish>
-      <StartVariance>667200</StartVariance>
-      <FinishVariance>672000</FinishVariance>
-      <WorkVariance>1440000</WorkVariance>
+      <StartVariance>0</StartVariance>
+      <FinishVariance>0</FinishVariance>
+      <WorkVariance>1440000.00</WorkVariance>
       <FreeSlack>0</FreeSlack>
       <TotalSlack>0</TotalSlack>
       <FixedCost>0</FixedCost>
@@ -1144,8 +1013,6 @@
       <Cost>0</Cost>
       <OvertimeCost>0</OvertimeCost>
       <OvertimeWork>PT0H0M0S</OvertimeWork>
-      <ActualStart>2000-01-01T00:00:00</ActualStart>
-      <ActualFinish>2000-01-01T00:00:00</ActualFinish>
       <ActualDuration>PT0H0M0S</ActualDuration>
       <ActualCost>0</ActualCost>
       <ActualOvertimeCost>0</ActualOvertimeCost>
@@ -1157,36 +1024,24 @@
       <RemainingWork>PT24H0M0S</RemainingWork>
       <RemainingOvertimeCost>0</RemainingOvertimeCost>
       <RemainingOvertimeWork>PT0H0M0S</RemainingOvertimeWork>
-      <ACWP>0</ACWP>
-      <CV>0</CV>
+      <ACWP>0.00</ACWP>
+      <CV>0.00</CV>
       <ConstraintType>0</ConstraintType>
       <CalendarUID>-1</CalendarUID>
-      <ConstraintDate>2000-01-01T00:00:00</ConstraintDate>
-      <Deadline>2000-01-01T00:00:00</Deadline>
       <LevelAssignments>1</LevelAssignments>
       <LevelingCanSplit>1</LevelingCanSplit>
       <LevelingDelay>0</LevelingDelay>
       <LevelingDelayFormat>8</LevelingDelayFormat>
-      <PreLeveledStart>2000-01-01T00:00:00</PreLeveledStart>
-      <PreLeveledFinish>2000-01-01T00:00:00</PreLeveledFinish>
       <IgnoreResourceCalendar>0</IgnoreResourceCalendar>
       <Notes>Task10 notes.</Notes>
       <HideBar>0</HideBar>
       <Rollup>0</Rollup>
-      <BCWS>0</BCWS>
-      <BCWP>0</BCWP>
+      <BCWS>0.00</BCWS>
+      <BCWP>0.00</BCWP>
       <PhysicalPercentComplete>0</PhysicalPercentComplete>
       <EarnedValueMethod>0</EarnedValueMethod>
       <IsPublished>1</IsPublished>
       <CommitmentType>0</CommitmentType>
-      <Baseline>
-        <Number>0</Number>
-        <Work>PT0H0M0S</Work>
-        <Start>2000-01-01T00:00:00</Start>
-        <Finish>2000-01-01T00:00:00</Finish>
-        <Duration>PT0H0M0S</Duration>
-        <DurationFormat>39</DurationFormat>
-      </Baseline>
       <PredecessorLink>
         <PredecessorUID>9</PredecessorUID>
         <Type>1</Type>
@@ -1199,15 +1054,14 @@
   <Resources>
     <Resource>
       <UID>0</UID>
+      <GUID>A0CB8B7E-2A8C-436D-0000-0000000000FF</GUID>
       <ID>0</ID>
       <Type>1</Type>
       <IsNull>0</IsNull>
       <WorkGroup>0</WorkGroup>
-      <MaxUnits>1</MaxUnits>
-      <PeakUnits>0</PeakUnits>
-      <OverAllocated>1</OverAllocated>
-      <AvailableFrom>2000-01-01T00:00:00</AvailableFrom>
-      <AvailableTo>2000-01-01T00:00:00</AvailableTo>
+      <MaxUnits>1.00</MaxUnits>
+      <PeakUnits>0.00</PeakUnits>
+      <OverAllocated>0</OverAllocated>
       <CanLevel>1</CanLevel>
       <AccrueAt>3</AccrueAt>
       <Work>PT0H0M0S</Work>
@@ -1229,35 +1083,33 @@
       <ActualOvertimeCost>0</ActualOvertimeCost>
       <RemainingCost>0</RemainingCost>
       <RemainingOvertimeCost>0</RemainingOvertimeCost>
-      <WorkVariance>0</WorkVariance>
+      <WorkVariance>0.00</WorkVariance>
       <CostVariance>0</CostVariance>
-      <SV>0</SV>
-      <CV>0</CV>
-      <ACWP>0</ACWP>
-      <CalendarUID>2</CalendarUID>
-      <BCWS>0</BCWS>
-      <BCWP>0</BCWP>
+      <SV>0.00</SV>
+      <CV>0.00</CV>
+      <ACWP>0.00</ACWP>
+      <BCWS>0.00</BCWS>
+      <BCWP>0.00</BCWP>
       <IsGeneric>0</IsGeneric>
       <IsInactive>0</IsInactive>
       <IsEnterprise>0</IsEnterprise>
       <BookingType>0</BookingType>
-      <CreationDate>2000-09-10T23:25:55</CreationDate>
+      <CreationDate>2000-07-01T23:20:55</CreationDate>
       <IsCostResource>0</IsCostResource>
       <IsBudget>0</IsBudget>
     </Resource>
     <Resource>
       <UID>1</UID>
+      <GUID>191330DF-4CB3-4965-8D04-57FFB2AC682A</GUID>
       <ID>1</ID>
       <Name>Resource1</Name>
       <Type>1</Type>
       <IsNull>0</IsNull>
       <Initials>R</Initials>
       <WorkGroup>0</WorkGroup>
-      <MaxUnits>1</MaxUnits>
-      <PeakUnits>0</PeakUnits>
-      <OverAllocated>1</OverAllocated>
-      <AvailableFrom>2000-01-01T00:00:00</AvailableFrom>
-      <AvailableTo>2000-01-01T00:00:00</AvailableTo>
+      <MaxUnits>1.00</MaxUnits>
+      <PeakUnits>0.00</PeakUnits>
+      <OverAllocated>0</OverAllocated>
       <CanLevel>1</CanLevel>
       <AccrueAt>3</AccrueAt>
       <Work>PT16H0M0S</Work>
@@ -1279,35 +1131,34 @@
       <ActualOvertimeCost>0</ActualOvertimeCost>
       <RemainingCost>0</RemainingCost>
       <RemainingOvertimeCost>0</RemainingOvertimeCost>
-      <WorkVariance>960000</WorkVariance>
+      <WorkVariance>960000.00</WorkVariance>
       <CostVariance>0</CostVariance>
-      <SV>0</SV>
-      <CV>0</CV>
-      <ACWP>0</ACWP>
+      <SV>0.00</SV>
+      <CV>0.00</CV>
+      <ACWP>0.00</ACWP>
       <CalendarUID>3</CalendarUID>
-      <BCWS>0</BCWS>
-      <BCWP>0</BCWP>
+      <BCWS>0.00</BCWS>
+      <BCWP>0.00</BCWP>
       <IsGeneric>0</IsGeneric>
       <IsInactive>0</IsInactive>
       <IsEnterprise>0</IsEnterprise>
       <BookingType>0</BookingType>
-      <CreationDate>2000-09-10T23:25:55</CreationDate>
+      <CreationDate>2000-07-01T23:20:55</CreationDate>
       <IsCostResource>0</IsCostResource>
       <IsBudget>0</IsBudget>
     </Resource>
     <Resource>
       <UID>2</UID>
+      <GUID>3B8CB9F5-4DE1-4977-B57B-555AA867AEB0</GUID>
       <ID>2</ID>
       <Name>Resource2</Name>
       <Type>1</Type>
       <IsNull>0</IsNull>
       <Initials>R</Initials>
       <WorkGroup>0</WorkGroup>
-      <MaxUnits>1</MaxUnits>
-      <PeakUnits>0</PeakUnits>
-      <OverAllocated>1</OverAllocated>
-      <AvailableFrom>2000-01-01T00:00:00</AvailableFrom>
-      <AvailableTo>2000-01-01T00:00:00</AvailableTo>
+      <MaxUnits>1.00</MaxUnits>
+      <PeakUnits>0.00</PeakUnits>
+      <OverAllocated>0</OverAllocated>
       <CanLevel>1</CanLevel>
       <AccrueAt>3</AccrueAt>
       <Work>PT168H0M0S</Work>
@@ -1329,35 +1180,34 @@
       <ActualOvertimeCost>0</ActualOvertimeCost>
       <RemainingCost>0</RemainingCost>
       <RemainingOvertimeCost>0</RemainingOvertimeCost>
-      <WorkVariance>10080000</WorkVariance>
+      <WorkVariance>10080000.00</WorkVariance>
       <CostVariance>0</CostVariance>
-      <SV>0</SV>
-      <CV>0</CV>
-      <ACWP>0</ACWP>
+      <SV>0.00</SV>
+      <CV>0.00</CV>
+      <ACWP>0.00</ACWP>
       <CalendarUID>4</CalendarUID>
-      <BCWS>0</BCWS>
-      <BCWP>0</BCWP>
+      <BCWS>0.00</BCWS>
+      <BCWP>0.00</BCWP>
       <IsGeneric>0</IsGeneric>
       <IsInactive>0</IsInactive>
       <IsEnterprise>0</IsEnterprise>
       <BookingType>0</BookingType>
-      <CreationDate>2000-09-10T23:25:55</CreationDate>
+      <CreationDate>2000-07-01T23:20:55</CreationDate>
       <IsCostResource>0</IsCostResource>
       <IsBudget>0</IsBudget>
     </Resource>
     <Resource>
       <UID>3</UID>
+      <GUID>9ABBC69D-8981-4173-A71B-C2F2DF3D44D2</GUID>
       <ID>3</ID>
       <Name>Resource3</Name>
       <Type>1</Type>
       <IsNull>0</IsNull>
       <Initials>R</Initials>
       <WorkGroup>0</WorkGroup>
-      <MaxUnits>1</MaxUnits>
-      <PeakUnits>0</PeakUnits>
-      <OverAllocated>1</OverAllocated>
-      <AvailableFrom>2000-01-01T00:00:00</AvailableFrom>
-      <AvailableTo>2000-01-01T00:00:00</AvailableTo>
+      <MaxUnits>1.00</MaxUnits>
+      <PeakUnits>0.00</PeakUnits>
+      <OverAllocated>0</OverAllocated>
       <CanLevel>1</CanLevel>
       <AccrueAt>3</AccrueAt>
       <Work>PT168H0M0S</Work>
@@ -1379,35 +1229,34 @@
       <ActualOvertimeCost>0</ActualOvertimeCost>
       <RemainingCost>0</RemainingCost>
       <RemainingOvertimeCost>0</RemainingOvertimeCost>
-      <WorkVariance>10080000</WorkVariance>
+      <WorkVariance>10080000.00</WorkVariance>
       <CostVariance>0</CostVariance>
-      <SV>0</SV>
-      <CV>0</CV>
-      <ACWP>0</ACWP>
+      <SV>0.00</SV>
+      <CV>0.00</CV>
+      <ACWP>0.00</ACWP>
       <CalendarUID>5</CalendarUID>
-      <BCWS>0</BCWS>
-      <BCWP>0</BCWP>
+      <BCWS>0.00</BCWS>
+      <BCWP>0.00</BCWP>
       <IsGeneric>0</IsGeneric>
       <IsInactive>0</IsInactive>
       <IsEnterprise>0</IsEnterprise>
       <BookingType>0</BookingType>
-      <CreationDate>2000-09-10T23:25:55</CreationDate>
+      <CreationDate>2000-07-01T23:20:55</CreationDate>
       <IsCostResource>0</IsCostResource>
       <IsBudget>0</IsBudget>
     </Resource>
     <Resource>
       <UID>4</UID>
+      <GUID>5B5FE371-C519-400C-8545-8867522A2235</GUID>
       <ID>4</ID>
       <Name>Resource4</Name>
       <Type>1</Type>
       <IsNull>0</IsNull>
       <Initials>R</Initials>
       <WorkGroup>0</WorkGroup>
-      <MaxUnits>1</MaxUnits>
-      <PeakUnits>0</PeakUnits>
-      <OverAllocated>1</OverAllocated>
-      <AvailableFrom>2000-01-01T00:00:00</AvailableFrom>
-      <AvailableTo>2000-01-01T00:00:00</AvailableTo>
+      <MaxUnits>1.00</MaxUnits>
+      <PeakUnits>0.00</PeakUnits>
+      <OverAllocated>0</OverAllocated>
       <CanLevel>1</CanLevel>
       <AccrueAt>3</AccrueAt>
       <Work>PT16H0M0S</Work>
@@ -1429,35 +1278,34 @@
       <ActualOvertimeCost>0</ActualOvertimeCost>
       <RemainingCost>0</RemainingCost>
       <RemainingOvertimeCost>0</RemainingOvertimeCost>
-      <WorkVariance>960000</WorkVariance>
+      <WorkVariance>960000.00</WorkVariance>
       <CostVariance>0</CostVariance>
-      <SV>0</SV>
-      <CV>0</CV>
-      <ACWP>0</ACWP>
+      <SV>0.00</SV>
+      <CV>0.00</CV>
+      <ACWP>0.00</ACWP>
       <CalendarUID>6</CalendarUID>
-      <BCWS>0</BCWS>
-      <BCWP>0</BCWP>
+      <BCWS>0.00</BCWS>
+      <BCWP>0.00</BCWP>
       <IsGeneric>0</IsGeneric>
       <IsInactive>0</IsInactive>
       <IsEnterprise>0</IsEnterprise>
       <BookingType>0</BookingType>
-      <CreationDate>2000-09-10T23:25:55</CreationDate>
+      <CreationDate>2000-07-01T23:20:55</CreationDate>
       <IsCostResource>0</IsCostResource>
       <IsBudget>0</IsBudget>
     </Resource>
     <Resource>
       <UID>5</UID>
+      <GUID>A7118C2E-0C11-4051-9CD5-84624240CC65</GUID>
       <ID>5</ID>
       <Name>Resource5</Name>
       <Type>1</Type>
       <IsNull>0</IsNull>
       <Initials>R</Initials>
       <WorkGroup>0</WorkGroup>
-      <MaxUnits>1</MaxUnits>
-      <PeakUnits>0</PeakUnits>
-      <OverAllocated>1</OverAllocated>
-      <AvailableFrom>2000-01-01T00:00:00</AvailableFrom>
-      <AvailableTo>2000-01-01T00:00:00</AvailableTo>
+      <MaxUnits>1.00</MaxUnits>
+      <PeakUnits>0.00</PeakUnits>
+      <OverAllocated>0</OverAllocated>
       <CanLevel>1</CanLevel>
       <AccrueAt>3</AccrueAt>
       <Work>PT40H0M0S</Work>
@@ -1479,19 +1327,19 @@
       <ActualOvertimeCost>0</ActualOvertimeCost>
       <RemainingCost>0</RemainingCost>
       <RemainingOvertimeCost>0</RemainingOvertimeCost>
-      <WorkVariance>2400000</WorkVariance>
+      <WorkVariance>2400000.00</WorkVariance>
       <CostVariance>0</CostVariance>
-      <SV>0</SV>
-      <CV>0</CV>
-      <ACWP>0</ACWP>
+      <SV>0.00</SV>
+      <CV>0.00</CV>
+      <ACWP>0.00</ACWP>
       <CalendarUID>7</CalendarUID>
-      <BCWS>0</BCWS>
-      <BCWP>0</BCWP>
+      <BCWS>0.00</BCWS>
+      <BCWP>0.00</BCWP>
       <IsGeneric>0</IsGeneric>
       <IsInactive>0</IsInactive>
       <IsEnterprise>0</IsEnterprise>
       <BookingType>0</BookingType>
-      <CreationDate>2000-09-10T23:25:55</CreationDate>
+      <CreationDate>2000-07-01T23:20:55</CreationDate>
       <IsCostResource>0</IsCostResource>
       <IsBudget>0</IsBudget>
     </Resource>
@@ -1499,22 +1347,23 @@
   <Assignments>
     <Assignment>
       <UID>2</UID>
+      <GUID>00000000-0000-0000-0000-000000000000</GUID>
       <TaskUID>2</TaskUID>
       <ResourceUID>-1</ResourceUID>
       <PercentWorkComplete>0</PercentWorkComplete>
       <ActualCost>0</ActualCost>
       <ActualOvertimeWork>PT0H0M0S</ActualOvertimeWork>
       <ActualWork>PT0H0M0S</ActualWork>
-      <ACWP>0</ACWP>
+      <ACWP>0.00</ACWP>
       <Confirmed>0</Confirmed>
       <Cost>0</Cost>
       <CostRateTable>0</CostRateTable>
       <CostVariance>0</CostVariance>
-      <CV>0</CV>
+      <CV>0.00</CV>
       <Finish>2000-06-08T17:00:00</Finish>
-      <FinishVariance>547200</FinishVariance>
-      <WorkVariance>480000</WorkVariance>
-      <HasFixedRateUnits>0</HasFixedRateUnits>
+      <FinishVariance>0</FinishVariance>
+      <WorkVariance>0.00</WorkVariance>
+      <HasFixedRateUnits>1</HasFixedRateUnits>
       <FixedMaterial>0</FixedMaterial>
       <LevelingDelay>0</LevelingDelay>
       <LevelingDelayFormat>7</LevelingDelayFormat>
@@ -1522,56 +1371,50 @@
       <Milestone>0</Milestone>
       <Overallocated>0</Overallocated>
       <OvertimeWork>PT0H0M0S</OvertimeWork>
-      <RegularWork>PT8H0M0S</RegularWork>
+      <RegularWork>PT0H0M0S</RegularWork>
       <RemainingCost>0</RemainingCost>
       <RemainingOvertimeWork>PT0H0M0S</RemainingOvertimeWork>
-      <RemainingWork>PT8H0M0S</RemainingWork>
+      <RemainingWork>PT0H0M0S</RemainingWork>
       <ResponsePending>0</ResponsePending>
       <Start>2000-06-08T08:00:00</Start>
-      <Stop>2000-06-08T08:00:00</Stop>
-      <Resume>2000-06-08T08:00:00</Resume>
-      <StartVariance>542400</StartVariance>
+      <StartVariance>0</StartVariance>
+      <Units>1</Units>
       <UpdateNeeded>0</UpdateNeeded>
-      <VAC>0</VAC>
-      <Work>PT8H0M0S</Work>
+      <VAC>0.00</VAC>
+      <Work>PT0H0M0S</Work>
       <WorkContour>0</WorkContour>
-      <BCWS>0</BCWS>
-      <BCWP>0</BCWP>
+      <BCWS>0.00</BCWS>
+      <BCWP>0.00</BCWP>
       <BookingType>0</BookingType>
       <CreationDate>2000-06-08T15:06:00</CreationDate>
-      <Baseline>
-        <Number>0</Number>
-        <Work>PT0H0M0S</Work>
-        <Start>2000-01-01T00:00:00</Start>
-        <Finish>2000-01-01T00:00:00</Finish>
-      </Baseline>
       <TimephasedData>
         <Type>1</Type>
         <UID>2</UID>
-        <Start>2000-06-08T08:00:00</Start>
-        <Finish>2000-06-08T17:00:00</Finish>
+        <Start>2010-06-08T08:00:00</Start>
+        <Finish>2010-06-08T17:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT8H0M0S</Value>
       </TimephasedData>
     </Assignment>
     <Assignment>
       <UID>6</UID>
+      <GUID>00000000-0000-0000-0000-000000000000</GUID>
       <TaskUID>6</TaskUID>
       <ResourceUID>-1</ResourceUID>
       <PercentWorkComplete>0</PercentWorkComplete>
       <ActualCost>0</ActualCost>
       <ActualOvertimeWork>PT0H0M0S</ActualOvertimeWork>
       <ActualWork>PT0H0M0S</ActualWork>
-      <ACWP>0</ACWP>
+      <ACWP>0.00</ACWP>
       <Confirmed>0</Confirmed>
       <Cost>0</Cost>
       <CostRateTable>0</CostRateTable>
       <CostVariance>0</CostVariance>
-      <CV>0</CV>
+      <CV>0.00</CV>
       <Finish>2000-07-07T17:00:00</Finish>
-      <FinishVariance>648000</FinishVariance>
-      <WorkVariance>4800000</WorkVariance>
-      <HasFixedRateUnits>0</HasFixedRateUnits>
+      <FinishVariance>0</FinishVariance>
+      <WorkVariance>0.00</WorkVariance>
+      <HasFixedRateUnits>1</HasFixedRateUnits>
       <FixedMaterial>0</FixedMaterial>
       <LevelingDelay>0</LevelingDelay>
       <LevelingDelayFormat>7</LevelingDelayFormat>
@@ -1579,160 +1422,154 @@
       <Milestone>0</Milestone>
       <Overallocated>0</Overallocated>
       <OvertimeWork>PT0H0M0S</OvertimeWork>
-      <RegularWork>PT80H0M0S</RegularWork>
+      <RegularWork>PT0H0M0S</RegularWork>
       <RemainingCost>0</RemainingCost>
       <RemainingOvertimeWork>PT0H0M0S</RemainingOvertimeWork>
-      <RemainingWork>PT80H0M0S</RemainingWork>
+      <RemainingWork>PT0H0M0S</RemainingWork>
       <ResponsePending>0</ResponsePending>
       <Start>2000-06-24T08:00:00</Start>
-      <Stop>2000-06-24T08:00:00</Stop>
-      <Resume>2000-06-24T08:00:00</Resume>
-      <StartVariance>600000</StartVariance>
+      <StartVariance>0</StartVariance>
+      <Units>1</Units>
       <UpdateNeeded>0</UpdateNeeded>
-      <VAC>0</VAC>
-      <Work>PT80H0M0S</Work>
+      <VAC>0.00</VAC>
+      <Work>PT0H0M0S</Work>
       <WorkContour>0</WorkContour>
-      <BCWS>0</BCWS>
-      <BCWP>0</BCWP>
+      <BCWS>0.00</BCWS>
+      <BCWP>0.00</BCWP>
       <BookingType>0</BookingType>
       <CreationDate>2000-06-08T15:06:00</CreationDate>
-      <Baseline>
-        <Number>0</Number>
-        <Work>PT0H0M0S</Work>
-        <Start>2000-01-01T00:00:00</Start>
-        <Finish>2000-01-01T00:00:00</Finish>
-      </Baseline>
       <TimephasedData>
         <Type>1</Type>
         <UID>6</UID>
-        <Start>2000-06-24T08:00:00</Start>
-        <Finish>2000-06-25T08:00:00</Finish>
+        <Start>2010-06-24T08:00:00</Start>
+        <Finish>2010-06-25T08:00:00</Finish>
+        <Unit>2</Unit>
+        <Value>PT8H0M0S</Value>
+      </TimephasedData>
+      <TimephasedData>
+        <Type>1</Type>
+        <UID>6</UID>
+        <Start>2010-06-25T08:00:00</Start>
+        <Finish>2010-06-26T08:00:00</Finish>
+        <Unit>2</Unit>
+        <Value>PT8H0M0S</Value>
+      </TimephasedData>
+      <TimephasedData>
+        <Type>1</Type>
+        <UID>6</UID>
+        <Start>2010-06-26T08:00:00</Start>
+        <Finish>2010-06-27T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT0H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>6</UID>
-        <Start>2000-06-25T08:00:00</Start>
-        <Finish>2000-06-26T08:00:00</Finish>
+        <Start>2010-06-27T08:00:00</Start>
+        <Finish>2010-06-28T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT0H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>6</UID>
-        <Start>2000-06-26T08:00:00</Start>
-        <Finish>2000-06-27T08:00:00</Finish>
+        <Start>2010-06-28T08:00:00</Start>
+        <Finish>2010-06-29T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT8H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>6</UID>
-        <Start>2000-06-27T08:00:00</Start>
-        <Finish>2000-06-28T08:00:00</Finish>
+        <Start>2010-06-29T08:00:00</Start>
+        <Finish>2010-06-30T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT8H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>6</UID>
-        <Start>2000-06-28T08:00:00</Start>
-        <Finish>2000-06-29T08:00:00</Finish>
+        <Start>2010-06-30T08:00:00</Start>
+        <Finish>2010-07-01T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT8H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>6</UID>
-        <Start>2000-06-29T08:00:00</Start>
-        <Finish>2000-06-30T08:00:00</Finish>
+        <Start>2010-07-01T08:00:00</Start>
+        <Finish>2010-07-02T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT8H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>6</UID>
-        <Start>2000-06-30T08:00:00</Start>
-        <Finish>2000-07-01T08:00:00</Finish>
+        <Start>2010-07-02T08:00:00</Start>
+        <Finish>2010-07-03T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT8H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>6</UID>
-        <Start>2000-07-01T08:00:00</Start>
-        <Finish>2000-07-02T08:00:00</Finish>
+        <Start>2010-07-03T08:00:00</Start>
+        <Finish>2010-07-04T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT0H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>6</UID>
-        <Start>2000-07-02T08:00:00</Start>
-        <Finish>2000-07-03T08:00:00</Finish>
+        <Start>2010-07-04T08:00:00</Start>
+        <Finish>2010-07-05T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT0H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>6</UID>
-        <Start>2000-07-03T08:00:00</Start>
-        <Finish>2000-07-04T08:00:00</Finish>
+        <Start>2010-07-05T08:00:00</Start>
+        <Finish>2010-07-06T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT8H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>6</UID>
-        <Start>2000-07-04T08:00:00</Start>
-        <Finish>2000-07-05T08:00:00</Finish>
+        <Start>2010-07-06T08:00:00</Start>
+        <Finish>2010-07-07T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT8H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>6</UID>
-        <Start>2000-07-05T08:00:00</Start>
-        <Finish>2000-07-06T08:00:00</Finish>
-        <Unit>2</Unit>
-        <Value>PT8H0M0S</Value>
-      </TimephasedData>
-      <TimephasedData>
-        <Type>1</Type>
-        <UID>6</UID>
-        <Start>2000-07-06T08:00:00</Start>
-        <Finish>2000-07-07T08:00:00</Finish>
-        <Unit>2</Unit>
-        <Value>PT8H0M0S</Value>
-      </TimephasedData>
-      <TimephasedData>
-        <Type>1</Type>
-        <UID>6</UID>
-        <Start>2000-07-07T08:00:00</Start>
-        <Finish>2000-07-07T17:00:00</Finish>
+        <Start>2010-07-07T08:00:00</Start>
+        <Finish>2010-07-07T17:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT8H0M0S</Value>
       </TimephasedData>
     </Assignment>
     <Assignment>
       <UID>9</UID>
+      <GUID>00000000-0000-0000-0000-000000000000</GUID>
       <TaskUID>9</TaskUID>
       <ResourceUID>-1</ResourceUID>
       <PercentWorkComplete>0</PercentWorkComplete>
       <ActualCost>0</ActualCost>
       <ActualOvertimeWork>PT0H0M0S</ActualOvertimeWork>
       <ActualWork>PT0H0M0S</ActualWork>
-      <ACWP>0</ACWP>
+      <ACWP>0.00</ACWP>
       <Confirmed>0</Confirmed>
       <Cost>0</Cost>
       <CostRateTable>0</CostRateTable>
       <CostVariance>0</CostVariance>
-      <CV>0</CV>
+      <CV>0.00</CV>
       <Finish>2000-07-13T17:00:00</Finish>
-      <FinishVariance>667200</FinishVariance>
-      <WorkVariance>480000</WorkVariance>
-      <HasFixedRateUnits>0</HasFixedRateUnits>
+      <FinishVariance>0</FinishVariance>
+      <WorkVariance>0.00</WorkVariance>
+      <HasFixedRateUnits>1</HasFixedRateUnits>
       <FixedMaterial>0</FixedMaterial>
       <LevelingDelay>0</LevelingDelay>
       <LevelingDelayFormat>7</LevelingDelayFormat>
@@ -1740,40 +1577,34 @@
       <Milestone>0</Milestone>
       <Overallocated>0</Overallocated>
       <OvertimeWork>PT0H0M0S</OvertimeWork>
-      <RegularWork>PT8H0M0S</RegularWork>
+      <RegularWork>PT0H0M0S</RegularWork>
       <RemainingCost>0</RemainingCost>
       <RemainingOvertimeWork>PT0H0M0S</RemainingOvertimeWork>
-      <RemainingWork>PT8H0M0S</RemainingWork>
+      <RemainingWork>PT0H0M0S</RemainingWork>
       <ResponsePending>0</ResponsePending>
       <Start>2000-07-13T08:00:00</Start>
-      <Stop>2000-07-13T08:00:00</Stop>
-      <Resume>2000-07-13T08:00:00</Resume>
-      <StartVariance>662400</StartVariance>
+      <StartVariance>0</StartVariance>
+      <Units>1</Units>
       <UpdateNeeded>0</UpdateNeeded>
-      <VAC>0</VAC>
-      <Work>PT8H0M0S</Work>
+      <VAC>0.00</VAC>
+      <Work>PT0H0M0S</Work>
       <WorkContour>0</WorkContour>
-      <BCWS>0</BCWS>
-      <BCWP>0</BCWP>
+      <BCWS>0.00</BCWS>
+      <BCWP>0.00</BCWP>
       <BookingType>0</BookingType>
       <CreationDate>2000-06-08T15:06:00</CreationDate>
-      <Baseline>
-        <Number>0</Number>
-        <Work>PT0H0M0S</Work>
-        <Start>2000-01-01T00:00:00</Start>
-        <Finish>2000-01-01T00:00:00</Finish>
-      </Baseline>
       <TimephasedData>
         <Type>1</Type>
         <UID>9</UID>
-        <Start>2000-07-13T08:00:00</Start>
-        <Finish>2000-07-13T17:00:00</Finish>
+        <Start>2010-07-13T08:00:00</Start>
+        <Finish>2010-07-13T17:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT8H0M0S</Value>
       </TimephasedData>
     </Assignment>
     <Assignment>
       <UID>11</UID>
+      <GUID>00000000-0000-0000-0000-000000000000</GUID>
       <TaskUID>3</TaskUID>
       <ResourceUID>1</ResourceUID>
       <PercentWorkComplete>0</PercentWorkComplete>
@@ -1781,17 +1612,17 @@
       <ActualOvertimeCost>0</ActualOvertimeCost>
       <ActualOvertimeWork>PT0H0M0S</ActualOvertimeWork>
       <ActualWork>PT0H0M0S</ActualWork>
-      <ACWP>0</ACWP>
+      <ACWP>0.00</ACWP>
       <Confirmed>0</Confirmed>
       <Cost>0</Cost>
       <CostRateTable>0</CostRateTable>
       <CostVariance>0</CostVariance>
-      <CV>0</CV>
+      <CV>0.00</CV>
       <Delay>0</Delay>
       <Finish>2000-06-09T17:00:00</Finish>
-      <FinishVariance>552000</FinishVariance>
-      <WorkVariance>960000</WorkVariance>
-      <HasFixedRateUnits>0</HasFixedRateUnits>
+      <FinishVariance>0</FinishVariance>
+      <WorkVariance>960000.00</WorkVariance>
+      <HasFixedRateUnits>1</HasFixedRateUnits>
       <FixedMaterial>0</FixedMaterial>
       <LevelingDelay>0</LevelingDelay>
       <LevelingDelayFormat>7</LevelingDelayFormat>
@@ -1800,6 +1631,7 @@
       <Overallocated>0</Overallocated>
       <OvertimeCost>0</OvertimeCost>
       <OvertimeWork>PT0H0M0S</OvertimeWork>
+      <PeakUnits>1</PeakUnits>
       <RegularWork>PT16H0M0S</RegularWork>
       <RemainingCost>0</RemainingCost>
       <RemainingOvertimeCost>0</RemainingOvertimeCost>
@@ -1807,43 +1639,36 @@
       <RemainingWork>PT16H0M0S</RemainingWork>
       <ResponsePending>0</ResponsePending>
       <Start>2000-06-08T08:00:00</Start>
-      <Stop>2000-06-08T08:00:00</Stop>
-      <Resume>2000-06-08T08:00:00</Resume>
-      <StartVariance>542400</StartVariance>
+      <StartVariance>0</StartVariance>
       <Units>1</Units>
       <UpdateNeeded>0</UpdateNeeded>
-      <VAC>0</VAC>
+      <VAC>0.00</VAC>
       <Work>PT16H0M0S</Work>
       <WorkContour>0</WorkContour>
-      <BCWS>0</BCWS>
-      <BCWP>0</BCWP>
+      <BCWS>0.00</BCWS>
+      <BCWP>0.00</BCWP>
       <BookingType>0</BookingType>
       <CreationDate>2000-06-08T15:14:00</CreationDate>
-      <Baseline>
-        <Number>0</Number>
-        <Work>PT0H0M0S</Work>
-        <Start>2000-01-01T00:00:00</Start>
-        <Finish>2000-01-01T00:00:00</Finish>
-      </Baseline>
       <TimephasedData>
         <Type>1</Type>
         <UID>11</UID>
-        <Start>2000-06-08T08:00:00</Start>
-        <Finish>2000-06-09T08:00:00</Finish>
+        <Start>2010-06-08T08:00:00</Start>
+        <Finish>2010-06-09T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT8H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>11</UID>
-        <Start>2000-06-09T08:00:00</Start>
-        <Finish>2000-06-09T17:00:00</Finish>
+        <Start>2010-06-09T08:00:00</Start>
+        <Finish>2010-06-09T17:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT8H0M0S</Value>
       </TimephasedData>
     </Assignment>
     <Assignment>
       <UID>12</UID>
+      <GUID>00000000-0000-0000-0000-000000000000</GUID>
       <TaskUID>5</TaskUID>
       <ResourceUID>2</ResourceUID>
       <PercentWorkComplete>0</PercentWorkComplete>
@@ -1851,17 +1676,17 @@
       <ActualOvertimeCost>0</ActualOvertimeCost>
       <ActualOvertimeWork>PT0H0M0S</ActualOvertimeWork>
       <ActualWork>PT0H0M0S</ActualWork>
-      <ACWP>0</ACWP>
+      <ACWP>0.00</ACWP>
       <Confirmed>0</Confirmed>
       <Cost>0</Cost>
       <CostRateTable>0</CostRateTable>
       <CostVariance>0</CostVariance>
-      <CV>0</CV>
+      <CV>0.00</CV>
       <Delay>0</Delay>
       <Finish>2000-07-08T17:00:00</Finish>
-      <FinishVariance>648000</FinishVariance>
-      <WorkVariance>5280000</WorkVariance>
-      <HasFixedRateUnits>0</HasFixedRateUnits>
+      <FinishVariance>0</FinishVariance>
+      <WorkVariance>5280000.00</WorkVariance>
+      <HasFixedRateUnits>1</HasFixedRateUnits>
       <FixedMaterial>0</FixedMaterial>
       <LevelingDelay>0</LevelingDelay>
       <LevelingDelayFormat>7</LevelingDelayFormat>
@@ -1870,6 +1695,7 @@
       <Overallocated>0</Overallocated>
       <OvertimeCost>0</OvertimeCost>
       <OvertimeWork>PT0H0M0S</OvertimeWork>
+      <PeakUnits>1</PeakUnits>
       <RegularWork>PT88H0M0S</RegularWork>
       <RemainingCost>0</RemainingCost>
       <RemainingOvertimeCost>0</RemainingOvertimeCost>
@@ -1877,164 +1703,141 @@
       <RemainingWork>PT88H0M0S</RemainingWork>
       <ResponsePending>0</ResponsePending>
       <Start>2000-06-24T08:00:00</Start>
-      <Stop>2000-06-24T08:00:00</Stop>
-      <Resume>2000-06-24T08:00:00</Resume>
-      <StartVariance>600000</StartVariance>
+      <StartVariance>0</StartVariance>
       <Summary>0</Summary>
       <Units>1</Units>
       <UpdateNeeded>0</UpdateNeeded>
-      <VAC>0</VAC>
+      <VAC>0.00</VAC>
       <Work>PT88H0M0S</Work>
       <WorkContour>0</WorkContour>
-      <BCWS>0</BCWS>
-      <BCWP>0</BCWP>
+      <BCWS>0.00</BCWS>
+      <BCWP>0.00</BCWP>
       <BookingType>0</BookingType>
       <CreationDate>2000-06-08T15:14:00</CreationDate>
-      <Baseline>
-        <Number>0</Number>
-        <Work>PT0H0M0S</Work>
-        <Start>2000-01-01T00:00:00</Start>
-        <Finish>2000-01-01T00:00:00</Finish>
-      </Baseline>
       <TimephasedData>
         <Type>1</Type>
         <UID>12</UID>
-        <Start>2000-06-24T08:00:00</Start>
-        <Finish>2000-06-25T08:00:00</Finish>
+        <Start>2010-06-24T08:00:00</Start>
+        <Finish>2010-06-25T08:00:00</Finish>
+        <Unit>2</Unit>
+        <Value>PT8H0M0S</Value>
+      </TimephasedData>
+      <TimephasedData>
+        <Type>1</Type>
+        <UID>12</UID>
+        <Start>2010-06-25T08:00:00</Start>
+        <Finish>2010-06-26T08:00:00</Finish>
+        <Unit>2</Unit>
+        <Value>PT8H0M0S</Value>
+      </TimephasedData>
+      <TimephasedData>
+        <Type>1</Type>
+        <UID>12</UID>
+        <Start>2010-06-26T08:00:00</Start>
+        <Finish>2010-06-27T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT0H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>12</UID>
-        <Start>2000-06-25T08:00:00</Start>
-        <Finish>2000-06-26T08:00:00</Finish>
+        <Start>2010-06-27T08:00:00</Start>
+        <Finish>2010-06-28T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT0H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>12</UID>
-        <Start>2000-06-26T08:00:00</Start>
-        <Finish>2000-06-27T08:00:00</Finish>
+        <Start>2010-06-28T08:00:00</Start>
+        <Finish>2010-06-29T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT8H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>12</UID>
-        <Start>2000-06-27T08:00:00</Start>
-        <Finish>2000-06-28T08:00:00</Finish>
+        <Start>2010-06-29T08:00:00</Start>
+        <Finish>2010-06-30T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT8H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>12</UID>
-        <Start>2000-06-28T08:00:00</Start>
-        <Finish>2000-06-29T08:00:00</Finish>
+        <Start>2010-06-30T08:00:00</Start>
+        <Finish>2010-07-01T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT8H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>12</UID>
-        <Start>2000-06-29T08:00:00</Start>
-        <Finish>2000-06-30T08:00:00</Finish>
+        <Start>2010-07-01T08:00:00</Start>
+        <Finish>2010-07-02T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT8H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>12</UID>
-        <Start>2000-06-30T08:00:00</Start>
-        <Finish>2000-07-01T08:00:00</Finish>
+        <Start>2010-07-02T08:00:00</Start>
+        <Finish>2010-07-03T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT8H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>12</UID>
-        <Start>2000-07-01T08:00:00</Start>
-        <Finish>2000-07-02T08:00:00</Finish>
+        <Start>2010-07-03T08:00:00</Start>
+        <Finish>2010-07-04T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT0H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>12</UID>
-        <Start>2000-07-02T08:00:00</Start>
-        <Finish>2000-07-03T08:00:00</Finish>
+        <Start>2010-07-04T08:00:00</Start>
+        <Finish>2010-07-05T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT0H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>12</UID>
-        <Start>2000-07-03T08:00:00</Start>
-        <Finish>2000-07-04T08:00:00</Finish>
+        <Start>2010-07-05T08:00:00</Start>
+        <Finish>2010-07-06T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT8H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>12</UID>
-        <Start>2000-07-04T08:00:00</Start>
-        <Finish>2000-07-05T08:00:00</Finish>
+        <Start>2010-07-06T08:00:00</Start>
+        <Finish>2010-07-07T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT8H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>12</UID>
-        <Start>2000-07-05T08:00:00</Start>
-        <Finish>2000-07-06T08:00:00</Finish>
+        <Start>2010-07-07T08:00:00</Start>
+        <Finish>2010-07-08T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT8H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>12</UID>
-        <Start>2000-07-06T08:00:00</Start>
-        <Finish>2000-07-07T08:00:00</Finish>
-        <Unit>2</Unit>
-        <Value>PT8H0M0S</Value>
-      </TimephasedData>
-      <TimephasedData>
-        <Type>1</Type>
-        <UID>12</UID>
-        <Start>2000-07-07T08:00:00</Start>
-        <Finish>2000-07-08T08:00:00</Finish>
-        <Unit>2</Unit>
-        <Value>PT8H0M0S</Value>
-      </TimephasedData>
-      <TimephasedData>
-        <Type>1</Type>
-        <UID>12</UID>
-        <Start>2000-07-08T08:00:00</Start>
-        <Finish>2000-07-09T08:00:00</Finish>
-        <Unit>2</Unit>
-        <Value>PT0H0M0S</Value>
-      </TimephasedData>
-      <TimephasedData>
-        <Type>1</Type>
-        <UID>12</UID>
-        <Start>2000-07-09T08:00:00</Start>
-        <Finish>2000-07-10T08:00:00</Finish>
-        <Unit>2</Unit>
-        <Value>PT0H0M0S</Value>
-      </TimephasedData>
-      <TimephasedData>
-        <Type>1</Type>
-        <UID>12</UID>
-        <Start>2000-07-10T08:00:00</Start>
-        <Finish>2000-07-10T17:00:00</Finish>
+        <Start>2010-07-08T08:00:00</Start>
+        <Finish>2010-07-08T17:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT8H0M0S</Value>
       </TimephasedData>
     </Assignment>
     <Assignment>
       <UID>13</UID>
+      <GUID>00000000-0000-0000-0000-000000000000</GUID>
       <TaskUID>7</TaskUID>
       <ResourceUID>3</ResourceUID>
       <PercentWorkComplete>0</PercentWorkComplete>
@@ -2042,17 +1845,17 @@
       <ActualOvertimeCost>0</ActualOvertimeCost>
       <ActualOvertimeWork>PT0H0M0S</ActualOvertimeWork>
       <ActualWork>PT0H0M0S</ActualWork>
-      <ACWP>0</ACWP>
+      <ACWP>0.00</ACWP>
       <Confirmed>0</Confirmed>
       <Cost>0</Cost>
       <CostRateTable>0</CostRateTable>
       <CostVariance>0</CostVariance>
-      <CV>0</CV>
+      <CV>0.00</CV>
       <Delay>0</Delay>
       <Finish>2000-07-08T17:00:00</Finish>
-      <FinishVariance>648000</FinishVariance>
-      <WorkVariance>5280000</WorkVariance>
-      <HasFixedRateUnits>0</HasFixedRateUnits>
+      <FinishVariance>0</FinishVariance>
+      <WorkVariance>5280000.00</WorkVariance>
+      <HasFixedRateUnits>1</HasFixedRateUnits>
       <FixedMaterial>0</FixedMaterial>
       <LevelingDelay>0</LevelingDelay>
       <LevelingDelayFormat>7</LevelingDelayFormat>
@@ -2061,6 +1864,7 @@
       <Overallocated>0</Overallocated>
       <OvertimeCost>0</OvertimeCost>
       <OvertimeWork>PT0H0M0S</OvertimeWork>
+      <PeakUnits>1</PeakUnits>
       <RegularWork>PT88H0M0S</RegularWork>
       <RemainingCost>0</RemainingCost>
       <RemainingOvertimeCost>0</RemainingOvertimeCost>
@@ -2068,163 +1872,140 @@
       <RemainingWork>PT88H0M0S</RemainingWork>
       <ResponsePending>0</ResponsePending>
       <Start>2000-06-24T08:00:00</Start>
-      <Stop>2000-06-24T08:00:00</Stop>
-      <Resume>2000-06-24T08:00:00</Resume>
-      <StartVariance>600000</StartVariance>
+      <StartVariance>0</StartVariance>
       <Units>1</Units>
       <UpdateNeeded>0</UpdateNeeded>
-      <VAC>0</VAC>
+      <VAC>0.00</VAC>
       <Work>PT88H0M0S</Work>
       <WorkContour>0</WorkContour>
-      <BCWS>0</BCWS>
-      <BCWP>0</BCWP>
+      <BCWS>0.00</BCWS>
+      <BCWP>0.00</BCWP>
       <BookingType>0</BookingType>
       <CreationDate>2000-06-08T15:14:00</CreationDate>
-      <Baseline>
-        <Number>0</Number>
-        <Work>PT0H0M0S</Work>
-        <Start>2000-01-01T00:00:00</Start>
-        <Finish>2000-01-01T00:00:00</Finish>
-      </Baseline>
       <TimephasedData>
         <Type>1</Type>
         <UID>13</UID>
-        <Start>2000-06-24T08:00:00</Start>
-        <Finish>2000-06-25T08:00:00</Finish>
+        <Start>2010-06-24T08:00:00</Start>
+        <Finish>2010-06-25T08:00:00</Finish>
+        <Unit>2</Unit>
+        <Value>PT8H0M0S</Value>
+      </TimephasedData>
+      <TimephasedData>
+        <Type>1</Type>
+        <UID>13</UID>
+        <Start>2010-06-25T08:00:00</Start>
+        <Finish>2010-06-26T08:00:00</Finish>
+        <Unit>2</Unit>
+        <Value>PT8H0M0S</Value>
+      </TimephasedData>
+      <TimephasedData>
+        <Type>1</Type>
+        <UID>13</UID>
+        <Start>2010-06-26T08:00:00</Start>
+        <Finish>2010-06-27T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT0H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>13</UID>
-        <Start>2000-06-25T08:00:00</Start>
-        <Finish>2000-06-26T08:00:00</Finish>
+        <Start>2010-06-27T08:00:00</Start>
+        <Finish>2010-06-28T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT0H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>13</UID>
-        <Start>2000-06-26T08:00:00</Start>
-        <Finish>2000-06-27T08:00:00</Finish>
+        <Start>2010-06-28T08:00:00</Start>
+        <Finish>2010-06-29T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT8H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>13</UID>
-        <Start>2000-06-27T08:00:00</Start>
-        <Finish>2000-06-28T08:00:00</Finish>
+        <Start>2010-06-29T08:00:00</Start>
+        <Finish>2010-06-30T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT8H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>13</UID>
-        <Start>2000-06-28T08:00:00</Start>
-        <Finish>2000-06-29T08:00:00</Finish>
+        <Start>2010-06-30T08:00:00</Start>
+        <Finish>2010-07-01T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT8H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>13</UID>
-        <Start>2000-06-29T08:00:00</Start>
-        <Finish>2000-06-30T08:00:00</Finish>
+        <Start>2010-07-01T08:00:00</Start>
+        <Finish>2010-07-02T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT8H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>13</UID>
-        <Start>2000-06-30T08:00:00</Start>
-        <Finish>2000-07-01T08:00:00</Finish>
+        <Start>2010-07-02T08:00:00</Start>
+        <Finish>2010-07-03T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT8H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>13</UID>
-        <Start>2000-07-01T08:00:00</Start>
-        <Finish>2000-07-02T08:00:00</Finish>
+        <Start>2010-07-03T08:00:00</Start>
+        <Finish>2010-07-04T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT0H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>13</UID>
-        <Start>2000-07-02T08:00:00</Start>
-        <Finish>2000-07-03T08:00:00</Finish>
+        <Start>2010-07-04T08:00:00</Start>
+        <Finish>2010-07-05T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT0H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>13</UID>
-        <Start>2000-07-03T08:00:00</Start>
-        <Finish>2000-07-04T08:00:00</Finish>
+        <Start>2010-07-05T08:00:00</Start>
+        <Finish>2010-07-06T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT8H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>13</UID>
-        <Start>2000-07-04T08:00:00</Start>
-        <Finish>2000-07-05T08:00:00</Finish>
+        <Start>2010-07-06T08:00:00</Start>
+        <Finish>2010-07-07T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT8H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>13</UID>
-        <Start>2000-07-05T08:00:00</Start>
-        <Finish>2000-07-06T08:00:00</Finish>
+        <Start>2010-07-07T08:00:00</Start>
+        <Finish>2010-07-08T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT8H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>13</UID>
-        <Start>2000-07-06T08:00:00</Start>
-        <Finish>2000-07-07T08:00:00</Finish>
-        <Unit>2</Unit>
-        <Value>PT8H0M0S</Value>
-      </TimephasedData>
-      <TimephasedData>
-        <Type>1</Type>
-        <UID>13</UID>
-        <Start>2000-07-07T08:00:00</Start>
-        <Finish>2000-07-08T08:00:00</Finish>
-        <Unit>2</Unit>
-        <Value>PT8H0M0S</Value>
-      </TimephasedData>
-      <TimephasedData>
-        <Type>1</Type>
-        <UID>13</UID>
-        <Start>2000-07-08T08:00:00</Start>
-        <Finish>2000-07-09T08:00:00</Finish>
-        <Unit>2</Unit>
-        <Value>PT0H0M0S</Value>
-      </TimephasedData>
-      <TimephasedData>
-        <Type>1</Type>
-        <UID>13</UID>
-        <Start>2000-07-09T08:00:00</Start>
-        <Finish>2000-07-10T08:00:00</Finish>
-        <Unit>2</Unit>
-        <Value>PT0H0M0S</Value>
-      </TimephasedData>
-      <TimephasedData>
-        <Type>1</Type>
-        <UID>13</UID>
-        <Start>2000-07-10T08:00:00</Start>
-        <Finish>2000-07-10T17:00:00</Finish>
+        <Start>2010-07-08T08:00:00</Start>
+        <Finish>2010-07-08T17:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT8H0M0S</Value>
       </TimephasedData>
     </Assignment>
     <Assignment>
       <UID>14</UID>
+      <GUID>00000000-0000-0000-0000-000000000000</GUID>
       <TaskUID>8</TaskUID>
       <ResourceUID>4</ResourceUID>
       <PercentWorkComplete>0</PercentWorkComplete>
@@ -2232,17 +2013,17 @@
       <ActualOvertimeCost>0</ActualOvertimeCost>
       <ActualOvertimeWork>PT0H0M0S</ActualOvertimeWork>
       <ActualWork>PT0H0M0S</ActualWork>
-      <ACWP>0</ACWP>
+      <ACWP>0.00</ACWP>
       <Confirmed>0</Confirmed>
       <Cost>0</Cost>
       <CostRateTable>0</CostRateTable>
       <CostVariance>0</CostVariance>
-      <CV>0</CV>
+      <CV>0.00</CV>
       <Delay>0</Delay>
       <Finish>2000-07-12T17:00:00</Finish>
-      <FinishVariance>662400</FinishVariance>
-      <WorkVariance>960000</WorkVariance>
-      <HasFixedRateUnits>0</HasFixedRateUnits>
+      <FinishVariance>0</FinishVariance>
+      <WorkVariance>960000.00</WorkVariance>
+      <HasFixedRateUnits>1</HasFixedRateUnits>
       <FixedMaterial>0</FixedMaterial>
       <LevelingDelay>0</LevelingDelay>
       <LevelingDelayFormat>7</LevelingDelayFormat>
@@ -2251,6 +2032,7 @@
       <Overallocated>0</Overallocated>
       <OvertimeCost>0</OvertimeCost>
       <OvertimeWork>PT0H0M0S</OvertimeWork>
+      <PeakUnits>1</PeakUnits>
       <RegularWork>PT16H0M0S</RegularWork>
       <RemainingCost>0</RemainingCost>
       <RemainingOvertimeCost>0</RemainingOvertimeCost>
@@ -2258,51 +2040,52 @@
       <RemainingWork>PT16H0M0S</RemainingWork>
       <ResponsePending>0</ResponsePending>
       <Start>2000-07-09T08:00:00</Start>
-      <Stop>2000-07-09T08:00:00</Stop>
-      <Resume>2000-07-09T08:00:00</Resume>
-      <StartVariance>648000</StartVariance>
+      <StartVariance>0</StartVariance>
       <Units>1</Units>
       <UpdateNeeded>0</UpdateNeeded>
-      <VAC>0</VAC>
+      <VAC>0.00</VAC>
       <Work>PT16H0M0S</Work>
       <WorkContour>0</WorkContour>
-      <BCWS>0</BCWS>
-      <BCWP>0</BCWP>
+      <BCWS>0.00</BCWS>
+      <BCWP>0.00</BCWP>
       <BookingType>0</BookingType>
       <CreationDate>2000-06-08T15:14:00</CreationDate>
-      <Baseline>
-        <Number>0</Number>
-        <Work>PT0H0M0S</Work>
-        <Start>2000-01-01T00:00:00</Start>
-        <Finish>2000-01-01T00:00:00</Finish>
-      </Baseline>
       <TimephasedData>
         <Type>1</Type>
         <UID>14</UID>
-        <Start>2000-07-09T08:00:00</Start>
-        <Finish>2000-07-10T08:00:00</Finish>
+        <Start>2010-07-09T08:00:00</Start>
+        <Finish>2010-07-10T17:00:00</Finish>
+        <Unit>2</Unit>
+        <Value>PT8H0M0S</Value>
+      </TimephasedData>
+      <TimephasedData>
+        <Type>1</Type>
+        <UID>14</UID>
+        <Start>2010-07-10T17:00:00</Start>
+        <Finish>2010-07-11T17:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT0H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>14</UID>
-        <Start>2000-07-10T08:00:00</Start>
-        <Finish>2000-07-11T08:00:00</Finish>
+        <Start>2010-07-11T17:00:00</Start>
+        <Finish>2010-07-12T08:00:00</Finish>
         <Unit>2</Unit>
-        <Value>PT8H0M0S</Value>
+        <Value>PT0H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>14</UID>
-        <Start>2000-07-11T08:00:00</Start>
-        <Finish>2000-07-11T17:00:00</Finish>
+        <Start>2010-07-12T08:00:00</Start>
+        <Finish>2010-07-12T17:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT8H0M0S</Value>
       </TimephasedData>
     </Assignment>
     <Assignment>
       <UID>15</UID>
+      <GUID>00000000-0000-0000-0000-000000000000</GUID>
       <TaskUID>10</TaskUID>
       <ResourceUID>5</ResourceUID>
       <PercentWorkComplete>0</PercentWorkComplete>
@@ -2310,17 +2093,17 @@
       <ActualOvertimeCost>0</ActualOvertimeCost>
       <ActualOvertimeWork>PT0H0M0S</ActualOvertimeWork>
       <ActualWork>PT0H0M0S</ActualWork>
-      <ACWP>0</ACWP>
+      <ACWP>0.00</ACWP>
       <Confirmed>0</Confirmed>
       <Cost>0</Cost>
       <CostRateTable>0</CostRateTable>
       <CostVariance>0</CostVariance>
-      <CV>0</CV>
+      <CV>0.00</CV>
       <Delay>0</Delay>
       <Finish>2000-07-16T17:00:00</Finish>
-      <FinishVariance>672000</FinishVariance>
-      <WorkVariance>1440000</WorkVariance>
-      <HasFixedRateUnits>0</HasFixedRateUnits>
+      <FinishVariance>0</FinishVariance>
+      <WorkVariance>1440000.00</WorkVariance>
+      <HasFixedRateUnits>1</HasFixedRateUnits>
       <FixedMaterial>0</FixedMaterial>
       <LevelingDelay>0</LevelingDelay>
       <LevelingDelayFormat>7</LevelingDelayFormat>
@@ -2329,6 +2112,7 @@
       <Overallocated>0</Overallocated>
       <OvertimeCost>0</OvertimeCost>
       <OvertimeWork>PT0H0M0S</OvertimeWork>
+      <PeakUnits>1</PeakUnits>
       <RegularWork>PT24H0M0S</RegularWork>
       <RemainingCost>0</RemainingCost>
       <RemainingOvertimeCost>0</RemainingOvertimeCost>
@@ -2336,67 +2120,44 @@
       <RemainingWork>PT24H0M0S</RemainingWork>
       <ResponsePending>0</ResponsePending>
       <Start>2000-07-14T08:00:00</Start>
-      <Stop>2000-07-14T08:00:00</Stop>
-      <Resume>2000-07-14T08:00:00</Resume>
-      <StartVariance>667200</StartVariance>
+      <StartVariance>0</StartVariance>
       <Units>1</Units>
       <UpdateNeeded>0</UpdateNeeded>
-      <VAC>0</VAC>
+      <VAC>0.00</VAC>
       <Work>PT24H0M0S</Work>
       <WorkContour>0</WorkContour>
-      <BCWS>0</BCWS>
-      <BCWP>0</BCWP>
+      <BCWS>0.00</BCWS>
+      <BCWP>0.00</BCWP>
       <BookingType>0</BookingType>
       <CreationDate>2000-06-08T15:14:00</CreationDate>
-      <Baseline>
-        <Number>0</Number>
-        <Work>PT0H0M0S</Work>
-        <Start>2000-01-01T00:00:00</Start>
-        <Finish>2000-01-01T00:00:00</Finish>
-      </Baseline>
       <TimephasedData>
         <Type>1</Type>
         <UID>15</UID>
-        <Start>2000-07-14T08:00:00</Start>
-        <Finish>2000-07-15T08:00:00</Finish>
+        <Start>2010-07-14T08:00:00</Start>
+        <Finish>2010-07-15T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT8H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>15</UID>
-        <Start>2000-07-15T08:00:00</Start>
-        <Finish>2000-07-16T08:00:00</Finish>
-        <Unit>2</Unit>
-        <Value>PT0H0M0S</Value>
-      </TimephasedData>
-      <TimephasedData>
-        <Type>1</Type>
-        <UID>15</UID>
-        <Start>2000-07-16T08:00:00</Start>
-        <Finish>2000-07-17T08:00:00</Finish>
-        <Unit>2</Unit>
-        <Value>PT0H0M0S</Value>
-      </TimephasedData>
-      <TimephasedData>
-        <Type>1</Type>
-        <UID>15</UID>
-        <Start>2000-07-17T08:00:00</Start>
-        <Finish>2000-07-18T08:00:00</Finish>
+        <Start>2010-07-15T08:00:00</Start>
+        <Finish>2010-07-16T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT8H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>15</UID>
-        <Start>2000-07-18T08:00:00</Start>
-        <Finish>2000-07-18T17:00:00</Finish>
+        <Start>2010-07-16T08:00:00</Start>
+        <Finish>2010-07-16T17:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT8H0M0S</Value>
       </TimephasedData>
     </Assignment>
     <Assignment>
       <UID>17</UID>
+      <GUID>00000000-0000-0000-0000-000000000000</GUID>
       <TaskUID>8</TaskUID>
       <ResourceUID>5</ResourceUID>
       <PercentWorkComplete>0</PercentWorkComplete>
@@ -2404,17 +2165,17 @@
       <ActualOvertimeCost>0</ActualOvertimeCost>
       <ActualOvertimeWork>PT0H0M0S</ActualOvertimeWork>
       <ActualWork>PT0H0M0S</ActualWork>
-      <ACWP>0</ACWP>
+      <ACWP>0.00</ACWP>
       <Confirmed>0</Confirmed>
       <Cost>0</Cost>
       <CostRateTable>0</CostRateTable>
       <CostVariance>0</CostVariance>
-      <CV>0</CV>
+      <CV>0.00</CV>
       <Delay>0</Delay>
       <Finish>2000-07-12T17:00:00</Finish>
-      <FinishVariance>662400</FinishVariance>
-      <WorkVariance>960000</WorkVariance>
-      <HasFixedRateUnits>0</HasFixedRateUnits>
+      <FinishVariance>0</FinishVariance>
+      <WorkVariance>960000.00</WorkVariance>
+      <HasFixedRateUnits>1</HasFixedRateUnits>
       <FixedMaterial>0</FixedMaterial>
       <LevelingDelay>0</LevelingDelay>
       <LevelingDelayFormat>7</LevelingDelayFormat>
@@ -2423,6 +2184,7 @@
       <Overallocated>0</Overallocated>
       <OvertimeCost>0</OvertimeCost>
       <OvertimeWork>PT0H0M0S</OvertimeWork>
+      <PeakUnits>1</PeakUnits>
       <RegularWork>PT16H0M0S</RegularWork>
       <RemainingCost>0</RemainingCost>
       <RemainingOvertimeCost>0</RemainingOvertimeCost>
@@ -2430,51 +2192,52 @@
       <RemainingWork>PT16H0M0S</RemainingWork>
       <ResponsePending>0</ResponsePending>
       <Start>2000-07-09T08:00:00</Start>
-      <Stop>2000-07-09T08:00:00</Stop>
-      <Resume>2000-07-09T08:00:00</Resume>
-      <StartVariance>648000</StartVariance>
+      <StartVariance>0</StartVariance>
       <Units>1</Units>
       <UpdateNeeded>0</UpdateNeeded>
-      <VAC>0</VAC>
+      <VAC>0.00</VAC>
       <Work>PT16H0M0S</Work>
       <WorkContour>0</WorkContour>
-      <BCWS>0</BCWS>
-      <BCWP>0</BCWP>
+      <BCWS>0.00</BCWS>
+      <BCWP>0.00</BCWP>
       <BookingType>0</BookingType>
       <CreationDate>2000-06-08T16:06:00</CreationDate>
-      <Baseline>
-        <Number>0</Number>
-        <Work>PT0H0M0S</Work>
-        <Start>2000-01-01T00:00:00</Start>
-        <Finish>2000-01-01T00:00:00</Finish>
-      </Baseline>
       <TimephasedData>
         <Type>1</Type>
         <UID>17</UID>
-        <Start>2000-07-09T08:00:00</Start>
-        <Finish>2000-07-10T08:00:00</Finish>
+        <Start>2010-07-09T08:00:00</Start>
+        <Finish>2010-07-10T17:00:00</Finish>
+        <Unit>2</Unit>
+        <Value>PT8H0M0S</Value>
+      </TimephasedData>
+      <TimephasedData>
+        <Type>1</Type>
+        <UID>17</UID>
+        <Start>2010-07-10T17:00:00</Start>
+        <Finish>2010-07-11T17:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT0H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>17</UID>
-        <Start>2000-07-10T08:00:00</Start>
-        <Finish>2000-07-11T08:00:00</Finish>
+        <Start>2010-07-11T17:00:00</Start>
+        <Finish>2010-07-12T08:00:00</Finish>
         <Unit>2</Unit>
-        <Value>PT8H0M0S</Value>
+        <Value>PT0H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>17</UID>
-        <Start>2000-07-11T08:00:00</Start>
-        <Finish>2000-07-11T17:00:00</Finish>
+        <Start>2010-07-12T08:00:00</Start>
+        <Finish>2010-07-12T17:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT8H0M0S</Value>
       </TimephasedData>
     </Assignment>
     <Assignment>
       <UID>18</UID>
+      <GUID>00000000-0000-0000-0000-000000000000</GUID>
       <TaskUID>4</TaskUID>
       <ResourceUID>2</ResourceUID>
       <PercentWorkComplete>0</PercentWorkComplete>
@@ -2482,17 +2245,17 @@
       <ActualOvertimeCost>0</ActualOvertimeCost>
       <ActualOvertimeWork>PT0H0M0S</ActualOvertimeWork>
       <ActualWork>PT0H0M0S</ActualWork>
-      <ACWP>0</ACWP>
+      <ACWP>0.00</ACWP>
       <Confirmed>0</Confirmed>
       <Cost>0</Cost>
       <CostRateTable>0</CostRateTable>
       <CostVariance>0</CostVariance>
-      <CV>0</CV>
+      <CV>0.00</CV>
       <Delay>0</Delay>
       <Finish>2000-06-23T17:00:00</Finish>
-      <FinishVariance>600000</FinishVariance>
-      <WorkVariance>4800000</WorkVariance>
-      <HasFixedRateUnits>0</HasFixedRateUnits>
+      <FinishVariance>0</FinishVariance>
+      <WorkVariance>4800000.00</WorkVariance>
+      <HasFixedRateUnits>1</HasFixedRateUnits>
       <FixedMaterial>0</FixedMaterial>
       <LevelingDelay>0</LevelingDelay>
       <LevelingDelayFormat>7</LevelingDelayFormat>
@@ -2501,6 +2264,7 @@
       <Overallocated>0</Overallocated>
       <OvertimeCost>0</OvertimeCost>
       <OvertimeWork>PT0H0M0S</OvertimeWork>
+      <PeakUnits>1</PeakUnits>
       <RegularWork>PT80H0M0S</RegularWork>
       <RemainingCost>0</RemainingCost>
       <RemainingOvertimeCost>0</RemainingOvertimeCost>
@@ -2508,139 +2272,132 @@
       <RemainingWork>PT80H0M0S</RemainingWork>
       <ResponsePending>0</ResponsePending>
       <Start>2000-06-10T08:00:00</Start>
-      <Stop>2000-06-10T08:00:00</Stop>
-      <Resume>2000-06-10T08:00:00</Resume>
-      <StartVariance>552000</StartVariance>
+      <StartVariance>0</StartVariance>
       <Units>1</Units>
       <UpdateNeeded>0</UpdateNeeded>
-      <VAC>0</VAC>
+      <VAC>0.00</VAC>
       <Work>PT80H0M0S</Work>
       <WorkContour>0</WorkContour>
-      <BCWS>0</BCWS>
-      <BCWP>0</BCWP>
+      <BCWS>0.00</BCWS>
+      <BCWP>0.00</BCWP>
       <BookingType>0</BookingType>
       <CreationDate>2000-06-08T16:08:00</CreationDate>
-      <Baseline>
-        <Number>0</Number>
-        <Work>PT0H0M0S</Work>
-        <Start>2000-01-01T00:00:00</Start>
-        <Finish>2000-01-01T00:00:00</Finish>
-      </Baseline>
       <TimephasedData>
         <Type>1</Type>
         <UID>18</UID>
-        <Start>2000-06-10T08:00:00</Start>
-        <Finish>2000-06-11T08:00:00</Finish>
+        <Start>2010-06-10T08:00:00</Start>
+        <Finish>2010-06-11T08:00:00</Finish>
+        <Unit>2</Unit>
+        <Value>PT8H0M0S</Value>
+      </TimephasedData>
+      <TimephasedData>
+        <Type>1</Type>
+        <UID>18</UID>
+        <Start>2010-06-11T08:00:00</Start>
+        <Finish>2010-06-12T08:00:00</Finish>
+        <Unit>2</Unit>
+        <Value>PT8H0M0S</Value>
+      </TimephasedData>
+      <TimephasedData>
+        <Type>1</Type>
+        <UID>18</UID>
+        <Start>2010-06-12T08:00:00</Start>
+        <Finish>2010-06-13T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT0H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>18</UID>
-        <Start>2000-06-11T08:00:00</Start>
-        <Finish>2000-06-12T08:00:00</Finish>
+        <Start>2010-06-13T08:00:00</Start>
+        <Finish>2010-06-14T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT0H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>18</UID>
-        <Start>2000-06-12T08:00:00</Start>
-        <Finish>2000-06-13T08:00:00</Finish>
+        <Start>2010-06-14T08:00:00</Start>
+        <Finish>2010-06-15T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT8H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>18</UID>
-        <Start>2000-06-13T08:00:00</Start>
-        <Finish>2000-06-14T08:00:00</Finish>
+        <Start>2010-06-15T08:00:00</Start>
+        <Finish>2010-06-16T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT8H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>18</UID>
-        <Start>2000-06-14T08:00:00</Start>
-        <Finish>2000-06-15T08:00:00</Finish>
+        <Start>2010-06-16T08:00:00</Start>
+        <Finish>2010-06-17T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT8H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>18</UID>
-        <Start>2000-06-15T08:00:00</Start>
-        <Finish>2000-06-16T08:00:00</Finish>
+        <Start>2010-06-17T08:00:00</Start>
+        <Finish>2010-06-18T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT8H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>18</UID>
-        <Start>2000-06-16T08:00:00</Start>
-        <Finish>2000-06-17T08:00:00</Finish>
+        <Start>2010-06-18T08:00:00</Start>
+        <Finish>2010-06-19T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT8H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>18</UID>
-        <Start>2000-06-17T08:00:00</Start>
-        <Finish>2000-06-18T08:00:00</Finish>
+        <Start>2010-06-19T08:00:00</Start>
+        <Finish>2010-06-20T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT0H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>18</UID>
-        <Start>2000-06-18T08:00:00</Start>
-        <Finish>2000-06-19T08:00:00</Finish>
+        <Start>2010-06-20T08:00:00</Start>
+        <Finish>2010-06-21T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT0H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>18</UID>
-        <Start>2000-06-19T08:00:00</Start>
-        <Finish>2000-06-20T08:00:00</Finish>
+        <Start>2010-06-21T08:00:00</Start>
+        <Finish>2010-06-22T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT8H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>18</UID>
-        <Start>2000-06-20T08:00:00</Start>
-        <Finish>2000-06-21T08:00:00</Finish>
+        <Start>2010-06-22T08:00:00</Start>
+        <Finish>2010-06-23T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT8H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>18</UID>
-        <Start>2000-06-21T08:00:00</Start>
-        <Finish>2000-06-22T08:00:00</Finish>
-        <Unit>2</Unit>
-        <Value>PT8H0M0S</Value>
-      </TimephasedData>
-      <TimephasedData>
-        <Type>1</Type>
-        <UID>18</UID>
-        <Start>2000-06-22T08:00:00</Start>
-        <Finish>2000-06-23T08:00:00</Finish>
-        <Unit>2</Unit>
-        <Value>PT8H0M0S</Value>
-      </TimephasedData>
-      <TimephasedData>
-        <Type>1</Type>
-        <UID>18</UID>
-        <Start>2000-06-23T08:00:00</Start>
-        <Finish>2000-06-23T17:00:00</Finish>
+        <Start>2010-06-23T08:00:00</Start>
+        <Finish>2010-06-23T17:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT8H0M0S</Value>
       </TimephasedData>
     </Assignment>
     <Assignment>
       <UID>19</UID>
+      <GUID>00000000-0000-0000-0000-000000000000</GUID>
       <TaskUID>4</TaskUID>
       <ResourceUID>3</ResourceUID>
       <PercentWorkComplete>0</PercentWorkComplete>
@@ -2648,17 +2405,17 @@
       <ActualOvertimeCost>0</ActualOvertimeCost>
       <ActualOvertimeWork>PT0H0M0S</ActualOvertimeWork>
       <ActualWork>PT0H0M0S</ActualWork>
-      <ACWP>0</ACWP>
+      <ACWP>0.00</ACWP>
       <Confirmed>0</Confirmed>
       <Cost>0</Cost>
       <CostRateTable>0</CostRateTable>
       <CostVariance>0</CostVariance>
-      <CV>0</CV>
+      <CV>0.00</CV>
       <Delay>0</Delay>
       <Finish>2000-06-23T17:00:00</Finish>
-      <FinishVariance>600000</FinishVariance>
-      <WorkVariance>4800000</WorkVariance>
-      <HasFixedRateUnits>0</HasFixedRateUnits>
+      <FinishVariance>0</FinishVariance>
+      <WorkVariance>4800000.00</WorkVariance>
+      <HasFixedRateUnits>1</HasFixedRateUnits>
       <FixedMaterial>0</FixedMaterial>
       <LevelingDelay>0</LevelingDelay>
       <LevelingDelayFormat>7</LevelingDelayFormat>
@@ -2667,6 +2424,7 @@
       <Overallocated>0</Overallocated>
       <OvertimeCost>0</OvertimeCost>
       <OvertimeWork>PT0H0M0S</OvertimeWork>
+      <PeakUnits>1</PeakUnits>
       <RegularWork>PT80H0M0S</RegularWork>
       <RemainingCost>0</RemainingCost>
       <RemainingOvertimeCost>0</RemainingOvertimeCost>
@@ -2674,133 +2432,125 @@
       <RemainingWork>PT80H0M0S</RemainingWork>
       <ResponsePending>0</ResponsePending>
       <Start>2000-06-10T08:00:00</Start>
-      <Stop>2000-06-10T08:00:00</Stop>
-      <Resume>2000-06-10T08:00:00</Resume>
-      <StartVariance>552000</StartVariance>
+      <StartVariance>0</StartVariance>
       <Units>1</Units>
       <UpdateNeeded>0</UpdateNeeded>
-      <VAC>0</VAC>
+      <VAC>0.00</VAC>
       <Work>PT80H0M0S</Work>
       <WorkContour>0</WorkContour>
-      <BCWS>0</BCWS>
-      <BCWP>0</BCWP>
+      <BCWS>0.00</BCWS>
+      <BCWP>0.00</BCWP>
       <BookingType>0</BookingType>
       <CreationDate>2000-06-08T16:08:00</CreationDate>
-      <Baseline>
-        <Number>0</Number>
-        <Work>PT0H0M0S</Work>
-        <Start>2000-01-01T00:00:00</Start>
-        <Finish>2000-01-01T00:00:00</Finish>
-      </Baseline>
       <TimephasedData>
         <Type>1</Type>
         <UID>19</UID>
-        <Start>2000-06-10T08:00:00</Start>
-        <Finish>2000-06-11T08:00:00</Finish>
+        <Start>2010-06-10T08:00:00</Start>
+        <Finish>2010-06-11T08:00:00</Finish>
+        <Unit>2</Unit>
+        <Value>PT8H0M0S</Value>
+      </TimephasedData>
+      <TimephasedData>
+        <Type>1</Type>
+        <UID>19</UID>
+        <Start>2010-06-11T08:00:00</Start>
+        <Finish>2010-06-12T08:00:00</Finish>
+        <Unit>2</Unit>
+        <Value>PT8H0M0S</Value>
+      </TimephasedData>
+      <TimephasedData>
+        <Type>1</Type>
+        <UID>19</UID>
+        <Start>2010-06-12T08:00:00</Start>
+        <Finish>2010-06-13T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT0H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>19</UID>
-        <Start>2000-06-11T08:00:00</Start>
-        <Finish>2000-06-12T08:00:00</Finish>
+        <Start>2010-06-13T08:00:00</Start>
+        <Finish>2010-06-14T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT0H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>19</UID>
-        <Start>2000-06-12T08:00:00</Start>
-        <Finish>2000-06-13T08:00:00</Finish>
+        <Start>2010-06-14T08:00:00</Start>
+        <Finish>2010-06-15T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT8H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>19</UID>
-        <Start>2000-06-13T08:00:00</Start>
-        <Finish>2000-06-14T08:00:00</Finish>
+        <Start>2010-06-15T08:00:00</Start>
+        <Finish>2010-06-16T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT8H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>19</UID>
-        <Start>2000-06-14T08:00:00</Start>
-        <Finish>2000-06-15T08:00:00</Finish>
+        <Start>2010-06-16T08:00:00</Start>
+        <Finish>2010-06-17T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT8H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>19</UID>
-        <Start>2000-06-15T08:00:00</Start>
-        <Finish>2000-06-16T08:00:00</Finish>
+        <Start>2010-06-17T08:00:00</Start>
+        <Finish>2010-06-18T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT8H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>19</UID>
-        <Start>2000-06-16T08:00:00</Start>
-        <Finish>2000-06-17T08:00:00</Finish>
+        <Start>2010-06-18T08:00:00</Start>
+        <Finish>2010-06-19T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT8H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>19</UID>
-        <Start>2000-06-17T08:00:00</Start>
-        <Finish>2000-06-18T08:00:00</Finish>
+        <Start>2010-06-19T08:00:00</Start>
+        <Finish>2010-06-20T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT0H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>19</UID>
-        <Start>2000-06-18T08:00:00</Start>
-        <Finish>2000-06-19T08:00:00</Finish>
+        <Start>2010-06-20T08:00:00</Start>
+        <Finish>2010-06-21T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT0H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>19</UID>
-        <Start>2000-06-19T08:00:00</Start>
-        <Finish>2000-06-20T08:00:00</Finish>
+        <Start>2010-06-21T08:00:00</Start>
+        <Finish>2010-06-22T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT8H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>19</UID>
-        <Start>2000-06-20T08:00:00</Start>
-        <Finish>2000-06-21T08:00:00</Finish>
+        <Start>2010-06-22T08:00:00</Start>
+        <Finish>2010-06-23T08:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT8H0M0S</Value>
       </TimephasedData>
       <TimephasedData>
         <Type>1</Type>
         <UID>19</UID>
-        <Start>2000-06-21T08:00:00</Start>
-        <Finish>2000-06-22T08:00:00</Finish>
-        <Unit>2</Unit>
-        <Value>PT8H0M0S</Value>
-      </TimephasedData>
-      <TimephasedData>
-        <Type>1</Type>
-        <UID>19</UID>
-        <Start>2000-06-22T08:00:00</Start>
-        <Finish>2000-06-23T08:00:00</Finish>
-        <Unit>2</Unit>
-        <Value>PT8H0M0S</Value>
-      </TimephasedData>
-      <TimephasedData>
-        <Type>1</Type>
-        <UID>19</UID>
-        <Start>2000-06-23T08:00:00</Start>
-        <Finish>2000-06-23T17:00:00</Finish>
+        <Start>2010-06-23T08:00:00</Start>
+        <Finish>2010-06-23T17:00:00</Finish>
         <Unit>2</Unit>
         <Value>PT8H0M0S</Value>
       </TimephasedData>

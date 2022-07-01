@@ -1,3 +1,11 @@
+/*
+ * Copyright 2001-2022 Aspose Pty Ltd. All Rights Reserved.
+ *
+ * This file is part of Aspose.Tasks. The source code in this file
+ * is only intended as a supplement to the documentation, and is provided
+ * "as is", without warranty of any kind, either expressed or implied.
+ */
+
 package com.aspose.tasks.examples.Tasks;
 
 import java.io.IOException;
@@ -6,13 +14,11 @@ import com.aspose.tasks.*;
 import com.aspose.tasks.examples.Utils;
 
 public class AddTaskExtendedAttributes {
-    public static void main(String[] args) throws IOException
-    {
+    public static void main(String[] args) throws IOException {
         TaskExtendedAttributes();
     }
 
-    static void TaskExtendedAttributes() throws IOException
-    {
+    static void TaskExtendedAttributes() throws IOException {
         // ExStart:AddTaskExtendedAttributes
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(AddTaskExtendedAttributes.class);
@@ -40,7 +46,7 @@ public class AddTaskExtendedAttributes {
         //Add the Extended Attribute to task
         task.getExtendedAttributes().add(taskExtendedAttributeText1);
 
-        project.save(dataDir + "PlainTextExtendedAttribute_out.mpp", SaveFileFormat.MPP);
+        project.save(dataDir + "PlainTextExtendedAttribute_out.mpp", SaveFileFormat.Mpp);
 
         //2.    Adding Text Attribute with Lookup option
         Project project1 = new Project(dataDir + "project.mpp");
@@ -73,7 +79,7 @@ public class AddTaskExtendedAttributes {
         //Add the Extended Attribute to task
         task2.getExtendedAttributes().add(taskExtendedAttributeText2);
 
-        project1.save(dataDir + "TextExtendedAttributeWithLookup_out.mpp", SaveFileFormat.MPP);
+        project1.save(dataDir + "TextExtendedAttributeWithLookup_out.mpp", SaveFileFormat.Mpp);
 
         //3.    Adding Duration Attribute with Lookup option
 
@@ -88,7 +94,6 @@ public class AddTaskExtendedAttributes {
         val.setDuration(project2.getDuration(4, TimeUnitType.Hour));
         val.setDescription("4 hours");
         taskExtendedAttributeDuration2Definition.addLookupValue(val);
-
 
         val = new Value();
         val.setId(3);
@@ -120,8 +125,7 @@ public class AddTaskExtendedAttributes {
         //Add the Extended Attribute to task
         task3.getExtendedAttributes().add(taskExtendedAttributeDuration2);
 
-        project2.save(dataDir + "DurationExtendedAttributeWithLookup_out.mpp", SaveFileFormat.MPP);
+        project2.save(dataDir + "DurationExtendedAttributeWithLookup_out.mpp", SaveFileFormat.Mpp);
         // ExEnd:AddTaskExtendedAttributes
     }
-
 }

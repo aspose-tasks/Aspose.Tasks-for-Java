@@ -1,20 +1,26 @@
-/* 
- * Copyright 2001-2015 Aspose Pty Ltd. All Rights Reserved.
+/*
+ * Copyright 2001-2022 Aspose Pty Ltd. All Rights Reserved.
  *
- * This file is part of Aspose.Slides. The source code in this file
+ * This file is part of Aspose.Tasks. The source code in this file
  * is only intended as a supplement to the documentation, and is provided
  * "as is", without warranty of any kind, either expressed or implied.
  */
- 
+
 package com.aspose.tasks.examples.Tasks;
 
-import com.aspose.tasks.*;
+import com.aspose.tasks.Asn;
+import com.aspose.tasks.Calendar;
+import com.aspose.tasks.Prj;
+import com.aspose.tasks.Project;
+import com.aspose.tasks.ResourceAssignment;
+import com.aspose.tasks.SaveFileFormat;
+import com.aspose.tasks.Task;
+import com.aspose.tasks.Tsk;
+import com.aspose.tasks.WorkContourType;
 import com.aspose.tasks.examples.Utils;
 
-public class SplitTasks
-{
-    public static void main(String[] args) throws Exception
-    {
+public class SplitTasks {
+    public static void main(String[] args) throws Exception {
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(SplitTasks.class);
 
@@ -26,9 +32,9 @@ public class SplitTasks
 
         //Set project's calendar settings
         java.util.Calendar cal = java.util.Calendar.getInstance();
-        cal.set(2011, 3, 15, 8, 0, 0);
+        cal.set(2011, java.util.Calendar.MARCH, 15, 8, 0, 0);
         splitTaskProject.set(Prj.START_DATE, cal.getTime());
-        cal.set(2011, 3, 21, 17, 0, 0);
+        cal.set(2011, java.util.Calendar.MARCH, 21, 17, 0, 0);
         splitTaskProject.set(Prj.FINISH_DATE, cal.getTime());
 
         // root task
@@ -52,17 +58,16 @@ public class SplitTasks
         cal = java.util.Calendar.getInstance();
         java.util.Calendar cal2 = java.util.Calendar.getInstance();
 
-        cal.set(2011, 3, 16, 8, 0, 0);
-        cal2.set(2011, 3, 16, 17, 0, 0);
+        cal.set(2011, java.util.Calendar.MARCH, 16, 8, 0, 0);
+        cal2.set(2011, java.util.Calendar.MARCH, 16, 17, 0, 0);
         splitResourceAssignment.splitTask(cal.getTime(), cal2.getTime(), calendar);
-        cal.set(2011, 3, 18, 8, 0, 0);
-        cal2.set(2011, 3, 18, 17, 0, 0);
+        cal.set(2011, java.util.Calendar.MARCH, 18, 8, 0, 0);
+        cal2.set(2011, java.util.Calendar.MARCH, 18, 17, 0, 0);
         splitResourceAssignment.splitTask(cal.getTime(), cal2.getTime(), calendar);
         splitResourceAssignment.set(Asn.WORK_CONTOUR, WorkContourType.Contoured);
 
         //Save the Project
-        splitTaskProject.save(dataDir + "Project.Xml", SaveFileFormat.XML);
-  
+        splitTaskProject.save(dataDir + "project.xml", SaveFileFormat.Xml);
     }
 }
 

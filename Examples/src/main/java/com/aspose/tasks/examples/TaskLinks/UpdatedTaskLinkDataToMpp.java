@@ -1,24 +1,22 @@
-/* 
- * Copyright 2001-2015 Aspose Pty Ltd. All Rights Reserved.
+/*
+ * Copyright 2001-2022 Aspose Pty Ltd. All Rights Reserved.
  *
  * This file is part of Aspose.Tasks. The source code in this file
  * is only intended as a supplement to the documentation, and is provided
  * "as is", without warranty of any kind, either expressed or implied.
  */
- 
+
 package com.aspose.tasks.examples.TaskLinks;
 
 import com.aspose.tasks.*;
 import com.aspose.tasks.examples.Utils;
 
-public class UpdatedTaskLinkDataToMpp
-{
-    public static void main(String[] args) throws Exception
-    {
+public class UpdatedTaskLinkDataToMpp {
+    public static void main(String[] args) throws Exception {
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(UpdatedTaskLinkDataToMpp.class);
 
-       	long OneSec = 10000000;//microsecond * 10
+        long OneSec = 10000000;//microsecond * 10
         long OneMin = 60 * OneSec;
         long OneHour = 60 * OneMin;
 
@@ -27,7 +25,7 @@ public class UpdatedTaskLinkDataToMpp
         String resultFile = "Output.mpp";
 
         // Read new empty file
-        Project project = new Project(newFile);
+        Project project = new Project(dataDir + newFile);
 
         // Add eight tasks
         Task task1 = project.getRootTask().getChildren().add("1");
@@ -103,13 +101,11 @@ public class UpdatedTaskLinkDataToMpp
 
         link4.setLagFormat(TimeUnitType.Day);
         link4.setLinkLag(60 * 8 * 10 * 10); // 10d
-        task8.set(Tsk.START, project.get(Prj.CALENDAR).getFinishDateByStartAndWork(task8.get(Tsk.FINISH), OneHour * 8 *10));
+        task8.set(Tsk.START, project.get(Prj.CALENDAR).getFinishDateByStartAndWork(task8.get(Tsk.FINISH), OneHour * 8 * 10));
         task8.set(Tsk.FINISH, project.get(Prj.CALENDAR).getFinishDateByStartAndWork(task8.get(Tsk.START), task8.get(Tsk.DURATION).toDouble()));
 
-
         //Save the Project
-        project.save(dataDir + "Project.Mpp", SaveFileFormat.MPP);
-
+        project.save(dataDir + resultFile, SaveFileFormat.Mpp);
     }
 }
 

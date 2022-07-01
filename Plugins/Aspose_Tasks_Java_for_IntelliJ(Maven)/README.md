@@ -22,24 +22,10 @@ Aspose.Tasks for Java API exposes the complete project document structure to rea
 
 For more info about the **Aspose.Tasks for Java API**, please check the api documentation urls:
 
-* [http://www.aspose.com/java/project-management-component.aspx](http://www.aspose.com/java/project-management-component.aspx)
-* [http://www.aspose.com/java/project-management-component/key-features.aspx](http://www.aspose.com/java/project-management-component/key-features.aspx)
+* [https://products.aspose.com/tasks/java/](https://products.aspose.com/tasks/java/)
 
-## Plugin Documentation
-
-For the complete documentation of this Intellij IDEA plugin, [please go through this wiki - click here](http://goo.gl/8B0k8J)
 
 ## Download Latest Versions?
 
 
-* [Latest Releases on Codeplex](https://asposetasksjavaintellij.codeplex.com/releases/view)
-
-
-
-## Clone Plugin SourceCodes?
-
-
-This project is also hosted and maintained at CodePlex. To clone navigate to: 
-
-
-* [Aspose.Tasks Java for IntelliJ Maven on CodePlex - click here](https://asposetasksjavaintellij.codeplex.com/SourceControl/latest)
+* [Latest Releases on GitHub](https://github.com/aspose-tasks/Aspose.Tasks-for-Java/releases)
