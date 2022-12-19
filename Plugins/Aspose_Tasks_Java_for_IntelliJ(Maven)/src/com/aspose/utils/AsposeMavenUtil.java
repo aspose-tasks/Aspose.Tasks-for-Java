@@ -40,7 +40,7 @@ import java.util.regex.Pattern;
 
 public class AsposeMavenUtil {
     public static final String MAVEN_NOTIFICATION_GROUP = "Maven";
-    public static final String MAVEN_PROJECT_XML_TEMPLATE = "Maven Project.xml";
+    public static final String MAVEN_PROJECT_XML_TEMPLATE = "Maven project.xml";
 
     public static void invokeLater(final Project p, final ModalityState state, final Runnable r) {
         if (isNoBackgroundMode()) {

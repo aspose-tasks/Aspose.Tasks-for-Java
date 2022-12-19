@@ -20,7 +20,7 @@ public class EstimatedMilestoneTasks {
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(EstimatedMilestoneTasks.class);
 
-        Project project = new Project(dataDir + "project.Xml");
+        Project project = new Project(dataDir + "project.xml");
 
         // Create a ChildTasksCollector instance
         ChildTasksCollector collector = new ChildTasksCollector();

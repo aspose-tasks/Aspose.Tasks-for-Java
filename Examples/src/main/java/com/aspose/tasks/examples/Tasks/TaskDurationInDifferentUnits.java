@@ -20,7 +20,7 @@ public class TaskDurationInDifferentUnits {
         String dataDir = Utils.getDataDir(TaskDurationInDifferentUnits.class);
 
         // Read MS Project template file
-        String fileName = dataDir + "project.Xml";
+        String fileName = dataDir + "project.xml";
 
         //Read the input file as Project
         Project project = new Project(fileName);

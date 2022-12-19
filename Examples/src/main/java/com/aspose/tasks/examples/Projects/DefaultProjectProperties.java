@@ -44,7 +44,7 @@ public class DefaultProjectProperties {
         project.set(Prj.DEFAULT_FIXED_COST_ACCRUAL, CostAccrualType.Prorated);
 
         //Save the project to XML format
-        project.save(dataDir + "Project4.xml", SaveFileFormat.Xml);
+        project.save(dataDir + "project4.xml", SaveFileFormat.Xml);
 
         //Display result of conversion.
         System.out.println("Process completed Successfully");

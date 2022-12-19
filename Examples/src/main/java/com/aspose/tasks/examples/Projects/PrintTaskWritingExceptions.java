@@ -18,10 +18,10 @@ public class PrintTaskWritingExceptions {
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(PrintTaskWritingExceptions.class);
 
-        Project prj = new Project(dataDir + "Project5.mpp");
+        Project prj = new Project(dataDir + "project5.mpp");
 
         try {
-            prj.save(dataDir + "project.MPP", SaveFileFormat.Mpp);
+            prj.save(dataDir + "project.mpp", SaveFileFormat.Mpp);
         } catch (TasksWritingException ex) {
             System.out.println(ex.getLogText());
         }

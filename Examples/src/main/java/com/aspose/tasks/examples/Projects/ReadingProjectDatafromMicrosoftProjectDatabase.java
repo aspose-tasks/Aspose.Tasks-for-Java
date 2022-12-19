@@ -36,7 +36,7 @@ public class ReadingProjectDatafromMicrosoftProjectDatabase {
         addJDBCDriver(new File("c:\\Program Files (x86)\\Microsoft JDBC Driver 4.0 for SQL Server\\sqljdbc_4.0\\enu\\sqljdbc4.jar"));
 
         Project project = new Project(settings);
-        project.save(dataDir + "Project1.xml", SaveFileFormat.Xml);
+        project.save(dataDir + "project1.xml", SaveFileFormat.Xml);
         // ExEnd: ReadingProjectDatafromMicrosoftProjectDatabase
     }
 

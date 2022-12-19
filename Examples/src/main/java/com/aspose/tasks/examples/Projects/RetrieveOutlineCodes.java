@@ -19,7 +19,7 @@ public class RetrieveOutlineCodes {
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(RetrieveOutlineCodes.class);
 
-        RetreiveOutlineCodesFromProject(dataDir + "Homemoveplan.mpp");
+        RetreiveOutlineCodesFromProject(dataDir + "HomeMovePlan.mpp");
 
         //Display result of conversion.
         System.out.println("Process completed Successfully");

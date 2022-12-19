@@ -33,7 +33,7 @@ public class ResourcePrefixForNestedResources implements IFontSavingCallback, IC
     public static String dataDir = Utils.getDataDir(ResourcePrefixForNestedResources.class);
 
     public static void main(String[] args) throws IOException {
-        FileInputStream fs = new FileInputStream(dataDir + "Project1.mpp");
+        FileInputStream fs = new FileInputStream(dataDir + "project1.mpp");
         Project project = new Project(fs);
         HtmlSaveOptions options = GetSaveOptions(1);
         FileOutputStream stream = new FileOutputStream(dataDir + "document.html");

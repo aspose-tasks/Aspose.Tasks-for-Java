@@ -26,7 +26,7 @@ public class ReducingGapBetweenTasksListAndFooter {
         String dataDir = Utils.getDataDir(SaveAsPdf.class);
 
         //Read the MPP file.
-        Project project = new Project(dataDir + "Homemoveplan.mpp");
+        Project project = new Project(dataDir + "HomeMovePlan.mpp");
 
         //Use ReduceFooterGap property to reduce the gap between list of tasks and Footer
         ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFileFormat.Png);

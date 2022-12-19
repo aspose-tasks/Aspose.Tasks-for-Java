@@ -22,7 +22,7 @@ public class SaveAsPdf {
         String dataDir = Utils.getDataDir(SaveAsPdf.class);
 
         // Read the input Project file
-        Project project = new Project(dataDir + "Homemoveplan.mpp");
+        Project project = new Project(dataDir + "HomeMovePlan.mpp");
 
         // Save the Project as PDF
         project.save(dataDir + "Project5.pdf", SaveFileFormat.Pdf);

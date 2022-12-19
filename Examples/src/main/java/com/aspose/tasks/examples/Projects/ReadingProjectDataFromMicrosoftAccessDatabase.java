@@ -24,7 +24,7 @@ public class ReadingProjectDataFromMicrosoftAccessDatabase {
 
         MpdSettings settings = new MpdSettings(getConnectionString(), 1);
         Project project = new Project(settings);
-        project.save(dataDir + "Project1.xml", SaveFileFormat.Xml);
+        project.save(dataDir + "project1.xml", SaveFileFormat.Xml);
     }
 
     private static String getConnectionString() {

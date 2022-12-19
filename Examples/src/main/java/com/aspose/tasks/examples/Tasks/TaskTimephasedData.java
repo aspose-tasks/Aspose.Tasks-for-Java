@@ -32,7 +32,7 @@ public class TaskTimephasedData {
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(TaskTimephasedData.class);
 
-        Project project = new Project(dataDir + "project.Xml");
+        Project project = new Project(dataDir + "project.xml");
 
         java.util.Calendar cal = java.util.Calendar.getInstance();
         cal.set(2013, 7, 17, 8, 0, 0);

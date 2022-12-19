@@ -36,7 +36,7 @@ public class DefineLinkType {
     }
 
     public static void gettinglinktype(String dataDir) {
-        Project project = new Project(dataDir + "Project.xml");
+        Project project = new Project(dataDir + "project.xml");
         TaskLinkCollection allinks = project.getTaskLinks();
         for (TaskLink tsklnk : allinks) {
             System.out.println(tsklnk.getLinkType());

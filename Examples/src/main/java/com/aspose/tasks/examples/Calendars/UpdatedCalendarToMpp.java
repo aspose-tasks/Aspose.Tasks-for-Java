@@ -21,8 +21,8 @@ public class UpdatedCalendarToMpp
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(UpdatedCalendarToMpp.class);
 
-        String resultFile = "OutputMPP.mpp";
-        String newFile = "SampleMPP.mpp";
+        String resultFile = "OutputMpp.mpp";
+        String newFile = "SampleMpp.mpp";
 
         Project project = new Project(dataDir + newFile);
         Calendar cal1 = project.getCalendars().add("Calendar 1");

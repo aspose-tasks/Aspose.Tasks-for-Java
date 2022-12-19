@@ -20,7 +20,7 @@ public class HandlePriorities {
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(HandlePriorities.class);
 
-        Project project = new Project(dataDir + "project.Xml");
+        Project project = new Project(dataDir + "project.xml");
 
         // Create a ChildTasksCollector instance
         ChildTasksCollector collector = new ChildTasksCollector();

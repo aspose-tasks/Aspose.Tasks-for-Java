@@ -40,7 +40,7 @@ public class ExtendedAttributes {
 
         eas.add(ea);
 
-        prj.save(dataDir + "Project5.xml", SaveFileFormat.Xml);
+        prj.save(dataDir + "project5.xml", SaveFileFormat.Xml);
 
         // Display result of conversion.
         System.out.println("Process completed Successfully");

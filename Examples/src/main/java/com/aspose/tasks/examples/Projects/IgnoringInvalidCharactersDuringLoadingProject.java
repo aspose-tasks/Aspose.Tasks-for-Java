@@ -41,7 +41,7 @@ public class IgnoringInvalidCharactersDuringLoadingProject {
                 return customDurationHandler(sender, args);
             }
         });
-        project.save(dataDir + "Project1.xml", SaveFileFormat.Xml);
+        project.save(dataDir + "project1.xml", SaveFileFormat.Xml);
     }
 
     private static String getModifiedXml(String dataDir) {

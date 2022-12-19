@@ -18,11 +18,11 @@ public class GetNumberOfPagesInProject {
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(GetNumberOfPagesInProject.class);
 
-        getNumberOfPagesInProject(dataDir + "Homemoveplan.mpp");
+        getNumberOfPagesInProject(dataDir + "HomeMovePlan.mpp");
 
-        GetNumberOfPagesInDifferentViews(dataDir + "Homemoveplan.mpp");
+        GetNumberOfPagesInDifferentViews(dataDir + "HomeMovePlan.mpp");
 
-        GetPageCountBetweenStartAndEndDates(dataDir + "Homemoveplan.mpp");
+        GetPageCountBetweenStartAndEndDates(dataDir + "HomeMovePlan.mpp");
         //Display result of conversion.
         System.out.println("Process completed Successfully");
     }

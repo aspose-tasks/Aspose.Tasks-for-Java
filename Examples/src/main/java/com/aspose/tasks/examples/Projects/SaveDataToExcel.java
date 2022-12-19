@@ -30,15 +30,15 @@ public class SaveDataToExcel {
 
     public static void savingProjectAsXlsx(String dataDir) throws IOException {
         // Read the input Project file
-        Project project = new Project(dataDir + "Project5.mpp");
+        Project project = new Project(dataDir + "project5.mpp");
 
         // Save the Project as XLSX
-        project.save(dataDir + "Project1.xlsx", SaveFileFormat.Xlsx);
+        project.save(dataDir + "project1.xlsx", SaveFileFormat.Xlsx);
     }
 
     public static void savingProjectAsXml(String dataDir) throws IOException {
-        Project project = new Project(dataDir + "Project5.mpp");
-        project.save(dataDir + "Project5.xml", SaveFileFormat.Spreadsheet2003);
+        Project project = new Project(dataDir + "project5.mpp");
+        project.save(dataDir + "project5.xml", SaveFileFormat.Spreadsheet2003);
     }
 }
 

@@ -27,7 +27,7 @@ public class UpdatedTaskDataToMpp {
         long OneMin = 60 * OneSec;
         long OneHour = 60 * OneMin;
 
-        Project project = new Project(dataDir + "project.Xml");
+        Project project = new Project(dataDir + "project.xml");
         Task task1 = project.getRootTask().getChildren().add("First task");
 
         java.util.Calendar cal = java.util.Calendar.getInstance();

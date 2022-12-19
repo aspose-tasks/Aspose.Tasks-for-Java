@@ -42,7 +42,7 @@ public class ExtendedResourceAttributes {
         Resource rsc = prj.getResources().add("R1");
         rsc.getExtendedAttributes().add(number1Resource);
 
-        prj.save(dataDir + "Project5.xml", SaveFileFormat.Xml);
+        prj.save(dataDir + "project5.xml", SaveFileFormat.Xml);
 
         // Display result of conversion.
         System.out.println("Process completed Successfully");

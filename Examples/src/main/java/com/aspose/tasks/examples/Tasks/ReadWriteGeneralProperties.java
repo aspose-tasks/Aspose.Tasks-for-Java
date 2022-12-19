@@ -42,7 +42,7 @@ public class ReadWriteGeneralProperties {
     }
 
     public static void gettingproperties(String dataDir) {
-        Project prj = new Project(dataDir + "Project.xml");
+        Project prj = new Project(dataDir + "project.xml");
         // Create a ChildTasksCollector instance
         ChildTasksCollector collector = new ChildTasksCollector();
 

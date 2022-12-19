@@ -28,13 +28,13 @@ public class SaveAsCsvTextAndTemplate {
     }
 
     public static void SavingProjectAsCsv(String dataDir) throws IOException {
-        Project project = new Project(dataDir + "Project5.mpp");
-        project.save(dataDir + "Project5.csv", SaveFileFormat.Csv);
+        Project project = new Project(dataDir + "project5.mpp");
+        project.save(dataDir + "project5.csv", SaveFileFormat.Csv);
     }
 
     public static void SavingProjectAsText(String dataDir) throws IOException {
-        Project project = new Project(dataDir + "Project5.mpp");
-        project.save(dataDir + "Project5.txt", SaveFileFormat.Txt);
+        Project project = new Project(dataDir + "project5.mpp");
+        project.save(dataDir + "project5.txt", SaveFileFormat.Txt);
     }
 
     public static void SavingProjectAsTemplate(String dataDir) throws IOException {
