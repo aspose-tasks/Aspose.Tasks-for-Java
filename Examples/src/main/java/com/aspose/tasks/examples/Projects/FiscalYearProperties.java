@@ -32,7 +32,7 @@ public class FiscalYearProperties {
         prj.set(Prj.FISCAL_YEAR_START, new NullableBool(true));
 
         //Save the project as XML project file
-        prj.save(dataDir + "savedproject.xml", SaveFileFormat.Xml);
+        prj.save(dataDir + "savedProject.xml", SaveFileFormat.Xml);
 
         //Display result of conversion.
         System.out.println("Process completed Successfully");

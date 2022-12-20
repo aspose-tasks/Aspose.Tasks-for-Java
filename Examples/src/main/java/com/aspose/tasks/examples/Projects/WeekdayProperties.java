@@ -38,7 +38,7 @@ public class WeekdayProperties {
         project.set(Prj.MINUTES_PER_WEEK, 3240);
 
         //Save the project as XML project file
-        prj.save(dataDir + "savedproject.xml", SaveFileFormat.Xml);
+        prj.save(dataDir + "savedProject.xml", SaveFileFormat.Xml);
 
         //Display result of conversion.
         System.out.println("Process completed Successfully");
