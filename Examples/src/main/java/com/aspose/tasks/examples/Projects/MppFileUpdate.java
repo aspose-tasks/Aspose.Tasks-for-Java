@@ -36,7 +36,7 @@ public class MppFileUpdate {
         task.set(Tsk.FINISH, cal.getTime());
 
         //Save the project as MPP project file
-        project.save(dataDir + "AfterLinking.Mpp", SaveFileFormat.Mpp);
+        project.save(dataDir + "AfterLinking.mpp", SaveFileFormat.Mpp);
         //Display result of conversion.
         System.out.println("Process completed Successfully");
     }

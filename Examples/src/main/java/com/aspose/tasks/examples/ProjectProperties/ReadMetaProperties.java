@@ -20,7 +20,7 @@ public class ReadMetaProperties {
         String dataDir = Utils.getDataDir(ActualProperties.class);
         // ExStart: ReadMetaProperties
         // Create a project reader instance
-        Project project = new Project(dataDir + "Project.mpp");
+        Project project = new Project(dataDir + "project.mpp");
 
         // Custom properties are available through the typed collection:
         for (CustomProjectProperty property : project.getCustomProps()) {

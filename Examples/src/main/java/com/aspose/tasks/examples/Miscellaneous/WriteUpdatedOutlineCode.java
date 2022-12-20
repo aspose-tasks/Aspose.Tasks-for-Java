@@ -61,7 +61,7 @@ public class WriteUpdatedOutlineCode {
         value2.setType(OutlineValueType.Number);
 
         //Save the Project
-        project.save(dataDir + "Project.Mpp", SaveFileFormat.Mpp);
+        project.save(dataDir + "project.mpp", SaveFileFormat.Mpp);
     }
 }
 

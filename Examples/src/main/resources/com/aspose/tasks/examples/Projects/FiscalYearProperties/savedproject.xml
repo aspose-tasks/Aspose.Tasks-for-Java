@@ -1,27 +1,19 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!--
-  ~ Copyright 2001-2022 Aspose Pty Ltd. All Rights Reserved.
-  ~
-  ~ This file is part of Aspose.Tasks. The source code in this file
-  ~ is only intended as a supplement to the documentation, and is provided
-  ~ "as is", without warranty of any kind, either expressed or implied.
-  -->
-
 <Project xmlns="http://schemas.microsoft.com/project">
-  <!--Published by Aspose.Tasks for Java 22.6-->
+  <!--Published by Aspose.Tasks for Java 22.12-->
   <SaveVersion>14</SaveVersion>
   <UID>1</UID>
   <Name>Project</Name>
-  <CreationDate>2000-06-27T22:35:32</CreationDate>
-  <LastSaved>2022-06-27T22:35:32</LastSaved>
+  <CreationDate>2000-12-20T17:58:44</CreationDate>
+  <LastSaved>2022-12-20T17:58:44</LastSaved>
   <ScheduleFromStart>1</ScheduleFromStart>
-  <StartDate>2000-06-27T08:00:00</StartDate>
-  <FinishDate>2000-06-27T08:00:00</FinishDate>
+  <StartDate>2000-12-20T08:00:00</StartDate>
+  <FinishDate>2000-12-20T08:00:00</FinishDate>
   <FYStartDate>7</FYStartDate>
   <CriticalSlackLimit>0</CriticalSlackLimit>
   <CurrencyDigits>2</CurrencyDigits>
-  <CurrencySymbol>р.</CurrencySymbol>
-  <CurrencyCode>RUB</CurrencyCode>
+  <CurrencySymbol>$</CurrencySymbol>
+  <CurrencyCode>USD</CurrencyCode>
   <CurrencySymbolPosition>0</CurrencySymbolPosition>
   <CalendarUID>1</CalendarUID>
   <DefaultStartTime>08:00:00</DefaultStartTime>
@@ -69,7 +61,7 @@
   <Calendars>
     <Calendar>
       <UID>1</UID>
-      <GUID>9538a9e9-ba03-4f9e-a759-23c3d86d2153</GUID>
+      <GUID>8051888d-8f71-4a0f-9c63-e293c8b3eca8</GUID>
       <Name>Standard</Name>
       <IsBaseCalendar>1</IsBaseCalendar>
       <BaseCalendarUID>-1</BaseCalendarUID>
@@ -158,22 +150,22 @@
   <Tasks>
     <Task>
       <UID>0</UID>
-      <GUID>ae2e199c-0516-4616-b3b3-b5e6204e6414</GUID>
+      <GUID>cc3c283b-e2cb-49d9-a416-afbb2e07cb34</GUID>
       <ID>0</ID>
       <Name>Project</Name>
       <Active>1</Active>
       <Type>0</Type>
       <IsNull>0</IsNull>
-      <CreateDate>2000-06-27T22:35:32</CreateDate>
+      <CreateDate>2000-12-20T17:58:43</CreateDate>
       <WBS>0</WBS>
       <OutlineNumber>0</OutlineNumber>
       <OutlineLevel>0</OutlineLevel>
       <Priority>500</Priority>
-      <Start>2000-06-27T08:00:00</Start>
-      <Finish>2000-06-27T08:00:00</Finish>
+      <Start>2000-12-20T08:00:00</Start>
+      <Finish>2000-12-20T08:00:00</Finish>
       <Duration>PT0H0M0S</Duration>
-      <ManualStart>2000-06-27T08:00:00</ManualStart>
-      <ManualFinish>2000-06-27T08:00:00</ManualFinish>
+      <ManualStart>2000-12-20T08:00:00</ManualStart>
+      <ManualFinish>2000-12-20T08:00:00</ManualFinish>
       <ManualDuration>PT0H0M0S</ManualDuration>
       <DurationFormat>39</DurationFormat>
       <Work>PT0H0M0S</Work>
@@ -189,10 +181,10 @@
       <IsSubproject>0</IsSubproject>
       <IsSubprojectReadOnly>0</IsSubprojectReadOnly>
       <ExternalTask>0</ExternalTask>
-      <EarlyStart>2000-06-27T08:00:00</EarlyStart>
-      <EarlyFinish>2000-06-27T08:00:00</EarlyFinish>
-      <LateStart>2000-06-27T08:00:00</LateStart>
-      <LateFinish>2000-06-27T08:00:00</LateFinish>
+      <EarlyStart>2000-12-20T08:00:00</EarlyStart>
+      <EarlyFinish>2000-12-20T08:00:00</EarlyFinish>
+      <LateStart>2000-12-20T08:00:00</LateStart>
+      <LateFinish>2000-12-20T08:00:00</LateFinish>
       <StartVariance>0</StartVariance>
       <FinishVariance>0</FinishVariance>
       <WorkVariance>0.00</WorkVariance>
@@ -280,7 +272,7 @@
       <IsInactive>0</IsInactive>
       <IsEnterprise>0</IsEnterprise>
       <BookingType>0</BookingType>
-      <CreationDate>2000-06-27T22:35:32</CreationDate>
+      <CreationDate>2000-12-20T17:58:44</CreationDate>
       <IsCostResource>0</IsCostResource>
       <IsBudget>0</IsBudget>
     </Resource>

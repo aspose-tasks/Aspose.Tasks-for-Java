@@ -19,8 +19,7 @@ public class ReadGroupDefinitionData
         String dataDir = Utils.getDataDir(ReadGroupDefinitionData.class);
 	
 
-	String testDir = "TASKS_33581\\";
-	Project project = new Project(testDir + "Task name filter.mpp"); // attached test project
+	Project project = new Project(dataDir + "project.mpp"); // attached test project
 
 	System.out.println("Task Groups Count: " + project.getTaskGroups().size());
 
