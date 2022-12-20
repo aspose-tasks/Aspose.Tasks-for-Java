@@ -12,7 +12,6 @@ import com.aspose.tasks.Filter;
 import com.aspose.tasks.FilterCollection;
 import com.aspose.tasks.FilterCriteria;
 import com.aspose.tasks.ItemType;
-import com.aspose.tasks.Prj;
 import com.aspose.tasks.Project;
 import com.aspose.tasks.examples.Utils;
 
@@ -42,7 +41,6 @@ public class FilterDataFromMppFile {
             System.out.println("Type: " + ItemType.getName(ItemType.class, filter.getFilterType()));
             System.out.println("Show In Menu: " + filter.getShowInMenu());
             System.out.println("Show Related Summary Rows: " + filter.getShowRelatedSummaryRows());
-            System.out.println("Parent project: " + filter.getParentProject().get(Prj.NAME));
         }
 
         List<Filter> rscFilters = project.getResourceFilters().toList();
