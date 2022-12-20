@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.aspose</groupId>
     <artifactId>tasks-java-examples</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>2.0-SNAPSHOT</version>
     <packaging>jar</packaging>
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -13,7 +13,7 @@
         <dependency>
             <groupId>com.aspose</groupId>
             <artifactId>aspose-tasks</artifactId>
-            <version>22.6</version>
+            <version>22.12</version>
             <classifier>jdk18</classifier>
         </dependency>
         <dependency>
