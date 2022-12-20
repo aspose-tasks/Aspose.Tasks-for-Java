@@ -68,7 +68,7 @@ public class ResourcePrefixForNestedResources implements IFontSavingCallback, IC
         if (args.getFileName().endsWith("png")) {
             FileOutputStream stream1;
             try {
-                stream1 = new FileOutputStream(dataDir + "resources/nestedResources/" + args.getFileName());
+                stream1 = new FileOutputStream(dataDir + "nestedResources/" + args.getFileName());
                 args.setStream(stream1);
                 args.setKeepStreamOpen(false);
                 args.setUri(dataDir + "resources/" + args.getFileName());
