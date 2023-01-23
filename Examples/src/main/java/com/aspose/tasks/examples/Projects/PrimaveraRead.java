@@ -12,10 +12,11 @@ import com.aspose.tasks.PrimaveraReadOptions;
 import com.aspose.tasks.Prj;
 import com.aspose.tasks.Project;
 import com.aspose.tasks.Task;
+import com.aspose.tasks.TimeDelta;
 import com.aspose.tasks.examples.Utils;
 
 public class PrimaveraRead {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(PrimaveraRead.class);
 
@@ -27,8 +28,7 @@ public class PrimaveraRead {
         System.out.println("Process completed Successfully");
     }
 
-    public static void readXmlFileWithMultipleProjects1(String dataDir)
-    {
+    public static void readXmlFileWithMultipleProjects1(String dataDir) {
         // ExStart:ReadXMLFileWithMultipleProjects
         // ExFor: PrimaveraReadOptions
         // ExFor: PrimaveraReadOptions.ProjectUid
@@ -43,8 +43,7 @@ public class PrimaveraRead {
         // ExEnd:ReadXMLFileWithMultipleProjects
     }
 
-    public static void readPrimaveraXmlFileAndAccessPrimaveraSpecificProperties(String dataDir)
-    {
+    public static void readPrimaveraXmlFileAndAccessPrimaveraSpecificProperties(String dataDir) {
         // ExStart:ReadPrimaveraXmlFileAndAccessPrimaveraSpecificProperties
         // ExFor: Task.PrimaveraProperties
         // ExSummary: Shows how to read a project from a Primavera XML and examine tasks' Primavera-specific properties.
@@ -54,21 +53,31 @@ public class PrimaveraRead {
         // Returns project with special Uid
         Project project = new Project(dataDir + "PrimaveraProject.xml", options);
 
-        for (Task task : project.enumerateAllChildTasks())
-        {
+        for (Task task : project.enumerateAllChildTasks()) {
             System.out.println("Task '" + task.getName() + "'");
 
-            if (task.isSummary())
-            {
+            if (task.isSummary()) {
                 System.out.println("WBS Sequence number: " + task.getPrimaveraProperties().getSequenceNumber());
-            }
-            else
-            {
+            } else {
                 System.out.println("Task ActivityId: " + task.getPrimaveraProperties().getActivityId());
             }
 
+            System.out.println("Original Duration: " + TimeDelta.fromMilliseconds(task.getDuration().getTimeSpan()).getTotalHours());
+            System.out.println("At Complete Duration: " +
+                    (TimeDelta.fromMilliseconds(task.getActualDuration().getTimeSpan()).getTotalHours() + TimeDelta.fromMilliseconds(task.getRemainingDuration().getTimeSpan()).getTotalHours()));
+            System.out.println("Duration % Complete: " + task.getPrimaveraProperties().getDurationPercentComplete());
+            System.out.println("Physical % Complete: " + task.getPrimaveraProperties().getPhysicalPercentComplete());
+
             System.out.println("Task RemainingEarlyStart: " + task.getPrimaveraProperties().getRemainingEarlyStart());
             System.out.println("Task RemainingEarlyFinish: " + task.getPrimaveraProperties().getRemainingEarlyFinish());
+
+            System.out.println("Labor Units:");
+            System.out.println(task.getPrimaveraProperties().getActualLaborUnits() + ", " +
+                    task.getPrimaveraProperties().getActualNonLaborUnits() + ", " +
+                    task.getPrimaveraProperties().getRemainingLaborUnits() + ", " +
+                    task.getPrimaveraProperties().getRemainingNonLaborUnits());
+
+            System.out.println("Units % Complete: " + task.getPrimaveraProperties().getUnitsPercentComplete());
         }
 
         // ExEnd:ReadPrimaveraXmlFileAndAccessPrimaveraSpecificProperties
