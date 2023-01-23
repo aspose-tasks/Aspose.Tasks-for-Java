@@ -21,7 +21,7 @@ import com.aspose.tasks.examples.Utils;
 import java.io.IOException;
 
 public class ReducingGapBetweenTasksListAndFooter {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         //ExStart: ReducingGapBetweenTasksListAndFooter
         String dataDir = Utils.getDataDir(SaveAsPdf.class);
 

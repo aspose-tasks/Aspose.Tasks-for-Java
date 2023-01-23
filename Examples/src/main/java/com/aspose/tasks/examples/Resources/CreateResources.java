@@ -12,7 +12,7 @@ import com.aspose.tasks.Project;
 import com.aspose.tasks.Resource;
 
 public class CreateResources {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         Project project = new Project();
         Resource rsc = project.getResources().add("Rsc");
     }

@@ -13,7 +13,7 @@ import com.aspose.tasks.Project;
 import com.aspose.tasks.examples.Utils;
 
 public class CurrencyCodes {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         settingCurrency();
 
         gettingCurrencyCode();

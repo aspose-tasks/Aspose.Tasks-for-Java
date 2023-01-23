@@ -18,7 +18,7 @@ import com.aspose.tasks.examples.Utils;
 import java.util.List;
 
 public class FilterDataFromMppFile {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         filterDefinitionData();
 
         filterCriteriaData();

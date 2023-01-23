@@ -14,7 +14,7 @@ import com.aspose.tasks.examples.Utils;
 import java.util.GregorianCalendar;
 
 public class DefineWeekdaysForExceptions {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         // ExStart: DefineWeekDaysForExceptions
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(DefineWeekdaysForExceptions.class);

@@ -15,7 +15,7 @@ import com.aspose.tasks.Task;
 import com.aspose.tasks.examples.Utils;
 
 public class CreateResourceAssignments {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         Project project = new Project();
 
         Task task = project.getRootTask().getChildren().add("Task");

@@ -16,7 +16,7 @@ import com.aspose.tasks.WeekDayCollection;
 import com.aspose.tasks.examples.Utils;
 
 public class RetrieveCalendarInfo {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(RetrieveCalendarInfo.class);
 

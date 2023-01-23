@@ -13,7 +13,7 @@ import com.aspose.tasks.Task;
 import com.aspose.tasks.examples.Utils;
 
 public class CreateTasks {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         Project project = new Project();
         Task task = project.getRootTask().getChildren().add("Summary1");
         Task subtask = task.getChildren().add("Subtask1");

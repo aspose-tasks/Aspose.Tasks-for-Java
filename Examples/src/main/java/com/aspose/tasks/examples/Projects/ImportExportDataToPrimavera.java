@@ -17,7 +17,7 @@ import com.aspose.tasks.examples.Utils;
 import java.io.IOException;
 
 public class ImportExportDataToPrimavera {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(ImportExportDataToPrimavera.class);
 
@@ -40,19 +40,19 @@ public class ImportExportDataToPrimavera {
         System.out.println(FileFormat.getName(FileFormat.class, info.getProjectFileFormat()));
     }
 
-    public static void exportingprimaveraxml(String dataDir) throws IOException {
+    public static void exportingprimaveraxml(String dataDir) {
         Project project = new Project(dataDir + "project.mpp");
 
         project.save(dataDir + "saved.xml", SaveFileFormat.PrimaveraP6Xml);
     }
 
-    public static void exportingprimaveraxer(String dataDir) throws IOException {
+    public static void exportingprimaveraxer(String dataDir) {
         Project project = new Project(dataDir + "project.mpp");
 
         project.save(dataDir + "saved.xer", SaveFileFormat.PrimaveraXer);
     }
 
-    public static void exportingprimaverampx(String dataDir) throws IOException {
+    public static void exportingprimaverampx(String dataDir) {
         Project project = new Project(dataDir + "project.mpp");
 
         project.save(dataDir + "saved.mpx", SaveFileFormat.Mpx);

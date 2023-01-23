@@ -18,7 +18,7 @@ import com.aspose.tasks.examples.Utils;
 import java.io.IOException;
 
 public class RenderResourceUsageAndSheetView {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(RenderResourceUsageAndSheetView.class);
 
@@ -30,7 +30,7 @@ public class RenderResourceUsageAndSheetView {
         System.out.println("Process completed Successfully");
     }
 
-    public static void resourceUsage(String dataDir) throws IOException {
+    public static void resourceUsage(String dataDir) {
         //Read the source Project
         Project project = new Project(dataDir + "ResourceUsageView.mpp");
         //Define the SaveOptions with required TimeScale settings as Days
@@ -55,7 +55,7 @@ public class RenderResourceUsageAndSheetView {
         project.save(dataDir + months, options);
     }
 
-    public static void resourceSheetView(String dataDir) throws IOException {
+    public static void resourceSheetView(String dataDir) {
         //Read the source Project
         Project project = new Project(dataDir + "ResourceUsageView.mpp");
         //Define the SaveOptions

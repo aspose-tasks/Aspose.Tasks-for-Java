@@ -24,7 +24,7 @@ import java.util.Calendar;
 import java.util.GregorianCalendar;
 
 public class HandleTaskConstraints {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(HandleTaskConstraints.class);
         GetConstraints(dataDir);
@@ -60,7 +60,7 @@ public class HandleTaskConstraints {
         //ExEnd: GetConstraints
     }
 
-    private static void setConstraintTypeStartNoEarlierThan(String dataDir) throws Exception {
+    private static void setConstraintTypeStartNoEarlierThan(String dataDir) {
         //ExStart: setConstraintTypeStartNoEarlierThan
         // Create project instance
         Project project = new Project(dataDir + "ConstraintStartNoEarlierThan.mpp");
@@ -81,7 +81,7 @@ public class HandleTaskConstraints {
         //ExEnd: setConstraintTypeStartNoEarlierThan
     }
 
-    private static void setConstraintTypeFinishNoEarlierThan(String dataDir) throws Exception {
+    private static void setConstraintTypeFinishNoEarlierThan(String dataDir) {
         //ExStart: setConstraintTypeFinishNoEarlierThan
         // Create project instance
         Project project = new Project(dataDir + "ConstraintStartNoEarlierThan.mpp");
@@ -102,7 +102,7 @@ public class HandleTaskConstraints {
         //ExEnd: setConstraintTypeFinishNoEarlierThan
     }
 
-    private static void SetConstraintTypeMustStartOn(String dataDir) throws Exception {
+    private static void SetConstraintTypeMustStartOn(String dataDir) {
         //ExStart: SetConstraintTypeMustStartOn
         // Create project instance
         Project project = new Project(dataDir + "ConstraintStartNoEarlierThan.mpp");
@@ -123,7 +123,7 @@ public class HandleTaskConstraints {
         //ExEnd: SetConstraintTypeMustStartOn
     }
 
-    private static void setConstraintTypeAsLateAsPossible(String dataDir) throws Exception {
+    private static void setConstraintTypeAsLateAsPossible(String dataDir) {
         //ExStart: setConstraintTypeAsLateAsPossible
         // Create project instance
         Project project = new Project(dataDir + "ConstraintStartNoEarlierThan.mpp");
@@ -140,7 +140,7 @@ public class HandleTaskConstraints {
         //ExEnd: setConstraintTypeAsLateAsPossible
     }
 
-    private static void setConstraintTypeMustFinishOn(String dataDir) throws Exception {
+    private static void setConstraintTypeMustFinishOn(String dataDir) {
         //ExStart: setConstraintTypeMustFinishOn
         // Create project instance
         Project project = new Project(dataDir + "ConstraintStartNoEarlierThan.mpp");

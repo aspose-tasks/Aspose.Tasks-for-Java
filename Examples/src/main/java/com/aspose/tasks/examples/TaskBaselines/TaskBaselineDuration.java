@@ -15,7 +15,7 @@ import com.aspose.tasks.TaskBaseline;
 import com.aspose.tasks.examples.Utils;
 
 public class TaskBaselineDuration {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         long OneSec = 10000000; // microsecond * 10
         long OneMin = 60 * OneSec;
         long OneHour = 60 * OneMin;

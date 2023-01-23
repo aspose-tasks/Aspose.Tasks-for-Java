@@ -16,7 +16,7 @@ import com.aspose.tasks.TaskLinkType;
 import com.aspose.tasks.Tsk;
 
 public class CreateCrossProjectTaskLink {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         // ExStart:CreateCrossProjectTaskLink
         // ExFor: TaskLink.CrossProjectName
         // ExFor: TaskLink.IsCrossProject

@@ -12,7 +12,7 @@ import com.aspose.tasks.Project;
 import com.aspose.tasks.examples.Utils;
 
 public class ReadPasswordProtectedFiles {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         // ExStart: ReadPasswordProtectedFiles
         // For complete examples and data files, please go to https://github.com/aspose-tasks/Aspose.Tasks-for-Java
         // The path to the documents directory.

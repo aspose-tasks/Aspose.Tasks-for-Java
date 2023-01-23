@@ -14,11 +14,11 @@ import com.aspose.tasks.*;
 import com.aspose.tasks.examples.Utils;
 
 public class AddTaskExtendedAttributes {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         TaskExtendedAttributes();
     }
 
-    static void TaskExtendedAttributes() throws IOException {
+    static void TaskExtendedAttributes() {
         // ExStart:AddTaskExtendedAttributes
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(AddTaskExtendedAttributes.class);

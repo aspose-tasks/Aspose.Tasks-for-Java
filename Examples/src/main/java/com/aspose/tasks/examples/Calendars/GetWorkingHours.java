@@ -12,7 +12,7 @@ import com.aspose.tasks.*;
 import com.aspose.tasks.examples.Utils;
 
 public class GetWorkingHours {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         // ExStart: GetWorkingHours
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(GetWorkingHours.class);

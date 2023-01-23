@@ -17,7 +17,7 @@ import java.io.IOException;
 
 public class ReadingProjectDataFromMicrosoftAccessDatabase {
     // ExStart: ReadingProjectDataFromMicrosoftAccessDatabase
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         // For complete examples and data files, please go to https://github.com/aspose-tasks/Aspose.Tasks-for-Java
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(ReadingProjectDatafromMicrosoftProjectDatabase.class);

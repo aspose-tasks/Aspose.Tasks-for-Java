@@ -17,7 +17,7 @@ import com.aspose.tasks.Tsk;
 import java.util.Calendar;
 
 public class HandleVariances {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         Project project = new Project();
         Task task = project.getRootTask().getChildren().add("Task");
         java.util.Calendar cal = java.util.Calendar.getInstance();

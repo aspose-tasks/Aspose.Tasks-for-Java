@@ -19,7 +19,7 @@ import com.aspose.tasks.examples.TaskLinks.UpdatedTaskLinkDataToMpp;
 import com.aspose.tasks.examples.Utils;
 
 public class UpdatedTaskDataToMpp {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(UpdatedTaskDataToMpp.class);
 

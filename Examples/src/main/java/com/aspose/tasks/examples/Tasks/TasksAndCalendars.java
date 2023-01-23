@@ -17,7 +17,7 @@ import com.aspose.tasks.Tsk;
 import com.aspose.tasks.examples.Utils;
 
 public class TasksAndCalendars {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         settingtaskcalendar();
 
         // Display result of process.

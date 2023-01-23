@@ -25,12 +25,12 @@ import java.io.IOException;
 import java.math.BigDecimal;
 
 public class AddExtendedAttributesToResourceAssignments {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         AddPlainExtendedAttributeToResourceAssignment();
         AddLookUpExtendedAttributeToResourceAssignment();
     }
 
-    public static void AddPlainExtendedAttributeToResourceAssignment() throws IOException {
+    public static void AddPlainExtendedAttributeToResourceAssignment() {
         String dataDir = Utils.getDataDir(AddExtendedAttributesToResourceAssignments.class);
 
         // ExStart: AddPlainExtendedAttributeToResourceAssignment
@@ -70,7 +70,7 @@ public class AddExtendedAttributesToResourceAssignments {
         // ExEnd: AddPlainExtendedAttributeToResourceAssignment
     }
 
-    public static void AddLookUpExtendedAttributeToResourceAssignment() throws IOException {
+    public static void AddLookUpExtendedAttributeToResourceAssignment() {
         String dataDir = Utils.getDataDir(AddExtendedAttributesToResourceAssignments.class);
         // ExStart: AddLookUpExtendedAttributeToResourceAssignment
         Project project = new Project(dataDir + "Blank2010.mpp");

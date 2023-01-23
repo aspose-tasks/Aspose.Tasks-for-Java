@@ -14,7 +14,7 @@ import com.aspose.tasks.Rsc;
 import com.aspose.tasks.examples.Utils;
 
 public class IterateOverNonRootResources {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         // Shows how to use IsRoot property to skip root resource.
 
         // The path to the documents directory.

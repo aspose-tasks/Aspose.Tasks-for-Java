@@ -16,7 +16,7 @@ import java.util.GregorianCalendar;
 
 public class UpdatedCalendarToMpp
 {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
     	// ExStart: UpdatedCalendarToMpp
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(UpdatedCalendarToMpp.class);

@@ -12,7 +12,7 @@ import com.aspose.tasks.*;
 import com.aspose.tasks.examples.Utils;
 
 public class ChangeProgressOfTask {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         Project project = new Project();
         System.out.println(project.getCalculationMode());
 

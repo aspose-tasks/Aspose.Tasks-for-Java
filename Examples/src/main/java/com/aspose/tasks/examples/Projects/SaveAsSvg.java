@@ -18,7 +18,7 @@ import com.aspose.tasks.examples.Utils;
 import java.io.IOException;
 
 public class SaveAsSvg {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(SaveAsSvg.class);
 
@@ -30,14 +30,14 @@ public class SaveAsSvg {
         System.out.println("Process completed Successfully");
     }
 
-    public static void SavingProjectDataAsSVG(String dataDir) throws IOException {
+    public static void SavingProjectDataAsSVG(String dataDir) {
         // Read the input Project file
         Project project = new Project(dataDir + "HomeMovePlan.mpp");
         // Save the Project as SVG
         project.save(dataDir + "project5.svg", SaveFileFormat.Svg);
     }
 
-    public static void UsingSvgOptions(String dataDir) throws IOException {
+    public static void UsingSvgOptions(String dataDir) {
         // Read the input Project file
         Project project = new Project(dataDir + "HomeMovePlan.mpp");
 

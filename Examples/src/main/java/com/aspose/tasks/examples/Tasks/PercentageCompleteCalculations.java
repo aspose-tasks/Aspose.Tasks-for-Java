@@ -15,7 +15,7 @@ import com.aspose.tasks.Tsk;
 import com.aspose.tasks.examples.Utils;
 
 public class PercentageCompleteCalculations {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(PercentageCompleteCalculations.class);
 

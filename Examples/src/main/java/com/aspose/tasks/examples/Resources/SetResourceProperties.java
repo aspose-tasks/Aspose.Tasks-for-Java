@@ -16,7 +16,7 @@ import com.aspose.tasks.examples.Utils;
 import java.math.BigDecimal;
 
 public class SetResourceProperties {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         Project project = new Project();
         Resource rsc = project.getResources().add("Rsc");
         // Resource properties are represented by static class Rsc

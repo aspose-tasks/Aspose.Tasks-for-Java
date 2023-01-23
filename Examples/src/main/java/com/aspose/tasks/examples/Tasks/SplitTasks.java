@@ -20,7 +20,7 @@ import com.aspose.tasks.WorkContourType;
 import com.aspose.tasks.examples.Utils;
 
 public class SplitTasks {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(SplitTasks.class);
 

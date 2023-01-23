@@ -15,7 +15,7 @@ import com.aspose.tasks.SaveFileFormat;
 import com.aspose.tasks.examples.Utils;
 
 public class SaveDataToExcel {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         // The path to the documents directory.
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(SaveDataToExcel.class);
@@ -28,7 +28,7 @@ public class SaveDataToExcel {
         System.out.println("Process completed Successfully");
     }
 
-    public static void savingProjectAsXlsx(String dataDir) throws IOException {
+    public static void savingProjectAsXlsx(String dataDir) {
         // Read the input Project file
         Project project = new Project(dataDir + "project5.mpp");
 
@@ -36,7 +36,7 @@ public class SaveDataToExcel {
         project.save(dataDir + "project1.xlsx", SaveFileFormat.Xlsx);
     }
 
-    public static void savingProjectAsXml(String dataDir) throws IOException {
+    public static void savingProjectAsXml(String dataDir) {
         Project project = new Project(dataDir + "project5.mpp");
         project.save(dataDir + "project5.xml", SaveFileFormat.Spreadsheet2003);
     }

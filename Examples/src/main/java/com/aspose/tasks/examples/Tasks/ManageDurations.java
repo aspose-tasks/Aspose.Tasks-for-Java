@@ -15,7 +15,7 @@ import com.aspose.tasks.TimeUnitType;
 import com.aspose.tasks.Tsk;
 
 public class ManageDurations {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         //ExStart: ManageDurations
         // Create a new project and add a new task
         Project project = new Project();

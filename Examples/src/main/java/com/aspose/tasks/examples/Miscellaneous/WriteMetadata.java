@@ -16,7 +16,7 @@ import java.util.Date;
 import java.util.TimeZone;
 
 public class WriteMetadata {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         // ExStart: WriteMetadata
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(WriteMetadata.class);

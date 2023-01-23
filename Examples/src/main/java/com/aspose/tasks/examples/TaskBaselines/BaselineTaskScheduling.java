@@ -14,7 +14,7 @@ import com.aspose.tasks.Task;
 import com.aspose.tasks.TaskBaseline;
 
 public class BaselineTaskScheduling {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         Project project = new Project();
         // Creating TaskBaseline:
         Task task = project.getRootTask().getChildren().add("Task");

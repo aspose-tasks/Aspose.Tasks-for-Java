@@ -16,7 +16,7 @@ import java.math.BigDecimal;
 import java.util.Objects;
 
 public class WriteReadFormula {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         writingFormulasInExtendedAttributes();
 
         readingFormulasInLocalAndEnterpriseExtendedAttributes();
@@ -27,7 +27,7 @@ public class WriteReadFormula {
         System.out.println("Process completed Successfully");
     }
 
-    public static void writingFormulasInExtendedAttributes() throws IOException {
+    public static void writingFormulasInExtendedAttributes() {
         // ExStart: writingFormulasInExtendedAttributes
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(WriteReadFormula.class);

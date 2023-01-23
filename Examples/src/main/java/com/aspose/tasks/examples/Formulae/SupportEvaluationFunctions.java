@@ -11,7 +11,7 @@ package com.aspose.tasks.examples.Formulae;
 import com.aspose.tasks.*;
 
 public class SupportEvaluationFunctions {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         CalculationOfMathExpressions();
 
         EvaluateChoose();

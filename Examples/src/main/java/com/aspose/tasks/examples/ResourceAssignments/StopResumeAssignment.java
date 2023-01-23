@@ -18,7 +18,7 @@ import java.util.GregorianCalendar;
 import java.util.Objects;
 
 public class StopResumeAssignment {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(StopResumeAssignment.class);
 

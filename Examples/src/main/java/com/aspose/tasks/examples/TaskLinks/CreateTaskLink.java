@@ -12,7 +12,7 @@ import com.aspose.tasks.*;
 import com.aspose.tasks.examples.Utils;
 
 public class CreateTaskLink {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         Project project = new Project();
         Task pred = project.getRootTask().getChildren().add("Task 1");
         Task succ = project.getRootTask().getChildren().add("Task 2");

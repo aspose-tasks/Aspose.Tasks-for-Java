@@ -15,7 +15,7 @@ import com.aspose.tasks.Project;
 import com.aspose.tasks.examples.Utils;
 
 public class RetrieveOutlineCodes {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(RetrieveOutlineCodes.class);
 

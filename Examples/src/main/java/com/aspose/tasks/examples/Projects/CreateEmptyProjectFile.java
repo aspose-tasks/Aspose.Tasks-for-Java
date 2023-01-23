@@ -12,7 +12,7 @@ import com.aspose.tasks.*;
 import com.aspose.tasks.examples.Utils;
 
 public class CreateEmptyProjectFile {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         // ExStart: CreateEmptyProjectFile
         // For complete examples and data files, please go to https://github.com/aspose-tasks/Aspose.Tasks-for-Java
         // The path to the documents directory.

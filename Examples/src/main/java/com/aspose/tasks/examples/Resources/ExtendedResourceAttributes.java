@@ -20,7 +20,7 @@ import com.aspose.tasks.examples.Utils;
 import java.math.BigDecimal;
 
 public class ExtendedResourceAttributes {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         // ExStart: ExtendedResourceAttributes
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(ExtendedResourceAttributes.class);

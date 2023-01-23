@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CreatingATaskBaseline {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         Project project = new Project();
 
         // Creating TaskBaseline:

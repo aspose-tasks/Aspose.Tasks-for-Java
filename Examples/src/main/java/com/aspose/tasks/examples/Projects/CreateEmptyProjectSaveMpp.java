@@ -15,7 +15,7 @@ import com.aspose.tasks.SaveFileFormat;
 import com.aspose.tasks.examples.Utils;
 
 public class CreateEmptyProjectSaveMpp {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         // ExStart: CreateEmptyProjectSaveMPP
         // For complete examples and data files, please go to https://github.com/aspose-tasks/Aspose.Tasks-for-Java
         // The path to the documents directory.

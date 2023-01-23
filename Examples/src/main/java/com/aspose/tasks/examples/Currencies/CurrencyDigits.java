@@ -16,7 +16,7 @@ import com.aspose.tasks.SaveFileFormat;
 import com.aspose.tasks.examples.Utils;
 
 public class CurrencyDigits {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         settingCurrencyDigits();
 
         gettingCurrencyDigits();
@@ -25,7 +25,7 @@ public class CurrencyDigits {
         System.out.println("Process completed Successfully");
     }
 
-    public static void settingCurrencyDigits() throws IOException {
+    public static void settingCurrencyDigits() {
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(CurrencyDigits.class);
 

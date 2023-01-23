@@ -25,7 +25,7 @@ import java.util.Date;
 import java.util.List;
 
 public class ParentAndChildTasks {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(ParentAndChildTasks.class);
 
@@ -54,7 +54,7 @@ public class ParentAndChildTasks {
         }
     }
 
-    public static void settingchildtasks() throws IOException {
+    public static void settingchildtasks() {
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(ParentAndChildTasks.class);
 

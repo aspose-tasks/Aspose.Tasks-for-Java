@@ -16,7 +16,7 @@ import com.aspose.tasks.VbaReferenceCollection;
 import com.aspose.tasks.examples.Utils;
 
 public class WorkWithVba {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(WorkWithVba.class);
 
@@ -26,7 +26,7 @@ public class WorkWithVba {
         ReadModuleAttributesInformation(dataDir);
     }
 
-    private static void ReadVBAProjectInformation(String dataDir) throws Exception {
+    private static void ReadVBAProjectInformation(String dataDir) {
         //ExStart:ReadVBAProjectInformation
         // Load project file
         Project project = new Project(dataDir + "VbaProject1.mpp");
@@ -40,7 +40,7 @@ public class WorkWithVba {
         //ExEnd:ReadVBAProjectInformation
     }
 
-    private static void ReadReferencesInformation(String dataDir) throws Exception {
+    private static void ReadReferencesInformation(String dataDir) {
         //ExStart: ReadReferencesInformation
         // Load project file
         Project project = new Project(dataDir + "VbaProject1.mpp");
@@ -63,7 +63,7 @@ public class WorkWithVba {
         //ExEnd: ReadReferencesInformation
     }
 
-    private static void ReadModulesInformation(String dataDir) throws Exception {
+    private static void ReadModulesInformation(String dataDir) {
         //ExStart: ReadModulesInformation
         // Load project file
         Project project = new Project(dataDir + "VbaProject1.mpp");
@@ -77,7 +77,7 @@ public class WorkWithVba {
         //ExEnd: ReadModulesInformation
     }
 
-    private static void ReadModuleAttributesInformation(String dataDir) throws Exception {
+    private static void ReadModuleAttributesInformation(String dataDir) {
         //ExStart: ReadModuleAttributesInformation
         // Load project file
         Project project = new Project(dataDir + "VbaProject1.mpp");

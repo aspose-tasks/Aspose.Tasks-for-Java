@@ -11,7 +11,7 @@ package com.aspose.tasks.examples.CalendarExceptions;
 import com.aspose.tasks.*;
 
 public class HandleOccurrences {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         // ExStart: HandleOccurrences
         CalendarException except = new CalendarException();
         except.setEnteredByOccurrences(true);

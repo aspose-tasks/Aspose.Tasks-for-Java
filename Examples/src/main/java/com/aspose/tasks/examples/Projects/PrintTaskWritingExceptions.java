@@ -14,7 +14,7 @@ import com.aspose.tasks.TasksWritingException;
 import com.aspose.tasks.examples.Utils;
 
 public class PrintTaskWritingExceptions {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(PrintTaskWritingExceptions.class);
 

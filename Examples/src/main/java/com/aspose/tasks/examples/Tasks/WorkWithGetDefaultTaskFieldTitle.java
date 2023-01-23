@@ -12,7 +12,7 @@ import com.aspose.tasks.FieldHelper;
 import com.aspose.tasks.Tsk;
 
 public class WorkWithGetDefaultTaskFieldTitle {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         // Shows how to get default field title for the specific task's field.
 
         System.out.println("Title for Tsk.ActualCost: " + FieldHelper.getDefaultTaskFieldTitle(Tsk.ACTUAL_COST.getKeyType()));

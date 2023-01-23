@@ -21,7 +21,7 @@ import java.awt.*;
 import java.util.ArrayList;
 
 public class PrintPagesToSeparateImage {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(PrintPagesToSeparateImage.class);
 

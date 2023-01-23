@@ -14,7 +14,7 @@ import com.aspose.tasks.*;
 import com.aspose.tasks.examples.Utils;
 
 public class SaveAsCsvTextAndTemplate {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(SaveAsCsvTextAndTemplate.class);
         SavingProjectAsCsv(dataDir);
@@ -27,17 +27,17 @@ public class SaveAsCsvTextAndTemplate {
         System.out.println("Process completed Successfully");
     }
 
-    public static void SavingProjectAsCsv(String dataDir) throws IOException {
+    public static void SavingProjectAsCsv(String dataDir) {
         Project project = new Project(dataDir + "project5.mpp");
         project.save(dataDir + "project5.csv", SaveFileFormat.Csv);
     }
 
-    public static void SavingProjectAsText(String dataDir) throws IOException {
+    public static void SavingProjectAsText(String dataDir) {
         Project project = new Project(dataDir + "project5.mpp");
         project.save(dataDir + "project5.txt", SaveFileFormat.Txt);
     }
 
-    public static void SavingProjectAsTemplate(String dataDir) throws IOException {
+    public static void SavingProjectAsTemplate(String dataDir) {
         String projectName = dataDir + "Blank2010.mpp"; // any mpp file (here 2010 format used)
         Project project = new Project(projectName);
         ProjectFileInfo projectFileInfo = Project.getProjectFileInfo(dataDir + "Blank2010.mpp");

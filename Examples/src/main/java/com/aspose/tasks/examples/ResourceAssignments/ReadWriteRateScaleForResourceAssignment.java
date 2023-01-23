@@ -22,7 +22,7 @@ import com.aspose.tasks.examples.Utils;
 import java.io.IOException;
 
 public class ReadWriteRateScaleForResourceAssignment {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         //ExStart: ReadWriteRateScaleForResourceAssignment
         String dataDir = Utils.getDataDir(ReadWriteRateScaleForResourceAssignment.class);
 

@@ -13,7 +13,7 @@ import com.aspose.tasks.*;
 import java.util.Calendar;
 
 public class WorkWithFormulas {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         TaskFieldsFormula();
         UsingArithmeticExpression();
         UsingTaskNumberFields();
@@ -21,7 +21,7 @@ public class WorkWithFormulas {
         FormulaWithProjectFields();
     }
 
-    private static void TaskFieldsFormula() throws Exception {
+    private static void TaskFieldsFormula() {
         // ExStart: TaskFieldsFormula
         // see this helper method below
         Project project = CreateTestProjectWithCustomField();

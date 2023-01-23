@@ -19,7 +19,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class WbsAssociatedWithTask {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         RenumberTaskWBSCodes();
     }
 

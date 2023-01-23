@@ -13,7 +13,7 @@ import com.aspose.tasks.CalendarCollection;
 import com.aspose.tasks.Project;
 
 public class ReplaceCalendar {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         Project project = new Project();
 
         // Add a calendar to the project

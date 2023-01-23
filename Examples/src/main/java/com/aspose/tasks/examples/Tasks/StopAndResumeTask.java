@@ -19,7 +19,7 @@ import java.util.Calendar;
 import java.util.GregorianCalendar;
 
 public class StopAndResumeTask {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(StopAndResumeTask.class);
 
