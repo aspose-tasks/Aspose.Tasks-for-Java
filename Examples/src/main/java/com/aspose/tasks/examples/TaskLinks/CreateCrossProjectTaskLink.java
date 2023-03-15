@@ -35,7 +35,7 @@ public class CreateCrossProjectTaskLink {
         Task t2 = summary.getChildren().add("External Task");
         t2.set(Tsk.EXTERNAL_TASK_PROJECT, "ExternalProject.mpp"); // here we set path to external project's MPP file.
         t2.set(Tsk.EXTERNAL_ID, 1); // Set External task's Id.
-        t2.set(Tsk.EXTERNAL_UID, 2); // External task's Unique Id should be set.
+        //t2.set(Tsk.EXTERNAL_UID, 2); // External task's Unique Id should be set.
         t2.set(Tsk.IS_EXTERNAL_TASK, true);
         t2.set(Tsk.IS_MANUAL, new NullableBool(false));
         t2.set(Tsk.IS_SUMMARY, false);

@@ -13,20 +13,19 @@ import com.aspose.tasks.examples.Utils;
 
 public class AddRemoveCalendarExceptions {
     public static void main(String[] args) {
-        // ExStart: AddRemoveCalendarExceptions
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(AddRemoveCalendarExceptions.class);
 
         Project project = new Project(dataDir + "input.mpp");
 
-        //Remove an exception
+        // Remove an exception
         Calendar cal = project.getCalendars().toList().get(0);
         if (cal.getExceptions().size() > 1) {
-            CalendarException exc = cal.getExceptions().toList().get(0);
+            CalendarException exc = cal.getExceptions().get(0);
             cal.getExceptions().remove(exc);
         }
 
-        //Add an exception
+        // Add an exception
         CalendarException calExc = new CalendarException();
 
         java.util.Calendar calObject = java.util.Calendar.getInstance();
@@ -38,12 +37,11 @@ public class AddRemoveCalendarExceptions {
 
         cal.getExceptions().add(calExc);
 
-        //Display exceptions
+        // Display exceptions
         for (CalendarException calExc1 : cal.getExceptions()) {
             System.out.println("From" + calExc1.getFromDate().toString());
             System.out.println("To" + calExc1.getToDate().toString());
         }
-        // ExEnd: AddRemoveCalendarExceptions
     }
 }
 

@@ -24,29 +24,24 @@ public class PrimaveraRead {
 
         readPrimaveraXmlFileAndAccessPrimaveraSpecificProperties(dataDir);
 
-        //Display result of conversion.
+        accessPrimaveraSpecificProjectProperties(dataDir);
+
+        // Display result of conversion.
         System.out.println("Process completed Successfully");
     }
 
     public static void readXmlFileWithMultipleProjects1(String dataDir) {
-        // ExStart:ReadXMLFileWithMultipleProjects
-        // ExFor: PrimaveraReadOptions
-        // ExFor: PrimaveraReadOptions.ProjectUid
-        // ExSummary: Shows how to read a project from a Primavera XML or Primavera XER file containing multiple projects.
+        // Shows how to read a project from a Primavera XML or Primavera XER file containing multiple projects.
         PrimaveraReadOptions options = new PrimaveraReadOptions();
         options.setProjectUid(3881);
 
         // Returns project with special Uid
         Project project = new Project(dataDir + "PrimaveraProject.xml", options);
         System.out.println(project.get(Prj.NAME));
-
-        // ExEnd:ReadXMLFileWithMultipleProjects
     }
 
     public static void readPrimaveraXmlFileAndAccessPrimaveraSpecificProperties(String dataDir) {
-        // ExStart:ReadPrimaveraXmlFileAndAccessPrimaveraSpecificProperties
-        // ExFor: Task.PrimaveraProperties
-        // ExSummary: Shows how to read a project from a Primavera XML and examine tasks' Primavera-specific properties.
+        // Shows how to read a project from a Primavera XML and examine tasks' Primavera-specific properties.
         PrimaveraReadOptions options = new PrimaveraReadOptions();
         options.setProjectUid(3883);
 
@@ -62,6 +57,9 @@ public class PrimaveraRead {
                 System.out.println("Task ActivityId: " + task.getPrimaveraProperties().getActivityId());
             }
 
+            System.out.println("Activity Type: " + task.getPrimaveraProperties().getActivityType());
+            System.out.println("Duration Type: " + task.getPrimaveraProperties().getDurationType());
+            System.out.println("Percent Complete Type: " + task.getPrimaveraProperties().getPercentCompleteType());
             System.out.println("Original Duration: " + TimeDelta.fromMilliseconds(task.getDuration().getTimeSpan()).getTotalHours());
             System.out.println("At Complete Duration: " +
                     (TimeDelta.fromMilliseconds(task.getActualDuration().getTimeSpan()).getTotalHours() + TimeDelta.fromMilliseconds(task.getRemainingDuration().getTimeSpan()).getTotalHours()));
@@ -71,6 +69,13 @@ public class PrimaveraRead {
             System.out.println("Task RemainingEarlyStart: " + task.getPrimaveraProperties().getRemainingEarlyStart());
             System.out.println("Task RemainingEarlyFinish: " + task.getPrimaveraProperties().getRemainingEarlyFinish());
 
+            System.out.println("Actual costs:");
+            System.out.println(task.getPrimaveraProperties().getActualExpenseCost() + ", "
+                            + task.getPrimaveraProperties().getActualLaborCost() + ", "
+                            + task.getPrimaveraProperties().getActualMaterialCost() + ", "
+                            + task.getPrimaveraProperties().getActualNonlaborCost() + ", Total: "
+                            + task.getPrimaveraProperties().getActualTotalCost());
+
             System.out.println("Labor Units:");
             System.out.println(task.getPrimaveraProperties().getActualLaborUnits() + ", " +
                     task.getPrimaveraProperties().getActualNonLaborUnits() + ", " +
@@ -79,8 +84,27 @@ public class PrimaveraRead {
 
             System.out.println("Units % Complete: " + task.getPrimaveraProperties().getUnitsPercentComplete());
         }
+    }
 
-        // ExEnd:ReadPrimaveraXmlFileAndAccessPrimaveraSpecificProperties
+    public static void accessPrimaveraSpecificProjectProperties(String dataDir)
+    {
+        // Shows how to read a project from a Primavera file and examine project's Primavera-specific properties.
+
+        PrimaveraReadOptions options = new PrimaveraReadOptions();
+        options.setProjectUid(4861);
+
+        // Returns project with special Uid
+        Project project = new Project(dataDir + "ScheduleOptions.xer", options);
+
+        // PrimaveraProperties can be null if project's schedule options have default values.
+        if (project.getPrimaveraProperties() != null)
+        {
+            System.out.println("Project's schedule options:");
+            System.out.println("Relationship Lag Calendar: " + project.getPrimaveraProperties().getRelationshipLagCalendar());
+            System.out.println("Make Open Ended Activities Critical: " + project.getPrimaveraProperties().getMakeOpenEndedActivitiesCritical());
+            System.out.println("Ignore Other Project Relationships: " + project.getPrimaveraProperties().getIgnoreOtherProjectRelationships());
+            System.out.println("Use Expected Finish Dates: " + project.getPrimaveraProperties().getUseExpectedFinishDates());
+        }
     }
 }
 

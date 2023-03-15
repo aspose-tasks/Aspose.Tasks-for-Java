@@ -13,7 +13,7 @@ import com.aspose.tasks.examples.Utils;
 
 public class ConfigureGanttChartView {
     public static void main(String[] args) {
-        // ExStart:ConfigureGantChart
+        // Shows how to configure Gantt Chart properties.
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(ConfigureGanttChartView.class);
 
@@ -41,7 +41,6 @@ public class ConfigureGanttChartView {
 
         // The result of opening of saved project in MSP2010 is in attached screenshot
         project.save("saved.mpp", SaveFileFormat.Mpp);
-        // ExEnd:ConfigureGantChart
     }
 }
 

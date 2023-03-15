@@ -23,15 +23,15 @@ public class ResourceAssignmentProperties {
         // The path to the documents directory.
         String dataDir = Utils.getDataDir(ResourceAssignmentProperties.class);
 
-        settingresourceassignmentproperties();
+        settingResourceAssignmentProperties();
 
-        gettingresourceassignmentproperties(dataDir);
+        gettingResourceAssignmentProperties(dataDir);
 
-        //Display result of conversion.
+        // Display result of conversion.
         System.out.println("Process completed Successfully");
     }
 
-    public static void settingresourceassignmentproperties() {
+    public static void settingResourceAssignmentProperties() {
         Project project = new Project();
 
         Task task = project.getRootTask().getChildren().add("Task");
@@ -42,7 +42,7 @@ public class ResourceAssignmentProperties {
         ResourceAssignment assn = project.getResourceAssignments().add(task, rsc);
     }
 
-    public static void gettingresourceassignmentproperties(String dataDir) {
+    public static void gettingResourceAssignmentProperties(String dataDir) {
         Project prj = new Project(dataDir + "project.mpp");
         for (ResourceAssignment ra : prj.getResourceAssignments()) {
             System.out.println(ra.get(Asn.UID));
