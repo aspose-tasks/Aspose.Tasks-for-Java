@@ -46,7 +46,7 @@ public class SupportEvaluationFunctions {
 
         // Print Calculated value
         Task task = project.getRootTask().getChildren().getById(1);
-        System.out.println("Sin(pi/2): {0}" + task.getExtendedAttributes().get(0).getNumericValue());
+        System.out.println("Sin(pi/2): " + task.getExtendedAttributes().get(0).getNumericValue());
         //ExEnd: CalculationOfMathExpressions
     }
 

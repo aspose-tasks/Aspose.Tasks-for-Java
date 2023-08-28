@@ -24,6 +24,7 @@ public class OvertimeRemainingCostsWork {
             System.out.println(ra.get(Asn.OVERTIME_COST));
             System.out.println(ra.get(Asn.OVERTIME_WORK).toString());
             System.out.println(ra.get(Asn.REMAINING_COST));
+            System.out.println(ra.get(Asn.REMAINING_WORK).toString());
             System.out.println(ra.get(Asn.REMAINING_OVERTIME_COST));
             System.out.println(ra.get(Asn.REMAINING_OVERTIME_WORK).toString());
         }

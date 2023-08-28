@@ -31,14 +31,15 @@ public class SaveAsPdf {
         Project project1 = new Project(dataDir + "project6.mpp");
         SaveOptions o = new PdfSaveOptions();
 
-        // Set the LegendOnEachPage property to false to hide legends
-
         // Set the row height to fit cell content
         o.setFitContent(true);
         o.setTimescale(Timescale.Months);
         o.setPresentationFormat(PresentationFormat.TaskUsage);
         project1.save("result_months.pdf", o);
+
+        // Set the LegendOnEachPage property to false to hide legends
         o.setLegendOnEachPage(false);
+
         project1.save(dataDir + "result_months_WithoutLegend.pdf", o);
 
         //Display result of conversion.

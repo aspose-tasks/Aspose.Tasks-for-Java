@@ -33,8 +33,8 @@ public class ConfigureGanttChartView {
         attrField.setField(Field.TaskText1);
         attrField.setWidth(20);
         attrField.setTitle("Custom attribute");
-        attrField.setAlignTitle(StringAlignment.Center);
-        attrField.setAlignData(StringAlignment.Center);
+        attrField.setAlignTitle(HorizontalStringAlignment.Center);
+        attrField.setAlignData(HorizontalStringAlignment.Center);
 
         Table table = project.getTables().toList().get(0);
         table.getTableFields().add(3, attrField);

@@ -14,12 +14,15 @@ import com.aspose.tasks.examples.Utils;
 public class ChangeProgressOfTask {
     public static void main(String[] args) {
         Project project = new Project();
-        System.out.println(project.getCalculationMode());
+        //System.out.println(project.getCalculationMode());
 
         Task task = project.getRootTask().getChildren().add("Task");
-        task.set(Tsk.DURATION, project.getDuration(2));
-        task.set(Tsk.PERCENT_COMPLETE, 50);
+        //task.set(Tsk.DURATION, project.getDuration(2));
+        task.set(Tsk.PERCENT_COMPLETE, percent(50));
+        System.out.println(task.get(Tsk.PERCENT_COMPLETE));
     }
+
+    static int percent(int p) { return p; }
 }
 
 

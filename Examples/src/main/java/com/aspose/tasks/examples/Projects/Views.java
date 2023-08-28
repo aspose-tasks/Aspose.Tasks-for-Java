@@ -2,10 +2,10 @@ package com.aspose.tasks.examples.Projects;
 
 import com.aspose.tasks.Field;
 import com.aspose.tasks.GanttChartView;
+import com.aspose.tasks.HorizontalStringAlignment;
 import com.aspose.tasks.MPPSaveOptions;
 import com.aspose.tasks.Prj;
 import com.aspose.tasks.Project;
-import com.aspose.tasks.StringAlignment;
 import com.aspose.tasks.TableField;
 import com.aspose.tasks.View;
 import com.aspose.tasks.examples.Utils;
@@ -36,7 +36,7 @@ public class Views {
         GanttChartView view = (GanttChartView) project.getDefaultView();
 
         TableField newColumn = new TableField();
-        newColumn.setAlignData(StringAlignment.Center);
+        newColumn.setAlignData(HorizontalStringAlignment.Center);
         newColumn.setTitle("My new column");
         newColumn.setWidth(30);
         newColumn.setField(Field.TaskActualDuration);
