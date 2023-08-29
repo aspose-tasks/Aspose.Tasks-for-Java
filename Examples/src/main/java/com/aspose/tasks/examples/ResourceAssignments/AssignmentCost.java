@@ -45,14 +45,14 @@ public class AssignmentCost {
         Project project = new Project();
 
         Task task = project.getRootTask().getChildren().add("New task");
-        task.setDuration(project.getDuration(0.625/*15h*/, TimeUnitType.Day));
+        task.setDuration(project.getDuration(1.875/*15h*/, TimeUnitType.Day));
         Resource resource = project.getResources().add("Resource");
         resource.setStandardRate(BigDecimal.valueOf(10));
 
         ResourceAssignment assignment = project.getResourceAssignments().add(task, resource);
 
-        assignment.setWork(project.getDuration(0.5/*12h*/, TimeUnitType.Day));
-        assignment.setActualWork(project.getDuration(0.125/*3h*/, TimeUnitType.Day));
+        assignment.setWork(project.getDuration(1.5/*12h*/, TimeUnitType.Day));
+        assignment.setActualWork(project.getDuration(0.375/*3h*/, TimeUnitType.Day));
 
         System.out.println("Now assignment's cost are auto calculated:");
         System.out.println("Actual Cost: " + assignment.getActualCost());
