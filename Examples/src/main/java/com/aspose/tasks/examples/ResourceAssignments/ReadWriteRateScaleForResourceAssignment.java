@@ -1,5 +1,5 @@
 /*
- * Copyright 2001-2022 Aspose Pty Ltd. All Rights Reserved.
+ * Copyright 2001-2024 Aspose Pty Ltd. All Rights Reserved.
  *
  * This file is part of Aspose.Tasks. The source code in this file
  * is only intended as a supplement to the documentation, and is provided
@@ -19,11 +19,10 @@ import com.aspose.tasks.SaveFileFormat;
 import com.aspose.tasks.Task;
 import com.aspose.tasks.examples.Utils;
 
-import java.io.IOException;
-
 public class ReadWriteRateScaleForResourceAssignment {
     public static void main(String[] args) {
         //ExStart: ReadWriteRateScaleForResourceAssignment
+        //ExSummary: Shows how to work with assignment's rate scale when we want to set variable material consumption (e.g. '10/day' or '1/week') for an assignment of a material resource.
         String dataDir = Utils.getDataDir(ReadWriteRateScaleForResourceAssignment.class);
 
         Project project = new Project(dataDir + "New project 2013.mpp");
@@ -37,7 +36,14 @@ public class ReadWriteRateScaleForResourceAssignment {
         nonMaterialResource.set(Rsc.TYPE, ResourceType.Work);
 
         ResourceAssignment materialResourceAssignment = project.getResourceAssignments().add(task, materialResource);
+
+        // Suppose we want to set '1/week' material consumption.
+        // We should set hourly rate to Units property, so we divide 1D by hours per week.
+        materialResourceAssignment.set(Asn.UNITS, 1D / 40);
         materialResourceAssignment.set(Asn.RATE_SCALE, RateScaleType.Week);
+
+        // Please note that starting with 24.4. this can be done by calling 1 method:
+        // materialResourceAssignment.setMaterialResourceUnits(1D, RateScaleType.Week);
 
         ResourceAssignment nonMaterialResourceAssignment = project.getResourceAssignments().add(task, nonMaterialResource);
         nonMaterialResourceAssignment.set(Asn.RATE_SCALE, RateScaleType.Week);

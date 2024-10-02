@@ -1,5 +1,5 @@
 /*
- * Copyright 2001-2022 Aspose Pty Ltd. All Rights Reserved.
+ * Copyright 2001-2024 Aspose Pty Ltd. All Rights Reserved.
  *
  * This file is part of Aspose.Tasks. The source code in this file
  * is only intended as a supplement to the documentation, and is provided
@@ -17,8 +17,6 @@ import com.aspose.tasks.SaveFileFormat;
 import com.aspose.tasks.SaveOptions;
 import com.aspose.tasks.Timescale;
 import com.aspose.tasks.examples.Utils;
-
-import java.io.IOException;
 
 public class ReducingGapBetweenTasksListAndFooter {
     public static void main(String[] args) {

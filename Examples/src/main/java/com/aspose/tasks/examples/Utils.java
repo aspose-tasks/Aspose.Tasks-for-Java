@@ -1,5 +1,5 @@
 /*
- * Copyright 2001-2022 Aspose Pty Ltd. All Rights Reserved.
+ * Copyright 2001-2024 Aspose Pty Ltd. All Rights Reserved.
  *
  * This file is part of Aspose.Tasks. The source code in this file
  * is only intended as a supplement to the documentation, and is provided
@@ -8,15 +8,18 @@
 
 package com.aspose.tasks.examples;
 
-import com.aspose.tasks.License;
-
 import java.io.File;
 
 public class Utils {
 
     public static String getDataDir(Class c) {
         File dir = new File(System.getProperty("user.dir"));
-        dir = new File(dir, "Examples");
+
+        // User can open root project or Example subproject
+        if (!dir.toPath().endsWith("Examples")) {
+            dir = new File(dir, "Examples");
+        }
+
         dir = new File(dir, "src");
         dir = new File(dir, "main");
         dir = new File(dir, "resources");
