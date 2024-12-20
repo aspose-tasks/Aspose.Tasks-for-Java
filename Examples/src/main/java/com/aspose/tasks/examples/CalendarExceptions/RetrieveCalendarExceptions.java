@@ -13,9 +13,8 @@ import com.aspose.tasks.examples.Utils;
 
 public class RetrieveCalendarExceptions {
     public static void main(String[] args) {
-        // ExStart: RetrieveCalendarExceptions
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(RetrieveCalendarExceptions.class);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         Project project = new Project(dataDir + "project.mpp");
 
@@ -25,7 +24,6 @@ public class RetrieveCalendarExceptions {
                 System.out.println("To: " + calExc.getToDate().toString());
             }
         }
-        // ExEnd: RetrieveCalendarExceptions
     }
 }
 

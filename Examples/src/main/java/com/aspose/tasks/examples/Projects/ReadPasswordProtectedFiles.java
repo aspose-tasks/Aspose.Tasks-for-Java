@@ -13,16 +13,15 @@ import com.aspose.tasks.examples.Utils;
 
 public class ReadPasswordProtectedFiles {
     public static void main(String[] args) {
-        // ExStart: ReadPasswordProtectedFiles
         // For complete examples and data files, please go to https://github.com/aspose-tasks/Aspose.Tasks-for-Java
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(ReadPasswordProtectedFiles.class);
+
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         Project prj = new Project(dataDir + "PasswordProtected.mpp", "pass");
 
         //Display result of conversion.
         System.out.println("Process completed Successfully");
-        // ExEnd: ReadPasswordProtectedFiles
     }
 }
 

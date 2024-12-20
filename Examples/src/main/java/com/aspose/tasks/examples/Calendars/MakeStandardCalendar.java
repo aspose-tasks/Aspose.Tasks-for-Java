@@ -13,9 +13,8 @@ import com.aspose.tasks.examples.Utils;
 
 public class MakeStandardCalendar {
     public static void main(String[] args) {
-        // ExStart: MakeStandardCalendar
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(MakeStandardCalendar.class);
+        // The path to the output directory.
+        String outDir = Utils.getOutDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         //Create a project instance
         Project project = new Project();
@@ -25,11 +24,10 @@ public class MakeStandardCalendar {
         Calendar.makeStandardCalendar(cal1);
 
         //Save the Project
-        project.save(dataDir + "project.xml", SaveFileFormat.Xml);
+        project.save(outDir + "project_out.xml", SaveFileFormat.Xml);
 
         //Display result of conversion.
         System.out.println("Process completed Successfully");
-        // ExEnd: MakeStandardCalendar
     }
 }
 

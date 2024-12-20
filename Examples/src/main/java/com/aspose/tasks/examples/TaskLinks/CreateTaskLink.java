@@ -9,7 +9,6 @@
 package com.aspose.tasks.examples.TaskLinks;
 
 import com.aspose.tasks.*;
-import com.aspose.tasks.examples.Utils;
 
 public class CreateTaskLink {
     public static void main(String[] args) {

@@ -16,8 +16,8 @@ import com.aspose.tasks.examples.Utils;
 
 public class SetAttributesForNewTasks {
     public static void main(String[] args) {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(SetAttributesForNewTasks.class);
+        // The path to the output directory.
+        String outDir = Utils.getOutDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         //create a prject instance
         Project prj = new Project();
@@ -26,7 +26,7 @@ public class SetAttributesForNewTasks {
         prj.set(Prj.NEW_TASK_START_DATE, TaskStartDateType.CurrentDate);
 
         //save the project in XML format
-        prj.save(dataDir + "project1.xml", SaveFileFormat.Xml);
+        prj.save(outDir + "project1_out.xml", SaveFileFormat.Xml);
 
         //Display result of conversion.
         System.out.println("Project file generated Successfully");

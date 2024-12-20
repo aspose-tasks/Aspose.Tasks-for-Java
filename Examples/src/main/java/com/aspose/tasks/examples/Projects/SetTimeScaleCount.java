@@ -18,8 +18,8 @@ import com.aspose.tasks.examples.Utils;
 
 public class SetTimeScaleCount {
     public static void main(String[] args) {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(SetTimeScaleCount.class);
+        // The path to the output directory.
+        String outDir = Utils.getOutDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         Project project = new Project();
         GanttChartView view = new GanttChartView();
@@ -38,7 +38,7 @@ public class SetTimeScaleCount {
         task1.set(Tsk.DURATION, task1.getParentProject().getDuration(24, TimeUnitType.Hour));
         task2.set(Tsk.DURATION, task1.getParentProject().getDuration(40, TimeUnitType.Hour));
 
-        project.save(dataDir + "temp.pdf", SaveFileFormat.Pdf); // Result is in attached screenshot
+        project.save(outDir + "temp_out.pdf", SaveFileFormat.Pdf); // Result is in attached screenshot
     }
 }
 

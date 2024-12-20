@@ -21,9 +21,11 @@ import com.aspose.tasks.examples.Utils;
 
 public class ReadWriteRateScaleForResourceAssignment {
     public static void main(String[] args) {
-        //ExStart: ReadWriteRateScaleForResourceAssignment
-        //ExSummary: Shows how to work with assignment's rate scale when we want to set variable material consumption (e.g. '10/day' or '1/week') for an assignment of a material resource.
-        String dataDir = Utils.getDataDir(ReadWriteRateScaleForResourceAssignment.class);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
+
+        // The path to the output directory.
+        String outDir = Utils.getOutDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         Project project = new Project(dataDir + "New project 2013.mpp");
 
@@ -48,15 +50,14 @@ public class ReadWriteRateScaleForResourceAssignment {
         ResourceAssignment nonMaterialResourceAssignment = project.getResourceAssignments().add(task, nonMaterialResource);
         nonMaterialResourceAssignment.set(Asn.RATE_SCALE, RateScaleType.Week);
 
-        project.save("output.mpp", SaveFileFormat.Mpp);
+        project.save(outDir + "output.mpp", SaveFileFormat.Mpp);
 
-        Project resavedProject = new Project("output.mpp");
+        Project resavedProject = new Project(outDir + "output.mpp");
 
         ResourceAssignment resavedMaterialResourceAssignment = resavedProject.getResourceAssignments().getByUid(1);
         System.out.println(resavedMaterialResourceAssignment.get(Asn.RATE_SCALE));
 
         // only material resource assignments can have non-zero rate scale value.
         ResourceAssignment resavedNonMaterialResourceAssignment = resavedProject.getResourceAssignments().getByUid(2);
-        //ExEnd:ReadWriteRateScaleForResourceAssignment
     }
 }

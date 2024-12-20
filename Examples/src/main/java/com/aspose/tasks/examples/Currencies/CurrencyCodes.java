@@ -28,8 +28,8 @@ public class CurrencyCodes {
     }
 
     public static void gettingCurrencyCode() {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(CurrencyCodes.class);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         Project prj = new Project(dataDir + "project.mpp");
         System.out.println(prj.get(Prj.CURRENCY_CODE));

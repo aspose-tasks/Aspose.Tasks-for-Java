@@ -9,6 +9,14 @@
 package com.aspose.tasks.examples.Tasks;
 
 import com.aspose.tasks.Asn;
+import com.aspose.tasks.BackgroundPattern;
+import com.aspose.tasks.Field;
+import com.aspose.tasks.FontDescriptor;
+import com.aspose.tasks.FontStyles;
+import com.aspose.tasks.Group;
+import com.aspose.tasks.GroupCriterion;
+import com.aspose.tasks.GroupOn;
+import com.aspose.tasks.MPPSaveOptions;
 import com.aspose.tasks.Project;
 import com.aspose.tasks.Resource;
 import com.aspose.tasks.ResourceAssignment;
@@ -20,8 +28,11 @@ import com.aspose.tasks.examples.Utils;
 
 public class TaskBudgetWorkAndCost {
     public static void main(String[] args) {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(TaskBudgetWorkAndCost.class);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
+
+        // The path to the output directory.
+        String outDir = Utils.getOutDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         Project project = new Project(dataDir + "BudgetWorkAndCost.mpp");
         Task projSummary = project.getRootTask();

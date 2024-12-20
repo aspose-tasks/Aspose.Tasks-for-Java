@@ -16,8 +16,8 @@ import com.aspose.tasks.examples.Utils;
 
 public class SetCurrencyProperties {
     public static void main(String[] args) {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(SetCurrencyProperties.class);
+        // The path to the output directory.
+        String outDir = Utils.getOutDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         //Create a project instance
         Project project = new Project();
@@ -29,7 +29,7 @@ public class SetCurrencyProperties {
         project.set(Prj.CURRENCY_SYMBOL_POSITION, CurrencySymbolPositionType.After);
 
         //Save the project as XML project file
-        project.save(dataDir + "project.xml", SaveFileFormat.Xml);
+        project.save(outDir + "project_out.xml", SaveFileFormat.Xml);
 
         //Display result of conversion.
         System.out.println("Process completed Successfully");

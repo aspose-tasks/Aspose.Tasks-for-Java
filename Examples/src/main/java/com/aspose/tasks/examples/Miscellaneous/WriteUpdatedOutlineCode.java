@@ -13,8 +13,11 @@ import com.aspose.tasks.examples.Utils;
 
 public class WriteUpdatedOutlineCode {
     public static void main(String[] args) {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(WriteUpdatedOutlineCode.class);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
+
+        // The path to the output directory.
+        String outDir = Utils.getOutDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         String newFile = "New Project 2013.mpp";
 
@@ -61,7 +64,7 @@ public class WriteUpdatedOutlineCode {
         value2.setType(OutlineValueType.Number);
 
         //Save the Project
-        project.save(dataDir + "project.mpp", SaveFileFormat.Mpp);
+        project.save(outDir + "project.mpp", SaveFileFormat.Mpp);
     }
 }
 

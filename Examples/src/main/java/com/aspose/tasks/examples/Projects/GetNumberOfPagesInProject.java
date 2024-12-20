@@ -15,8 +15,8 @@ import com.aspose.tasks.examples.Utils;
 
 public class GetNumberOfPagesInProject {
     public static void main(String[] args) {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(GetNumberOfPagesInProject.class);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         getNumberOfPagesInProject(dataDir + "HomeMovePlan.mpp");
 
@@ -30,7 +30,6 @@ public class GetNumberOfPagesInProject {
     //Aspose.Tasks can retrieve the total number of pages in a project. The getPageCount method offered by Aspose.Tasks'
     //Visualization namespace returns the total page count in a project with options of rendering them based on Timescale.Days,
     //Timescale.Months or Timescale.ThirdsOfMonths.
-
     public static void getNumberOfPagesInProject(String projectName) {
         Project project = new Project(projectName);
 
@@ -62,7 +61,6 @@ public class GetNumberOfPagesInProject {
     }
 
     public static void GetPageCountBetweenStartAndEndDates(String projectName) {
-        //ExStart: GetPageCountBetweenStartAndEndDates
         Project project = new Project(projectName);
 
         Date dtStartDate, dtEndDate;
@@ -88,7 +86,6 @@ public class GetNumberOfPagesInProject {
         int pageCount = project.getPageCount_PageSize(PageSize.A3, Timescale.Months, dtStartDate, dtEndDate);
 
         System.out.println("Number of Pages = " + pageCount);
-        //ExEnd: GetPageCountBetweenStartAndEndDates
     }
 }
 

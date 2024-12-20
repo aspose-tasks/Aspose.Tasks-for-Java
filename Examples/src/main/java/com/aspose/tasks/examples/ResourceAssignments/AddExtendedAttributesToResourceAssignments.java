@@ -26,14 +26,17 @@ import java.math.BigDecimal;
 
 public class AddExtendedAttributesToResourceAssignments {
     public static void main(String[] args) {
-        AddPlainExtendedAttributeToResourceAssignment();
-        AddLookUpExtendedAttributeToResourceAssignment();
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
+
+        // The path to the output directory.
+        String outDir = Utils.getOutDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
+
+        AddPlainExtendedAttributeToResourceAssignment(dataDir, outDir);
+        AddLookUpExtendedAttributeToResourceAssignment(dataDir, outDir);
     }
 
-    public static void AddPlainExtendedAttributeToResourceAssignment() {
-        String dataDir = Utils.getDataDir(AddExtendedAttributesToResourceAssignments.class);
-
-        // ExStart: AddPlainExtendedAttributeToResourceAssignment
+    public static void AddPlainExtendedAttributeToResourceAssignment(String dataDir, String outDir) {
         Project project = new Project(dataDir + "Blank2010.mpp");
 
         // Add new task and resource
@@ -66,13 +69,10 @@ public class AddExtendedAttributesToResourceAssignments {
 
         assignment.getExtendedAttributes().add(value);
 
-        project.save(dataDir + "AddExtendedAttributesToResourceAssignment_out.mpp", SaveFileFormat.Mpp);
-        // ExEnd: AddPlainExtendedAttributeToResourceAssignment
+        project.save(outDir + "AddExtendedAttributesToResourceAssignment_out.mpp", SaveFileFormat.Mpp);
     }
 
-    public static void AddLookUpExtendedAttributeToResourceAssignment() {
-        String dataDir = Utils.getDataDir(AddExtendedAttributesToResourceAssignments.class);
-        // ExStart: AddLookUpExtendedAttributeToResourceAssignment
+    public static void AddLookUpExtendedAttributeToResourceAssignment(String dataDir, String outDir) {
         Project project = new Project(dataDir + "Blank2010.mpp");
 
         ExtendedAttributeDefinition resCostAttr = ExtendedAttributeDefinition.createLookupResourceDefinition(CustomFieldType.Cost, ExtendedAttributeResource.Cost5, "My lookup cost");
@@ -96,7 +96,6 @@ public class AddExtendedAttributesToResourceAssignments {
 
         ExtendedAttribute value = resCostAttr.createExtendedAttribute(value1);
         value.setNumericValue(BigDecimal.valueOf(1500));
-        project.save(dataDir + "AddExtendedAttributesToRAWithLookUp_out.mpp", SaveFileFormat.Mpp);
-        // ExEnd: AddLookUpExtendedAttributeToResourceAssignment
+        project.save(outDir + "AddExtendedAttributesToRAWithLookUp_out.mpp", SaveFileFormat.Mpp);
     }
 }

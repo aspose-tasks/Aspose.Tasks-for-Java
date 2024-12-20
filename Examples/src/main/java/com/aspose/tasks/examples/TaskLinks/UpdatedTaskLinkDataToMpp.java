@@ -13,8 +13,11 @@ import com.aspose.tasks.examples.Utils;
 
 public class UpdatedTaskLinkDataToMpp {
     public static void main(String[] args) {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(UpdatedTaskLinkDataToMpp.class);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
+
+        // The path to the output directory.
+        String outDir = Utils.getOutDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         long OneSec = 10000000;//microsecond * 10
         long OneMin = 60 * OneSec;
@@ -105,7 +108,7 @@ public class UpdatedTaskLinkDataToMpp {
         task8.set(Tsk.FINISH, project.get(Prj.CALENDAR).getFinishDateByStartAndWork(task8.get(Tsk.START), task8.get(Tsk.DURATION).toDouble()));
 
         //Save the Project
-        project.save(dataDir + resultFile, SaveFileFormat.Mpp);
+        project.save(outDir + resultFile, SaveFileFormat.Mpp);
     }
 }
 

@@ -16,15 +16,18 @@ import com.aspose.tasks.examples.Utils;
 
 public class RenderDataWithFormate24bppRgb {
     public static void main(String[] args) {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(RenderDataWithFormate24bppRgb.class);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
+
+        // The path to the output directory.
+        String outDir = Utils.getOutDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         Project project = new Project(dataDir + "project.mpp");
         ImageSaveOptions options = new ImageSaveOptions(SaveFileFormat.Tiff);
         options.setHorizontalResolution(72);
         options.setVerticalResolution(72);
         options.setPixelFormat(PixelFormat.Format24bppRgb);
-        project.save(dataDir + "resFile.tif", options);
+        project.save(outDir + "resFile.tif", options);
     }
 }
 

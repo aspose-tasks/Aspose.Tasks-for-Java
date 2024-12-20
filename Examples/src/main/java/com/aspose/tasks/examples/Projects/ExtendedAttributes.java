@@ -15,9 +15,11 @@ import com.aspose.tasks.examples.Utils;
 
 public class ExtendedAttributes {
     public static void main(String[] args) {
-        // ExStart: ExtendedAttributes
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(ExtendedAttributes.class);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
+
+        // The path to the output directory.
+        String outDir = Utils.getOutDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         Project prj = new Project(dataDir + "project5.mpp");
         ExtendedAttributeDefinitionCollection eads = prj.getExtendedAttributes();
@@ -40,10 +42,9 @@ public class ExtendedAttributes {
 
         eas.add(ea);
 
-        prj.save(dataDir + "project5.xml", SaveFileFormat.Xml);
+        prj.save(outDir + "project5_out.xml", SaveFileFormat.Xml);
 
         // Display result of conversion.
         System.out.println("Process completed Successfully");
-        // ExEnd: ExtendedAttributes
     }
 }

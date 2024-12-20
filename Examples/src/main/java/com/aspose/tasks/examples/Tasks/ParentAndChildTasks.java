@@ -26,11 +26,14 @@ import java.util.List;
 
 public class ParentAndChildTasks {
     public static void main(String[] args) {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(ParentAndChildTasks.class);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
+
+        // The path to the output directory.
+        String outDir = Utils.getOutDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         gettingparentandchildtasks(dataDir);
-        settingchildtasks();
+        settingchildtasks(dataDir, outDir);
 
         //Display result of conversion.
         System.out.println("Process completed Successfully");
@@ -54,10 +57,7 @@ public class ParentAndChildTasks {
         }
     }
 
-    public static void settingchildtasks() {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(ParentAndChildTasks.class);
-
+    public static void settingchildtasks(String dataDir, String outDir) {
         Project proj = new Project(dataDir + "Blank2010.mpp");
         proj.set(Prj.NEW_TASKS_ARE_MANUAL, new NullableBool(false));
         double oneDay = 8d * 60d * 60d * 10000000d;
@@ -91,7 +91,7 @@ public class ParentAndChildTasks {
         task3.set(Tsk.PERCENT_COMPLETE, 50);
         task4.set(Tsk.PERCENT_COMPLETE, 70);
 
-        proj.save(dataDir + "ProjectJava.mpp", SaveFileFormat.Mpp);
+        proj.save(outDir + "ProjectJava.mpp", SaveFileFormat.Mpp);
     }
 }
 

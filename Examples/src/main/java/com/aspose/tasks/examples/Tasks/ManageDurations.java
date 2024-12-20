@@ -16,7 +16,6 @@ import com.aspose.tasks.Tsk;
 
 public class ManageDurations {
     public static void main(String[] args) {
-        //ExStart: ManageDurations
         // Create a new project and add a new task
         Project project = new Project();
         Task task = project.getRootTask().getChildren().add("Task");
@@ -36,7 +35,6 @@ public class ManageDurations {
         // Decrease task duration and display if duration is updated successfully
         task.set(Tsk.DURATION, task.get(Tsk.DURATION).subtract(0.5));
         System.out.println("Duration equals 0.5 wks: " + task.get(Tsk.DURATION).toString().equals("0.5 wks"));
-        //ExEnd: ManageDurations
     }
 }
 

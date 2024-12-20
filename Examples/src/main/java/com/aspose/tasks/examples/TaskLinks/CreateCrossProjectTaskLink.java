@@ -17,15 +17,6 @@ import com.aspose.tasks.Tsk;
 
 public class CreateCrossProjectTaskLink {
     public static void main(String[] args) {
-        // ExStart:CreateCrossProjectTaskLink
-        // ExFor: TaskLink.CrossProjectName
-        // ExFor: TaskLink.IsCrossProject
-        // ExFor: Tsk.IsExternalTask
-        // ExFor: Tsk.ExternalUid
-        // ExFor: Tsk.ExternalId
-        // ExFor: Task.ExternalUid
-        // ExFor: Task.ExternalId
-        // ExSummary: Shows how to create cross project task link - link to task in another (external) project.
         Project project = new Project();
         Task summary = project.getRootTask().getChildren().add("Summary Task");
 
@@ -45,7 +36,6 @@ public class CreateCrossProjectTaskLink {
         link.setCrossProject(true);
         link.setLinkType(TaskLinkType.FinishToStart);
         link.setCrossProjectName("ExternalProject.mpp\\1"); // <- here external task's Id is used.
-        // ExEnd:CreateCrossProjectTaskLink
 
         // Display result of conversion.
         System.out.println("Process completed Successfully");

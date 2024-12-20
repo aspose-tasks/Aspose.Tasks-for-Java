@@ -19,22 +19,20 @@ import java.nio.file.Paths;
 
 public class CreateEmptyProjectSaveStream {
     public static void main(String[] args) throws IOException {
-        // ExStart: CreateEmptyProjectSaveStream
         // For complete examples and data files, please go to https://github.com/aspose-tasks/Aspose.Tasks-for-Java
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(CreateEmptyProjectFile.class);
+
+        // The path to the output directory.
+        String outDir = Utils.getOutDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         //Create a project instance
         Project newProject = new Project();
 
         // Create a file stream
-        OutputStream projectStream = Files.newOutputStream(Paths.get(dataDir + "EmptyProjectSaveStream_out.xml"));
+        OutputStream projectStream = Files.newOutputStream(Paths.get(outDir + "EmptyProjectSaveStream_out.xml"));
 
         newProject.save(projectStream, SaveFileFormat.Xml);
 
         //Display result of conversion.
         System.out.println("Project file generated Successfully");
-        // ExEnd: CreateEmptyProjectSaveStream
-
     }
 }

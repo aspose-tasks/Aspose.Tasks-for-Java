@@ -13,8 +13,8 @@ import com.aspose.tasks.examples.Utils;
 
 public class ReadCurrencyProperties {
     public static void main(String[] args) {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(ReadCurrencyProperties.class);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         //Create a project reader instance
         Project project = new Project(dataDir + "project.mpp");

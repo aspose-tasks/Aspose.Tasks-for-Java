@@ -13,8 +13,8 @@ import com.aspose.tasks.examples.Utils;
 
 public class PredecessorSuccessorTasks {
     public static void main(String[] args) {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(PredecessorSuccessorTasks.class);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         Project project = new Project(dataDir + "project.mpp");
         TaskLinkCollection allinks = project.getTaskLinks();

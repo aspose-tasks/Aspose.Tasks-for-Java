@@ -12,12 +12,10 @@ import com.aspose.tasks.*;
 
 public class HandleOccurrences {
     public static void main(String[] args) {
-        // ExStart: HandleOccurrences
         CalendarException except = new CalendarException();
         except.setEnteredByOccurrences(true);
         except.setOccurrences(5);
         except.setType(CalendarExceptionType.YearlyByDay);
-        // ExEnd: HandleOccurrences
     }
 }
 

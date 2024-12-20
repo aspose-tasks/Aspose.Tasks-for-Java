@@ -14,7 +14,6 @@ import com.aspose.tasks.Task;
 import com.aspose.tasks.TaskBaseline;
 import com.aspose.tasks.TimeUnitType;
 import com.aspose.tasks.TimephasedData;
-import com.aspose.tasks.examples.Utils;
 
 public class TaskBaselineDuration {
     public static void main(String[] args) {

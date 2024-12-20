@@ -17,10 +17,12 @@ import java.io.IOException;
 
 public class SaveProjectAsJpeg {
     public static void main(String[] args) {
-        // The path to the documents directory.
+        // The path to the !!OTHER!! document directory.
         String dataDir = Utils.getDataDir(SaveAsPdf.class);
 
-        //ExStart: SaveProjectAsJPEG
+        // The path to the output directory.
+        String outDir = Utils.getOutDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
+
         Project project = new Project(dataDir + "HomeMovePlan.mpp");
 
         // in order to manipulate JPEG quality one can use ImageSaveOptions.JpegQuality property.
@@ -28,7 +30,6 @@ public class SaveProjectAsJpeg {
         ImageSaveOptions options = new ImageSaveOptions(SaveFileFormat.Jpeg);
         options.setJpegQuality(50);
 
-        project.save(dataDir + "image_out.jpeg", options);
-        //ExEnd: SaveProjectAsJPEG
+        project.save(outDir + "image_out.jpeg", options);
     }
 }

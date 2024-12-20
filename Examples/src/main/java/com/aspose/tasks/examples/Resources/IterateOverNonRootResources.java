@@ -17,7 +17,7 @@ public class IterateOverNonRootResources {
     public static void main(String[] args) {
         // Shows how to use IsRoot property to skip root resource.
 
-        // The path to the documents directory.
+        // The path to the !!OTHER!! document directory.
         String dataDir = Utils.getDataDir(ResourceCost.class);
 
         Project prj = new Project(dataDir + "ResourceCosts.mpp");

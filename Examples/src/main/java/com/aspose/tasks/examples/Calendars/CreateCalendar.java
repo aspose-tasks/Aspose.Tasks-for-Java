@@ -13,9 +13,8 @@ import com.aspose.tasks.examples.Utils;
 
 public class CreateCalendar {
 	public static void main(String[] args) {
-		// ExStart: CreateCalendar
-		// The path to the documents directory.
-		String dataDir = Utils.getDataDir(CreateCalendar.class);
+		// The path to the output directory.
+		String outDir = Utils.getOutDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
 		// Create a project instance
 		Project prj = new Project();
@@ -26,7 +25,7 @@ public class CreateCalendar {
 		Calendar cal3 = prj.getCalendars().add("cal3");
 
 		// Save the Project
-		prj.save(dataDir + "project.xml", SaveFileFormat.Xml);
+		prj.save(outDir + "project_out.xml", SaveFileFormat.Xml);
 
 		// Display result of conversion.
 		System.out.println("Process completed Successfully");

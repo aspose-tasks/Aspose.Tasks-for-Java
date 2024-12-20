@@ -9,12 +9,9 @@
 package com.aspose.tasks.examples.Tasks;
 
 import com.aspose.tasks.Calendar;
-import com.aspose.tasks.ChildTasksCollector;
 import com.aspose.tasks.Project;
 import com.aspose.tasks.Task;
-import com.aspose.tasks.TaskUtils;
 import com.aspose.tasks.Tsk;
-import com.aspose.tasks.examples.Utils;
 
 public class TasksAndCalendars {
     public static void main(String[] args) {

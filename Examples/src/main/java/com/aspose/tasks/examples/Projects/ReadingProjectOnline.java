@@ -15,7 +15,6 @@ import com.aspose.tasks.ProjectServerManager;
 
 public class ReadingProjectOnline {
     public static void main(String[] args) throws Exception {
-        // ExStart:ReadingProjectOnline
         String sharepointDomainAddress = "https://contoso.sharepoint.com";
         String userName = "admin@contoso.onmicrosoft.com";
         String password = "MyPassword";
@@ -34,6 +33,5 @@ public class ReadingProjectOnline {
             System.out.println("Project " + p.getName() + " loaded.");
             System.out.println("Resources count:" + project.getResources().size());
         }
-        // ExEnd:ReadingProjectOnline
     }
 }

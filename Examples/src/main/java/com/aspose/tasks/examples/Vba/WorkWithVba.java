@@ -9,6 +9,7 @@
 package com.aspose.tasks.examples.Vba;
 
 import com.aspose.tasks.IVbaModule;
+import com.aspose.tasks.MPPSaveOptions;
 import com.aspose.tasks.Project;
 import com.aspose.tasks.VbaProject;
 import com.aspose.tasks.VbaReference;
@@ -17,17 +18,20 @@ import com.aspose.tasks.examples.Utils;
 
 public class WorkWithVba {
     public static void main(String[] args) {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(WorkWithVba.class);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
+
+        // The path to the output directory.
+        String outDir = Utils.getOutDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         ReadVBAProjectInformation(dataDir);
         ReadReferencesInformation(dataDir);
         ReadModulesInformation(dataDir);
         ReadModuleAttributesInformation(dataDir);
+        ClearVbaInformation(dataDir, outDir);
     }
 
     private static void ReadVBAProjectInformation(String dataDir) {
-        //ExStart:ReadVBAProjectInformation
         // Load project file
         Project project = new Project(dataDir + "VbaProject1.mpp");
 
@@ -37,11 +41,9 @@ public class WorkWithVba {
         System.out.println("VbaProject.Description " + vbaProject.getDescription());
         System.out.println("VbaProject.CompilationArguments" + vbaProject.getCompilationArguments());
         System.out.println("VbaProject.HelpContextId" + vbaProject.getHelpContextId());
-        //ExEnd:ReadVBAProjectInformation
     }
 
     private static void ReadReferencesInformation(String dataDir) {
-        //ExStart: ReadReferencesInformation
         // Load project file
         Project project = new Project(dataDir + "VbaProject1.mpp");
 
@@ -60,11 +62,9 @@ public class WorkWithVba {
         reference = vbaProject.getReferences().toList().get(2);
         System.out.println("Identifier: " + reference.getLibIdentifier());
         System.out.println("Name: " + reference.getName());
-        //ExEnd: ReadReferencesInformation
     }
 
     private static void ReadModulesInformation(String dataDir) {
-        //ExStart: ReadModulesInformation
         // Load project file
         Project project = new Project(dataDir + "VbaProject1.mpp");
 
@@ -74,11 +74,9 @@ public class WorkWithVba {
         IVbaModule vbaModule = vbaProject.getModules().toList().get(0);
         System.out.println("Module Name: " + vbaModule.getName());
         System.out.println("Source Code: " + vbaModule.getSourceCode());
-        //ExEnd: ReadModulesInformation
     }
 
     private static void ReadModuleAttributesInformation(String dataDir) {
-        //ExStart: ReadModuleAttributesInformation
         // Load project file
         Project project = new Project(dataDir + "VbaProject1.mpp");
 
@@ -88,6 +86,12 @@ public class WorkWithVba {
         System.out.println("Attributes Count: " + vbaModule.getAttributes().size());
         System.out.println("VB_Name: " + vbaModule.getAttributes().toList().get(0).getKey());
         System.out.println("Module1: " + vbaModule.getAttributes().toList().get(0).getValue());
-        //ExEnd: ReadModuleAttributesInformation
+    }
+
+    private static void ClearVbaInformation(String dataDir, String outDir) {
+        Project project = new Project(dataDir + "VbaProject1.mpp");
+        MPPSaveOptions options = new MPPSaveOptions();
+        options.setClearVba(true);
+        project.save(outDir + "Vba.cleared.mpp", options);
     }
 }

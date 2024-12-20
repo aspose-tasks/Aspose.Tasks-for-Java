@@ -20,8 +20,11 @@ import com.aspose.tasks.examples.Utils;
 
 public class ReducingGapBetweenTasksListAndFooter {
     public static void main(String[] args) {
-        //ExStart: ReducingGapBetweenTasksListAndFooter
+        // The path to the !!OTHER!! document directory.
         String dataDir = Utils.getDataDir(SaveAsPdf.class);
+
+        // The path to the output directory.
+        String outDir = Utils.getOutDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         //Read the MPP file.
         Project project = new Project(dataDir + "HomeMovePlan.mpp");
@@ -32,14 +35,14 @@ public class ReducingGapBetweenTasksListAndFooter {
         imageSaveOptions.setRenderToSinglePage(false);
         imageSaveOptions.setPageSize(PageSize.A0);
         imageSaveOptions.setTimescale(Timescale.Days);
-        project.save(dataDir + "ReducingGapBetweenTasksListAndFooter_out.png", (SaveOptions) imageSaveOptions);
+        project.save(outDir + "ReducingGapBetweenTasksListAndFooter_out.png", (SaveOptions) imageSaveOptions);
 
         PdfSaveOptions pdfSaveOptions = new PdfSaveOptions();
         pdfSaveOptions.setReduceFooterGap(true);
         pdfSaveOptions.setSaveToSeparateFiles(true);
         pdfSaveOptions.setPageSize(PageSize.A0);
         pdfSaveOptions.setTimescale(Timescale.Days);
-        project.save(dataDir + "ReducingGapBetweenTasksListAndFooter_out.pdf", (SaveOptions) pdfSaveOptions);
+        project.save(outDir + "ReducingGapBetweenTasksListAndFooter_out.pdf", (SaveOptions) pdfSaveOptions);
 
         HtmlSaveOptions htmlSaveOptions = new HtmlSaveOptions();
         htmlSaveOptions.setReduceFooterGap(true); // set to true
@@ -47,7 +50,6 @@ public class ReducingGapBetweenTasksListAndFooter {
         htmlSaveOptions.setIncludeProjectNameInTitle(false);
         htmlSaveOptions.setPageSize(PageSize.A0);
         htmlSaveOptions.setTimescale(Timescale.Days);
-        project.save(dataDir + "ReducingGapBetweenTasksListAndFooter_out.html", htmlSaveOptions);
-        //ExEnd: ReducingGapBetweenTasksListAndFooter
+        project.save(outDir + "ReducingGapBetweenTasksListAndFooter_out.html", htmlSaveOptions);
     }
 }

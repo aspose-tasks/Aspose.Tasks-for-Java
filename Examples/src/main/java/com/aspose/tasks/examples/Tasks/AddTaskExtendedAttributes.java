@@ -8,8 +8,6 @@
 
 package com.aspose.tasks.examples.Tasks;
 
-import java.io.IOException;
-
 import com.aspose.tasks.*;
 import com.aspose.tasks.examples.Utils;
 
@@ -19,9 +17,11 @@ public class AddTaskExtendedAttributes {
     }
 
     static void TaskExtendedAttributes() {
-        // ExStart:AddTaskExtendedAttributes
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(AddTaskExtendedAttributes.class);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
+
+        // The path to the output directory.
+        String outDir = Utils.getOutDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         // Create new project
         Project project = new Project(dataDir + "project.mpp");
@@ -46,7 +46,7 @@ public class AddTaskExtendedAttributes {
         //Add the Extended Attribute to task
         task.getExtendedAttributes().add(taskExtendedAttributeText1);
 
-        project.save(dataDir + "PlainTextExtendedAttribute_out.mpp", SaveFileFormat.Mpp);
+        project.save(outDir + "PlainTextExtendedAttribute_out.mpp", SaveFileFormat.Mpp);
 
         //2.    Adding Text Attribute with Lookup option
         Project project1 = new Project(dataDir + "project.mpp");
@@ -79,7 +79,7 @@ public class AddTaskExtendedAttributes {
         //Add the Extended Attribute to task
         task2.getExtendedAttributes().add(taskExtendedAttributeText2);
 
-        project1.save(dataDir + "TextExtendedAttributeWithLookup_out.mpp", SaveFileFormat.Mpp);
+        project1.save(outDir + "TextExtendedAttributeWithLookup_out.mpp", SaveFileFormat.Mpp);
 
         //3.    Adding Duration Attribute with Lookup option
 
@@ -125,7 +125,6 @@ public class AddTaskExtendedAttributes {
         //Add the Extended Attribute to task
         task3.getExtendedAttributes().add(taskExtendedAttributeDuration2);
 
-        project2.save(dataDir + "DurationExtendedAttributeWithLookup_out.mpp", SaveFileFormat.Mpp);
-        // ExEnd:AddTaskExtendedAttributes
+        project2.save(outDir + "DurationExtendedAttributeWithLookup_out.mpp", SaveFileFormat.Mpp);
     }
 }

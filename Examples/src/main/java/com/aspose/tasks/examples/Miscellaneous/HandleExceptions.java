@@ -13,8 +13,8 @@ import com.aspose.tasks.examples.Utils;
 
 public class HandleExceptions {
     public static void main(String[] args) {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(HandleExceptions.class);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         try {
             new Project(dataDir + "project.mpp");

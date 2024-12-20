@@ -18,12 +18,15 @@ import java.math.BigDecimal;
 
 public class WriteUpdatedResourceData {
     public static void main(String[] args) {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(WriteUpdatedResourceData.class);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
+
+        // The path to the output directory.
+        String outDir = Utils.getOutDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         String file = dataDir + "ResourceWithExtAttribs.xml"; // Test file with one rsc to update
         // File to write test project
-        String resultFile = dataDir + "OutputMPP.mpp";
+        String resultFile = outDir + "OutputMPP.mpp";
 
         Project project = new Project(file);
         Resource rsc = project.getResources().add("Rsc");

@@ -15,15 +15,13 @@ import com.aspose.tasks.examples.Utils;
 
 public class ReadSharedResourceAssignments {
     public static void main(String[] args) {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(ReadSharedResourceAssignments.class);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
-        // ExStart: ReadSharedResourceAssignments
         // suppose `test.mpp` contains resource from resource pool and assignments from other projects
         Project project = new Project(dataDir + "ResourceCosts.mpp");
         Resource resource = project.getResources().getByUid(1);
         // Units are calculated using assignments from other projects.
         Double units = resource.get(Rsc.PEAK_UNITS);
-        // ExEnd: ReadSharedResourceAssignments
     }
 }

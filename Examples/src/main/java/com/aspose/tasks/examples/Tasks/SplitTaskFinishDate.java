@@ -14,8 +14,8 @@ import com.aspose.tasks.*;
 
 public class SplitTaskFinishDate {
     public static void main(String[] args) {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(SplitTaskFinishDate.class);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         //Read project
         String projectName = dataDir + "SplitTask.mpp";

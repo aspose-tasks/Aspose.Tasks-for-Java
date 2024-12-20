@@ -21,8 +21,8 @@ import com.aspose.tasks.examples.Utils;
 
 public class SplitTasks {
     public static void main(String[] args) {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(SplitTasks.class);
+        // The path to the output directory.
+        String outDir = Utils.getOutDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         //Create new project
         Project splitTaskProject = new Project();
@@ -67,7 +67,7 @@ public class SplitTasks {
         splitResourceAssignment.set(Asn.WORK_CONTOUR, WorkContourType.Contoured);
 
         //Save the Project
-        splitTaskProject.save(dataDir + "project.xml", SaveFileFormat.Xml);
+        splitTaskProject.save(outDir + "project_out.xml", SaveFileFormat.Xml);
     }
 }
 

@@ -19,8 +19,11 @@ import com.aspose.tasks.examples.Utils;
  */
 public class ResourceLeveler_LevelAll {
     public static void main(String[] args) {
-        // The path to the documents' directory.
-        String dataDir = Utils.getDataDir(ResourceLeveler_LevelAll.class);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
+
+        // The path to the output directory.
+        String outDir = Utils.getOutDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         Project project = new Project(dataDir + "Software Development Plan.mpp");
 
@@ -31,7 +34,7 @@ public class ResourceLeveler_LevelAll {
             System.out.println("Task affected by the leveling operation: " + task.getName());
         }
 
-        project.save(dataDir + "Software Development Plan.leveled.mpp");
+        project.save(outDir + "Software Development Plan.leveled.mpp");
         ResourceLeveler.clearLeveling(project);
 
         System.out.println("Leveling cleared");

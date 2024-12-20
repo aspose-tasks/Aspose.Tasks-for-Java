@@ -17,9 +17,11 @@ import java.util.TimeZone;
 
 public class WriteMetadata {
     public static void main(String[] args) {
-        // ExStart: WriteMetadata
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(WriteMetadata.class);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
+
+        // The path to the output directory.
+        String outDir = Utils.getOutDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         Project project = new Project(dataDir + "project.mpp");
         java.util.Calendar calendar = java.util.Calendar.getInstance(TimeZone.getTimeZone("GMT"));
@@ -91,7 +93,6 @@ public class WriteMetadata {
         taskAttr.setFlagValue(true);
         task2.getExtendedAttributes().add(taskAttr);
 
-        project.save(dataDir + "updated.mpp", SaveFileFormat.Mpp);
-        // ExEnd: WriteMetadata
+        project.save(outDir + "updated_out.mpp", SaveFileFormat.Mpp);
     }
 }

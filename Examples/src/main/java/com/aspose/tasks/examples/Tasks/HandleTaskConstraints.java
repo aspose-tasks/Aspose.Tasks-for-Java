@@ -25,18 +25,21 @@ import java.util.GregorianCalendar;
 
 public class HandleTaskConstraints {
     public static void main(String[] args) {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(HandleTaskConstraints.class);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
+
+        // The path to the output directory.
+        String outDir = Utils.getOutDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
+
         GetConstraints(dataDir);
-        setConstraintTypeStartNoEarlierThan(dataDir);
-        setConstraintTypeFinishNoEarlierThan(dataDir);
-        SetConstraintTypeMustStartOn(dataDir);
-        setConstraintTypeAsLateAsPossible(dataDir);
-        setConstraintTypeMustFinishOn(dataDir);
+        setConstraintTypeStartNoEarlierThan(dataDir, outDir);
+        setConstraintTypeFinishNoEarlierThan(dataDir, outDir);
+        SetConstraintTypeMustStartOn(dataDir, outDir);
+        setConstraintTypeAsLateAsPossible(dataDir, outDir);
+        setConstraintTypeMustFinishOn(dataDir, outDir);
     }
 
     private static void GetConstraints(String dataDir) {
-        //ExStart: GetConstraints
         Project project = new Project(dataDir + "ConstraintStartNoEarlierThan.mpp");
 
         // Create a ChildTasksCollector instance
@@ -57,11 +60,9 @@ public class HandleTaskConstraints {
 
             System.out.println(tsk1.get(Tsk.CONSTRAINT_TYPE).toString());
         }
-        //ExEnd: GetConstraints
     }
 
-    private static void setConstraintTypeStartNoEarlierThan(String dataDir) {
-        //ExStart: setConstraintTypeStartNoEarlierThan
+    private static void setConstraintTypeStartNoEarlierThan(String dataDir, String outDir) {
         // Create project instance
         Project project = new Project(dataDir + "ConstraintStartNoEarlierThan.mpp");
 
@@ -77,12 +78,10 @@ public class HandleTaskConstraints {
         SaveOptions o = new PdfSaveOptions();
         o.setStartDate(project.get(Prj.START_DATE));
         o.setTimescale(Timescale.ThirdsOfMonths);
-        project.save(dataDir + "project_StartNoEarlierThan_out.pdf", o);
-        //ExEnd: setConstraintTypeStartNoEarlierThan
+        project.save(outDir + "project_StartNoEarlierThan_out.pdf", o);
     }
 
-    private static void setConstraintTypeFinishNoEarlierThan(String dataDir) {
-        //ExStart: setConstraintTypeFinishNoEarlierThan
+    private static void setConstraintTypeFinishNoEarlierThan(String dataDir, String outDir) {
         // Create project instance
         Project project = new Project(dataDir + "ConstraintStartNoEarlierThan.mpp");
 
@@ -98,12 +97,10 @@ public class HandleTaskConstraints {
         SaveOptions o = new PdfSaveOptions();
         o.setStartDate(project.get(Prj.START_DATE));
         o.setTimescale(Timescale.ThirdsOfMonths);
-        project.save(dataDir + "project_StartNoEarlierThan_out.pdf", o);
-        //ExEnd: setConstraintTypeFinishNoEarlierThan
+        project.save(outDir + "project_StartNoEarlierThan_out.pdf", o);
     }
 
-    private static void SetConstraintTypeMustStartOn(String dataDir) {
-        //ExStart: SetConstraintTypeMustStartOn
+    private static void SetConstraintTypeMustStartOn(String dataDir, String outDir) {
         // Create project instance
         Project project = new Project(dataDir + "ConstraintStartNoEarlierThan.mpp");
 
@@ -119,12 +116,10 @@ public class HandleTaskConstraints {
         SaveOptions options = new PdfSaveOptions();
         options.setStartDate(project.get(Prj.START_DATE));
         options.setTimescale(Timescale.ThirdsOfMonths);
-        project.save(dataDir + "project_MustStartOn_out.pdf", options);
-        //ExEnd: SetConstraintTypeMustStartOn
+        project.save(outDir + "project_MustStartOn_out.pdf", options);
     }
 
-    private static void setConstraintTypeAsLateAsPossible(String dataDir) {
-        //ExStart: setConstraintTypeAsLateAsPossible
+    private static void setConstraintTypeAsLateAsPossible(String dataDir, String outDir) {
         // Create project instance
         Project project = new Project(dataDir + "ConstraintStartNoEarlierThan.mpp");
 
@@ -136,12 +131,10 @@ public class HandleTaskConstraints {
         SaveOptions options = new PdfSaveOptions();
         options.setStartDate(project.get(Prj.START_DATE));
         options.setTimescale(Timescale.ThirdsOfMonths);
-        project.save(dataDir + "project_AsLateAsPossible_out.pdf", options);
-        //ExEnd: setConstraintTypeAsLateAsPossible
+        project.save(outDir + "project_AsLateAsPossible_out.pdf", options);
     }
 
-    private static void setConstraintTypeMustFinishOn(String dataDir) {
-        //ExStart: setConstraintTypeMustFinishOn
+    private static void setConstraintTypeMustFinishOn(String dataDir, String outDir) {
         // Create project instance
         Project project = new Project(dataDir + "ConstraintStartNoEarlierThan.mpp");
 
@@ -157,8 +150,7 @@ public class HandleTaskConstraints {
         SaveOptions options = new PdfSaveOptions();
         options.setStartDate(project.get(Prj.START_DATE));
         options.setTimescale(Timescale.ThirdsOfMonths);
-        project.save(dataDir + "project_MustFinishOn_out.pdf", options);
-        //ExEnd: setConstraintTypeMustFinishOn
+        project.save(outDir + "project_MustFinishOn_out.pdf", options);
     }
 }
 

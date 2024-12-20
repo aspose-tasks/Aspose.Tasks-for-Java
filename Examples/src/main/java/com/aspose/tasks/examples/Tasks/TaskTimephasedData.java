@@ -29,8 +29,8 @@ import java.util.List;
 
 public class TaskTimephasedData {
     public static void main(String[] args) {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(TaskTimephasedData.class);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         Project project = new Project(dataDir + "project.xml");
 

@@ -17,8 +17,8 @@ import com.aspose.tasks.examples.Utils;
 
 public class ResourceAssignmentNotes {
     public static void main(String[] args) {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(ResourceAssignmentNotes.class);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         Project prj = new Project(dataDir + "UpdateResourceAssignment.mpp");
 

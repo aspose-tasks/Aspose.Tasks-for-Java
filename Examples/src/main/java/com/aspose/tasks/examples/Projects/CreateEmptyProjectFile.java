@@ -13,19 +13,18 @@ import com.aspose.tasks.examples.Utils;
 
 public class CreateEmptyProjectFile {
     public static void main(String[] args) {
-        // ExStart: CreateEmptyProjectFile
         // For complete examples and data files, please go to https://github.com/aspose-tasks/Aspose.Tasks-for-Java
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(CreateEmptyProjectFile.class);
+
+        // The path to the output directory.
+        String outDir = Utils.getOutDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         // Create a project instance
         Project newProject = new Project();
 
-        newProject.save(dataDir + "project1.xml", SaveFileFormat.Xml);
+        newProject.save(outDir + "project1_out.xml", SaveFileFormat.Xml);
 
         //Display result of conversion.
         System.out.println("Project file generated Successfully");
-        // ExEnd: CreateEmptyProjectFile
     }
 }
 

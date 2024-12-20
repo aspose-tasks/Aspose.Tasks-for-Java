@@ -26,17 +26,17 @@ public class CurrencyDigits {
     }
 
     public static void settingCurrencyDigits() {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(CurrencyDigits.class);
+        // The path to the output directory.
+        String outDir = Utils.getOutDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         Project project = new Project();
         project.set(Prj.CURRENCY_DIGITS, 2);
-        project.save(dataDir + "ProjectCurrDigits.mpp", SaveFileFormat.Mpp);
+        project.save(outDir + "ProjectCurrDigits.mpp", SaveFileFormat.Mpp);
     }
 
     public static void gettingCurrencyDigits() {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(CurrencyDigits.class);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         Project project = new Project(dataDir + "project.mpp");
         System.out.println(project.get(Prj.CURRENCY_DIGITS));

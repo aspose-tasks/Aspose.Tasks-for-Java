@@ -13,9 +13,11 @@ import com.aspose.tasks.examples.Utils;
 
 public class ConfigureGanttChartView {
     public static void main(String[] args) {
-        // Shows how to configure Gantt Chart properties.
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(ConfigureGanttChartView.class);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
+
+        // The path to the output directory.
+        String outDir = Utils.getOutDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         Project project = new Project(dataDir + "project.mpp");
 
@@ -40,7 +42,7 @@ public class ConfigureGanttChartView {
         table.getTableFields().add(3, attrField);
 
         // The result of opening of saved project in MSP2010 is in attached screenshot
-        project.save("saved.mpp", SaveFileFormat.Mpp);
+        project.save(outDir + "saved.mpp", SaveFileFormat.Mpp);
     }
 }
 

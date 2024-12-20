@@ -11,6 +11,7 @@ package com.aspose.tasks.examples.Projects;
 import com.aspose.tasks.Gridline;
 import com.aspose.tasks.GridlineType;
 import com.aspose.tasks.ImageSaveOptions;
+import com.aspose.tasks.LegendDrawingOptions;
 import com.aspose.tasks.LinePattern;
 import com.aspose.tasks.Prj;
 import com.aspose.tasks.Project;
@@ -22,8 +23,11 @@ import java.util.ArrayList;
 
 public class PrintPagesToSeparateImage {
     public static void main(String[] args) {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(PrintPagesToSeparateImage.class);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
+
+        // The path to the output directory.
+        String outDir = Utils.getOutDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         Project project = new Project(dataDir + "CustomerFeedback.mpp");
         ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFileFormat.Png);
@@ -36,7 +40,7 @@ public class PrintPagesToSeparateImage {
         saveOptions.setEndDate(project.get(Prj.FINISH_DATE));
 
         saveOptions.setMarkCriticalTasks(true);
-        saveOptions.setLegendOnEachPage(false);
+        saveOptions.setLegendDrawingOptions(LegendDrawingOptions.NoLegend);
 
         saveOptions.setGridlines(new ArrayList<Gridline>());
 
@@ -47,11 +51,11 @@ public class PrintPagesToSeparateImage {
         saveOptions.getGridlines().add(gridline);
 
         // Save the whole project layout to one file
-        project.save(dataDir + "CustomerFeedback.png", saveOptions);
+        project.save(outDir + "CustomerFeedback.png", saveOptions);
 
         // Save project layout to separate files
         saveOptions.setRenderToSinglePage(false);
-        project.save(dataDir + "CustomerFeedback_.png", saveOptions);
+        project.save(outDir + "CustomerFeedback_.png", saveOptions);
     }
 }
 

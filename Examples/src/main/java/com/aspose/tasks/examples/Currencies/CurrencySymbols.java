@@ -28,8 +28,8 @@ public class CurrencySymbols {
     }
 
     public static void gettingCurrencySymbol() {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(CurrencySymbols.class);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         Project project = new Project(dataDir + "project.mpp");
         System.out.println(project.get(Prj.CURRENCY_SYMBOL));

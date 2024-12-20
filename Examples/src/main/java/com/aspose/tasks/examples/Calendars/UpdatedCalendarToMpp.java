@@ -14,12 +14,13 @@ import com.aspose.tasks.examples.Utils;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
-public class UpdatedCalendarToMpp
-{
+public class UpdatedCalendarToMpp {
     public static void main(String[] args) {
-    	// ExStart: UpdatedCalendarToMpp
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(UpdatedCalendarToMpp.class);
+		// The path to the document directory.
+		String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
+
+		// The path to the output directory.
+		String outDir = Utils.getOutDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         String resultFile = "OutputMpp.mpp";
         String newFile = "SampleMpp.mpp";
@@ -31,15 +32,13 @@ public class UpdatedCalendarToMpp
         project.set(Prj.CALENDAR, cal1);
 
         //Save the Project
-        project.save(dataDir + resultFile, SaveFileFormat.Mpp);
+        project.save(outDir + resultFile, SaveFileFormat.Mpp);
 
         //Display result of conversion.
         System.out.println("Process completed Successfully");
-        // ExEnd: UpdatedCalendarToMpp
     }
 	
 
-    // ExStart: GetTestCalendar
     private static void GetTestCalendar(Calendar  cal) {
     	Calendar.makeStandardCalendar(cal);
     	cal.setName("Test calendar");
@@ -80,7 +79,6 @@ public class UpdatedCalendarToMpp
     	exc2.setDayWorking(false);
     	cal.getExceptions().add(exc2);
      }
-    // ExEnd: GetTestCalendar
 }
 
 

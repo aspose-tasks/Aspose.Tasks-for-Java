@@ -24,7 +24,11 @@ import java.util.Calendar;
  */
 public class WorkWithIsPortrait {
     public static void main(String[] args) {
-        String dataDir = Utils.getDataDir(WorkWithIsPortrait.class);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
+
+        // The path to the output directory.
+        String outDir = Utils.getOutDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         //Read the MPP file.
         Project project = new Project(dataDir + "EstimatedMilestoneTasks.mpp");
@@ -59,11 +63,11 @@ public class WorkWithIsPortrait {
         saveOptions.setPortrait(true);
 
         // In this case the page size and orientation applied from SaveOptions.
-        project.save(dataDir + "WorkWithIsPortrait_out2.pdf", saveOptions);
+        project.save(outDir + "WorkWithIsPortrait_out2.pdf", saveOptions);
 
         saveOptions.setCustomPageSize(new Dimension(400, 600));
 
         // In this case the page size applied with SaveOptions.setCustomPageSize(). isPortrait() is not taken into account.
-        project.save(dataDir + "WorkWithIsPortrait_out3.pdf", saveOptions);
+        project.save(outDir + "WorkWithIsPortrait_out3.pdf", saveOptions);
     }
 }

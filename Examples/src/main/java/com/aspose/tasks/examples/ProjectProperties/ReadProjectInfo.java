@@ -13,9 +13,9 @@ import com.aspose.tasks.examples.Utils;
 
 public class ReadProjectInfo {
     public static void main(String[] args) {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(ReadProjectInfo.class);
-        //ExStart:ReadProjectInfo
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
+
         Project project = new Project(dataDir + "ReadProjectInfo.mpp");
 		if (project.get(Prj.SCHEDULE_FROM_START).getValue()) {
 			System.out.println("Project Start Date: " + project.get(Prj.START_DATE));
@@ -28,6 +28,5 @@ public class ReadProjectInfo {
         System.out.println("Current Date: " + project.get(Prj.CURRENT_DATE));
         System.out.println("Status Date: " + project.get(Prj.STATUS_DATE));
         System.out.println("Calendar: " + project.get(Prj.CALENDAR).getName());
-        //ExEnd:ReadProjectInfo
     }
 }

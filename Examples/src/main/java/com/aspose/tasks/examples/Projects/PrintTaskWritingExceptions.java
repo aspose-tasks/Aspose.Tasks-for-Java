@@ -15,13 +15,16 @@ import com.aspose.tasks.examples.Utils;
 
 public class PrintTaskWritingExceptions {
     public static void main(String[] args) {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(PrintTaskWritingExceptions.class);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
+
+        // The path to the output directory.
+        String outDir = Utils.getOutDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         Project prj = new Project(dataDir + "project5.mpp");
 
         try {
-            prj.save(dataDir + "project.mpp", SaveFileFormat.Mpp);
+            prj.save(outDir + "project_out.mpp", SaveFileFormat.Mpp);
         } catch (TasksWritingException ex) {
             System.out.println(ex.getLogText());
         }

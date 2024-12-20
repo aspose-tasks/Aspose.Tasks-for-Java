@@ -19,32 +19,35 @@ import java.io.IOException;
 
 public class SaveAsSvg {
     public static void main(String[] args) {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(SaveAsSvg.class);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
-        SavingProjectDataAsSVG(dataDir);
+        // The path to the output directory.
+        String outDir = Utils.getOutDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
-        UsingSvgOptions(dataDir);
+        SavingProjectDataAsSVG(dataDir, outDir);
+
+        UsingSvgOptions(dataDir, outDir);
 
         //Display result of conversion.
         System.out.println("Process completed Successfully");
     }
 
-    public static void SavingProjectDataAsSVG(String dataDir) {
+    public static void SavingProjectDataAsSVG(String dataDir, String outDir) {
         // Read the input Project file
         Project project = new Project(dataDir + "HomeMovePlan.mpp");
         // Save the Project as SVG
-        project.save(dataDir + "project5.svg", SaveFileFormat.Svg);
+        project.save(outDir + "project5_out.svg", SaveFileFormat.Svg);
     }
 
-    public static void UsingSvgOptions(String dataDir) {
+    public static void UsingSvgOptions(String dataDir, String outDir) {
         // Read the input Project file
         Project project = new Project(dataDir + "HomeMovePlan.mpp");
 
         SaveOptions opt = new SvgOptions();
         opt.setFitContent(true);
         opt.setTimescale(Timescale.ThirdsOfMonths);
-        project.save(dataDir + "FileName5.svg", opt);
+        project.save(outDir + "FileName5.svg", opt);
     }
 }
 

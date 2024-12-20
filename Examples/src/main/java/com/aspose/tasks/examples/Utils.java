@@ -9,6 +9,8 @@
 package com.aspose.tasks.examples;
 
 import java.io.File;
+import java.util.Arrays;
+import java.util.stream.Collectors;
 
 public class Utils {
 
@@ -26,11 +28,31 @@ public class Utils {
 
         for (String s : c.getName().split("\\.")) {
             dir = new File(dir, s);
-            if (dir.isDirectory() == false)
+            if (!dir.isDirectory())
                 dir.mkdir();
         }
 
         System.out.println("Using data directory: " + dir.toString());
+        return dir.toString() + File.separator;
+    }
+
+    public static String getOutDir(Class c) {
+        File dir = new File(System.getProperty("user.dir"));
+
+        // User can open root project or Example subproject
+        if (!dir.toPath().endsWith("Examples")) {
+            dir = new File(dir, "Examples");
+        }
+
+        dir = new File(dir, "test-output");
+
+        for (String s : Arrays.stream(c.getName().split("\\.")).skip(4).collect(Collectors.toList())) {
+            dir = new File(dir, s);
+            if (!dir.isDirectory())
+                dir.mkdir();
+        }
+
+        System.out.println("Using out directory: " + dir.toString());
         return dir.toString() + File.separator;
     }
 }

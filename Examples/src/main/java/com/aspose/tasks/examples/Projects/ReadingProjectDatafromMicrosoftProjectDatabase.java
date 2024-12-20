@@ -21,9 +21,8 @@ import java.util.UUID;
 
 public class ReadingProjectDatafromMicrosoftProjectDatabase {
     public static void main(String[] args) throws Exception {
-        // ExStart: ReadingProjectDatafromMicrosoftProjectDatabase
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(ReadingProjectDatafromMicrosoftProjectDatabase.class);
+        // The path to the output directory.
+        String outDir = Utils.getOutDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         String url = "jdbc:sqlserver://";
         String serverName = "192.168.56.2\\MSSQLSERVER";
@@ -36,15 +35,12 @@ public class ReadingProjectDatafromMicrosoftProjectDatabase {
         addJDBCDriver(new File("c:\\Program Files (x86)\\Microsoft JDBC Driver 4.0 for SQL Server\\sqljdbc_4.0\\enu\\sqljdbc4.jar"));
 
         Project project = new Project(settings);
-        project.save(dataDir + "project1.xml", SaveFileFormat.Xml);
-        // ExEnd: ReadingProjectDatafromMicrosoftProjectDatabase
+        project.save(outDir + "project1.xml", SaveFileFormat.Xml);
     }
 
-    // ExStart: addJDBCDriver
     private static void addJDBCDriver(File file) throws Exception {
         Method method = URLClassLoader.class.getDeclaredMethod("addURL", new Class[] {URL.class});
         method.setAccessible(true);
         method.invoke(ClassLoader.getSystemClassLoader(), new Object[] {file.toURI().toURL()});
     }
-    // ExEnd: addJDBCDriver
 }

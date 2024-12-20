@@ -15,9 +15,8 @@ import java.util.GregorianCalendar;
 
 public class DefineWeekdaysForExceptions {
     public static void main(String[] args) {
-        // ExStart: DefineWeekDaysForExceptions
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(DefineWeekdaysForExceptions.class);
+        // The path to the output directory.
+        String outDir = Utils.getOutDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         // Create a project instance
         Project project = new Project();
@@ -35,8 +34,7 @@ public class DefineWeekdaysForExceptions {
         cal.getExceptions().add(except);
 
         // Save the Project
-        project.save(dataDir + "project.xml", SaveFileFormat.Xml);
-        // ExEnd: DefineWeekDaysForExceptions
+        project.save(outDir + "project_out.xml", SaveFileFormat.Xml);
     }
 }
 

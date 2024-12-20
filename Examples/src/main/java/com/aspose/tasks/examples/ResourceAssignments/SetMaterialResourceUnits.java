@@ -23,8 +23,8 @@ import com.aspose.tasks.exceptions.NotSupportedException;
  */
 public class SetMaterialResourceUnits {
     public static void main(String[] args) {
-        // The path to the documents' directory.
-        String dataDir = Utils.getDataDir(SetMaterialResourceUnits.class);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         try {
             Project project = new Project(dataDir + "New project 2013.mpp");

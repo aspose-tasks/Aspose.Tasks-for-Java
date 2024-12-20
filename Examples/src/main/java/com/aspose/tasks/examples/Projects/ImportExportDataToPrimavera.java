@@ -18,16 +18,19 @@ import java.io.IOException;
 
 public class ImportExportDataToPrimavera {
     public static void main(String[] args) {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(ImportExportDataToPrimavera.class);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
+
+        // The path to the output directory.
+        String outDir = Utils.getOutDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         importingprimaveraxml(dataDir);
 
-        exportingprimaveraxml(dataDir);
+        exportingprimaveraxml(dataDir, outDir);
 
-        exportingprimaveraxer(dataDir);
+        exportingprimaveraxer(dataDir, outDir);
 
-        exportingprimaverampx(dataDir);
+        exportingprimaverampx(dataDir, outDir);
         //Display result of conversion.
         System.out.println("Process completed Successfully");
     }
@@ -40,22 +43,22 @@ public class ImportExportDataToPrimavera {
         System.out.println(FileFormat.getName(FileFormat.class, info.getProjectFileFormat()));
     }
 
-    public static void exportingprimaveraxml(String dataDir) {
+    public static void exportingprimaveraxml(String dataDir, String outDir) {
         Project project = new Project(dataDir + "project.mpp");
 
-        project.save(dataDir + "saved.xml", SaveFileFormat.PrimaveraP6Xml);
+        project.save(outDir + "saved.xml", SaveFileFormat.PrimaveraP6Xml);
     }
 
-    public static void exportingprimaveraxer(String dataDir) {
+    public static void exportingprimaveraxer(String dataDir, String outDir) {
         Project project = new Project(dataDir + "project.mpp");
 
-        project.save(dataDir + "saved.xer", SaveFileFormat.PrimaveraXer);
+        project.save(outDir + "saved.xer", SaveFileFormat.PrimaveraXer);
     }
 
-    public static void exportingprimaverampx(String dataDir) {
+    public static void exportingprimaverampx(String dataDir, String outDir) {
         Project project = new Project(dataDir + "project.mpp");
 
-        project.save(dataDir + "saved.mpx", SaveFileFormat.Mpx);
+        project.save(outDir + "saved.mpx", SaveFileFormat.Mpx);
     }
 }
 

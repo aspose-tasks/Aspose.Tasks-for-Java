@@ -17,8 +17,8 @@ import com.aspose.tasks.examples.Utils;
 
 public class RetrieveCalendarInfo {
     public static void main(String[] args) {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(RetrieveCalendarInfo.class);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         long OneSec = 10000000;//microsecond * 10
         long OneMin = 60 * OneSec;

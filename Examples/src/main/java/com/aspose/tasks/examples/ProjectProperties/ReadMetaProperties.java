@@ -16,9 +16,9 @@ import com.aspose.tasks.examples.Tasks.ActualProperties;
 
 public class ReadMetaProperties {
     public static void main(String[] args) {
-        // The path to the documents directory.
+        // The path to the !!OTHER!! document directory.
         String dataDir = Utils.getDataDir(ActualProperties.class);
-        // ExStart: ReadMetaProperties
+
         // Create a project reader instance
         Project project = new Project(dataDir + "project.mpp");
 
@@ -38,6 +38,5 @@ public class ReadMetaProperties {
             System.out.println(property.getName());
             System.out.println(property.getValue());
         }
-        // ExEnd:ReadMetaProperties
     }
 }

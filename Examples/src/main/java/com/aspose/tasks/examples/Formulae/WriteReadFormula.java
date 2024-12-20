@@ -28,9 +28,11 @@ public class WriteReadFormula {
     }
 
     public static void writingFormulasInExtendedAttributes() {
-        // ExStart: writingFormulasInExtendedAttributes
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(WriteReadFormula.class);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
+
+        // The path to the output directory.
+        String outDir = Utils.getOutDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         Project project = new Project(dataDir + "project.mpp");
         project.set(Prj.NEW_TASKS_ARE_MANUAL, new NullableBool(false));
@@ -47,24 +49,20 @@ public class WriteReadFormula {
         // set task cost
         task.set(Tsk.COST, BigDecimal.valueOf(100));
         // see the result in the attached screenshot (result.jpg)
-        project.save(dataDir + "saved.mpp", SaveFileFormat.Mpp);
-        // ExEnd: writingFormulasInExtendedAttributes
+        project.save(outDir + "saved.mpp", SaveFileFormat.Mpp);
     }
 
     public static void readingFormulasInLocalAndEnterpriseExtendedAttributes() {
-        // ExStart: readingFormulasInLocalAndEnterpriseExtendedAttributes
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(WriteReadFormula.class);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         Project proj = new Project(dataDir + "FormulaField.mpp"); // attached test mpp
         ExtendedAttributeDefinition attr = proj.getExtendedAttributes().get(0);
 
         System.out.println("Attribute Formula: " + attr.getFormula());
-        // ExEnd: readingFormulasInLocalAndEnterpriseExtendedAttributes
     }
 
     public static void readOnlyAccessToCustomFieldValues() {
-        // ExStart: readOnlyAccessToCustomFieldValues
         Project project = new Project();
 
         ExtendedAttributeDefinition attribute = ExtendedAttributeDefinition.createTaskDefinition(CustomFieldType.Cost, ExtendedAttributeTask.Cost1, "");
@@ -83,6 +81,5 @@ public class WriteReadFormula {
         System.out.println(extendedAttribute.getValueReadOnly() ? "Value is Read only" : "Value is not read only");
         extendedAttribute.setTextValue("-36755");
         System.out.println(Objects.equals(extendedAttribute.getTextValue(), " ") ? "Formula values are read-only" : "Values are not read-only");
-        // ExEnd: readOnlyAccessToCustomFieldValues
     }
 }

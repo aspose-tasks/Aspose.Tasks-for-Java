@@ -28,8 +28,8 @@ public class FilterDataFromMppFile {
     }
 
     public static void filterDefinitionData() {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(FilterDataFromMppFile.class);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         Project project = new Project(dataDir + "ReadFilterDefinitionData.mpp");
         FilterCollection taskFilters = project.getTaskFilters();
@@ -52,8 +52,8 @@ public class FilterDataFromMppFile {
     }
 
     public static void filterCriteriaData() {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(FilterDataFromMppFile.class);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         Project project = new Project(dataDir + "Project2003.mpp");
 

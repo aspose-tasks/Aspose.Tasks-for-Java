@@ -15,9 +15,9 @@ import java.util.Calendar;
 
 public class WriteProjectInfo {
     public static void main(String[] args) {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(WriteProjectInfo.class);
-        //ExStart:WriteProjectInfo
+        // The path to the output directory.
+        String outDir = Utils.getOutDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
+
         //Create a project instance
         Project project = new Project();
         //Set project information properties
@@ -29,8 +29,7 @@ public class WriteProjectInfo {
         project.set(Prj.STATUS_DATE, cal.getTime());
 
         //Save the Project as XML
-        project.save(dataDir + "project3.xml", SaveFileFormat.Xml);
-        //ExEnd:WriteProjectInfo
+        project.save(outDir + "project3_out.xml", SaveFileFormat.Xml);
     }
 }
 

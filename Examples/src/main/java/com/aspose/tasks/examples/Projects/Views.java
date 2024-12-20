@@ -20,18 +20,18 @@ import com.aspose.tasks.examples.Utils;
 
 public class Views {
     public static void main(String[] args) {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(PrimaveraRead.class);
+        // The path to the output directory.
+        String outDir = Utils.getOutDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
-        modifyViewAddColumn(dataDir);
+        modifyViewAddColumn(outDir);
 
-        workWithView(dataDir);
+        workWithView(outDir);
 
         // Display result of conversion.
         System.out.println("Process completed Successfully");
     }
 
-    public static void modifyViewAddColumn(String dataDir)
+    public static void modifyViewAddColumn(String outDir)
     {
         // Shows how to work with Project's view and add column to the default view (which is shown when MPP file is opened in MS Project).
 
@@ -54,10 +54,10 @@ public class Views {
         // WriteViewData flag should be used to persist modifications of view's properties.
         MPPSaveOptions options = new MPPSaveOptions();
         options.setWriteViewData(true);
-        project.save(dataDir + "modifyView_output.mpp", options);
+        project.save(outDir + "modifyView_output.mpp", options);
     }
 
-    public static void workWithView(String dataDir)
+    public static void workWithView(String outDir)
     {
         // Shows how to work with MS Project views.
 
@@ -94,7 +94,7 @@ public class Views {
         // WriteViewData flag should be used to persist modifications of project.Views.
         MPPSaveOptions options = new MPPSaveOptions();
         options.setWriteViewData(true);
-        project.save(dataDir + "workWithView_output.mpp", options);
+        project.save(outDir + "workWithView_output.mpp", options);
         // Let's check some properties of the newly added view
         // Print the unique identifier of a view
         System.out.println("View Uid: " + view.getUid());

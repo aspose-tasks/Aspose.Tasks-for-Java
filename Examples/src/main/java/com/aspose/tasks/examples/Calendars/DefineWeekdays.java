@@ -15,9 +15,8 @@ import java.util.GregorianCalendar;
 
 public class DefineWeekdays {
     public static void main(String[] args) {
-        // ExStart: DefineWeekdays
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(DefineWeekdays.class);
+        // The path to the output directory.
+        String outDir = Utils.getOutDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         // Create a project instance
         Project prj = new Project();
@@ -53,11 +52,10 @@ public class DefineWeekdays {
         cal.getWeekDays().add(myWeekDay);
 
         // Save the Project
-        prj.save(dataDir + "project.xml", SaveFileFormat.Xml);
+        prj.save(outDir + "project_out.xml", SaveFileFormat.Xml);
 
         // Display result of conversion.
         System.out.println("Process completed Successfully");
-        // ExEnd: DefineWeekdays
     }
 }
 

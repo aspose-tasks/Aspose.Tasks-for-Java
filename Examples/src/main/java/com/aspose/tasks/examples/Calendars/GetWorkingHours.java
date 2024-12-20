@@ -13,9 +13,8 @@ import com.aspose.tasks.examples.Utils;
 
 public class GetWorkingHours {
     public static void main(String[] args) {
-        // ExStart: GetWorkingHours
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(GetWorkingHours.class);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         long OneSec = 10000000;//microsecond * 10
         long OneMin = 60 * OneSec;
@@ -81,7 +80,6 @@ public class GetWorkingHours {
         System.out.println("Duration in Hours = " + durationInHours);
         System.out.println("Duration in Days = " + durationInDays);
         System.out.println();
-        // ExEnd: GetWorkingHours
     }
 }
 

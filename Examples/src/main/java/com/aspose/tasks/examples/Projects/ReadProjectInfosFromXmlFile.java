@@ -19,8 +19,8 @@ import java.util.List;
  */
 public class ReadProjectInfosFromXmlFile {
     public static void main(String[] args) {
-        // The path to the documents' directory.
-        String dataDir = Utils.getDataDir(ReadProjectInfosFromXmlFile.class);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         //Read the MPP file.
         PrimaveraXmlReader reader = new PrimaveraXmlReader(dataDir + "MultiprojectWithExternal.xml");

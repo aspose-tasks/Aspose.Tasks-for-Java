@@ -20,9 +20,8 @@ import com.aspose.tasks.examples.Utils;
 public class ReadWorkWeeks {
 
 	public static void main(String[] args) {
-		// ExStart: ReadWorkWeeksInformation
-		// The path to the documents directory.
-		String dataDir = Utils.getDataDir(ReadWorkWeeks.class);
+		// The path to the document directory.
+		String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
 		// Create project instance and access calendar and work weeks collection
 		Project project = new Project(dataDir + "ReadWorkWeeksInformation.mpp");
@@ -43,7 +42,5 @@ public class ReadWorkWeeks {
 				WorkingTimeCollection workingTimes = day.getWorkingTimes();
 			}
 		}
-		// ExEnd: ReadWorkWeeksInformation
 	}
-
 }

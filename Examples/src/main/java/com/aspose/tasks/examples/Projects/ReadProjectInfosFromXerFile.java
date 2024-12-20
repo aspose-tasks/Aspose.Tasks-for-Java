@@ -20,8 +20,8 @@ import java.util.List;
  */
 public class ReadProjectInfosFromXerFile {
     public static void main(String[] args) {
-        // The path to the documents' directory.
-        String dataDir = Utils.getDataDir(ReadProjectInfosFromXerFile.class);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         //Read the MPP file.
         PrimaveraXerReader reader = new PrimaveraXerReader(dataDir + "MultiprojectWithExternal.xer");

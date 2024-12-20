@@ -16,9 +16,8 @@ import com.aspose.tasks.examples.Utils;
 
 public class ExtendedTaskAttributes {
     public static void main(String[] args) {
-        // ExStart:ReadTaskExtendedAttributes
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(ExtendedTaskAttributes.class);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         Project project = new Project(dataDir + "ReadTaskExtendedAttributes.mpp");
 
@@ -53,7 +52,6 @@ public class ExtendedTaskAttributes {
                 }
             }
         }
-        // ExEnd:ReadTaskExtendedAttributes
     }
 }
 

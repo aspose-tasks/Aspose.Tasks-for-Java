@@ -17,8 +17,11 @@ import java.util.Calendar;
 
 public class WriteMppProjectSummary {
     public static void main(String[] args) {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(WriteMppProjectSummary.class);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
+
+        // The path to the output directory.
+        String outDir = Utils.getOutDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         Project project = new Project(dataDir + "project.mpp");
 
@@ -37,13 +40,13 @@ public class WriteMppProjectSummary {
         project.set(Prj.LAST_PRINTED, cal.getTime());
 
         //Save the Project back in MPP format
-        project.save(dataDir + "MppAspose.xml", SaveFileFormat.Xml);
+        project.save(outDir + "MppAspose.xml", SaveFileFormat.Xml);
 
         //Display result of conversion.
         System.out.println("Process completed Successfully");
 
         //Reading Project Summary Information
-        project = new Project(dataDir + "MppAspose.xml");
+        project = new Project(outDir + "MppAspose.xml");
 
         System.out.println("Author: " + project.get(Prj.AUTHOR));
         System.out.println(project.get(Prj.LAST_AUTHOR));

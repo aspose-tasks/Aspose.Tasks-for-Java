@@ -13,22 +13,19 @@ import com.aspose.tasks.Project;
 import com.aspose.tasks.SaveFileFormat;
 import com.aspose.tasks.examples.Utils;
 
-import java.io.IOException;
-
 public class ReadingProjectDataFromMicrosoftAccessDatabase {
-    // ExStart: ReadingProjectDataFromMicrosoftAccessDatabase
     public static void main(String[] args) {
         // For complete examples and data files, please go to https://github.com/aspose-tasks/Aspose.Tasks-for-Java
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(ReadingProjectDatafromMicrosoftProjectDatabase.class);
+
+        // The path to the output directory.
+        String outDir = Utils.getOutDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         MpdSettings settings = new MpdSettings(getConnectionString(), 1);
         Project project = new Project(settings);
-        project.save(dataDir + "project1.xml", SaveFileFormat.Xml);
+        project.save(outDir + "project1.xml", SaveFileFormat.Xml);
     }
 
     private static String getConnectionString() {
         return "jdbc:odbc:DRIVER=Microsoft Access Driver (*.mdb, *.accdb);DBQ=" + "mpdFile.mpd";
     }
-    // ExEnd: ReadingProjectDataFromMicrosoftAccessDatabase
 }

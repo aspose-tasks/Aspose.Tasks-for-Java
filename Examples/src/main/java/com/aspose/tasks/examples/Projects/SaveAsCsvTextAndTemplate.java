@@ -8,36 +8,38 @@
 
 package com.aspose.tasks.examples.Projects;
 
-import java.io.IOException;
-
 import com.aspose.tasks.*;
 import com.aspose.tasks.examples.Utils;
 
 public class SaveAsCsvTextAndTemplate {
     public static void main(String[] args) {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(SaveAsCsvTextAndTemplate.class);
-        SavingProjectAsCsv(dataDir);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
-        SavingProjectAsText(dataDir);
+        // The path to the output directory.
+        String outDir = Utils.getOutDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
-        SavingProjectAsTemplate(dataDir);
+        SavingProjectAsCsv(dataDir, outDir);
+
+        SavingProjectAsText(dataDir, outDir);
+
+        SavingProjectAsTemplate(dataDir, outDir);
 
         //Display result of conversion.
         System.out.println("Process completed Successfully");
     }
 
-    public static void SavingProjectAsCsv(String dataDir) {
+    public static void SavingProjectAsCsv(String dataDir, String outDir) {
         Project project = new Project(dataDir + "project5.mpp");
-        project.save(dataDir + "project5.csv", SaveFileFormat.Csv);
+        project.save(outDir + "project5_out.csv", SaveFileFormat.Csv);
     }
 
-    public static void SavingProjectAsText(String dataDir) {
+    public static void SavingProjectAsText(String dataDir, String outDir) {
         Project project = new Project(dataDir + "project5.mpp");
-        project.save(dataDir + "project5.txt", SaveFileFormat.Txt);
+        project.save(outDir + "project5_out.txt", SaveFileFormat.Txt);
     }
 
-    public static void SavingProjectAsTemplate(String dataDir) {
+    public static void SavingProjectAsTemplate(String dataDir, String outDir) {
         String projectName = dataDir + "Blank2010.mpp"; // any mpp file (here 2010 format used)
         Project project = new Project(projectName);
         ProjectFileInfo projectFileInfo = Project.getProjectFileInfo(dataDir + "Blank2010.mpp");
@@ -50,9 +52,9 @@ public class SaveAsCsvTextAndTemplate {
         options.setRemoveBaselineValues(true);
 
         String templateName = "result.mpt";
-        project.saveAsTemplate(templateName);
+        project.saveAsTemplate(outDir + templateName);
 
-        ProjectFileInfo templateFileInfo = Project.getProjectFileInfo(templateName);
+        ProjectFileInfo templateFileInfo = Project.getProjectFileInfo(outDir + templateName);
         if (FileFormat.MPT14 == templateFileInfo.getProjectFileFormat()) {
             System.out.println("Template FileFormat is ok");
         }

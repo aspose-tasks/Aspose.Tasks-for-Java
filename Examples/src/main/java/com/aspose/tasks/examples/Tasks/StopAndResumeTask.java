@@ -20,8 +20,8 @@ import java.util.GregorianCalendar;
 
 public class StopAndResumeTask {
     public static void main(String[] args) {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(StopAndResumeTask.class);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         Project project = new Project(dataDir + "Software Development.mpp");
 

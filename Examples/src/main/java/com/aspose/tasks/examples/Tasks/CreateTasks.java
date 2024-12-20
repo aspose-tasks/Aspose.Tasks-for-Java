@@ -10,7 +10,6 @@ package com.aspose.tasks.examples.Tasks;
 
 import com.aspose.tasks.Project;
 import com.aspose.tasks.Task;
-import com.aspose.tasks.examples.Utils;
 
 public class CreateTasks {
     public static void main(String[] args) {

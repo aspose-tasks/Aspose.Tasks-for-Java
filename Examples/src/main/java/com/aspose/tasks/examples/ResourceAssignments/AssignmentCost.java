@@ -15,8 +15,8 @@ import java.math.BigDecimal;
 
 public class AssignmentCost {
     public static void main(String[] args) {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(AssignmentCost.class);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         getResourceAssignmentCosts(dataDir);
 

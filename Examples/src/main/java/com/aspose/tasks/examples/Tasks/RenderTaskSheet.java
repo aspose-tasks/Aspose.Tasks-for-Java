@@ -16,14 +16,17 @@ import com.aspose.tasks.examples.Utils;
 
 public class RenderTaskSheet {
     public static void main(String[] args) {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(RenderTaskSheet.class);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
+
+        // The path to the output directory.
+        String outDir = Utils.getOutDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         Project project = new Project(dataDir + "NewProductDev.mpp");
         SaveOptions options = new PdfSaveOptions();
         options.setPresentationFormat(PresentationFormat.TaskSheet);
         // See the result attached
-        project.save(dataDir + "taskSheet.pdf", options);
+        project.save(outDir + "taskSheet_out.pdf", options);
     }
 }
 

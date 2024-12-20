@@ -24,9 +24,8 @@ public class WbsAssociatedWithTask {
     }
 
     public static void ReadWBSCodes() {
-        //ExStart: ReadWBSCodes
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(WbsAssociatedWithTask.class);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         Project project = new Project(dataDir + "input.mpp");
 
@@ -43,12 +42,11 @@ public class WbsAssociatedWithTask {
             // set custom WBS
             tsk.set(Tsk.WBS, "custom wbs");
         }
-        //ExEnd: ReadWBSCodes
     }
 
     public static void RenumberTaskWBSCodes() {
-        //ExStart: RenumberTaskWBSCodes
-        String dataDir = Utils.getDataDir(WbsAssociatedWithTask.class);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         Project project = new Project(dataDir + "RenumberExample.mpp");
 
@@ -74,7 +72,6 @@ public class WbsAssociatedWithTask {
         for (Task task : tasks) {
             System.out.println("\"" + task.get(Tsk.WBS) + "\"" + "; ");
         }
-        //ExEnd: RenumberTaskWBSCodes
     }
 }
 

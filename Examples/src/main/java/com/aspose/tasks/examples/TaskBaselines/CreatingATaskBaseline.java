@@ -11,7 +11,6 @@ package com.aspose.tasks.examples.TaskBaselines;
 import com.aspose.tasks.BaselineType;
 import com.aspose.tasks.Project;
 import com.aspose.tasks.Task;
-import com.aspose.tasks.examples.Utils;
 
 import java.util.ArrayList;
 import java.util.List;

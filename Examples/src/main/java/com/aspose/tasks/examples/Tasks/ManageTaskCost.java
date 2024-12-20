@@ -17,9 +17,6 @@ import java.math.BigDecimal;
 
 public class ManageTaskCost {
     public static void main(String[] args) {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(ManageTaskCost.class);
-
         Project project = new Project();
         Task task = project.getRootTask().getChildren().add("Task");
 

@@ -18,8 +18,11 @@ import java.util.Calendar;
 
 public class MppFileUpdate {
     public static void main(String[] args) {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(MppFileUpdate.class);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
+
+        // The path to the output directory.
+        String outDir = Utils.getOutDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         //Read an existing project
         Project project = new Project(dataDir + "SampleMSP2010.mpp");
@@ -36,7 +39,7 @@ public class MppFileUpdate {
         task.set(Tsk.FINISH, cal.getTime());
 
         //Save the project as MPP project file
-        project.save(dataDir + "AfterLinking.mpp", SaveFileFormat.Mpp);
+        project.save(outDir + "AfterLinking.mpp", SaveFileFormat.Mpp);
         //Display result of conversion.
         System.out.println("Process completed Successfully");
     }

@@ -19,8 +19,8 @@ import java.util.Calendar;
 
 public class ReadWriteGeneralProperties {
     public static void main(String[] args) {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(ReadWriteGeneralProperties.class);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         settingproperties();
 

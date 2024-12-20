@@ -19,8 +19,8 @@ import com.aspose.tasks.examples.Utils;
 
 public class TimephasedDataGeneration {
     public static void main(String[] args) {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(TimephasedDataGeneration.class);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         //Read the source MPP file
         Project project = new Project(dataDir + "project.mpp");

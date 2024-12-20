@@ -15,8 +15,11 @@ import java.util.Calendar;
 
 public class DefaultProjectProperties {
     public static void main(String[] args) {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(DefaultProjectProperties.class);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
+
+        // The path to the output directory.
+        String outDir = Utils.getOutDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         Project project = new Project(dataDir + "project.mpp");
 
@@ -44,7 +47,7 @@ public class DefaultProjectProperties {
         project.set(Prj.DEFAULT_FIXED_COST_ACCRUAL, CostAccrualType.Prorated);
 
         //Save the project to XML format
-        project.save(dataDir + "project4.xml", SaveFileFormat.Xml);
+        project.save(outDir + "project4_out.xml", SaveFileFormat.Xml);
 
         //Display result of conversion.
         System.out.println("Process completed Successfully");

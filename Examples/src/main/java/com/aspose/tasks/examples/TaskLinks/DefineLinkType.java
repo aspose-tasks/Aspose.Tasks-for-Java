@@ -17,8 +17,8 @@ import com.aspose.tasks.examples.Utils;
 
 public class DefineLinkType {
     public static void main(String[] args) {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(DefineLinkType.class);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         settinglinktype();
         gettinglinktype(dataDir);

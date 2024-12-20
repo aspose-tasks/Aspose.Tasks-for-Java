@@ -28,25 +28,25 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-//ExStart: ResourcePrefixForNestedResources
 public class ResourcePrefixForNestedResources implements IFontSavingCallback, ICssSavingCallback, IImageSavingCallback {
     public static String dataDir = Utils.getDataDir(ResourcePrefixForNestedResources.class);
+    public static String outDir = Utils.getOutDir(ResourcePrefixForNestedResources.class);
 
     public static void main(String[] args) throws IOException {
         FileInputStream fs = new FileInputStream(dataDir + "project1.mpp");
         Project project = new Project(fs);
         HtmlSaveOptions options = GetSaveOptions(1);
-        FileOutputStream stream = new FileOutputStream(dataDir + "document.html");
+        FileOutputStream stream = new FileOutputStream(outDir + "document.html");
         project.save(stream, options);
     }
 
     public void cssSaving(CssSavingArgs args) {
         FileOutputStream stream;
         try {
-            stream = new FileOutputStream(dataDir + "css/" + args.getFileName());
+            stream = new FileOutputStream(outDir + "css/" + args.getFileName());
             args.setStream(stream);
             args.setKeepStreamOpen(false);
-            args.setUri(dataDir + "css/" + args.getFileName());
+            args.setUri(outDir + "css/" + args.getFileName());
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
@@ -55,10 +55,10 @@ public class ResourcePrefixForNestedResources implements IFontSavingCallback, IC
     public void fontSaving(FontSavingArgs args) {
         FileOutputStream stream;
         try {
-            stream = new FileOutputStream(dataDir + "fonts/" + args.getFileName());
+            stream = new FileOutputStream(outDir + "fonts/" + args.getFileName());
             args.setStream(stream);
             args.setKeepStreamOpen(false);
-            args.setUri(dataDir + "fonts/" + args.getFileName());
+            args.setUri(outDir + "fonts/" + args.getFileName());
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
@@ -68,10 +68,10 @@ public class ResourcePrefixForNestedResources implements IFontSavingCallback, IC
         if (args.getFileName().endsWith("png")) {
             FileOutputStream stream1;
             try {
-                stream1 = new FileOutputStream(dataDir + "nestedResources/" + args.getFileName());
+                stream1 = new FileOutputStream(outDir + "nestedResources/" + args.getFileName());
                 args.setStream(stream1);
                 args.setKeepStreamOpen(false);
-                args.setUri(dataDir + "resources/" + args.getFileName());
+                args.setUri(outDir + "resources/" + args.getFileName());
                 //args.setNestedUri(dataDir + "nestedResources/" + args.getFileName());
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
@@ -79,10 +79,10 @@ public class ResourcePrefixForNestedResources implements IFontSavingCallback, IC
         } else {
             FileOutputStream stream2;
             try {
-                stream2 = new FileOutputStream(dataDir + "resources/" + args.getFileName());
+                stream2 = new FileOutputStream(outDir + "resources/" + args.getFileName());
                 args.setStream(stream2);
                 args.setKeepStreamOpen(false);
-                args.setUri(dataDir + "resources/" + args.getFileName());
+                args.setUri(outDir + "resources/" + args.getFileName());
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
             }
@@ -109,22 +109,22 @@ public class ResourcePrefixForNestedResources implements IFontSavingCallback, IC
         saveOptions.getPages().clear();
         saveOptions.getPages().add(pageNumber);
 
-        File dirFonts = new File(dataDir + "fonts");
+        File dirFonts = new File(outDir + "fonts");
         if (!dirFonts.exists()) {
             dirFonts.mkdir();
         }
 
-        File dirResources = new File(dataDir + "resources");
+        File dirResources = new File(outDir + "resources");
         if (!dirResources.exists()) {
             dirResources.mkdir();
         }
 
-        File dirNResources = new File(dataDir + "nestedResources");
+        File dirNResources = new File(outDir + "nestedResources");
         if (!dirNResources.exists()) {
             dirNResources.mkdir();
         }
 
-        File dirCSS = new File(dataDir + "css");
+        File dirCSS = new File(outDir + "css");
         if (!dirCSS.exists()) {
             dirCSS.mkdir();
         }
@@ -132,4 +132,3 @@ public class ResourcePrefixForNestedResources implements IFontSavingCallback, IC
         return saveOptions;
     }
 }
-//ExEnd: ResourcePrefixForNestedResources

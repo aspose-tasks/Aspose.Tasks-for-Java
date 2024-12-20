@@ -25,8 +25,8 @@ import java.util.List;
  */
 public class ResourceLeveler_LevelResources {
     public static void main(String[] args) {
-        // The path to the documents' directory.
-        String dataDir = Utils.getDataDir(ResourceLeveler_LevelResources.class);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         Project project = new Project(dataDir + "Software Development Plan.mpp");
 

@@ -22,8 +22,6 @@ public class WorkWithFormulas {
     }
 
     private static void TaskFieldsFormula() {
-        // ExStart: TaskFieldsFormula
-        // see this helper method below
         Project project = CreateTestProjectWithCustomField();
 
         ExtendedAttributeDefinition attr = project.getExtendedAttributes().get(0);
@@ -37,11 +35,9 @@ public class WorkWithFormulas {
         task.set(Tsk.DEADLINE, cal.getTime());
 
         project.save("SaveFile.mpp", SaveFileFormat.Mpp);
-        // ExEnd: TaskFieldsFormula
     }
 
     private static Project CreateTestProjectWithCustomField() {
-        // ExStart: CreateTestProjectWithCustomField
         // Create new project instance
         Project project = new Project();
 
@@ -61,11 +57,9 @@ public class WorkWithFormulas {
         Resource rsc = project.getResources().add("Rsc");
         project.getResourceAssignments().add(task, rsc);
         return project;
-        // ExEnd: CreateTestProjectWithCustomField
     }
 
     private static void UsingArithmeticExpression() {
-        // ExStart:UsingArithmeticExpression
         Project project = CreateTestProjectWithCustomField();
 
         // Set arithmetic formula for extended attribute
@@ -76,11 +70,9 @@ public class WorkWithFormulas {
         // Display extended attribute value
         Task task = project.getRootTask().getChildren().getById(1);
         System.out.println(task.getExtendedAttributes().get(0).getNumericValue());
-        // ExEnd:UsingArithmeticExpression
     }
 
     private static void UsingTaskNumberFields() {
-        // ExStart:UsingTaskNumberFields
         Project project = CreateTestProjectWithCustomField();
 
         // Set Formula
@@ -95,11 +87,9 @@ public class WorkWithFormulas {
 
         task.set(Tsk.PERCENT_COMPLETE, 50);
         System.out.println(task.getExtendedAttributes().get(0).getNumericValue());
-        // ExEnd:UsingTaskNumberFields
     }
 
     private static void FormulaWithBooleanValues() {
-        // ExStart:FormulaWithBooleanValues
         Project project = CreateTestProjectWithCustomField();
 
         // Set formula for extended attribute
@@ -108,11 +98,9 @@ public class WorkWithFormulas {
         // Print value of extended attribute
         Task task = project.getRootTask().getChildren().getById(1);
         System.out.println("Formula with boolean values" + task.getExtendedAttributes().get(0).getTextValue());
-        // ExEnd:FormulaWithBooleanValues
     }
 
     private static void FormulaWithProjectFields() {
-        // ExStart:FormulaWithProjectFields
         Project project = CreateTestProjectWithCustomField();
 
         // Set formula for extended attribute
@@ -121,6 +109,5 @@ public class WorkWithFormulas {
         // Print value of extended attribute
         Task task = project.getRootTask().getChildren().getById(1);
         System.out.println("Formula with boolean values" + task.getExtendedAttributes().get(0).getTextValue());
-        // ExEnd:FormulaWithProjectFields
     }
 }

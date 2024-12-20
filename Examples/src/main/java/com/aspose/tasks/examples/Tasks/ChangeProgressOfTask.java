@@ -9,7 +9,6 @@
 package com.aspose.tasks.examples.Tasks;
 
 import com.aspose.tasks.*;
-import com.aspose.tasks.examples.Utils;
 
 public class ChangeProgressOfTask {
     public static void main(String[] args) {

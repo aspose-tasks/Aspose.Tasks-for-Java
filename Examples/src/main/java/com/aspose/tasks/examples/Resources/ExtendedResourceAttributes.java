@@ -21,9 +21,11 @@ import java.math.BigDecimal;
 
 public class ExtendedResourceAttributes {
     public static void main(String[] args) {
-        // ExStart: ExtendedResourceAttributes
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(ExtendedResourceAttributes.class);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
+
+        // The path to the output directory.
+        String outDir = Utils.getOutDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         Project prj = new Project(dataDir + "ResourceWithExtAttribs.xml");
 
@@ -42,10 +44,9 @@ public class ExtendedResourceAttributes {
         Resource rsc = prj.getResources().add("R1");
         rsc.getExtendedAttributes().add(number1Resource);
 
-        prj.save(dataDir + "project5.xml", SaveFileFormat.Xml);
+        prj.save(outDir + "project5_out.xml", SaveFileFormat.Xml);
 
         // Display result of conversion.
         System.out.println("Process completed Successfully");
-        // ExEnd: ExtendedResourceAttributes
     }
 }

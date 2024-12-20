@@ -18,21 +18,21 @@ import com.aspose.tasks.examples.Utils;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
-import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
-import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class IgnoringInvalidCharactersDuringLoadingProject {
-    // ExStart: IgnoringInvalidCharactersDuringLoadingProject
     public static void main(String[] args) {
         // For complete examples and data files, please go to https://github.com/aspose-tasks/Aspose.Tasks-for-Java
 
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(IgnoringInvalidCharactersDuringLoadingProject.class);
+        // The path to the document directory.
+        String dataDir = Utils.getDataDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
+
+        // The path to the output directory.
+        String outDir = Utils.getOutDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         InputStream stream = new ByteArrayInputStream(getModifiedXml(dataDir).getBytes(StandardCharsets.UTF_8));
 
@@ -42,7 +42,7 @@ public class IgnoringInvalidCharactersDuringLoadingProject {
             }
         });
 
-        project.save(dataDir + "project1.xml", SaveFileFormat.Xml);
+        project.save(outDir + "project1_out.xml", SaveFileFormat.Xml);
     }
 
     private static String getModifiedXml(String dataDir) {
@@ -70,5 +70,4 @@ public class IgnoringInvalidCharactersDuringLoadingProject {
         Project project = new Project();
         return project.getDuration(newValue, TimeUnitType.Hour);
     }
-    // ExEnd: IgnoringInvalidCharactersDuringLoadingProject
 }

@@ -23,8 +23,8 @@ import java.util.Calendar;
 
 public class UpdateProjectAndRescheduleUncompletedWork {
     public static void main(String[] args) {
-        // The path to the documents directory.
-        String dataDir = Utils.getDataDir(UpdateProjectAndRescheduleUncompletedWork.class);
+        // The path to the output directory.
+        String outDir = Utils.getOutDir(java.lang.invoke.MethodHandles.lookup().lookupClass());
 
         Project project = new Project();
 
@@ -68,17 +68,17 @@ public class UpdateProjectAndRescheduleUncompletedWork {
         task9.set(Tsk.IS_MANUAL, new NullableBool(true));
         task10.set(Tsk.IS_MANUAL, new NullableBool(true));
 
-        project.save(dataDir + "not updated.xml", SaveFileFormat.Xml);
+        project.save(outDir + "not updated_out.xml", SaveFileFormat.Xml);
 
         cal.set(2014, Calendar.JANUARY, 28, 17, 0, 0);
         project.updateProjectWorkAsComplete(cal.getTime(), false);
 
-        project.save(dataDir + "updated.xml", SaveFileFormat.Xml);
+        project.save(outDir + "updated_out.xml", SaveFileFormat.Xml);
 
         cal.set(2014, Calendar.JANUARY, 28, 17, 0, 0);
         project.rescheduleUncompletedWorkToStartAfter(cal.getTime());
 
-        project.save(dataDir + "rescheduled.xml", SaveFileFormat.Xml);
+        project.save(outDir + "rescheduled_out.xml", SaveFileFormat.Xml);
         //Display result of conversion.
         System.out.println("Process completed Successfully");
     }

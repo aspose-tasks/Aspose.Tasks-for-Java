@@ -38,7 +38,6 @@ public class SupportEvaluationFunctions {
     }
 
     public static void CalculationOfMathExpressions() {
-        //ExStart: CalculationOfMathExpressions
         Project project = CreateTestProjectWithCustomField();
 
         // Set formula Sin(pi/2)
@@ -47,10 +46,8 @@ public class SupportEvaluationFunctions {
         // Print Calculated value
         Task task = project.getRootTask().getChildren().getById(1);
         System.out.println("Sin(pi/2): " + task.getExtendedAttributes().get(0).getNumericValue());
-        //ExEnd: CalculationOfMathExpressions
     }
 
-    //ExStart: CalculationOfGeneralFunctions
     public static void EvaluateChoose() {
         Project project = CreateTestProjectWithCustomField();
 
@@ -93,10 +90,8 @@ public class SupportEvaluationFunctions {
         Task task = project.getRootTask().getChildren().getById(1);
         System.out.println(task.getExtendedAttributes().get(0).getNumericValue());
     }
-    //ExEnd: CalculationOfGeneralFunctions
 
     public static void CalculationOfTextFunctions() {
-        //ExStart: CalculationOfTextFunctions
         Project project = CreateTestProjectWithCustomField();
         Task task = project.getRootTask().getChildren().getById(1);
 
@@ -122,11 +117,9 @@ public class SupportEvaluationFunctions {
         project.getExtendedAttributes().get(0).setFormula("String(-5, \"A\")");
         // #Error
         System.out.println(task.getExtendedAttributes().get(0).getNumericValue());
-        //ExEnd: CalculationOfTextFunctions
     }
 
     public static void CalculationOfDateTimeFunctions() {
-        //ExStart: CalculationOfDateTimeFunctions
         Project project = CreateTestProjectWithCustomField();
         Task task = project.getRootTask().getChildren().getById(1);
 
@@ -188,7 +181,6 @@ public class SupportEvaluationFunctions {
 
         numberDefinition.setFormula("Weekday(\"24/3/2015\", 3)");
         System.out.println(task.getExtendedAttributes().get(0).getNumericValue());
-        //ExEnd: CalculationOfDateTimeFunctions
     }
 }
 
